@@ -12,3 +12,6 @@ __pycache__/
 # Power BI local cache
 powerbi/**/.pbi/localSettings.json
 powerbi/**/.pbi/cache.abf
+
+# fitted models (rebuilt by notebook 03)
+data/processed/*.joblib

@@ -1,0 +1,89 @@
+feature,name,mean_abs_shap
+time_step,age (time_step),0.62264
+Spec_7,Spec 7,0.22022
+Spec_1,Spec 1,0.20953
+c666_level,"counter 666, level",0.16986
+h167_mean_bin,"histogram 167, mean bin (lifetime)",0.15972
+h291_top2_share,"histogram 291, share in top 2 bins (lifetime)",0.14072
+c309_level,"counter 309, level",0.13632
+c837_level,"counter 837, level",0.13094
+c100_level,"counter 100, level",0.12437
+h167_recent5_mean_bin,"histogram 167, mean bin (last 5 readouts)",0.09182
+h459_mean_bin,"histogram 459, mean bin (lifetime)",0.09061
+h397_recent5_top2_share,"histogram 397, share in top 2 bins (last 5 readouts)",0.08836
+Spec_6,Spec 6,0.08637
+readouts_so_far,readouts so far,0.0839
+Spec_2,Spec 2,0.08054
+c427_level,"counter 427, level",0.07755
+c666_rate_prev,"counter 666, rate since previous readout",0.07493
+dt_last5,span of last 5 readouts,0.07474
+h397_top2_share,"histogram 397, share in top 2 bins (lifetime)",0.07311
+h272_recent5_mean_bin,"histogram 272, mean bin (last 5 readouts)",0.07107
+h459_recent5_mean_bin,"histogram 459, mean bin (last 5 readouts)",0.06956
+h291_mean_bin,"histogram 291, mean bin (lifetime)",0.06656
+c100_rate_5,"counter 100, rate over last 5 readouts",0.06608
+h158_recent5_top2_share,"histogram 158, share in top 2 bins (last 5 readouts)",0.06366
+h272_mean_bin,"histogram 272, mean bin (lifetime)",0.06184
+h158_recent5_mean_bin,"histogram 158, mean bin (last 5 readouts)",0.0612
+h459_top2_share,"histogram 459, share in top 2 bins (lifetime)",0.06
+h397_recent5_mean_bin,"histogram 397, mean bin (last 5 readouts)",0.05743
+h167_mean_bin_change_5,"histogram 167, change in mean bin over last 5 readouts",0.05719
+h459_total,"histogram 459, total count",0.05129
+c666_delta_5,"counter 666, change over last 5 readouts",0.05113
+c427_rate_5,"counter 427, rate over last 5 readouts",0.04994
+h167_total,"histogram 167, total count",0.04977
+c666_rate_5,"counter 666, rate over last 5 readouts",0.04894
+h291_mean_bin_change_5,"histogram 291, change in mean bin over last 5 readouts",0.04796
+h397_mean_bin_change_5,"histogram 397, change in mean bin over last 5 readouts",0.04644
+c100_delta_5,"counter 100, change over last 5 readouts",0.04608
+c835_rate_prev,"counter 835, rate since previous readout",0.04514
+c837_delta_5,"counter 837, change over last 5 readouts",0.04494
+h158_mean_bin_change_5,"histogram 158, change in mean bin over last 5 readouts",0.04087
+h459_mean_bin_change_5,"histogram 459, change in mean bin over last 5 readouts",0.04005
+h291_total,"histogram 291, total count",0.03973
+h167_top2_share,"histogram 167, share in top 2 bins (lifetime)",0.03971
+c171_rate_prev,"counter 171, rate since previous readout",0.03878
+h291_recent5_top2_share,"histogram 291, share in top 2 bins (last 5 readouts)",0.03869
+c100_rate_prev,"counter 100, rate since previous readout",0.0386
+h459_recent5_top2_share,"histogram 459, share in top 2 bins (last 5 readouts)",0.03833
+c100_delta_prev,"counter 100, change since previous readout",0.0383
+h158_mean_bin,"histogram 158, mean bin (lifetime)",0.03623
+h397_mean_bin,"histogram 397, mean bin (lifetime)",0.03578
+dt_prev,gap since previous readout,0.03423
+c835_rate_5,"counter 835, rate over last 5 readouts",0.03415
+c835_delta_5,"counter 835, change over last 5 readouts",0.03383
+h158_top2_share,"histogram 158, share in top 2 bins (lifetime)",0.0313
+c666_delta_prev,"counter 666, change since previous readout",0.03075
+c427_rate_prev,"counter 427, rate since previous readout",0.03065
+h291_recent5_mean_bin,"histogram 291, mean bin (last 5 readouts)",0.03049
+c171_level,"counter 171, level",0.0295
+c171_delta_5,"counter 171, change over last 5 readouts",0.02898
+h272_mean_bin_change_5,"histogram 272, change in mean bin over last 5 readouts",0.02897
+c427_delta_prev,"counter 427, change since previous readout",0.02717
+c171_delta_prev,"counter 171, change since previous readout",0.02693
+c370_level,"counter 370, level",0.0266
+c427_delta_5,"counter 427, change over last 5 readouts",0.02624
+c837_rate_prev,"counter 837, rate since previous readout",0.02558
+h167_recent5_top2_share,"histogram 167, share in top 2 bins (last 5 readouts)",0.02548
+c835_delta_prev,"counter 835, change since previous readout",0.02398
+c171_rate_5,"counter 171, rate over last 5 readouts",0.02371
+c309_rate_5,"counter 309, rate over last 5 readouts",0.0233
+c309_delta_5,"counter 309, change over last 5 readouts",0.02147
+c837_rate_5,"counter 837, rate over last 5 readouts",0.0213
+c835_level,"counter 835, level",0.01729
+c837_delta_prev,"counter 837, change since previous readout",0.0171
+c309_rate_prev,"counter 309, rate since previous readout",0.01636
+Spec_3,Spec 3,0.01624
+h158_total,"histogram 158, total count",0.01374
+c370_delta_prev,"counter 370, change since previous readout",0.01325
+c309_delta_prev,"counter 309, change since previous readout",0.01287
+c370_delta_5,"counter 370, change over last 5 readouts",0.01228
+c370_rate_5,"counter 370, rate over last 5 readouts",0.01129
+h397_total,"histogram 397, total count",0.00932
+Spec_5,Spec 5,0.00847
+h272_top2_share,"histogram 272, share in top 2 bins (lifetime)",0.00553
+c370_rate_prev,"counter 370, rate since previous readout",0.00518
+h272_total,"histogram 272, total count",0.00484
+Spec_4,Spec 4,0.00208
+h272_recent5_top2_share,"histogram 272, share in top 2 bins (last 5 readouts)",0.0006
+Spec_0,Spec 0,0.0

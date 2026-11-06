@@ -1,0 +1,1001 @@
+vehicle_id,risk_log_odds,driver_1,driver_1_shap,driver_2,driver_2_shap,driver_3,driver_3_shap
+189,-3.9078,age (time_step),0.5803,"counter 309, level",-0.2834,"histogram 397, change in mean bin over last 5 readouts",-0.2556
+940,-2.6326,"counter 666, change over last 5 readouts",0.4369,"histogram 158, share in top 2 bins (last 5 readouts)",0.4113,"counter 666, rate since previous readout",0.4049
+1285,-6.368,age (time_step),-3.5285,"counter 427, level",0.4592,Spec 1,0.2609
+1327,-5.1023,"counter 100, level",-0.313,"histogram 459, total count",-0.2652,Spec 1,0.2281
+2061,-3.1321,age (time_step),0.3974,Spec 1,-0.2733,readouts so far,0.2458
+2322,-4.9376,age (time_step),0.7593,"counter 100, level",-0.5979,"counter 427, rate over last 5 readouts",-0.2095
+2415,-2.4842,readouts so far,0.3111,"histogram 291, share in top 2 bins (lifetime)",0.2582,"histogram 167, mean bin (lifetime)",0.1903
+2656,-3.5649,age (time_step),0.317,Spec 1,0.2829,"counter 100, level",-0.2647
+2803,-2.5589,age (time_step),0.6103,"histogram 167, mean bin (lifetime)",0.205,"histogram 167, mean bin (last 5 readouts)",0.1942
+3022,-4.6964,age (time_step),0.7806,"counter 666, level",-0.5828,"histogram 272, mean bin (lifetime)",-0.5062
+3074,-4.7054,age (time_step),0.6097,"histogram 167, mean bin (lifetime)",-0.4371,"histogram 167, mean bin (last 5 readouts)",-0.2481
+3298,-2.5797,age (time_step),0.7667,"histogram 167, mean bin (lifetime)",0.2619,"histogram 291, share in top 2 bins (lifetime)",0.242
+3309,-4.7049,age (time_step),0.7512,"histogram 291, share in top 2 bins (lifetime)",-0.3951,Spec 2,-0.2314
+3344,-2.9736,age (time_step),0.7595,Spec 1,-0.4961,"counter 309, level",0.2184
+3649,-3.1257,age (time_step),0.711,"counter 666, level",-0.4854,"histogram 291, share in top 2 bins (lifetime)",-0.3599
+3669,-3.5735,age (time_step),0.5839,Spec 1,-0.4408,"histogram 459, change in mean bin over last 5 readouts",-0.3643
+3756,-6.4232,age (time_step),-0.9502,"counter 837, level",-0.3537,Spec 1,0.295
+3816,-3.4728,"histogram 291, share in top 2 bins (lifetime)",0.2543,span of last 5 readouts,-0.2205,Spec 7,-0.2137
+4257,-2.9307,age (time_step),0.7662,"histogram 291, share in top 2 bins (lifetime)",0.3248,Spec 1,0.2715
+4384,-1.7912,Spec 1,0.3743,age (time_step),0.3671,"histogram 459, mean bin (lifetime)",0.2854
+4810,-1.6775,age (time_step),0.3786,"histogram 158, change in mean bin over last 5 readouts",0.2835,"histogram 397, share in top 2 bins (last 5 readouts)",0.2596
+5506,-3.6367,age (time_step),0.404,Spec 6,-0.3593,"histogram 167, mean bin (lifetime)",-0.35
+5550,-4.5131,age (time_step),0.5347,"histogram 397, share in top 2 bins (last 5 readouts)",-0.3997,"histogram 397, mean bin (last 5 readouts)",-0.179
+5592,-3.0192,age (time_step),0.6594,span of last 5 readouts,-0.1397,"histogram 291, mean bin (lifetime)",-0.1383
+5749,-3.2143,age (time_step),0.7968,"histogram 167, mean bin (lifetime)",0.2158,Spec 1,0.2149
+5818,-2.0933,age (time_step),0.6756,Spec 2,0.4321,"histogram 459, mean bin (lifetime)",0.2402
+5837,-2.2896,"histogram 397, share in top 2 bins (last 5 readouts)",0.4054,"histogram 291, change in mean bin over last 5 readouts",-0.3655,"counter 100, level",-0.3197
+6554,-4.8809,age (time_step),0.7046,Spec 1,-0.4922,Spec 2,-0.1985
+6722,-2.764,age (time_step),0.4635,"histogram 167, mean bin (lifetime)",0.1997,Spec 1,0.1897
+6807,-2.8785,age (time_step),0.4176,"histogram 167, mean bin (lifetime)",0.214,span of last 5 readouts,-0.1654
+6930,-2.9487,age (time_step),0.7598,Spec 1,0.219,"histogram 167, mean bin (lifetime)",0.2135
+6975,-3.2496,age (time_step),-0.6331,"counter 666, change over last 5 readouts",0.4947,"histogram 158, share in top 2 bins (last 5 readouts)",0.4801
+7325,-2.3209,age (time_step),0.5036,"histogram 272, mean bin (lifetime)",-0.2774,"histogram 167, mean bin (lifetime)",0.275
+7537,-1.7298,age (time_step),0.621,Spec 2,0.489,"histogram 158, change in mean bin over last 5 readouts",0.3261
+7981,-4.491,Spec 1,-0.7965,"histogram 291, share in top 2 bins (lifetime)",-0.4016,"counter 427, level",0.3896
+7988,-1.9121,Spec 2,0.3178,age (time_step),0.2684,"counter 100, level",-0.2428
+8061,-1.6928,age (time_step),0.651,"histogram 167, mean bin (last 5 readouts)",0.2521,"histogram 459, share in top 2 bins (last 5 readouts)",0.2162
+8382,-5.7765,age (time_step),-1.1816,"counter 309, level",-0.3573,"histogram 291, share in top 2 bins (lifetime)",0.2791
+8406,-4.5183,"histogram 291, mean bin (last 5 readouts)",-0.4657,"histogram 167, share in top 2 bins (lifetime)",0.4132,Spec 1,-0.2928
+8423,-3.8738,"counter 666, level",-0.5635,age (time_step),0.4773,"counter 100, level",-0.4346
+8834,-2.7871,age (time_step),0.647,"counter 309, level",-0.3173,"histogram 397, share in top 2 bins (last 5 readouts)",-0.3065
+8898,-4.2448,age (time_step),0.7803,Spec 2,-0.1653,Spec 7,-0.1407
+9051,-1.8547,age (time_step),0.5702,Spec 1,0.2496,"histogram 291, share in top 2 bins (lifetime)",0.2134
+9229,-4.2032,age (time_step),0.3854,Spec 1,0.2299,"counter 837, level",-0.2166
+9773,-0.9878,"histogram 158, share in top 2 bins (last 5 readouts)",0.729,Spec 7,0.5168,"counter 666, change over last 5 readouts",0.4473
+9784,-1.3839,Spec 7,0.4642,age (time_step),0.3882,"histogram 397, share in top 2 bins (last 5 readouts)",0.2689
+10118,-1.5095,age (time_step),0.6712,Spec 7,0.348,"histogram 291, share in top 2 bins (lifetime)",0.2471
+10134,-3.1923,age (time_step),0.7964,Spec 7,0.4349,"histogram 167, mean bin (lifetime)",-0.3557
+10369,-3.3139,age (time_step),0.5853,Spec 1,-0.3297,Spec 7,0.3292
+10497,-2.461,age (time_step),0.6794,Spec 1,-0.3935,Spec 7,0.3217
+10635,-3.4442,age (time_step),0.8187,Spec 7,-0.3098,Spec 6,0.2591
+10777,-2.1922,age (time_step),0.6669,Spec 7,0.3863,"histogram 167, mean bin (lifetime)",0.3149
+11177,-1.6559,age (time_step),0.6899,Spec 7,0.3745,"histogram 167, mean bin (lifetime)",0.2115
+11315,-2.545,age (time_step),0.5772,Spec 7,0.3712,Spec 1,-0.2851
+11430,-2.9963,age (time_step),0.6943,Spec 7,0.6422,"counter 837, level",0.2046
+11490,-2.6062,age (time_step),0.4107,Spec 7,0.3931,Spec 1,-0.3179
+12212,-1.5668,age (time_step),0.7231,Spec 7,0.5423,"histogram 291, change in mean bin over last 5 readouts",0.3242
+12680,-0.369,age (time_step),0.7129,Spec 7,0.5401,"counter 666, rate since previous readout",0.4073
+12902,0.0858,age (time_step),0.4971,Spec 7,0.3246,"histogram 397, share in top 2 bins (last 5 readouts)",0.3181
+12985,-1.7323,age (time_step),0.7888,Spec 7,0.3617,"counter 309, level",0.2832
+13529,-1.0452,age (time_step),0.4635,Spec 7,0.3715,"counter 309, level",0.2247
+14354,-4.3987,"histogram 397, share in top 2 bins (lifetime)",-0.2458,Spec 7,-0.1768,Spec 1,0.1473
+14626,-3.1091,"counter 427, level",0.3725,age (time_step),-0.3084,"counter 309, level",-0.3018
+15021,-4.2903,Spec 1,-0.4737,"counter 100, level",-0.3413,"histogram 291, change in mean bin over last 5 readouts",-0.3117
+15262,-2.6077,age (time_step),0.2801,"histogram 167, mean bin (last 5 readouts)",0.2158,"histogram 291, share in top 2 bins (lifetime)",0.2114
+16133,-5.1727,age (time_step),-1.441,"counter 309, level",0.2208,Spec 2,-0.2024
+16186,-2.2993,age (time_step),0.4113,"counter 837, level",0.3331,Spec 1,0.2497
+16220,-3.8468,age (time_step),0.5728,Spec 1,0.2247,"histogram 291, share in top 2 bins (lifetime)",0.1898
+16307,-3.8927,Spec 1,-0.5678,age (time_step),0.2503,Spec 7,-0.207
+16412,-1.9454,"histogram 158, share in top 2 bins (last 5 readouts)",0.7871,"counter 666, change over last 5 readouts",0.432,"counter 666, rate since previous readout",0.2992
+16457,-3.0116,age (time_step),-0.7375,Spec 1,0.3872,"counter 427, level",0.3261
+16504,-3.6567,age (time_step),-1.4586,readouts so far,0.4421,"counter 309, level",0.2409
+16691,-2.9109,age (time_step),0.3008,readouts so far,0.2974,"histogram 291, share in top 2 bins (lifetime)",0.1793
+16995,-4.1408,age (time_step),0.6437,"counter 666, level",-0.5383,"histogram 167, mean bin (last 5 readouts)",0.1703
+17340,-3.0556,age (time_step),0.4698,"histogram 167, mean bin (lifetime)",0.193,Spec 1,0.1846
+17444,-5.1733,age (time_step),0.4618,"counter 100, level",-0.3879,"counter 100, change over last 5 readouts",-0.2283
+18026,-2.7452,"histogram 291, share in top 2 bins (lifetime)",0.312,Spec 1,0.2473,Spec 7,-0.1646
+18916,-2.7177,age (time_step),0.8248,"histogram 291, mean bin (lifetime)",-0.3363,Spec 1,0.3
+19087,-2.9092,age (time_step),0.5734,Spec 6,0.1925,Spec 1,0.157
+19391,-1.376,age (time_step),0.5053,"histogram 291, change in mean bin over last 5 readouts",-0.4156,"histogram 397, share in top 2 bins (last 5 readouts)",0.3283
+19477,-2.8122,age (time_step),0.3416,"counter 666, rate since previous readout",0.3032,span of last 5 readouts,-0.2685
+19555,-0.7482,age (time_step),0.6497,Spec 2,0.5567,"counter 309, level",0.3783
+19616,-3.7842,age (time_step),-1.3094,readouts so far,0.4064,Spec 1,0.1667
+20795,-3.2442,age (time_step),0.7835,Spec 1,-0.3303,"histogram 167, mean bin (lifetime)",0.1698
+20984,-2.0749,age (time_step),0.6987,Spec 1,-0.363,"counter 837, level",0.3439
+21326,-3.2683,"histogram 459, mean bin (lifetime)",-0.2097,age (time_step),0.2006,"histogram 167, mean bin (last 5 readouts)",0.178
+21386,-0.9172,age (time_step),0.7052,"counter 837, level",0.4175,"histogram 167, mean bin (last 5 readouts)",0.2781
+22249,-3.9704,Spec 1,-0.3311,"histogram 167, mean bin (lifetime)",0.2877,"counter 837, level",-0.2828
+22398,-2.3867,age (time_step),0.5688,"histogram 397, share in top 2 bins (last 5 readouts)",0.2757,"histogram 291, change in mean bin over last 5 readouts",-0.2375
+22726,-3.7693,age (time_step),0.5047,"histogram 167, mean bin (last 5 readouts)",0.1788,Spec 7,-0.1702
+22754,-1.6247,age (time_step),0.6784,"histogram 167, mean bin (lifetime)",0.2839,"counter 309, level",0.2444
+22959,-2.2034,Spec 1,-0.7354,age (time_step),0.4198,"histogram 397, share in top 2 bins (last 5 readouts)",0.3536
+23066,-3.7129,age (time_step),0.2448,Spec 2,-0.1868,"histogram 167, mean bin (lifetime)",0.1784
+23110,-2.8504,age (time_step),0.771,"histogram 167, mean bin (lifetime)",0.2455,"counter 309, level",-0.2348
+23256,-4.7135,Spec 1,-0.7592,age (time_step),0.6687,"counter 309, level",-0.2998
+23371,-3.3998,age (time_step),0.3744,Spec 1,-0.3484,"counter 100, level",-0.2618
+23486,-3.0756,age (time_step),0.5766,Spec 1,0.2394,"histogram 291, share in top 2 bins (lifetime)",0.2149
+23544,-3.7169,"counter 100, level",-0.4592,Spec 1,-0.3781,age (time_step),0.347
+23864,-4.1816,"counter 666, level",-0.5209,age (time_step),0.4158,"histogram 291, share in top 2 bins (lifetime)",0.3419
+24202,-4.0729,"counter 100, level",-0.4086,age (time_step),0.3563,"histogram 291, share in top 2 bins (lifetime)",0.182
+24511,-2.771,age (time_step),0.7363,Spec 7,0.4347,"histogram 291, share in top 2 bins (lifetime)",-0.1543
+25145,-1.3648,age (time_step),0.5883,Spec 7,0.3538,"histogram 272, mean bin (lifetime)",-0.2463
+25155,-2.5712,age (time_step),0.678,Spec 7,0.2904,"histogram 167, mean bin (lifetime)",0.2701
+25160,-2.939,age (time_step),0.7427,Spec 7,0.3352,"histogram 397, share in top 2 bins (lifetime)",0.3172
+25208,-1.4348,age (time_step),0.8087,Spec 7,0.571,Spec 1,0.2489
+25303,-1.3346,age (time_step),0.7206,"histogram 291, share in top 2 bins (lifetime)",0.387,Spec 7,0.3669
+25329,0.1642,age (time_step),0.6373,Spec 7,0.5091,"histogram 158, share in top 2 bins (last 5 readouts)",0.4891
+25957,-2.4601,age (time_step),0.7112,Spec 7,0.4758,"histogram 397, share in top 2 bins (lifetime)",0.1937
+26294,-1.2661,age (time_step),0.682,Spec 7,0.42,"histogram 291, share in top 2 bins (lifetime)",0.3581
+26316,0.2041,age (time_step),0.7867,"histogram 158, share in top 2 bins (last 5 readouts)",0.6229,"counter 666, change over last 5 readouts",0.453
+26360,-2.0612,age (time_step),0.7637,Spec 7,0.5393,"histogram 291, share in top 2 bins (lifetime)",0.2654
+26414,-1.0474,age (time_step),0.7047,"histogram 158, share in top 2 bins (last 5 readouts)",0.5241,Spec 7,0.4412
+26700,-4.6804,age (time_step),0.5364,"counter 837, level",-0.3497,"counter 666, level",-0.3413
+26710,-1.9351,age (time_step),0.6635,Spec 7,0.2849,Spec 1,0.2752
+26793,-1.9096,age (time_step),0.7868,Spec 7,0.5761,"histogram 167, mean bin (lifetime)",0.205
+26916,-1.1467,age (time_step),0.7553,Spec 7,0.4562,Spec 1,0.3694
+26922,-2.9095,age (time_step),0.7179,Spec 7,0.336,"counter 666, level",0.2265
+26947,-1.703,age (time_step),0.7216,Spec 7,0.4427,Spec 1,0.2012
+27179,-4.4555,age (time_step),0.8034,Spec 1,-0.5202,"counter 100, level",-0.258
+27187,-2.2719,age (time_step),0.723,Spec 7,0.4463,"counter 666, rate since previous readout",0.2879
+27619,-1.5744,age (time_step),0.7956,Spec 7,0.5556,"counter 309, level",-0.3747
+27806,-1.0144,"histogram 158, share in top 2 bins (last 5 readouts)",0.6249,age (time_step),0.6241,Spec 7,0.4592
+28064,-1.8826,age (time_step),0.493,"histogram 167, mean bin (lifetime)",0.2645,"histogram 291, share in top 2 bins (lifetime)",0.249
+28273,-1.6418,age (time_step),0.5669,Spec 1,0.3752,"histogram 167, share in top 2 bins (lifetime)",0.3313
+28412,-1.9973,age (time_step),0.6985,Spec 7,0.4606,"counter 666, rate since previous readout",0.3102
+28461,-0.2114,age (time_step),0.8042,Spec 7,0.4032,"histogram 167, mean bin (last 5 readouts)",0.332
+28553,-0.7789,age (time_step),0.769,Spec 7,0.481,Spec 1,0.2928
+28727,-2.128,age (time_step),0.5786,Spec 7,0.4311,Spec 1,0.3491
+29026,-1.3721,age (time_step),0.8294,Spec 7,0.4631,"histogram 167, mean bin (lifetime)",0.2459
+29621,-2.1968,age (time_step),0.7615,Spec 7,0.4385,"histogram 291, share in top 2 bins (lifetime)",0.2035
+29947,-1.7508,age (time_step),0.7244,Spec 7,0.42,"histogram 291, share in top 2 bins (lifetime)",0.2757
+30246,-2.4681,Spec 7,0.5115,age (time_step),0.4971,Spec 1,0.218
+31069,-0.2435,"histogram 158, share in top 2 bins (last 5 readouts)",0.5955,age (time_step),0.4475,"counter 666, rate since previous readout",0.4325
+32091,-3.3909,age (time_step),0.402,Spec 7,0.3534,Spec 1,0.1509
+32184,-2.9541,age (time_step),0.8376,Spec 7,0.431,"counter 100, level",-0.2481
+33116,-1.2549,age (time_step),0.7012,"histogram 291, share in top 2 bins (lifetime)",0.3174,"histogram 167, mean bin (lifetime)",0.2698
+13514,-0.813,age (time_step),0.6438,"histogram 167, share in top 2 bins (lifetime)",0.3255,Spec 7,0.3099
+5432,-3.9189,age (time_step),-0.9044,readouts so far,0.3994,"counter 837, level",0.1852
+2950,-4.3724,age (time_step),-1.7397,"counter 427, level",0.2919,readouts so far,0.2476
+32059,-2.7401,age (time_step),0.342,"histogram 291, share in top 2 bins (lifetime)",0.2515,Spec 7,0.2418
+6296,-3.2524,age (time_step),-0.528,readouts so far,0.3402,"histogram 291, share in top 2 bins (lifetime)",0.2502
+6394,-5.5264,"counter 666, level",-0.6618,age (time_step),0.4556,"counter 100, level",-0.3993
+21941,-3.9752,age (time_step),0.5637,"counter 666, level",-0.561,"histogram 158, share in top 2 bins (last 5 readouts)",0.3832
+6177,-4.0895,age (time_step),-0.5255,Spec 1,-0.4988,"histogram 459, mean bin (lifetime)",0.3744
+33383,-6.5968,age (time_step),-0.8924,"counter 666, level",-0.4142,"histogram 167, mean bin (lifetime)",-0.3997
+27024,-2.8389,age (time_step),0.5071,Spec 7,0.4036,"counter 837, level",-0.2036
+9176,-4.8041,Spec 1,0.4738,"counter 837, level",-0.3773,"counter 309, level",-0.288
+5618,-4.2132,Spec 1,-0.3421,"histogram 272, mean bin (lifetime)",-0.3346,"counter 427, level",0.2874
+15581,-6.9312,age (time_step),-1.0126,Spec 1,-0.8314,readouts so far,0.3168
+33483,-3.9515,age (time_step),-0.6244,"counter 837, level",0.3232,readouts so far,0.3049
+33264,-2.7789,age (time_step),0.7674,Spec 1,-0.2996,Spec 7,-0.209
+6520,-4.4452,age (time_step),-0.6277,readouts so far,0.2882,"histogram 291, share in top 2 bins (lifetime)",0.2762
+28997,-5.9599,"counter 666, level",-0.5299,age (time_step),0.348,"counter 309, level",-0.272
+26397,-2.0415,age (time_step),0.7248,Spec 7,0.5724,"histogram 291, share in top 2 bins (lifetime)",0.2815
+2932,-3.7507,age (time_step),0.2639,Spec 1,-0.2467,"histogram 397, share in top 2 bins (lifetime)",0.1621
+31127,-2.5721,age (time_step),0.6185,"counter 100, level",-0.3495,Spec 7,0.3396
+14830,-3.4225,age (time_step),0.2869,"histogram 291, share in top 2 bins (lifetime)",0.2395,"histogram 397, change in mean bin over last 5 readouts",-0.209
+21448,-3.4871,age (time_step),0.786,Spec 1,0.2007,Spec 2,-0.1885
+25806,-2.9032,age (time_step),0.8237,Spec 7,0.3587,"counter 837, level",-0.1965
+25342,-2.5514,age (time_step),0.647,Spec 7,0.3508,"counter 666, rate since previous readout",0.2199
+28269,-2.7368,age (time_step),0.7293,Spec 7,0.4186,"counter 309, level",-0.2787
+17520,-3.4549,"counter 309, level",-0.3344,"histogram 167, mean bin (lifetime)",0.1661,"histogram 291, share in top 2 bins (lifetime)",0.1657
+20793,-3.5482,age (time_step),0.798,"counter 309, level",-0.2459,"counter 100, level",0.1411
+25760,-1.3567,age (time_step),0.651,Spec 7,0.4352,Spec 1,0.2805
+5958,-4.4053,Spec 1,-0.8147,age (time_step),0.5767,"counter 666, rate since previous readout",0.425
+27046,-3.5105,age (time_step),0.6534,Spec 7,0.3833,"histogram 167, mean bin (last 5 readouts)",-0.1959
+28536,-2.242,age (time_step),0.7264,Spec 7,0.4337,Spec 1,0.2814
+14486,-5.6699,Spec 7,-0.5905,Spec 1,-0.4032,age (time_step),0.3668
+8063,-6.1725,"counter 666, level",-0.5309,age (time_step),0.4796,"histogram 167, mean bin (lifetime)",-0.4415
+19282,-3.7165,"counter 837, level",-0.4624,"counter 309, level",-0.4114,age (time_step),-0.2986
+12294,-2.4578,age (time_step),0.4029,Spec 7,0.3306,"histogram 167, mean bin (lifetime)",0.2223
+30354,-2.5864,age (time_step),0.6448,Spec 7,0.3703,"counter 666, rate since previous readout",0.3403
+17765,-5.4643,age (time_step),-0.8154,"histogram 291, share in top 2 bins (lifetime)",-0.4078,"histogram 397, share in top 2 bins (last 5 readouts)",-0.3098
+9108,-5.049,"counter 837, level",-0.4098,"counter 666, rate since previous readout",0.3701,"counter 309, level",-0.3621
+13048,-3.7655,age (time_step),0.7173,Spec 7,0.4875,Spec 1,-0.4304
+19589,-4.5617,"counter 100, level",-0.5898,"counter 666, change over last 5 readouts",0.4866,age (time_step),-0.4644
+14233,-5.3416,"counter 666, level",-0.663,age (time_step),0.4108,"counter 837, level",-0.3238
+26133,-5.7354,age (time_step),0.4108,"counter 666, level",-0.3476,"histogram 291, total count",-0.2849
+21635,-4.8,"counter 666, rate over last 5 readouts",0.2497,Spec 1,0.2476,"counter 100, rate over last 5 readouts",-0.2473
+25505,-1.2619,age (time_step),0.7446,Spec 7,0.4117,"histogram 397, share in top 2 bins (lifetime)",0.2572
+15786,-4.8451,"counter 666, change over last 5 readouts",0.4716,age (time_step),-0.4217,"counter 666, rate over last 5 readouts",0.2802
+4301,-4.664,"counter 427, level",0.2561,Spec 2,-0.2158,"histogram 291, mean bin (lifetime)",-0.1889
+10730,-2.3122,age (time_step),0.7232,Spec 7,0.4591,"histogram 167, mean bin (last 5 readouts)",0.2537
+8229,-5.0677,"histogram 291, change in mean bin over last 5 readouts",-0.4021,age (time_step),0.3753,"counter 100, level",-0.2376
+3471,-4.0452,"counter 666, level",-0.4588,age (time_step),0.4501,"histogram 291, share in top 2 bins (lifetime)",0.2303
+6612,-6.5067,Spec 1,-0.5281,"counter 666, level",-0.5112,"counter 309, level",-0.3638
+27184,-4.5534,age (time_step),0.8023,Spec 1,-0.3605,Spec 7,0.2257
+20620,-4.3605,age (time_step),0.652,"counter 666, rate since previous readout",0.2558,"counter 100, level",-0.2553
+26987,-2.2613,age (time_step),0.7671,Spec 7,0.3679,"histogram 291, mean bin (lifetime)",-0.2092
+29228,-4.6367,age (time_step),0.7107,Spec 7,0.3793,"histogram 291, total count",-0.2664
+25360,-3.524,Spec 7,0.3802,age (time_step),0.2642,"histogram 459, share in top 2 bins (lifetime)",0.1485
+9019,-7.0442,"counter 666, level",-0.4977,"histogram 167, mean bin (lifetime)",-0.4111,"histogram 167, change in mean bin over last 5 readouts",-0.3978
+6664,-4.7052,readouts so far,0.435,"counter 100, rate over last 5 readouts",-0.2255,age (time_step),-0.2114
+3574,-7.813,age (time_step),-1.4291,"counter 666, level",-0.7165,"histogram 158, share in top 2 bins (last 5 readouts)",0.5108
+16966,-5.6136,age (time_step),-0.8582,"counter 666, level",-0.6067,"counter 309, level",-0.4798
+2180,-7.4271,age (time_step),-2.2159,Spec 7,-0.2604,"counter 309, level",-0.2125
+7495,-4.9404,"counter 100, level",-0.7131,Spec 2,0.3396,"counter 666, level",-0.3352
+8333,-3.8086,Spec 1,-0.3078,"histogram 167, mean bin (lifetime)",-0.3076,"counter 309, level",0.251
+16669,-4.2124,"histogram 291, change in mean bin over last 5 readouts",-0.3603,"counter 100, level",-0.2987,age (time_step),0.274
+10058,-3.4524,Spec 1,-0.4697,Spec 7,0.3621,age (time_step),0.3612
+6779,-4.1408,age (time_step),0.5798,"histogram 291, share in top 2 bins (lifetime)",-0.2607,"counter 309, level",-0.2531
+19485,-4.6563,"counter 309, level",-0.4012,"counter 837, level",-0.3187,age (time_step),-0.2109
+23063,-7.0121,"counter 666, level",-0.6179,"histogram 167, mean bin (lifetime)",-0.37,"counter 100, level",-0.3547
+26251,-1.9615,age (time_step),0.7661,Spec 7,0.4515,"counter 666, level",0.2456
+16276,-3.6817,"counter 100, level",-0.6596,age (time_step),0.2981,Spec 1,-0.2882
+19460,-5.1177,age (time_step),-0.5643,"histogram 459, mean bin (lifetime)",-0.1937,Spec 1,0.1715
+24216,-3.3181,age (time_step),0.7027,Spec 1,0.1954,"counter 100, level",0.1921
+6160,-3.2511,age (time_step),-0.5023,"counter 427, level",0.342,"counter 837, level",0.2535
+7262,-2.3581,Spec 2,0.4737,age (time_step),0.3892,"counter 666, rate since previous readout",0.2422
+19773,-3.3376,age (time_step),-0.3645,Spec 1,0.2106,"histogram 291, share in top 2 bins (lifetime)",0.1898
+19623,-4.137,age (time_step),-0.4793,Spec 7,-0.2223,Spec 1,0.22
+22194,-4.1336,"histogram 291, share in top 2 bins (lifetime)",0.2114,Spec 1,0.1675,Spec 7,-0.1597
+20354,-3.6797,age (time_step),-0.5428,"counter 666, rate since previous readout",0.3313,"counter 666, change over last 5 readouts",0.323
+18714,-4.5917,age (time_step),-0.6388,"counter 100, level",-0.4691,readouts so far,0.2211
+17455,-6.6157,age (time_step),0.5809,"counter 666, level",-0.4489,"histogram 167, mean bin (lifetime)",-0.4145
+8938,-3.317,"histogram 459, total count",-0.3645,"histogram 459, share in top 2 bins (lifetime)",0.219,"histogram 291, share in top 2 bins (lifetime)",0.2096
+15456,-5.1327,Spec 1,-0.5814,age (time_step),-0.3541,Spec 2,-0.3063
+11373,-6.6957,age (time_step),0.7908,"counter 666, level",-0.6443,"histogram 167, mean bin (lifetime)",-0.4838
+16498,-3.9356,age (time_step),-0.3244,Spec 6,0.2458,"counter 309, level",-0.2115
+19970,-4.9188,"counter 837, level",-0.449,"histogram 397, share in top 2 bins (last 5 readouts)",-0.3652,Spec 7,-0.3309
+8211,-4.5433,"counter 666, level",-0.5965,"counter 666, change over last 5 readouts",0.4229,"counter 309, level",-0.381
+12759,-5.933,"counter 666, level",-0.597,age (time_step),0.5208,"histogram 167, mean bin (lifetime)",-0.5098
+25106,-5.2839,age (time_step),0.6459,"histogram 291, total count",-0.358,"counter 100, level",-0.3072
+21826,-2.6541,"counter 100, level",-0.3294,Spec 1,0.3182,age (time_step),0.2801
+12919,-3.5539,age (time_step),0.7297,Spec 7,0.4141,Spec 1,0.2078
+2320,-3.6552,age (time_step),0.8053,"histogram 291, mean bin (lifetime)",-0.307,"histogram 158, share in top 2 bins (lifetime)",0.2895
+11869,-2.9607,age (time_step),0.6648,Spec 7,0.4032,span of last 5 readouts,-0.2767
+5328,-5.075,age (time_step),-0.7313,"counter 309, level",0.1913,Spec 1,-0.174
+25186,-3.606,Spec 7,0.4117,age (time_step),0.2834,"histogram 459, share in top 2 bins (lifetime)",-0.174
+15507,-3.462,age (time_step),-1.0026,readouts so far,0.2196,"histogram 167, mean bin (lifetime)",0.1924
+26180,-2.0142,age (time_step),0.6147,"counter 837, level",0.314,"histogram 459, mean bin (lifetime)",0.2744
+23238,-4.1587,"counter 427, level",0.3642,"counter 309, level",-0.3199,"counter 666, rate since previous readout",0.2734
+20281,-4.0269,age (time_step),0.7815,"counter 666, level",-0.4281,"histogram 167, mean bin (lifetime)",-0.4209
+27735,-2.4838,age (time_step),0.6707,Spec 7,0.4191,"histogram 291, share in top 2 bins (lifetime)",0.2392
+5394,-5.1445,age (time_step),0.4411,"counter 309, level",-0.3714,Spec 1,-0.3098
+30226,-2.4144,age (time_step),0.7754,Spec 7,0.5186,"histogram 459, mean bin (last 5 readouts)",-0.2298
+30472,-4.153,age (time_step),0.5786,Spec 7,0.4464,"counter 100, level",-0.3451
+23885,-3.8511,age (time_step),0.3857,"histogram 397, share in top 2 bins (lifetime)",0.3299,"counter 837, level",-0.3052
+31305,-3.0921,age (time_step),0.6508,Spec 7,0.5823,"histogram 167, mean bin (lifetime)",0.2198
+26575,-5.3192,"counter 666, level",-0.7173,age (time_step),0.4799,"counter 837, level",-0.3652
+18798,-4.6242,"counter 100, level",-0.3553,age (time_step),0.2636,Spec 1,0.2303
+32690,-3.4798,"counter 100, level",-0.3874,"counter 666, level",-0.3617,"histogram 291, share in top 2 bins (lifetime)",0.3293
+22751,-2.4881,age (time_step),0.7609,Spec 1,0.2239,"histogram 167, mean bin (lifetime)",0.2103
+10049,-6.0634,"counter 666, level",-0.5812,"histogram 167, mean bin (lifetime)",-0.4576,age (time_step),0.4052
+9420,-6.7281,"counter 666, level",-0.5131,age (time_step),0.5003,"counter 100, level",-0.4446
+2464,-2.4997,"histogram 167, mean bin (last 5 readouts)",0.3733,"histogram 291, share in top 2 bins (lifetime)",0.2256,Spec 1,0.1988
+11095,-5.128,age (time_step),0.8412,"histogram 158, share in top 2 bins (last 5 readouts)",0.5386,"histogram 167, mean bin (lifetime)",-0.4815
+26701,-2.1035,age (time_step),0.8291,Spec 7,0.4068,"histogram 291, share in top 2 bins (lifetime)",0.2315
+459,-9.2833,age (time_step),-4.2947,readouts so far,-0.2934,Spec 2,-0.2654
+20166,-4.2891,"counter 837, level",-0.475,age (time_step),0.2592,Spec 7,-0.2307
+3922,-5.858,Spec 6,0.4248,"counter 666, level",-0.4158,age (time_step),0.4036
+11080,-2.4055,age (time_step),0.7684,Spec 1,-0.6335,Spec 7,0.5473
+19903,-5.3372,"counter 666, level",-0.4837,"counter 837, level",-0.3937,age (time_step),0.3612
+29424,-3.4185,age (time_step),0.7362,Spec 7,0.3997,"histogram 167, mean bin (lifetime)",0.2033
+5420,-4.3641,age (time_step),-0.5803,"counter 309, level",-0.4829,"counter 666, change over last 5 readouts",0.3503
+22793,-3.0552,age (time_step),0.304,Spec 6,0.2275,Spec 1,0.1792
+13417,-3.0158,age (time_step),0.4176,"histogram 459, mean bin (lifetime)",0.2886,Spec 1,0.2707
+31911,-5.664,age (time_step),0.4086,"histogram 459, total count",-0.407,Spec 1,-0.3793
+16781,-5.2504,age (time_step),-0.8258,"counter 309, level",-0.2483,"histogram 397, share in top 2 bins (lifetime)",0.1309
+6951,-4.613,"counter 309, level",-0.2877,"counter 837, level",-0.266,"histogram 291, mean bin (lifetime)",0.221
+4382,-6.9089,age (time_step),-1.158,"counter 309, level",-0.2956,"histogram 291, mean bin (lifetime)",-0.2894
+4657,-5.43,age (time_step),-0.8975,"histogram 167, mean bin (lifetime)",-0.3332,Spec 2,-0.2155
+10510,-4.6449,age (time_step),0.782,"counter 666, level",-0.3521,"histogram 167, mean bin (lifetime)",-0.3106
+20930,-4.4768,"counter 309, level",-0.2634,"histogram 291, share in top 2 bins (lifetime)",0.2572,"histogram 459, mean bin (last 5 readouts)",-0.1946
+31963,-3.817,age (time_step),0.3938,Spec 7,0.2374,Spec 1,0.2096
+10921,-2.2136,age (time_step),0.7435,Spec 7,0.3182,"counter 309, level",0.2112
+9486,-5.5359,"counter 666, level",-0.5998,age (time_step),0.4119,"histogram 167, mean bin (lifetime)",-0.3538
+12443,-2.6488,Spec 1,-0.6544,age (time_step),0.4975,Spec 7,0.4353
+8612,-5.4706,"counter 309, level",-0.399,readouts so far,0.3,Spec 1,-0.2753
+19587,-3.9594,age (time_step),0.8302,"counter 666, level",-0.4057,Spec 6,0.3648
+16517,-4.0256,age (time_step),-0.9294,Spec 1,0.2729,"counter 666, rate since previous readout",0.2605
+6035,-6.358,age (time_step),-0.5902,Spec 1,0.57,"counter 666, level",-0.495
+27250,-3.1207,age (time_step),0.6975,Spec 7,0.4134,"histogram 291, share in top 2 bins (lifetime)",0.2283
+2459,-5.0545,age (time_step),-1.6077,Spec 1,0.2029,"histogram 291, share in top 2 bins (lifetime)",0.18
+6420,-5.3421,age (time_step),-0.5643,"counter 835, rate over last 5 readouts",0.2288,"counter 666, level",-0.2235
+15658,-3.6981,"counter 309, level",-0.2774,Spec 7,-0.2734,"counter 837, level",-0.1923
+6259,-3.8732,readouts so far,0.1825,"histogram 291, share in top 2 bins (lifetime)",0.1476,"histogram 459, share in top 2 bins (lifetime)",-0.1399
+870,-2.6072,age (time_step),0.4881,"histogram 397, share in top 2 bins (last 5 readouts)",-0.4225,Spec 2,0.2934
+5709,-5.6763,age (time_step),-0.509,Spec 1,-0.355,"histogram 397, share in top 2 bins (last 5 readouts)",-0.2298
+9575,-2.6243,age (time_step),0.5905,Spec 7,0.5154,"histogram 167, mean bin (lifetime)",-0.3971
+20426,-3.6698,age (time_step),0.6982,"counter 100, level",-0.3148,Spec 1,0.2219
+25219,-2.9429,Spec 7,0.4562,age (time_step),0.4071,"histogram 459, mean bin (lifetime)",-0.1648
+19797,-4.0988,"counter 666, rate since previous readout",0.2667,"histogram 167, mean bin (lifetime)",0.2271,readouts so far,0.2033
+8233,-6.8165,Spec 1,-0.5834,Spec 7,-0.2488,Spec 2,-0.2317
+1595,-4.39,age (time_step),0.7014,"histogram 167, mean bin (lifetime)",0.2267,Spec 7,-0.188
+21251,-5.0838,"histogram 459, mean bin (lifetime)",-0.2257,Spec 7,-0.2159,"histogram 459, change in mean bin over last 5 readouts",-0.1855
+14211,-3.5253,"histogram 291, share in top 2 bins (lifetime)",-0.3424,Spec 7,0.3247,"histogram 291, mean bin (lifetime)",-0.3078
+30308,-3.3189,age (time_step),0.6099,Spec 7,0.3961,"histogram 167, mean bin (lifetime)",0.2538
+2631,-5.0894,age (time_step),-2.199,readouts so far,0.5079,"histogram 167, share in top 2 bins (lifetime)",0.2183
+24358,-5.5311,"histogram 167, mean bin (lifetime)",-0.5467,age (time_step),0.3938,"counter 666, level",-0.315
+22123,-2.7103,"counter 427, level",0.2641,"counter 837, level",0.2457,readouts so far,0.1896
+4073,-3.5561,age (time_step),0.4054,Spec 1,0.3793,Spec 2,-0.2156
+9194,-3.1723,age (time_step),0.2164,"histogram 397, change in mean bin over last 5 readouts",-0.1668,Spec 7,-0.1637
+1686,-5.2729,age (time_step),-0.3807,"counter 100, change over last 5 readouts",-0.2393,readouts so far,0.2129
+15634,-4.688,age (time_step),-1.3131,readouts so far,0.4601,"counter 666, rate since previous readout",0.2702
+5639,-5.4817,Spec 1,-0.3734,"counter 666, rate since previous readout",0.2344,"histogram 291, share in top 2 bins (lifetime)",0.2298
+22897,-5.0246,"counter 666, level",-0.5371,"counter 309, level",-0.4368,age (time_step),0.4173
+16759,-1.1619,"counter 666, rate since previous readout",0.5477,"histogram 158, change in mean bin over last 5 readouts",0.3654,age (time_step),0.2931
+19178,-4.7127,Spec 1,-0.4754,age (time_step),-0.3984,readouts so far,0.2484
+23094,-4.865,"counter 666, level",-0.5647,age (time_step),0.5087,"counter 100, level",-0.2583
+15405,-3.2399,age (time_step),0.355,"counter 100, rate over last 5 readouts",-0.2931,"histogram 167, mean bin (lifetime)",0.2227
+25693,-1.7376,age (time_step),0.7847,Spec 1,0.4054,"histogram 459, mean bin (lifetime)",0.2564
+19113,-3.9691,age (time_step),-0.8664,"histogram 167, mean bin (lifetime)",0.2446,readouts so far,0.2435
+14557,-4.1468,age (time_step),0.8157,Spec 6,0.2657,"counter 309, level",-0.2657
+28972,-0.7731,age (time_step),0.661,Spec 7,0.3364,"histogram 291, share in top 2 bins (lifetime)",0.2458
+5405,-5.5871,age (time_step),0.4797,Spec 6,-0.3832,"counter 309, level",-0.3085
+24296,-3.6282,age (time_step),0.4067,"counter 666, level",-0.267,"histogram 158, share in top 2 bins (last 5 readouts)",0.2117
+22031,-4.595,"histogram 158, change in mean bin over last 5 readouts",0.1922,Spec 7,-0.1489,"counter 666, level",0.145
+5813,-0.8011,age (time_step),0.7521,"counter 666, rate since previous readout",0.5726,"histogram 158, share in top 2 bins (last 5 readouts)",0.4371
+11780,-5.9683,age (time_step),0.7381,"counter 666, level",-0.4659,"histogram 167, mean bin (lifetime)",-0.4204
+17653,-4.5798,age (time_step),-0.4695,"counter 427, level",0.3227,"counter 837, level",0.2251
+33307,-4.5979,"histogram 291, share in top 2 bins (lifetime)",-0.3118,age (time_step),0.2931,Spec 1,0.1934
+3618,-7.0133,age (time_step),-0.8366,Spec 7,-0.4476,"counter 309, level",-0.3721
+3723,-4.0026,age (time_step),-0.566,"counter 666, rate since previous readout",0.2644,Spec 1,0.1413
+20535,-5.6535,age (time_step),0.6442,"counter 666, level",-0.5487,"counter 100, level",-0.3532
+11722,-2.0099,age (time_step),0.7732,Spec 7,0.3945,span of last 5 readouts,0.2031
+19768,-4.1823,"counter 666, rate since previous readout",0.2773,span of last 5 readouts,-0.2502,"histogram 397, share in top 2 bins (lifetime)",0.1669
+17404,-5.9477,age (time_step),0.6696,"counter 666, level",-0.5679,"counter 309, level",-0.5598
+27297,-3.6212,age (time_step),0.7647,Spec 7,0.3548,"counter 666, rate since previous readout",0.2487
+14993,-6.7866,age (time_step),-1.0831,"counter 309, level",-0.4313,"counter 837, level",-0.2335
+14195,-2.3548,age (time_step),0.4667,"histogram 291, share in top 2 bins (lifetime)",-0.3743,"counter 837, level",0.294
+367,-4.3651,"histogram 291, change in mean bin over last 5 readouts",-0.3206,age (time_step),0.2402,Spec 1,0.2298
+25428,-2.7755,Spec 7,0.4848,"counter 666, rate since previous readout",0.3901,"histogram 272, mean bin (lifetime)",-0.2421
+17353,-4.2547,age (time_step),-0.4788,readouts so far,0.4296,"histogram 291, share in top 2 bins (lifetime)",-0.2776
+2040,-4.4934,age (time_step),0.7164,"counter 837, level",-0.3561,"histogram 291, share in top 2 bins (lifetime)",-0.2946
+6896,-6.314,Spec 1,-0.7153,Spec 7,-0.2099,"histogram 167, mean bin (lifetime)",-0.1928
+4582,-6.3689,age (time_step),-1.0602,"counter 309, level",-0.5333,"counter 666, level",-0.5114
+21740,-3.7132,Spec 1,-0.6323,age (time_step),0.2411,"histogram 167, mean bin (lifetime)",0.2294
+12542,-4.562,age (time_step),0.6983,Spec 7,0.4752,"counter 309, level",-0.3577
+2129,-6.1888,age (time_step),0.786,"counter 666, level",-0.6842,"counter 309, level",-0.3931
+1023,-4.6357,age (time_step),-1.4515,"histogram 291, share in top 2 bins (lifetime)",0.3642,"counter 666, rate since previous readout",0.2839
+19803,-3.3772,"histogram 397, share in top 2 bins (last 5 readouts)",0.2307,"histogram 291, share in top 2 bins (lifetime)",0.2233,Spec 1,0.2206
+8877,-4.7755,age (time_step),0.4734,"counter 666, level",-0.462,"histogram 167, mean bin (lifetime)",-0.337
+10238,-3.5167,age (time_step),0.8172,"counter 666, level",-0.5912,Spec 7,0.3065
+6544,-6.0281,Spec 1,-0.9518,age (time_step),0.3985,"counter 100, level",-0.3303
+1818,-2.3048,age (time_step),0.7496,"counter 666, rate since previous readout",0.2719,Spec 1,0.2611
+22706,0.396,age (time_step),0.8446,"histogram 158, share in top 2 bins (last 5 readouts)",0.6066,"counter 666, change over last 5 readouts",0.5574
+13423,-3.4434,Spec 7,0.4879,age (time_step),0.4516,"histogram 167, mean bin (lifetime)",-0.3788
+18119,-4.3388,Spec 1,0.3462,age (time_step),-0.2497,"histogram 291, share in top 2 bins (lifetime)",-0.2348
+18575,-1.9562,readouts so far,0.5104,"counter 666, rate since previous readout",0.396,"histogram 397, share in top 2 bins (lifetime)",0.2156
+4746,-6.502,age (time_step),-0.8943,Spec 1,-0.3914,"histogram 291, share in top 2 bins (lifetime)",-0.3248
+18967,-3.5963,age (time_step),-0.6204,"counter 427, level",0.4049,"counter 666, level",0.2125
+18507,-3.4175,age (time_step),0.4355,Spec 7,-0.2009,"histogram 291, share in top 2 bins (lifetime)",0.1994
+13408,-2.4163,age (time_step),0.5238,"histogram 167, mean bin (lifetime)",0.3595,Spec 7,0.3234
+2114,-6.3482,age (time_step),-1.5261,"histogram 291, share in top 2 bins (lifetime)",-0.3342,"counter 370, level",-0.2416
+20332,-4.374,"histogram 158, change in mean bin over last 5 readouts",0.2692,Spec 1,0.1978,age (time_step),0.1884
+2208,-3.2189,age (time_step),0.7196,Spec 1,0.1853,Spec 7,-0.1817
+13254,-2.9534,age (time_step),0.7249,Spec 7,0.3574,"histogram 167, mean bin (last 5 readouts)",-0.2862
+29843,-1.9582,age (time_step),0.7535,Spec 7,0.5627,"histogram 167, mean bin (lifetime)",0.2367
+29516,-2.6768,age (time_step),0.7561,Spec 7,0.4518,Spec 1,0.2756
+26813,-1.9764,age (time_step),0.7288,Spec 7,0.2614,"counter 666, level",0.1691
+1450,-2.7936,age (time_step),0.7745,"histogram 291, share in top 2 bins (lifetime)",0.2596,Spec 1,0.2384
+2919,-6.0112,age (time_step),-1.5412,Spec 1,-0.4616,"histogram 291, share in top 2 bins (lifetime)",0.2421
+24700,-3.8398,"histogram 158, share in top 2 bins (last 5 readouts)",0.6325,"counter 309, level",-0.4663,"counter 837, level",-0.4277
+22762,-2.9296,"counter 837, level",0.2029,"histogram 167, mean bin (lifetime)",0.1635,"histogram 459, share in top 2 bins (last 5 readouts)",0.1603
+14396,-5.536,"counter 666, level",-0.729,age (time_step),0.5263,"counter 100, level",-0.2471
+26921,-5.1327,"counter 666, level",-0.7013,age (time_step),0.377,"counter 100, level",-0.3348
+5636,-5.2731,age (time_step),-0.6919,Spec 1,-0.4439,"counter 427, level",0.3418
+25611,-2.2516,age (time_step),0.6369,Spec 7,0.3595,Spec 1,0.2334
+10081,-3.5511,age (time_step),0.5617,"histogram 291, change in mean bin over last 5 readouts",-0.3458,Spec 7,0.3018
+14271,-5.8554,"counter 666, level",-0.6097,age (time_step),0.383,"counter 100, level",-0.3771
+27045,-3.345,age (time_step),0.7524,Spec 7,0.4075,"counter 100, level",-0.2676
+1699,-4.3013,"histogram 291, mean bin (last 5 readouts)",-0.6088,age (time_step),0.5267,"counter 427, level",0.3054
+3636,-5.6275,age (time_step),-1.3891,Spec 1,0.4155,Spec 2,0.2854
+10282,-4.4407,age (time_step),0.7006,"counter 837, level",-0.3049,"counter 666, level",-0.2796
+17577,-4.8903,Spec 7,-0.2224,"histogram 397, change in mean bin over last 5 readouts",-0.2165,"counter 309, level",-0.1969
+9745,-1.446,age (time_step),0.8008,Spec 7,0.3036,"counter 666, rate since previous readout",0.2571
+689,-5.2797,age (time_step),-0.877,Spec 2,-0.2304,"histogram 167, mean bin (lifetime)",0.1769
+28358,-1.5625,age (time_step),0.684,Spec 7,0.4272,"counter 100, level",0.2559
+10093,-2.8847,Spec 1,-0.6039,age (time_step),0.5983,Spec 7,0.5512
+786,-6.3519,age (time_step),0.8436,Spec 1,-0.5173,"counter 666, level",-0.4906
+9717,-2.8211,age (time_step),0.5967,Spec 7,0.4825,Spec 1,-0.2813
+12930,-2.3631,age (time_step),0.5888,Spec 7,0.409,"histogram 167, mean bin (lifetime)",0.2044
+13581,-3.5927,age (time_step),0.6808,"histogram 291, share in top 2 bins (lifetime)",-0.4868,Spec 7,0.31
+24616,-4.2504,age (time_step),0.622,Spec 7,0.2945,"counter 666, level",0.1499
+16832,-4.9986,age (time_step),0.8156,Spec 7,-0.3148,"counter 666, level",-0.3124
+25958,-2.467,age (time_step),0.6077,Spec 7,0.4904,"counter 666, rate since previous readout",0.2191
+19558,-3.3645,age (time_step),0.7953,Spec 7,-0.3167,"counter 309, level",-0.2584
+4385,-2.4061,age (time_step),-0.5038,"histogram 272, mean bin (lifetime)",-0.4281,"counter 427, level",0.4198
+12959,-6.693,Spec 1,-0.8001,"counter 100, level",-0.4664,age (time_step),0.4476
+21269,-6.0778,"counter 666, level",-0.9522,"counter 309, level",-0.4541,"histogram 167, mean bin (lifetime)",-0.4468
+23362,-4.5778,Spec 1,-0.5105,age (time_step),0.3623,Spec 7,-0.2345
+29259,-6.3686,Spec 1,-0.6284,"counter 666, level",-0.5718,"counter 100, level",-0.5589
+25286,-3.8637,age (time_step),0.4454,Spec 7,0.4046,Spec 1,-0.3289
+649,-6.059,age (time_step),-3.4555,"counter 427, level",0.3786,"histogram 167, mean bin (lifetime)",0.2286
+33419,-3.7366,age (time_step),-0.9982,readouts so far,0.2844,"histogram 167, mean bin (lifetime)",0.2076
+26634,-7.7061,"counter 666, level",-0.6539,"counter 100, level",-0.5314,"histogram 291, total count",-0.4494
+32924,-3.3573,age (time_step),0.7682,"counter 309, level",-0.257,"counter 837, level",-0.235
+21574,-3.81,age (time_step),0.4549,Spec 1,0.2786,"counter 100, level",-0.273
+20387,-4.1028,"histogram 397, share in top 2 bins (last 5 readouts)",-0.4845,"histogram 167, mean bin (lifetime)",0.3034,"histogram 291, share in top 2 bins (lifetime)",0.2387
+1083,-4.5163,age (time_step),0.4774,span of last 5 readouts,-0.2282,"histogram 397, change in mean bin over last 5 readouts",-0.2165
+31135,-3.4193,age (time_step),0.554,Spec 7,0.2806,"counter 100, level",-0.2675
+23034,-6.0603,"counter 666, level",-0.7762,"counter 309, level",-0.5698,"counter 837, level",-0.4174
+28940,-3.4411,age (time_step),0.7692,Spec 7,0.3545,"histogram 291, share in top 2 bins (lifetime)",-0.2753
+1906,-5.6141,age (time_step),-2.6279,"histogram 167, share in top 2 bins (lifetime)",0.3126,"counter 427, level",0.3067
+15810,-3.5441,age (time_step),-0.9209,"counter 427, level",0.4553,readouts so far,0.2583
+30500,-4.9573,age (time_step),0.722,span of last 5 readouts,-0.4572,"histogram 291, change in mean bin over last 5 readouts",-0.3528
+23019,-4.0908,"histogram 397, share in top 2 bins (lifetime)",0.2261,readouts so far,0.2145,Spec 1,0.1924
+22971,-5.4714,"histogram 397, share in top 2 bins (last 5 readouts)",-0.4146,"histogram 291, share in top 2 bins (lifetime)",0.2568,Spec 7,-0.206
+16575,-8.3118,age (time_step),-1.4331,"counter 666, level",-0.8302,span of last 5 readouts,-0.2858
+13429,-3.7855,"counter 666, level",-0.5945,age (time_step),0.4912,Spec 7,0.318
+19796,-7.1137,Spec 1,-0.8107,"counter 666, level",-0.7646,"counter 309, level",-0.5475
+11908,-6.0533,age (time_step),0.6818,"counter 666, level",-0.555,"counter 100, level",-0.477
+7163,-3.6659,"counter 100, level",-0.4676,age (time_step),0.2921,"histogram 291, share in top 2 bins (lifetime)",0.213
+15463,-5.739,Spec 1,-0.4737,"histogram 291, change in mean bin over last 5 readouts",-0.321,"counter 100, level",-0.3021
+3758,-3.4815,"counter 837, level",0.3031,"counter 309, level",0.2488,"histogram 291, share in top 2 bins (lifetime)",0.2336
+17104,-3.5702,age (time_step),-1.4639,"counter 427, level",0.3024,"counter 837, level",0.2806
+18807,-4.4364,age (time_step),-0.8179,"counter 427, level",0.3512,readouts so far,0.2816
+18391,-3.0493,age (time_step),-0.7933,"histogram 291, share in top 2 bins (lifetime)",0.3565,readouts so far,0.3527
+8359,-2.5612,Spec 1,0.5066,"counter 309, level",0.277,"histogram 291, share in top 2 bins (lifetime)",-0.2182
+26089,-6.6825,age (time_step),0.6715,"histogram 167, mean bin (lifetime)",-0.5384,"counter 666, level",-0.4909
+170,-8.8204,age (time_step),-4.1685,"counter 427, level",0.4547,readouts so far,0.3191
+9507,-6.2306,"counter 309, level",-0.5565,"histogram 167, mean bin (lifetime)",-0.4411,"histogram 459, total count",-0.4374
+11751,-3.6116,age (time_step),0.3539,"counter 100, level",-0.2865,Spec 7,0.2834
+15148,-8.3347,"counter 666, level",-0.6587,age (time_step),-0.5425,"histogram 291, change in mean bin over last 5 readouts",-0.3342
+24139,-4.941,"histogram 291, share in top 2 bins (lifetime)",-0.3465,age (time_step),0.3,"counter 837, level",-0.271
+19959,-2.9942,age (time_step),0.375,Spec 1,0.2067,"histogram 167, mean bin (lifetime)",0.1912
+214,-9.6765,age (time_step),-3.9872,Spec 1,-0.4093,"histogram 291, change in mean bin over last 5 readouts",-0.2998
+32536,-3.2906,Spec 7,0.3748,age (time_step),0.3148,"counter 666, rate since previous readout",0.2779
+1120,-4.1584,age (time_step),0.7102,"counter 309, level",-0.4122,Spec 1,0.2295
+17630,-5.5303,age (time_step),-0.293,"counter 309, level",-0.2641,Spec 7,-0.2038
+25636,-1.3832,"histogram 158, share in top 2 bins (last 5 readouts)",0.7598,age (time_step),0.7407,Spec 7,0.4496
+392,-3.6284,age (time_step),0.7737,Spec 1,0.2455,"counter 100, rate over last 5 readouts",-0.2363
+13835,-2.271,age (time_step),0.7245,Spec 7,0.4333,"counter 837, level",0.3391
+10695,-2.4067,age (time_step),0.7662,Spec 7,0.4927,"counter 837, level",0.2074
+4209,-5.6682,age (time_step),-1.4308,Spec 1,-0.2164,Spec 2,-0.1674
+13092,-3.1873,age (time_step),0.6221,Spec 7,0.5652,"counter 666, level",0.1647
+31903,-3.1987,"histogram 459, total count",-0.4136,age (time_step),0.3953,"counter 100, level",-0.3629
+7257,-2.2672,age (time_step),0.3486,"histogram 167, mean bin (lifetime)",0.1993,"counter 100, level",0.1734
+4041,-5.0986,age (time_step),-0.8231,"counter 666, rate since previous readout",0.2659,"histogram 167, mean bin (lifetime)",0.2559
+15241,-3.4581,age (time_step),0.7263,Spec 1,0.2194,"histogram 459, share in top 2 bins (lifetime)",0.1854
+28683,-4.1934,"counter 666, level",-0.4808,age (time_step),0.459,"counter 309, level",-0.2915
+1756,-2.5437,age (time_step),0.6734,"histogram 167, mean bin (last 5 readouts)",0.2519,"histogram 167, mean bin (lifetime)",0.1666
+7799,-5.3922,"counter 666, level",-0.6208,Spec 1,-0.4367,"counter 309, level",-0.3686
+10194,-7.2119,"counter 666, level",-0.7993,Spec 1,-0.5155,"histogram 291, total count",-0.4405
+9859,-2.0344,age (time_step),0.6944,Spec 7,0.3782,"histogram 291, share in top 2 bins (lifetime)",-0.2773
+24389,-6.4114,age (time_step),0.7448,"counter 100, level",-0.5558,"counter 666, level",-0.4973
+24855,-2.7999,Spec 7,0.5338,age (time_step),0.4708,"counter 837, level",-0.148
+30368,-3.7436,age (time_step),0.676,Spec 7,0.4463,Spec 1,0.1886
+438,-4.9444,age (time_step),-1.9812,"counter 427, level",0.4316,"counter 837, level",0.2277
+22391,-4.334,"counter 837, level",0.2975,"histogram 459, mean bin (lifetime)",-0.1871,Spec 2,-0.1847
+1058,-3.9271,"counter 666, rate since previous readout",0.3671,age (time_step),0.2922,Spec 7,-0.1721
+13486,-4.4197,age (time_step),0.5296,"histogram 291, share in top 2 bins (lifetime)",-0.3943,Spec 7,0.3832
+28571,-3.3457,age (time_step),0.7274,Spec 7,0.5846,"counter 100, level",-0.2793
+16484,-2.8762,age (time_step),0.6712,Spec 7,-0.2357,"histogram 291, share in top 2 bins (lifetime)",0.1778
+30973,-2.5761,age (time_step),0.3384,Spec 7,0.2648,"histogram 291, share in top 2 bins (lifetime)",0.261
+21719,-3.7781,age (time_step),0.621,"counter 837, level",-0.2119,Spec 7,-0.2109
+16951,-3.807,age (time_step),-0.6916,"histogram 167, mean bin (lifetime)",0.192,readouts so far,0.1818
+25544,-4.1547,age (time_step),0.8669,Spec 7,0.4657,"counter 171, change over last 5 readouts",-0.2274
+2238,-6.6125,"counter 666, level",-0.6216,age (time_step),0.4755,"histogram 167, mean bin (lifetime)",-0.419
+18301,-4.8434,age (time_step),-0.697,Spec 1,-0.3408,Spec 2,-0.2505
+31364,-5.1043,age (time_step),0.5902,"counter 666, level",-0.546,"counter 837, level",-0.293
+7329,-5.3944,"counter 309, level",-0.3205,age (time_step),-0.2321,Spec 7,-0.1682
+16118,-5.648,"counter 666, level",-0.5897,age (time_step),0.3851,"counter 100, level",-0.343
+15764,-4.654,age (time_step),-1.2236,"counter 666, rate since previous readout",0.3179,Spec 1,0.3157
+21823,-6.7123,Spec 1,-0.8104,Spec 7,-0.228,Spec 2,-0.2138
+10533,-4.4058,age (time_step),0.8032,"histogram 167, mean bin (lifetime)",-0.3604,"counter 666, level",-0.3458
+3970,-4.786,age (time_step),-1.6496,"counter 427, level",0.3732,"counter 837, level",0.2616
+1121,-6.4534,age (time_step),-2.9233,"counter 427, level",0.4135,"counter 666, rate since previous readout",0.3034
+15274,-4.001,age (time_step),0.295,"counter 666, rate since previous readout",0.2442,Spec 7,-0.1823
+4179,-2.4435,"counter 427, level",0.4823,age (time_step),-0.339,"counter 666, level",0.2306
+32229,-5.2937,"counter 100, level",-0.381,"counter 666, level",-0.378,Spec 6,0.3156
+25123,-2.7889,age (time_step),0.7957,Spec 7,0.3559,"histogram 397, share in top 2 bins (lifetime)",0.2836
+3288,-6.7196,age (time_step),-1.7124,"counter 666, level",-0.5653,"counter 309, level",-0.3714
+21357,-3.6945,readouts so far,-0.2191,Spec 7,-0.2153,"histogram 291, share in top 2 bins (lifetime)",0.2151
+1320,-4.8702,age (time_step),0.6218,Spec 1,-0.5269,"histogram 291, mean bin (lifetime)",-0.1895
+12831,-4.2614,age (time_step),0.7128,Spec 1,-0.543,Spec 7,0.4734
+4680,-5.2892,age (time_step),0.752,Spec 1,-0.5389,"histogram 291, share in top 2 bins (lifetime)",-0.274
+25037,-5.8333,"counter 666, level",-0.5782,age (time_step),-0.5068,"histogram 459, total count",-0.4052
+2905,-4.9421,age (time_step),-2.1179,"histogram 158, share in top 2 bins (last 5 readouts)",0.6744,"counter 666, rate since previous readout",0.5612
+19756,-4.3987,age (time_step),0.7255,"histogram 167, mean bin (lifetime)",-0.6463,"counter 666, level",-0.4502
+32951,-5.7995,age (time_step),-1.8639,"counter 427, level",0.4588,Spec 2,-0.2831
+2000,-7.6519,age (time_step),-2.2399,"counter 837, level",-0.3592,"counter 666, level",-0.2437
+26628,-5.2177,age (time_step),0.7453,Spec 7,0.3905,"counter 100, level",-0.3511
+1311,-4.2725,age (time_step),0.4496,"counter 100, level",-0.313,"counter 666, level",-0.2242
+16182,-3.9075,age (time_step),-1.0476,readouts so far,0.2039,"histogram 167, mean bin (lifetime)",0.196
+28649,-3.6549,age (time_step),0.7735,"histogram 291, share in top 2 bins (lifetime)",-0.5667,Spec 7,0.3523
+11462,-2.9909,age (time_step),0.7329,Spec 7,0.4835,"counter 837, level",-0.2875
+28529,-2.426,age (time_step),0.759,Spec 7,0.3834,"histogram 167, mean bin (lifetime)",0.1756
+19311,-3.9829,age (time_step),-0.6349,Spec 1,0.226,"histogram 167, mean bin (lifetime)",0.178
+13519,-2.2784,age (time_step),0.553,Spec 7,0.4574,Spec 1,-0.1678
+8995,-6.9405,"counter 666, level",-0.4956,"counter 309, level",-0.4601,Spec 1,-0.4291
+4388,-3.8804,age (time_step),0.7191,Spec 1,0.3294,"histogram 291, mean bin (lifetime)",-0.2383
+6503,-6.3031,"counter 666, level",-0.7343,"counter 309, level",-0.5275,age (time_step),-0.492
+31380,-3.976,Spec 1,-0.2665,"histogram 459, mean bin (lifetime)",0.234,"histogram 291, share in top 2 bins (lifetime)",-0.2289
+2811,-4.7948,age (time_step),0.7477,Spec 1,-0.6111,"counter 666, rate since previous readout",0.2102
+11583,-3.1215,age (time_step),0.7299,"histogram 291, share in top 2 bins (lifetime)",-0.5102,Spec 7,0.2924
+27926,-3.0848,age (time_step),0.7746,Spec 7,0.3643,"counter 100, level",-0.3018
+26990,-3.8394,age (time_step),0.7798,Spec 7,0.402,"counter 837, level",-0.3745
+24537,-1.5995,Spec 7,0.4749,age (time_step),0.3494,"histogram 167, mean bin (lifetime)",0.2931
+12761,-2.9947,age (time_step),0.6153,Spec 7,0.4875,"counter 837, level",-0.231
+29999,-2.5853,age (time_step),0.5937,Spec 7,0.3729,"histogram 291, share in top 2 bins (lifetime)",0.3557
+7102,-6.3077,"counter 666, level",-0.5161,age (time_step),-0.3309,"counter 837, level",-0.3157
+24890,0.1229,age (time_step),0.5248,"counter 666, rate since previous readout",0.461,"counter 666, change over last 5 readouts",0.3873
+19073,-3.117,age (time_step),0.7252,"counter 309, level",-0.3975,Spec 1,0.2161
+19846,-3.2167,"counter 837, change over last 5 readouts",-0.3263,"counter 837, level",0.2505,"counter 309, level",0.2217
+27881,-2.5037,age (time_step),0.7066,Spec 7,0.3117,"histogram 167, mean bin (lifetime)",0.2296
+27273,-2.9722,age (time_step),0.7616,Spec 7,0.3865,"histogram 291, share in top 2 bins (lifetime)",0.2834
+31981,-3.993,"counter 666, level",-0.5349,age (time_step),0.3448,"counter 100, level",-0.3181
+9924,-3.8115,age (time_step),0.8211,"histogram 167, mean bin (lifetime)",-0.5121,"counter 666, level",-0.2952
+16557,-2.9425,age (time_step),-0.7484,"counter 427, level",0.3976,Spec 1,0.2815
+14496,-5.6418,"counter 666, level",-0.6104,"counter 100, level",-0.3761,"histogram 291, change in mean bin over last 5 readouts",-0.3417
+33351,-4.2326,age (time_step),-0.8314,"counter 427, level",0.4013,"counter 666, rate since previous readout",0.3419
+29497,-7.7517,"counter 666, level",-0.6597,Spec 1,-0.6184,"histogram 291, total count",-0.5645
+16353,-3.0847,age (time_step),0.5679,Spec 6,0.2496,"histogram 291, share in top 2 bins (lifetime)",0.2466
+27939,-2.5926,age (time_step),0.7912,Spec 7,0.5325,"counter 837, level",-0.2261
+28378,-7.4025,Spec 1,-0.8776,"counter 666, level",-0.6916,"histogram 291, total count",-0.4966
+12794,-1.993,age (time_step),0.6793,Spec 7,0.431,"histogram 291, share in top 2 bins (lifetime)",0.1874
+22084,-3.4797,"histogram 291, share in top 2 bins (lifetime)",-0.3227,age (time_step),0.3047,"histogram 167, mean bin (lifetime)",-0.2071
+25679,-3.2169,age (time_step),0.6736,Spec 7,0.4299,Spec 1,0.2665
+20140,-2.4221,age (time_step),0.6406,Spec 1,0.2734,"histogram 167, mean bin (lifetime)",0.2641
+14906,-3.9707,age (time_step),-1.1228,Spec 2,0.4309,"histogram 397, share in top 2 bins (last 5 readouts)",0.2515
+2029,-5.4895,age (time_step),-0.7267,"histogram 291, mean bin (last 5 readouts)",-0.5982,"counter 100, rate over last 5 readouts",0.3571
+7635,-2.6071,"histogram 291, share in top 2 bins (lifetime)",0.2952,Spec 1,0.225,"histogram 167, mean bin (lifetime)",0.2217
+26132,-2.6465,age (time_step),0.423,"counter 100, level",-0.3622,Spec 1,0.3338
+27690,-0.9353,Spec 7,0.4614,age (time_step),0.4068,"histogram 167, mean bin (lifetime)",0.2991
+2806,-5.2541,age (time_step),-1.2333,Spec 1,-0.5885,"counter 837, level",0.3108
+22669,-3.9994,age (time_step),0.3664,Spec 7,-0.155,"counter 100, level",0.1423
+9614,-4.9047,Spec 7,-0.6332,"counter 666, level",-0.6083,age (time_step),0.4731
+14304,-4.4322,Spec 1,-0.5051,Spec 7,0.435,age (time_step),0.3602
+1757,-3.3153,age (time_step),0.6877,"histogram 291, share in top 2 bins (lifetime)",0.2545,Spec 1,0.1969
+21749,-4.4133,"histogram 167, mean bin (lifetime)",0.2255,Spec 7,-0.2075,"counter 837, level",-0.2074
+19620,-4.2889,readouts so far,0.2543,age (time_step),-0.2377,"counter 666, level",0.1467
+23394,-3.3639,age (time_step),0.2796,Spec 7,-0.2153,"counter 309, level",-0.1958
+5765,-4.7056,Spec 1,-0.5313,age (time_step),-0.4907,"histogram 291, share in top 2 bins (lifetime)",-0.3652
+4131,-2.9733,age (time_step),0.7397,Spec 1,0.2072,"histogram 167, mean bin (lifetime)",0.1975
+5203,-5.4645,"counter 666, level",-0.5265,"counter 100, level",-0.4152,age (time_step),0.3822
+16997,-4.0387,"histogram 291, share in top 2 bins (lifetime)",0.2157,"counter 100, level",0.1819,Spec 7,-0.1812
+4212,-5.0204,age (time_step),-1.1702,"counter 427, level",0.4501,Spec 1,-0.3495
+11692,-2.6078,age (time_step),0.7562,Spec 1,-0.7255,Spec 7,0.4542
+26249,-3.5609,age (time_step),0.6607,"counter 100, level",-0.2357,Spec 1,0.2301
+25771,-3.0784,age (time_step),0.789,Spec 7,0.3127,Spec 1,0.2762
+12533,-2.8088,age (time_step),0.7604,Spec 7,0.5866,"counter 171, change over last 5 readouts",-0.2806
+19534,-3.6911,"counter 309, level",-0.2457,Spec 7,-0.2186,Spec 6,0.1523
+6224,-4.0968,age (time_step),0.4714,"counter 666, level",-0.2742,"histogram 459, mean bin (last 5 readouts)",-0.2143
+14884,-5.3987,age (time_step),-1.5701,readouts so far,0.4312,Spec 1,-0.3619
+6783,-4.1044,age (time_step),0.4657,"histogram 459, mean bin (last 5 readouts)",-0.1552,Spec 6,0.1541
+15714,-4.3655,age (time_step),0.3284,"histogram 272, mean bin (last 5 readouts)",-0.1906,Spec 2,-0.1743
+24542,-4.5252,Spec 7,0.4486,age (time_step),0.3756,readouts so far,-0.3571
+8039,-1.8144,"counter 427, level",0.3623,"histogram 291, share in top 2 bins (lifetime)",0.234,Spec 1,0.1704
+9133,-5.0089,Spec 1,-0.5196,Spec 2,-0.2943,age (time_step),0.2684
+14392,-2.3493,age (time_step),0.6421,"counter 309, level",0.1937,"counter 837, level",0.1738
+30557,-3.1361,age (time_step),0.8247,Spec 1,-0.3677,"counter 309, level",-0.2307
+19524,-4.3639,age (time_step),0.2262,Spec 1,-0.206,"histogram 291, share in top 2 bins (lifetime)",0.2024
+11917,-5.4183,age (time_step),0.7761,"counter 666, level",-0.4876,"counter 837, level",-0.4133
+19841,-5.3649,age (time_step),-0.912,"histogram 158, change in mean bin over last 5 readouts",0.468,"counter 100, level",-0.3952
+10963,-3.745,age (time_step),0.7864,Spec 7,0.4006,"histogram 167, mean bin (lifetime)",-0.303
+26597,-5.1592,"histogram 167, mean bin (lifetime)",-0.558,"counter 837, level",-0.4314,age (time_step),0.3669
+5545,-2.8003,Spec 2,0.4335,"counter 427, level",0.3429,age (time_step),-0.3419
+32828,-5.5562,age (time_step),0.4857,"counter 309, level",-0.335,"histogram 291, share in top 2 bins (lifetime)",-0.3139
+30225,-2.1091,age (time_step),0.598,Spec 7,0.3029,Spec 1,0.2524
+18719,-3.6941,age (time_step),0.5236,Spec 1,0.2177,"counter 100, level",-0.2094
+10583,-4.4079,age (time_step),0.7542,"counter 666, level",-0.4587,"histogram 167, mean bin (lifetime)",-0.3442
+21573,-5.3602,"counter 837, level",-0.3724,"counter 309, level",-0.2923,"histogram 397, share in top 2 bins (lifetime)",0.2251
+15770,-1.8054,age (time_step),0.6428,"histogram 291, share in top 2 bins (lifetime)",0.3551,Spec 1,0.2925
+11048,-3.615,age (time_step),0.7329,"histogram 291, share in top 2 bins (lifetime)",-0.2291,"histogram 459, mean bin (lifetime)",0.2226
+19449,-3.5479,"counter 427, level",0.3988,Spec 1,-0.3241,age (time_step),-0.2374
+30490,-2.1495,age (time_step),0.6807,Spec 7,0.4151,"histogram 397, share in top 2 bins (lifetime)",0.2848
+13485,-1.5334,age (time_step),0.6294,Spec 7,0.3787,"histogram 167, mean bin (lifetime)",-0.226
+24948,-3.0807,"counter 100, level",-0.5184,age (time_step),0.4099,Spec 7,0.3397
+11690,-2.6904,age (time_step),0.7765,Spec 7,0.4023,"counter 837, level",-0.1949
+17560,-4.5661,age (time_step),0.4781,"counter 309, level",-0.2173,"histogram 291, share in top 2 bins (lifetime)",-0.1882
+24873,-4.4051,Spec 7,0.5579,Spec 1,-0.5359,"histogram 272, mean bin (lifetime)",-0.3053
+23137,-3.97,"histogram 291, share in top 2 bins (lifetime)",0.2558,age (time_step),0.1835,Spec 7,-0.1763
+2566,-2.2155,age (time_step),0.3204,"histogram 167, mean bin (lifetime)",0.2518,"histogram 291, share in top 2 bins (lifetime)",0.2484
+3183,-4.2294,age (time_step),0.5626,Spec 1,0.38,"counter 666, level",-0.3557
+30923,-1.7631,age (time_step),0.6449,Spec 7,0.4201,"histogram 167, mean bin (lifetime)",0.2965
+11826,-2.5643,age (time_step),0.7276,Spec 7,0.3386,"histogram 167, mean bin (lifetime)",0.2203
+23387,-4.9356,age (time_step),0.6629,"histogram 167, change in mean bin over last 5 readouts",-0.4858,span of last 5 readouts,-0.3921
+25416,-1.8421,age (time_step),0.722,Spec 7,0.4879,"histogram 291, share in top 2 bins (lifetime)",0.2342
+10211,-6.7562,age (time_step),0.7654,"histogram 167, mean bin (lifetime)",-0.625,"counter 666, level",-0.513
+4368,-6.6316,age (time_step),-1.1297,"counter 666, level",-0.6105,"counter 309, level",-0.3871
+18000,-3.1808,Spec 7,-0.2231,"histogram 167, mean bin (lifetime)",0.2078,Spec 1,0.1474
+33002,-6.3894,age (time_step),-1.4226,"counter 309, level",-0.3829,Spec 1,-0.348
+27430,-2.5742,age (time_step),0.8135,Spec 7,0.4025,"histogram 291, share in top 2 bins (lifetime)",0.238
+10339,-4.8225,age (time_step),0.7923,"counter 837, level",-0.3544,"counter 309, level",-0.2281
+5672,-4.5024,age (time_step),-0.8214,"histogram 158, share in top 2 bins (last 5 readouts)",0.6383,Spec 6,-0.365
+26823,-2.8304,age (time_step),0.5556,Spec 7,0.4253,span of last 5 readouts,-0.2192
+6695,-2.7122,age (time_step),-0.4802,"counter 427, level",0.4483,"histogram 291, share in top 2 bins (lifetime)",0.3327
+22379,-3.8104,age (time_step),0.7403,Spec 7,-0.1772,Spec 1,-0.1749
+29864,-0.6589,age (time_step),0.764,Spec 7,0.4898,"histogram 167, mean bin (lifetime)",0.3894
+7476,-5.7023,"histogram 167, mean bin (lifetime)",-0.3147,"counter 309, level",-0.2768,"counter 837, level",-0.2625
+6983,-3.4099,"histogram 397, share in top 2 bins (lifetime)",0.1345,"histogram 167, total count",0.1314,"histogram 158, mean bin (last 5 readouts)",-0.1296
+32429,-4.1743,Spec 7,0.3918,age (time_step),0.3749,"counter 100, level",-0.2956
+28580,-2.565,age (time_step),0.6912,Spec 7,0.4188,"histogram 167, mean bin (lifetime)",0.2089
+23309,-4.4775,"counter 666, level",-0.7674,age (time_step),0.709,"histogram 167, mean bin (lifetime)",0.2927
+5078,-3.6872,age (time_step),0.7549,Spec 1,-0.3763,"counter 100, level",-0.2829
+14492,-5.8413,age (time_step),0.4696,"counter 666, level",-0.4072,"counter 309, level",-0.3672
+26208,-1.6666,age (time_step),0.7368,"histogram 158, share in top 2 bins (last 5 readouts)",0.5725,"counter 837, level",-0.4765
+5699,-4.7556,age (time_step),-0.6109,Spec 1,-0.3275,"histogram 167, share in top 2 bins (lifetime)",0.2864
+1185,-6.9569,age (time_step),-3.0165,"counter 427, level",0.3791,Spec 7,-0.2158
+8952,-4.8583,readouts so far,0.32,"counter 837, level",-0.2582,"counter 309, level",-0.2327
+12002,-1.9494,age (time_step),0.7207,Spec 7,0.3437,"histogram 167, mean bin (lifetime)",0.2102
+15265,-3.9793,age (time_step),0.3862,"histogram 459, share in top 2 bins (lifetime)",0.2043,"histogram 459, mean bin (last 5 readouts)",-0.2014
+5930,-4.2762,age (time_step),-0.463,readouts so far,0.2572,Spec 2,-0.2034
+29850,-4.6779,age (time_step),0.6709,"counter 837, level",-0.403,"counter 309, level",-0.3128
+22747,-3.0318,age (time_step),0.3329,"histogram 291, share in top 2 bins (lifetime)",0.1593,"counter 100, rate over last 5 readouts",0.1562
+18077,-4.4003,Spec 1,0.3997,"counter 100, rate since previous readout",0.3931,age (time_step),-0.3775
+5529,-4.1937,age (time_step),-0.8579,Spec 1,0.3118,Spec 2,-0.2743
+6594,-6.6442,age (time_step),0.4852,"counter 100, level",-0.4551,"histogram 167, change in mean bin over last 5 readouts",-0.4155
+32829,-5.8591,age (time_step),-1.538,readouts so far,0.2947,"histogram 397, share in top 2 bins (lifetime)",0.2734
+10785,-3.6776,age (time_step),0.7365,Spec 7,0.654,Spec 1,-0.3372
+26464,-2.1948,age (time_step),0.7607,Spec 7,0.4816,"histogram 167, mean bin (lifetime)",0.2455
+22985,-3.4326,"histogram 291, share in top 2 bins (lifetime)",0.2811,Spec 7,-0.1915,"histogram 167, mean bin (lifetime)",0.174
+27558,-7.2266,Spec 1,-0.8857,"counter 666, level",-0.6863,"histogram 291, total count",-0.4177
+7876,-5.6315,Spec 1,-0.4929,"histogram 291, share in top 2 bins (lifetime)",-0.3442,"counter 427, level",0.2894
+8657,-3.2937,Spec 1,-0.3899,"counter 837, level",0.3447,Spec 2,-0.2035
+16386,-4.9809,age (time_step),-0.5378,"histogram 167, mean bin (lifetime)",-0.4779,"histogram 291, mean bin (lifetime)",0.2278
+6007,-1.6507,Spec 1,0.2511,"histogram 272, mean bin (last 5 readouts)",0.251,readouts so far,0.2387
+16823,-5.5518,age (time_step),-1.1467,"histogram 291, share in top 2 bins (lifetime)",-0.2802,readouts so far,0.2559
+26539,-2.4721,age (time_step),0.5964,Spec 7,0.4128,"histogram 167, mean bin (lifetime)",0.1913
+25055,-2.6819,age (time_step),0.4643,Spec 7,0.4417,"histogram 459, mean bin (last 5 readouts)",-0.2086
+9979,-5.0849,age (time_step),0.7929,"counter 666, level",-0.6317,"counter 309, level",-0.5117
+11705,-4.2772,age (time_step),0.7341,Spec 7,0.3205,Spec 1,-0.2305
+22835,-5.7274,"counter 837, level",-0.4039,"counter 666, level",-0.3438,"counter 309, level",-0.257
+283,-6.274,age (time_step),0.4832,"counter 309, level",-0.4736,"histogram 167, mean bin (lifetime)",-0.4362
+15793,-5.8533,age (time_step),-1.2802,"counter 427, level",0.3181,"counter 370, level",-0.21
+3082,-4.3529,age (time_step),-1.4726,"counter 427, level",0.4013,"counter 666, rate since previous readout",0.2815
+12336,-3.0301,age (time_step),0.7461,Spec 1,-0.4623,Spec 2,0.2619
+11784,-6.0511,age (time_step),0.8061,"histogram 167, mean bin (lifetime)",-0.55,"counter 666, level",-0.4121
+12937,-2.4127,age (time_step),0.6523,Spec 7,0.4119,span of last 5 readouts,-0.2313
+12782,-2.0235,age (time_step),0.7507,Spec 7,0.3499,"counter 666, level",0.1874
+26665,-3.2667,age (time_step),0.7329,Spec 7,0.4076,"histogram 291, total count",-0.2889
+4930,-6.3971,age (time_step),-0.9197,"counter 837, level",-0.3324,"counter 309, level",-0.3321
+2202,-4.1131,Spec 1,0.4303,age (time_step),0.4024,"counter 100, level",-0.361
+27082,-2.4824,age (time_step),0.7325,Spec 7,0.3667,"histogram 167, mean bin (lifetime)",0.2208
+711,-3.4121,age (time_step),0.6977,Spec 1,0.2963,Spec 7,-0.2203
+30876,-2.1862,age (time_step),0.6947,Spec 7,0.5284,Spec 1,0.2747
+10425,-2.0452,Spec 7,0.6615,age (time_step),0.5654,"counter 666, level",0.1949
+2643,-3.6553,age (time_step),-1.9259,Spec 2,0.4036,"histogram 459, mean bin (lifetime)",0.3505
+32730,-6.9171,"counter 666, level",-0.5038,"histogram 167, change in mean bin over last 5 readouts",-0.5008,"counter 100, level",-0.2856
+14217,-4.9301,"counter 666, level",-0.7715,"counter 100, level",-0.7481,"histogram 459, total count",-0.3505
+32818,-4.5233,age (time_step),0.5453,"histogram 397, share in top 2 bins (last 5 readouts)",-0.3656,"counter 309, level",-0.2193
+22111,-3.6449,age (time_step),0.2483,"histogram 291, share in top 2 bins (lifetime)",0.211,Spec 7,-0.1734
+22570,-4.0545,"counter 100, rate over last 5 readouts",-0.2139,Spec 7,-0.2052,Spec 1,0.1981
+2591,-3.4034,"histogram 167, mean bin (lifetime)",0.2304,Spec 1,0.2192,Spec 7,-0.1716
+23557,-3.2833,age (time_step),0.7583,Spec 1,0.2551,"histogram 167, mean bin (lifetime)",0.1693
+22061,-3.4167,age (time_step),0.707,Spec 1,0.2816,span of last 5 readouts,-0.2101
+19488,-5.0455,age (time_step),0.4757,"counter 309, level",-0.3273,"histogram 291, mean bin (lifetime)",-0.1879
+17665,-3.5146,readouts so far,0.4459,age (time_step),-0.3431,"counter 837, level",-0.1735
+6863,-3.068,span of last 5 readouts,0.1751,age (time_step),-0.1426,Spec 1,0.1319
+25515,-3.9818,age (time_step),0.7124,"counter 837, level",-0.379,"counter 309, level",-0.2087
+5461,-3.8052,age (time_step),0.623,Spec 1,-0.4471,Spec 7,-0.2822
+32401,-3.8864,age (time_step),0.5701,Spec 7,0.3638,"histogram 158, mean bin (last 5 readouts)",-0.2608
+15501,-3.9041,age (time_step),0.773,Spec 7,-0.3236,"counter 309, level",-0.2851
+21988,-2.6762,age (time_step),0.6271,Spec 1,0.1909,"histogram 167, mean bin (lifetime)",0.1721
+5217,-4.6744,age (time_step),0.3719,Spec 7,-0.1858,"histogram 459, share in top 2 bins (lifetime)",-0.1746
+31100,-2.7305,age (time_step),0.7514,Spec 7,0.3199,"counter 666, rate since previous readout",0.3007
+27043,-2.1472,age (time_step),0.7903,Spec 7,0.3969,"histogram 167, mean bin (lifetime)",0.2864
+19451,-5.3895,"counter 666, rate since previous readout",0.2201,"histogram 167, mean bin (lifetime)",0.2073,"counter 100, rate over last 5 readouts",-0.1978
+9436,-5.099,"counter 666, level",-0.5312,age (time_step),0.3452,"counter 837, level",-0.2828
+18902,-6.1028,age (time_step),-0.6813,"counter 837, level",-0.3921,Spec 7,-0.3089
+405,-4.2465,age (time_step),0.8631,Spec 1,-0.7152,"counter 309, level",-0.3382
+14018,-3.2822,Spec 7,0.3973,age (time_step),0.341,"counter 100, level",-0.2331
+12126,-3.6438,age (time_step),0.7507,Spec 7,0.5337,Spec 1,-0.3855
+4509,-5.0512,age (time_step),-0.6062,Spec 1,-0.2993,"histogram 158, change in mean bin over last 5 readouts",0.2593
+32298,-3.0262,Spec 7,0.3625,age (time_step),0.3535,Spec 1,0.3139
+29370,-3.0314,age (time_step),0.7151,Spec 7,0.5057,"histogram 272, mean bin (lifetime)",-0.4449
+18932,-3.7788,"histogram 291, share in top 2 bins (lifetime)",0.1575,"counter 309, level",0.1399,Spec 7,-0.1343
+5182,-2.6686,age (time_step),0.7438,"histogram 291, share in top 2 bins (lifetime)",0.2217,Spec 1,0.1713
+19939,-2.8457,age (time_step),0.4567,Spec 1,0.2762,"histogram 167, mean bin (lifetime)",0.2004
+13331,-4.025,age (time_step),0.5673,"histogram 167, mean bin (lifetime)",-0.4036,Spec 1,-0.2837
+25775,-2.229,age (time_step),0.6535,Spec 7,0.3724,"counter 837, level",0.2712
+31828,-5.2446,"counter 666, level",-0.8515,"counter 100, level",-0.4394,age (time_step),0.3658
+2790,-6.2113,age (time_step),-1.9247,"histogram 291, share in top 2 bins (lifetime)",-0.3192,"counter 837, level",0.2828
+32193,-2.5535,Spec 1,0.3814,Spec 7,0.2895,"counter 100, level",-0.2792
+18618,-4.1389,age (time_step),-0.6461,"counter 309, level",-0.3681,"counter 837, level",-0.2212
+14154,-2.4952,age (time_step),0.4982,Spec 7,0.3714,"histogram 291, mean bin (lifetime)",-0.2359
+10751,-4.4653,"counter 666, level",-0.9294,age (time_step),0.7604,"counter 309, level",-0.5247
+23467,-3.726,age (time_step),0.3037,"histogram 167, mean bin (lifetime)",0.2986,"histogram 397, share in top 2 bins (lifetime)",0.2555
+28535,-3.214,age (time_step),0.7669,Spec 7,0.4317,"histogram 167, mean bin (lifetime)",0.2901
+59,-3.5245,age (time_step),0.6954,"counter 666, change over last 5 readouts",0.4421,"histogram 272, mean bin (last 5 readouts)",-0.2981
+26067,-4.7842,age (time_step),0.6486,"histogram 167, mean bin (lifetime)",-0.4362,"counter 837, level",-0.4076
+17897,-2.8952,age (time_step),-0.7288,Spec 1,0.2113,"counter 309, level",0.1807
+6222,-6.2036,"counter 666, level",-0.3567,"counter 837, level",-0.3477,"counter 309, level",-0.316
+6471,-7.0784,age (time_step),0.511,"counter 666, level",-0.4886,"counter 309, level",-0.3894
+20159,-2.9818,"counter 837, level",0.3588,"counter 666, rate since previous readout",0.2644,"counter 309, level",0.259
+27927,-4.2066,age (time_step),0.6663,Spec 7,0.461,"histogram 272, mean bin (lifetime)",-0.1733
+9205,-1.9163,age (time_step),0.5673,"counter 427, change since previous readout",0.1995,"counter 427, rate over last 5 readouts",0.1522
+5531,-2.6349,"counter 427, level",0.3913,age (time_step),0.2888,Spec 7,-0.2034
+492,-3.7836,age (time_step),0.7635,Spec 1,-0.5649,Spec 2,-0.2518
+15975,-3.8725,span of last 5 readouts,-0.1879,Spec 7,-0.1742,Spec 1,0.1606
+4575,-4.4599,"histogram 291, share in top 2 bins (lifetime)",-0.2211,"histogram 291, change in mean bin over last 5 readouts",-0.2114,age (time_step),0.1618
+14701,-3.5232,age (time_step),-0.4327,readouts so far,0.2115,"histogram 167, total count",0.1756
+26029,-3.0836,age (time_step),0.6895,Spec 7,0.4475,"counter 666, level",0.1716
+5908,-3.7391,age (time_step),-1.0022,"counter 427, level",0.4255,"counter 100, rate over last 5 readouts",0.1745
+12528,-3.6947,age (time_step),0.7268,"histogram 291, mean bin (lifetime)",-0.366,Spec 7,0.3436
+4671,-4.3534,Spec 1,-0.476,"counter 837, level",-0.3424,"counter 100, level",0.1978
+22093,-4.1749,"counter 666, rate since previous readout",0.3022,Spec 1,0.2134,"histogram 167, mean bin (lifetime)",0.2033
+1389,-4.714,Spec 1,-0.6465,age (time_step),0.3868,"counter 100, level",-0.2579
+12314,-0.2577,age (time_step),0.7495,Spec 7,0.5091,"counter 666, rate since previous readout",0.4258
+4165,-5.3933,age (time_step),-1.1371,readouts so far,0.3734,"histogram 291, share in top 2 bins (lifetime)",0.2588
+15553,-4.5898,Spec 1,0.3014,"counter 100, level",-0.2065,"histogram 167, mean bin (lifetime)",0.1991
+23773,-2.52,"counter 427, level",0.3841,"counter 666, rate since previous readout",0.2941,age (time_step),0.233
+12934,-3.1745,age (time_step),0.7076,Spec 7,0.5525,"counter 837, level",-0.3083
+15140,-4.0346,age (time_step),0.5243,"counter 309, level",-0.1692,"histogram 158, mean bin (last 5 readouts)",-0.1392
+9594,-5.1548,"counter 100, level",-0.6958,Spec 7,0.4251,Spec 1,-0.2553
+22252,-3.02,age (time_step),0.3159,Spec 1,0.224,"histogram 167, mean bin (lifetime)",0.2238
+15591,-5.6389,age (time_step),-1.2753,"histogram 291, share in top 2 bins (lifetime)",-0.4227,readouts so far,0.2182
+5022,-4.1833,age (time_step),0.7879,Spec 1,-0.4679,"histogram 158, share in top 2 bins (last 5 readouts)",-0.1959
+12679,-3.0988,age (time_step),0.6512,Spec 7,0.4508,"counter 837, level",0.2612
+2527,-3.2528,age (time_step),0.7494,"histogram 291, share in top 2 bins (lifetime)",0.2244,"histogram 167, mean bin (lifetime)",0.2204
+3842,-3.7701,"histogram 397, change in mean bin over last 5 readouts",-0.2555,"histogram 167, mean bin (lifetime)",0.2178,Spec 7,-0.2167
+31131,-2.3352,age (time_step),0.6838,Spec 7,0.482,"histogram 291, mean bin (last 5 readouts)",-0.4546
+30391,-3.7945,Spec 1,-0.7725,age (time_step),0.5302,Spec 7,0.4744
+27362,-1.7163,age (time_step),0.8181,Spec 7,0.5083,Spec 1,0.3012
+3488,-6.6163,age (time_step),-1.3505,"histogram 167, mean bin (lifetime)",-0.4592,"histogram 167, mean bin (last 5 readouts)",-0.1949
+14502,-4.8982,Spec 7,-0.3566,"counter 309, level",-0.2699,age (time_step),0.2249
+513,-5.4192,age (time_step),-0.5484,"counter 100, level",-0.3555,"histogram 167, mean bin (lifetime)",0.2881
+13191,-2.6378,age (time_step),0.8444,Spec 1,-0.4156,Spec 7,0.397
+3558,-5.2847,age (time_step),-1.3655,readouts so far,0.2522,"histogram 167, total count",0.2106
+21676,-3.8486,Spec 1,0.1572,Spec 7,-0.1538,"histogram 167, mean bin (lifetime)",0.1369
+28829,-2.2718,age (time_step),0.6812,Spec 1,0.3986,Spec 6,0.3327
+31569,-3.0356,age (time_step),0.411,Spec 7,0.3298,"histogram 291, share in top 2 bins (lifetime)",0.221
+3927,-3.6344,age (time_step),-0.8248,Spec 1,0.2261,"histogram 291, share in top 2 bins (lifetime)",0.2222
+16076,-7.5203,"counter 666, level",-0.7912,age (time_step),-0.6598,"histogram 167, change in mean bin over last 5 readouts",-0.4197
+6467,-4.7688,age (time_step),0.8505,"histogram 167, mean bin (lifetime)",-0.5279,"counter 309, level",-0.4026
+1051,-7.1408,age (time_step),-3.3712,"counter 427, level",0.4358,Spec 1,0.241
+8558,-3.207,"counter 837, level",0.3013,"counter 309, level",0.251,"histogram 291, share in top 2 bins (lifetime)",0.1838
+265,-3.7322,age (time_step),0.4153,"histogram 167, mean bin (lifetime)",0.3629,"counter 309, level",-0.2536
+6189,-5.2493,age (time_step),-0.641,readouts so far,0.4196,"histogram 291, share in top 2 bins (lifetime)",-0.3992
+24506,-2.1778,age (time_step),0.8221,Spec 7,0.3964,"histogram 291, share in top 2 bins (lifetime)",0.2144
+5164,-4.9141,Spec 1,-0.5004,age (time_step),-0.2967,readouts so far,0.2501
+11585,-2.1496,age (time_step),0.707,Spec 7,0.4641,"counter 837, level",0.2757
+28762,-2.4133,age (time_step),0.7181,Spec 7,0.2987,Spec 1,0.2893
+8516,-4.2019,readouts so far,0.2742,"counter 837, level",0.2255,Spec 2,-0.21
+3673,-3.5459,age (time_step),-0.747,readouts so far,0.3393,"counter 309, level",-0.2887
+20805,-5.1684,age (time_step),-0.3579,"histogram 291, share in top 2 bins (lifetime)",-0.3251,"histogram 397, share in top 2 bins (lifetime)",0.1641
+9255,-6.011,"counter 666, level",-0.5228,age (time_step),0.5092,Spec 1,0.4317
+7664,-4.3633,"counter 100, level",-0.5251,"counter 666, level",-0.5046,age (time_step),0.2917
+7615,-5.186,age (time_step),0.7147,"counter 837, level",-0.3915,"counter 309, level",-0.2516
+14009,-3.4508,"counter 666, level",-0.6092,age (time_step),0.4967,"counter 100, level",-0.4631
+18645,-4.9587,age (time_step),-1.3667,"histogram 167, mean bin (lifetime)",0.2466,span of last 5 readouts,-0.1968
+17315,-4.3561,Spec 7,-0.3199,"counter 837, level",-0.2663,"counter 309, level",-0.243
+16228,-3.8741,age (time_step),-0.828,readouts so far,0.4147,Spec 1,0.2306
+17859,-4.0994,age (time_step),-0.8458,Spec 1,-0.368,"counter 309, level",0.2208
+16253,-2.001,age (time_step),0.3318,"counter 427, level",0.32,"histogram 167, mean bin (last 5 readouts)",0.2897
+7744,-4.4447,age (time_step),-0.3861,Spec 1,-0.2821,"histogram 459, mean bin (lifetime)",0.2736
+33044,-4.8897,age (time_step),-1.1888,"counter 837, level",0.4482,"counter 427, level",0.3483
+14507,-4.7548,"histogram 167, mean bin (lifetime)",-0.3402,"histogram 291, share in top 2 bins (lifetime)",-0.3077,age (time_step),-0.296
+1804,-3.2357,age (time_step),0.7452,span of last 5 readouts,-0.2462,Spec 2,-0.206
+439,-8.6006,age (time_step),-3.8808,"counter 309, level",-0.4002,"counter 427, level",0.3966
+27281,-5.3475,"counter 666, level",-0.6885,"histogram 167, mean bin (lifetime)",-0.5817,"histogram 397, share in top 2 bins (last 5 readouts)",-0.395
+25084,-2.514,age (time_step),0.6827,Spec 7,0.5,"histogram 167, mean bin (lifetime)",0.1657
+18586,-4.2493,age (time_step),-0.2301,Spec 1,0.1794,"histogram 459, mean bin (lifetime)",-0.1617
+33601,-5.6259,"counter 666, level",-0.8588,"histogram 397, share in top 2 bins (last 5 readouts)",-0.4324,age (time_step),0.3789
+10447,-3.9096,age (time_step),0.7188,Spec 7,0.4173,"counter 100, rate over last 5 readouts",-0.175
+22603,-4.9413,"counter 100, level",-0.4773,"counter 837, level",0.3062,age (time_step),-0.2245
+3544,-3.4873,age (time_step),0.258,"histogram 291, share in top 2 bins (lifetime)",0.2316,Spec 1,0.2234
+17215,-4.0119,age (time_step),0.6637,"histogram 167, mean bin (lifetime)",-0.4628,"histogram 291, share in top 2 bins (lifetime)",-0.2892
+12693,-2.8884,age (time_step),0.5286,Spec 7,0.3829,"counter 100, level",-0.3525
+4335,-4.5509,age (time_step),-1.432,"counter 666, rate since previous readout",0.3722,readouts so far,0.3256
+12168,-2.8304,age (time_step),0.7752,"histogram 291, share in top 2 bins (lifetime)",-0.478,Spec 7,0.4283
+26399,-0.7513,age (time_step),0.8078,"counter 666, rate since previous readout",0.4792,"histogram 397, share in top 2 bins (last 5 readouts)",0.3002
+14780,-3.3816,age (time_step),0.735,"histogram 167, mean bin (lifetime)",0.2286,Spec 7,-0.215
+31266,-2.6178,age (time_step),0.7193,Spec 7,0.4644,Spec 1,0.2212
+17829,-4.8134,age (time_step),-0.9387,"histogram 167, mean bin (lifetime)",0.1732,Spec 1,0.1554
+1391,-3.5827,Spec 1,0.233,"counter 100, rate over last 5 readouts",-0.224,"histogram 291, share in top 2 bins (lifetime)",0.2072
+754,-1.7501,age (time_step),0.6136,Spec 1,0.1921,"histogram 291, share in top 2 bins (lifetime)",0.1875
+32897,-4.6575,age (time_step),0.3998,"counter 309, level",-0.2845,"counter 100, level",-0.2442
+7369,-5.9799,"histogram 397, share in top 2 bins (last 5 readouts)",-0.497,"counter 837, level",-0.3722,"counter 666, level",-0.3499
+14670,-5.9816,age (time_step),-1.3452,"histogram 291, share in top 2 bins (lifetime)",-0.2682,"counter 100, rate over last 5 readouts",-0.2343
+21043,-4.6699,age (time_step),-0.4138,Spec 7,-0.2206,Spec 1,0.2011
+1861,-2.0078,age (time_step),0.8291,"counter 666, rate since previous readout",0.325,Spec 1,0.2007
+10307,0.3827,age (time_step),0.6891,"histogram 158, share in top 2 bins (last 5 readouts)",0.6196,"counter 666, change over last 5 readouts",0.4628
+9781,-1.4077,Spec 7,0.3803,Spec 1,0.3709,age (time_step),0.3613
+2972,-2.1177,age (time_step),0.7175,Spec 1,0.2912,"histogram 167, mean bin (lifetime)",0.267
+27897,-4.9429,"counter 666, level",-0.7332,"counter 837, level",-0.3545,age (time_step),0.3112
+24504,-2.5644,"histogram 158, share in top 2 bins (last 5 readouts)",0.5822,Spec 7,0.4973,age (time_step),0.4461
+16768,-2.9851,age (time_step),0.7725,"counter 309, level",-0.3811,"histogram 167, mean bin (last 5 readouts)",-0.1642
+16466,-5.8202,age (time_step),-1.1308,"counter 309, level",-0.2716,"histogram 291, share in top 2 bins (lifetime)",-0.2667
+10654,-4.0452,"histogram 167, mean bin (lifetime)",-0.4973,age (time_step),0.4061,"histogram 459, total count",-0.2412
+11271,-6.5071,age (time_step),0.7568,"counter 666, level",-0.6062,"counter 100, level",-0.4573
+11574,-5.051,age (time_step),0.7651,"counter 837, level",-0.3909,"counter 309, level",-0.3386
+20709,-2.7207,age (time_step),-0.2508,"histogram 167, share in top 2 bins (lifetime)",0.2398,"histogram 167, mean bin (lifetime)",0.1955
+22519,-5.1235,"counter 837, level",-0.4256,readouts so far,0.2913,"histogram 291, share in top 2 bins (lifetime)",-0.2643
+30721,-1.3226,age (time_step),0.6744,Spec 7,0.3898,"histogram 291, share in top 2 bins (lifetime)",0.2437
+3159,-5.7665,age (time_step),-1.816,"counter 837, level",0.3167,Spec 2,-0.1749
+239,-5.8384,age (time_step),-2.2749,"counter 427, level",0.3576,"counter 837, level",0.3329
+7431,-4.1723,age (time_step),0.4078,"counter 100, level",-0.4043,"histogram 167, mean bin (lifetime)",0.2152
+952,-3.6106,age (time_step),0.5114,"histogram 291, share in top 2 bins (lifetime)",0.2963,"histogram 459, mean bin (last 5 readouts)",-0.2479
+4527,-4.4078,age (time_step),0.7405,"counter 666, level",-0.5537,"histogram 291, share in top 2 bins (lifetime)",0.4036
+22488,-3.509,age (time_step),0.4229,Spec 2,0.3987,"histogram 167, mean bin (lifetime)",-0.3333
+12511,-3.175,age (time_step),0.597,"histogram 291, change in mean bin over last 5 readouts",-0.3389,"histogram 459, mean bin (lifetime)",0.3258
+15036,-4.4052,age (time_step),-0.9182,"counter 100, change over last 5 readouts",-0.2991,"counter 666, rate since previous readout",0.2761
+2544,-4.6188,Spec 1,-0.881,age (time_step),0.7888,Spec 6,-0.1659
+7674,-2.3318,age (time_step),0.6559,"histogram 291, share in top 2 bins (lifetime)",0.239,Spec 1,0.2139
+25285,-3.0687,Spec 7,0.495,age (time_step),0.3321,"histogram 167, mean bin (lifetime)",0.2213
+11252,-2.4112,age (time_step),0.7843,Spec 7,0.4233,Spec 1,-0.415
+28485,-3.0412,Spec 7,0.4134,age (time_step),0.4098,"counter 100, level",-0.2912
+30334,-3.1343,age (time_step),0.754,Spec 7,0.5385,Spec 1,0.2774
+3910,-4.6252,age (time_step),-1.6183,"histogram 167, mean bin (lifetime)",0.2648,"histogram 291, mean bin (lifetime)",-0.2604
+29297,-1.9051,age (time_step),0.6939,Spec 7,0.4933,"histogram 167, mean bin (lifetime)",0.2507
+1556,-4.3296,age (time_step),-1.1157,readouts so far,0.5368,"counter 837, level",0.2606
+16110,-9.0605,age (time_step),-0.9274,"counter 666, level",-0.7828,"counter 100, level",-0.4524
+25452,-2.6862,age (time_step),0.7187,Spec 7,0.3998,Spec 1,-0.2011
+45,-5.2284,Spec 1,-0.4946,Spec 2,-0.3014,readouts so far,0.2773
+22179,-4.4325,age (time_step),0.3917,"histogram 291, mean bin (lifetime)",-0.3147,"counter 666, rate since previous readout",0.3089
+6988,-1.6439,readouts so far,0.3689,"counter 837, level",0.311,Spec 1,0.2815
+3256,-3.5467,age (time_step),0.7475,"histogram 291, share in top 2 bins (lifetime)",0.2515,Spec 1,0.1877
+14272,-6.6681,"counter 666, level",-0.7185,Spec 7,-0.5309,"counter 309, level",-0.3918
+27786,-3.8158,age (time_step),0.7547,"counter 309, level",-0.3331,"counter 837, level",-0.2787
+18201,-4.1408,"counter 666, level",-0.626,"counter 100, level",-0.4252,"histogram 291, share in top 2 bins (lifetime)",0.3396
+18,-5.5314,age (time_step),-1.1327,"histogram 397, share in top 2 bins (last 5 readouts)",-0.2232,"histogram 291, share in top 2 bins (lifetime)",0.2115
+11656,-3.561,age (time_step),0.6583,Spec 7,0.3112,"histogram 167, mean bin (last 5 readouts)",-0.1683
+33141,-3.5122,age (time_step),0.6948,"counter 309, level",-0.2244,"histogram 291, change in mean bin over last 5 readouts",0.1837
+17165,-3.2152,age (time_step),0.7078,"histogram 397, share in top 2 bins (last 5 readouts)",0.273,Spec 7,-0.1974
+10967,-2.763,age (time_step),0.7425,Spec 1,-0.6386,Spec 7,0.5185
+24315,-4.0979,Spec 1,0.4736,age (time_step),0.3977,Spec 6,0.3117
+9245,-4.1057,"histogram 291, share in top 2 bins (lifetime)",0.2486,age (time_step),0.2311,"counter 666, rate since previous readout",0.2279
+22817,-3.152,age (time_step),0.6695,"histogram 459, mean bin (last 5 readouts)",0.2137,Spec 2,-0.1927
+9179,-4.5094,age (time_step),0.4036,"counter 309, level",-0.2962,"counter 837, level",-0.2328
+23972,-5.2739,"histogram 167, change in mean bin over last 5 readouts",-0.644,"counter 100, level",-0.4933,age (time_step),0.3977
+21733,-5.794,"counter 666, level",-0.521,age (time_step),-0.274,"counter 100, level",-0.2141
+4954,-4.3055,age (time_step),0.6481,"counter 309, level",-0.314,"histogram 272, change in mean bin over last 5 readouts",0.2155
+23241,-2.3242,age (time_step),0.7411,"histogram 272, change in mean bin over last 5 readouts",0.3668,"histogram 397, change in mean bin over last 5 readouts",-0.2637
+5290,-3.6526,age (time_step),-0.9103,"histogram 291, share in top 2 bins (lifetime)",0.2542,Spec 1,0.2457
+6479,-4.1391,age (time_step),-0.4389,"histogram 291, share in top 2 bins (lifetime)",-0.3206,"histogram 167, mean bin (lifetime)",-0.2583
+25975,-3.9266,age (time_step),0.6833,Spec 7,0.6207,Spec 1,-0.3656
+16190,-3.7862,Spec 2,-0.32,age (time_step),0.2378,"histogram 272, mean bin (lifetime)",0.1993
+12203,-4.2933,age (time_step),0.4399,"histogram 167, mean bin (lifetime)",-0.4001,Spec 1,-0.2548
+643,-3.4126,Spec 7,-0.3393,"histogram 167, mean bin (lifetime)",0.2348,Spec 1,0.2213
+18993,-3.2793,"counter 100, level",-0.4659,Spec 2,0.3818,"counter 837, level",0.3274
+28477,-3.3438,age (time_step),0.7996,Spec 7,0.3678,"counter 100, level",-0.2752
+9424,-2.2476,age (time_step),0.3196,"counter 666, rate since previous readout",0.3162,readouts so far,0.3089
+29107,-7.2178,"counter 666, level",-0.6733,Spec 1,-0.6197,"histogram 167, mean bin (lifetime)",-0.4437
+19020,-3.2998,age (time_step),0.7298,"histogram 167, mean bin (lifetime)",0.2106,Spec 7,-0.1982
+20193,-4.189,"counter 837, level",-0.2637,"counter 309, level",-0.263,age (time_step),0.2589
+12272,-3.7701,"histogram 167, mean bin (lifetime)",-0.398,age (time_step),0.3514,Spec 1,-0.267
+24914,-3.0833,age (time_step),0.7022,Spec 7,0.4231,"counter 100, level",-0.2433
+7661,-3.8119,age (time_step),0.7176,Spec 1,0.3049,"histogram 291, share in top 2 bins (lifetime)",0.2875
+23829,-3.271,"counter 837, level",-0.4034,age (time_step),0.2965,"counter 835, rate over last 5 readouts",0.246
+20644,-6.3791,"counter 666, level",-0.5302,age (time_step),0.43,readouts so far,-0.3489
+31984,-2.8276,age (time_step),0.4008,Spec 7,0.2963,"histogram 167, mean bin (lifetime)",0.1985
+22276,-4.1921,age (time_step),0.8133,"counter 666, level",-0.4972,"counter 100, level",-0.2593
+11357,-3.6887,age (time_step),0.6779,Spec 7,0.2684,readouts so far,-0.1103
+7683,-3.3596,age (time_step),0.3397,Spec 2,-0.2482,"histogram 158, mean bin (lifetime)",-0.1592
+1352,-6.925,age (time_step),-2.3132,"counter 837, level",-0.3641,"counter 666, level",-0.3494
+27172,-1.393,age (time_step),0.7431,Spec 7,0.3733,"histogram 167, mean bin (lifetime)",0.2669
+6451,-3.4785,age (time_step),-0.3877,Spec 1,0.2531,"histogram 291, share in top 2 bins (lifetime)",0.2162
+303,-3.0389,age (time_step),0.7144,"histogram 291, share in top 2 bins (lifetime)",0.2102,"histogram 167, mean bin (lifetime)",0.1959
+7545,-4.5833,"counter 666, rate since previous readout",0.2346,Spec 1,0.1713,"histogram 167, mean bin (lifetime)",0.1561
+568,-8.448,age (time_step),-3.6987,"counter 837, level",-0.3961,"counter 309, level",-0.3676
+24172,-3.9626,age (time_step),0.4303,"histogram 291, share in top 2 bins (lifetime)",0.2123,"histogram 167, mean bin (lifetime)",0.1932
+29577,-2.3741,age (time_step),0.7625,Spec 7,0.3894,"histogram 291, share in top 2 bins (lifetime)",0.2995
+1424,-7.74,age (time_step),-2.5814,"counter 837, level",-0.3174,"counter 309, level",-0.3085
+31113,-2.7491,age (time_step),0.4864,Spec 7,0.4849,"histogram 272, mean bin (lifetime)",-0.339
+17631,-2.8873,age (time_step),0.7306,Spec 1,0.2319,"histogram 167, mean bin (lifetime)",0.1669
+8900,-4.134,age (time_step),0.3071,Spec 6,0.2675,Spec 1,-0.2446
+5387,-2.5602,age (time_step),-0.7815,"counter 427, level",0.428,readouts so far,0.246
+5886,-2.5006,age (time_step),0.7408,"histogram 291, share in top 2 bins (lifetime)",0.2589,"counter 427, rate over last 5 readouts",0.2024
+31284,-2.6131,age (time_step),0.7039,Spec 7,0.3608,"histogram 397, share in top 2 bins (lifetime)",0.2308
+10412,-5.3454,age (time_step),0.7223,"counter 666, level",-0.6385,Spec 1,0.5746
+16387,-4.1311,age (time_step),-0.8512,"histogram 167, mean bin (lifetime)",0.2014,Spec 7,-0.2001
+21495,-4.6179,Spec 7,-0.3427,age (time_step),0.2908,"counter 837, level",-0.1811
+32511,-3.025,Spec 7,0.3511,age (time_step),0.3418,Spec 1,0.2831
+8008,-3.9723,"histogram 291, share in top 2 bins (lifetime)",0.3129,"histogram 167, mean bin (lifetime)",0.2435,age (time_step),0.2317
+28831,-2.5804,age (time_step),0.764,Spec 7,0.3388,"histogram 167, mean bin (last 5 readouts)",-0.2078
+1552,-3.8677,age (time_step),0.6351,"counter 309, level",-0.3202,Spec 7,-0.2398
+21975,-3.7327,readouts so far,0.4295,"histogram 272, mean bin (lifetime)",-0.3552,Spec 1,0.2775
+4104,-4.5146,"counter 309, level",-0.3757,age (time_step),0.3328,"counter 837, level",-0.2412
+5494,-5.1306,Spec 1,-0.5272,age (time_step),-0.2364,Spec 7,-0.1843
+11214,-3.6883,age (time_step),0.7362,Spec 1,-0.6048,Spec 7,0.4851
+1451,-6.8912,age (time_step),-1.5767,"counter 309, level",-0.405,"histogram 291, share in top 2 bins (lifetime)",0.1832
+26274,-3.7824,age (time_step),0.6921,Spec 7,0.5048,"histogram 291, share in top 2 bins (lifetime)",-0.3738
+30759,-3.8959,age (time_step),0.6164,Spec 7,0.36,"counter 100, level",-0.2866
+1576,-4.059,age (time_step),-1.4938,"histogram 167, share in top 2 bins (lifetime)",0.5826,"counter 427, level",0.2728
+26723,-4.2994,age (time_step),0.7965,"histogram 397, share in top 2 bins (last 5 readouts)",-0.7042,Spec 7,0.4921
+369,-6.3298,age (time_step),-2.2972,Spec 1,-0.7108,"counter 427, level",0.3325
+13369,-3.211,age (time_step),0.6129,"counter 427, rate over last 5 readouts",-0.2693,"counter 171, level",0.2673
+23325,-5.7436,"counter 666, level",-0.5933,"counter 309, level",-0.3936,"counter 837, level",-0.3104
+22870,-3.9862,Spec 1,0.3899,age (time_step),0.3244,"histogram 291, change in mean bin over last 5 readouts",-0.29
+29036,-2.092,age (time_step),0.6161,Spec 7,0.3496,"histogram 291, share in top 2 bins (lifetime)",0.2938
+3293,-3.4499,age (time_step),0.4896,Spec 1,-0.2251,"histogram 291, change in mean bin over last 5 readouts",0.2144
+24393,-5.2782,age (time_step),0.535,"counter 666, level",-0.4549,"counter 837, level",-0.3715
+23730,-4.4403,age (time_step),0.7311,"histogram 291, share in top 2 bins (lifetime)",-0.3945,"counter 309, level",-0.1908
+25353,-3.0058,age (time_step),0.8634,Spec 7,0.4181,Spec 1,0.2899
+31719,-5.4749,"counter 100, level",-0.5377,age (time_step),0.5016,"counter 666, level",-0.4781
+31242,-2.7334,age (time_step),0.405,Spec 7,0.3709,Spec 1,0.3399
+26825,-2.4822,age (time_step),0.7796,Spec 7,0.3961,"counter 100, level",-0.2355
+10892,-1.8523,age (time_step),0.7226,Spec 7,0.4858,"counter 837, level",0.3545
+18082,-4.5833,Spec 1,0.2424,age (time_step),0.2283,"counter 666, level",-0.2264
+28576,-2.7141,age (time_step),0.7713,Spec 7,0.3621,"counter 666, rate since previous readout",0.2898
+1512,-3.1622,age (time_step),0.5297,"histogram 167, mean bin (lifetime)",0.1956,Spec 1,0.1859
+25796,-3.7232,age (time_step),0.7199,"histogram 167, mean bin (lifetime)",-0.432,Spec 7,0.3505
+9031,-5.8488,Spec 1,-0.5618,"counter 100, level",-0.2589,"histogram 291, change in mean bin over last 5 readouts",-0.2522
+17506,-4.3323,age (time_step),-0.6863,"histogram 291, share in top 2 bins (lifetime)",-0.4203,"counter 837, level",-0.2923
+23482,-4.0242,age (time_step),0.8108,"histogram 291, share in top 2 bins (lifetime)",-0.3052,"histogram 459, mean bin (lifetime)",-0.1929
+598,-4.3196,Spec 1,-0.23,"histogram 167, mean bin (lifetime)",0.2069,readouts so far,-0.1778
+20759,-3.4188,age (time_step),-0.4267,Spec 1,0.1933,"histogram 459, mean bin (lifetime)",0.183
+17081,-3.7717,readouts so far,0.2162,Spec 7,-0.1858,"histogram 291, share in top 2 bins (lifetime)",0.1475
+12665,-1.2226,age (time_step),0.7462,Spec 7,0.386,"histogram 167, mean bin (lifetime)",0.2277
+20691,-4.6839,age (time_step),0.7806,"counter 666, level",-0.5517,"counter 309, level",-0.4918
+9150,-2.9206,Spec 6,-0.407,Spec 1,0.4024,"histogram 459, mean bin (lifetime)",0.2083
+9675,-3.3219,age (time_step),0.7893,Spec 7,0.5922,Spec 1,-0.5681
+5214,-6.7026,age (time_step),-0.6778,"histogram 167, mean bin (lifetime)",-0.3519,"histogram 397, mean bin (last 5 readouts)",-0.2824
+14219,-3.7565,"counter 666, level",-0.5579,age (time_step),0.3196,"histogram 167, mean bin (lifetime)",0.2134
+18921,-2.8474,age (time_step),0.6789,Spec 1,0.192,"histogram 459, mean bin (last 5 readouts)",-0.1833
+1567,-4.2147,age (time_step),0.7225,"counter 100, level",-0.3694,Spec 7,-0.3094
+7556,-5.2004,Spec 1,-0.4638,age (time_step),-0.2891,"counter 837, level",-0.265
+13432,-5.8327,"counter 666, level",-0.6485,"counter 100, level",-0.4926,age (time_step),0.4803
+724,-4.5145,age (time_step),-1.6288,"counter 427, level",0.3501,"counter 427, change since previous readout",0.223
+1730,-5.9735,"histogram 272, mean bin (lifetime)",-0.4043,span of last 5 readouts,-0.355,Spec 7,-0.272
+30158,-3.6002,age (time_step),0.6903,Spec 7,0.4074,"counter 309, level",-0.2016
+27198,-2.9334,age (time_step),0.8073,Spec 7,0.4261,"counter 666, rate since previous readout",0.2331
+28554,-3.5413,age (time_step),0.5735,"histogram 167, mean bin (lifetime)",-0.2306,Spec 1,0.2281
+4032,-6.9675,age (time_step),0.4598,"counter 666, level",-0.4592,"counter 100, level",-0.3864
+10157,-5.9732,age (time_step),0.7393,"histogram 167, mean bin (lifetime)",-0.5123,Spec 1,0.3679
+18447,-2.8096,age (time_step),0.7728,"counter 837, level",-0.286,"counter 309, level",-0.2741
+33313,-4.807,age (time_step),0.705,"histogram 291, share in top 2 bins (lifetime)",-0.3136,"counter 837, level",-0.3068
+31452,-3.4306,Spec 7,0.5157,age (time_step),0.3772,"histogram 291, mean bin (lifetime)",0.2518
+6853,-5.4927,Spec 1,-0.5249,age (time_step),-0.398,"counter 427, level",0.324
+19541,-3.8912,age (time_step),-0.5444,Spec 1,0.242,"histogram 291, share in top 2 bins (lifetime)",0.225
+8759,-3.079,Spec 1,0.451,Spec 2,0.3547,"histogram 397, mean bin (last 5 readouts)",-0.2163
+8298,-3.4571,Spec 1,-0.4332,"counter 837, level",0.2817,"counter 309, level",0.2512
+21079,-4.0398,"histogram 167, change in mean bin over last 5 readouts",-0.5429,age (time_step),0.3115,"histogram 167, mean bin (lifetime)",0.1852
+407,-3.6576,age (time_step),0.7548,"counter 309, level",-0.3396,"counter 837, level",-0.1935
+8205,-3.8646,"histogram 167, mean bin (lifetime)",0.1705,age (time_step),-0.168,"counter 666, level",0.1492
+29528,-3.9152,Spec 7,0.3869,age (time_step),0.3856,"histogram 167, mean bin (lifetime)",-0.2775
+28456,-2.2658,age (time_step),0.7199,Spec 1,0.3012,Spec 7,0.292
+5535,-3.1976,age (time_step),0.8273,"histogram 167, mean bin (lifetime)",-0.5734,"histogram 291, share in top 2 bins (lifetime)",0.4634
+8557,-5.3533,Spec 1,-0.4724,"histogram 167, mean bin (lifetime)",-0.4346,Spec 2,-0.2302
+10325,-1.8877,age (time_step),0.6058,Spec 7,0.3223,"histogram 291, share in top 2 bins (lifetime)",0.2533
+26462,-3.3447,age (time_step),0.7581,Spec 7,0.4127,"counter 837, level",-0.2744
+17299,-5.1264,age (time_step),-0.9075,readouts so far,0.4081,"histogram 291, share in top 2 bins (lifetime)",0.3403
+12070,-1.3522,age (time_step),0.6091,"histogram 167, mean bin (last 5 readouts)",0.2249,Spec 7,0.1917
+25860,-3.7788,age (time_step),0.648,Spec 7,0.3182,Spec 1,0.2649
+7823,-2.6965,age (time_step),0.4955,Spec 1,0.2677,"histogram 167, mean bin (lifetime)",0.2413
+23855,-4.8279,"counter 666, level",-0.7183,age (time_step),0.681,"histogram 291, share in top 2 bins (lifetime)",-0.3522
+27592,-2.6927,age (time_step),0.6949,"histogram 158, change in mean bin over last 5 readouts",0.3958,span of last 5 readouts,-0.3872
+8024,-2.935,"counter 837, level",0.27,"histogram 167, mean bin (last 5 readouts)",0.2192,"counter 100, rate over last 5 readouts",-0.2104
+1263,-2.8554,age (time_step),0.7391,"histogram 291, share in top 2 bins (lifetime)",0.2705,"counter 100, level",-0.2643
+8138,-3.7284,age (time_step),0.8028,"counter 309, level",-0.2996,Spec 1,0.2827
+15518,-5.959,age (time_step),-0.85,"counter 837, level",-0.4166,"counter 309, level",-0.3282
+25391,-3.25,Spec 7,0.551,age (time_step),0.4831,"counter 309, level",-0.2113
+12933,-6.7434,"histogram 167, mean bin (lifetime)",-0.5761,"counter 666, level",-0.5215,age (time_step),0.4032
+18914,-4.3977,age (time_step),0.4693,"counter 100, level",-0.3222,"histogram 167, mean bin (lifetime)",0.2814
+17242,-4.3759,"counter 666, level",-0.7635,age (time_step),0.4339,"counter 309, level",-0.4173
+7983,-1.6567,Spec 2,0.4074,age (time_step),0.367,"histogram 272, mean bin (last 5 readouts)",0.2003
+3400,-4.1114,age (time_step),0.6915,"histogram 167, mean bin (lifetime)",0.2429,Spec 1,0.2211
+29750,-2.3691,age (time_step),0.7575,Spec 7,0.3495,Spec 1,0.2201
+28643,-4.1737,age (time_step),0.5165,"histogram 167, mean bin (lifetime)",-0.3969,Spec 7,0.2982
+6515,-5.153,"histogram 158, share in top 2 bins (last 5 readouts)",0.558,"counter 666, level",-0.5537,age (time_step),-0.4984
+2012,-2.6483,age (time_step),0.4822,"histogram 167, mean bin (lifetime)",0.2745,"counter 309, level",-0.2317
+11325,-3.0575,age (time_step),0.492,Spec 7,0.4733,"histogram 291, change in mean bin over last 5 readouts",0.2523
+23503,-6.0475,Spec 1,-0.6492,age (time_step),0.3911,"counter 666, level",-0.3654
+12710,-2.77,age (time_step),0.6909,Spec 7,0.4368,"histogram 397, share in top 2 bins (last 5 readouts)",-0.3758
+12024,-4.4059,age (time_step),0.7493,Spec 1,-0.4685,"counter 100, level",-0.272
+5899,-4.8663,age (time_step),-0.6397,"histogram 167, mean bin (lifetime)",-0.3476,"histogram 167, mean bin (last 5 readouts)",-0.2047
+3763,-3.6762,age (time_step),0.4948,"counter 666, rate since previous readout",0.4494,"histogram 158, change in mean bin over last 5 readouts",0.3542
+11183,0.914,age (time_step),0.7546,"counter 666, change over last 5 readouts",0.7436,"histogram 158, share in top 2 bins (last 5 readouts)",0.6923
+22106,-4.6575,age (time_step),0.2686,"counter 100, rate over last 5 readouts",-0.2311,"counter 100, change over last 5 readouts",-0.1656
+8562,-4.7898,"counter 837, level",-0.2872,Spec 2,-0.2545,Spec 7,-0.2368
+1079,-7.336,age (time_step),-3.4948,"counter 427, level",0.3008,"counter 837, level",0.2798
+12090,-5.1113,age (time_step),0.7006,"counter 837, level",-0.4239,"counter 309, level",-0.3477
+31555,-2.4151,age (time_step),0.371,Spec 7,0.327,"counter 666, rate since previous readout",0.3082
+18657,-4.1669,age (time_step),-0.2452,Spec 1,0.1932,"histogram 167, mean bin (lifetime)",0.1719
+15594,-4.048,age (time_step),0.6958,"histogram 167, mean bin (lifetime)",0.2298,Spec 7,-0.2198
+10043,-3.8535,age (time_step),0.5582,"histogram 167, mean bin (lifetime)",-0.3928,Spec 7,0.3165
+5735,-5.3646,age (time_step),-0.5285,Spec 1,-0.3881,"counter 837, level",-0.3254
+8410,-5.7369,"counter 666, level",-0.5589,age (time_step),0.3806,"counter 100, level",-0.3192
+23955,-3.513,age (time_step),0.2534,"counter 427, rate over last 5 readouts",0.1945,Spec 7,-0.1839
+13877,-4.3762,"counter 666, level",-0.7219,age (time_step),0.6907,Spec 6,0.406
+18869,-4.7783,age (time_step),0.4701,"counter 309, level",-0.2857,"histogram 167, mean bin (lifetime)",0.2514
+3812,-4.5922,age (time_step),0.7193,Spec 7,-0.2467,"histogram 397, change in mean bin over last 5 readouts",-0.2275
+10198,-0.9378,age (time_step),0.5483,Spec 7,0.4233,"counter 837, level",0.2133
+2575,-2.9484,age (time_step),0.4841,Spec 1,0.3012,"histogram 167, mean bin (lifetime)",0.238
+28765,-6.3308,age (time_step),0.7407,"counter 100, level",-0.5529,"counter 666, level",-0.5041
+24439,-3.935,age (time_step),0.476,"counter 309, level",-0.2579,"histogram 459, mean bin (last 5 readouts)",-0.2249
+9267,-2.9161,"counter 427, level",0.4423,age (time_step),0.246,Spec 1,0.1911
+6287,-6.9651,"counter 666, level",-0.6233,"counter 100, level",-0.6048,"histogram 167, mean bin (lifetime)",-0.3818
+31150,-2.7175,age (time_step),0.4783,Spec 7,0.2392,"histogram 167, mean bin (lifetime)",0.218
+30654,-2.8645,Spec 7,0.3292,age (time_step),0.3005,"histogram 459, share in top 2 bins (lifetime)",0.2584
+24901,-2.3253,Spec 7,0.3691,age (time_step),0.2801,"counter 837, level",0.2317
+27936,-2.7571,age (time_step),0.7045,Spec 7,0.2619,"counter 837, level",0.2586
+28197,-4.0987,age (time_step),0.7935,"counter 309, level",-0.3083,"counter 837, level",-0.2763
+2581,-5.1655,age (time_step),-2.0411,"counter 427, level",0.3428,"histogram 291, share in top 2 bins (lifetime)",0.2695
+23408,-4.0695,"histogram 291, mean bin (lifetime)",-0.2895,Spec 1,0.2611,age (time_step),0.2576
+33245,-4.7813,"counter 666, level",-0.7751,"counter 309, level",-0.5139,age (time_step),0.3307
+19789,-2.625,age (time_step),0.7008,"histogram 459, mean bin (lifetime)",0.2209,Spec 1,0.1708
+26638,-4.457,age (time_step),0.8176,"counter 837, level",-0.3875,Spec 7,0.3679
+8322,-3.467,age (time_step),0.6175,"histogram 459, mean bin (last 5 readouts)",-0.2041,Spec 7,-0.1577
+21604,-3.1401,age (time_step),0.7594,"histogram 291, share in top 2 bins (lifetime)",0.2454,Spec 1,0.2108
+17970,-3.1495,age (time_step),0.7098,"histogram 167, mean bin (lifetime)",0.3075,"counter 666, level",-0.2637
+27891,-1.8989,age (time_step),0.7846,Spec 7,0.4368,"histogram 167, mean bin (lifetime)",0.3132
+14685,-7.362,age (time_step),-1.166,"counter 309, level",-0.4415,"counter 666, level",-0.4097
+16924,-4.3485,age (time_step),0.5835,"counter 309, level",-0.2601,"histogram 397, change in mean bin over last 5 readouts",-0.1756
+5828,-4.8169,age (time_step),-1.2476,Spec 2,-0.2114,"counter 837, level",0.2075
+13735,-3.601,age (time_step),0.3593,"counter 666, level",-0.3132,Spec 7,0.2647
+19315,-4.0009,readouts so far,0.3783,age (time_step),-0.3448,"histogram 167, mean bin (lifetime)",0.222
+22217,-4.9903,age (time_step),0.3666,"histogram 272, mean bin (lifetime)",-0.3497,"histogram 291, share in top 2 bins (lifetime)",-0.3256
+27532,-4.4661,age (time_step),0.8408,"counter 666, level",-0.7131,Spec 7,-0.5167
+32068,-2.2973,age (time_step),0.5002,Spec 7,0.3801,"histogram 291, share in top 2 bins (lifetime)",0.2074
+6203,-3.7799,age (time_step),-0.5584,"histogram 291, share in top 2 bins (lifetime)",0.247,readouts so far,0.1779
+11699,-3.7149,age (time_step),0.818,Spec 1,-0.5234,"counter 666, rate since previous readout",0.2804
+307,-6.5338,"counter 100, level",-0.548,age (time_step),0.4609,"histogram 158, share in top 2 bins (last 5 readouts)",0.4427
+9340,-3.239,age (time_step),0.2895,Spec 1,0.2143,Spec 7,-0.2058
+13655,-2.445,age (time_step),0.5386,Spec 7,0.3901,"histogram 167, mean bin (lifetime)",0.3163
+28236,-7.3486,Spec 1,-0.7423,"counter 666, level",-0.6743,"histogram 291, total count",-0.4928
+3556,-4.7279,age (time_step),-0.6728,Spec 1,-0.4091,"histogram 291, share in top 2 bins (lifetime)",0.2164
