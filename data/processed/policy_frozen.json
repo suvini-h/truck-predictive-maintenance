@@ -1,0 +1,31 @@
+{
+  "model": "hist_gb",
+  "probabilities": "calibrated + age",
+  "calibrator_params": [
+    0.16976453484301196,
+    -2.5397068550693143,
+    -1.9310121987393332,
+    -1.1001173319224598,
+    -0.27104083796962863,
+    -0.11417616557722454,
+    -0.6726571985199953
+  ],
+  "secondary_calibrator_params": [
+    0.10068732510500092,
+    -2.7536556160668866,
+    -2.1590999831799653,
+    -1.2947166695766321,
+    -0.4498508683820446
+  ],
+  "decision_rule": "expected cost, expert matrix (miss-cost multiplier 1), no capacity limit",
+  "fixed_age_rule": "class per 5-step age bin from data/processed/fixed_age_rule.csv",
+  "age_band_rule": "call in now if 100 <= age < 250, else no action",
+  "validation_cost_per_1000": {
+    "Run-to-failure": 11375.3,
+    "Call everyone in now": 9822.8,
+    "Fixed-age rule (b)": 9701.9,
+    "Age bands (validation-tuned bar)": 8109.4,
+    "Model policy (expected cost)": 6538.4
+  },
+  "test_evaluated": true
+}

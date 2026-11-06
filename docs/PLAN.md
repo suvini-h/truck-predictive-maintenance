@@ -32,12 +32,17 @@ It has real calendar dates, so "this week" would be literal.
 |---|---|---|
 | Run-to-failure (predict 0 for everyone) | 11,375 | 11,120 |
 | Call every truck in now (predict 4 for everyone) | 9,823 | 9,846 |
-| **Fixed-age rule (baseline b)**: age thresholds tuned on validation, older = more urgent; ends up as "call in every truck older than 65" | 9,702 (CV 10,028) | notebook 04 |
-| Age bands, any direction (stricter age-only bar): call in trucks aged 100–250, no action otherwise | 8,109 (CV 8,354) | notebook 04 |
+| **Fixed-age rule (baseline b)**: age thresholds tuned on validation, older = more urgent; ends up as "call in every truck older than 65" | 9,702 (CV 10,028) | 9,721 |
+| Age bands, any direction (stricter age-only bar): call in trucks aged 100–250, no action otherwise | 8,109 (CV 8,354) | 9,150 |
+| **Model policy**: gradient boosting + calibration with age term + expected-cost rule | **6,538** (cross-fitted) | **7,399** |
+| Model policy without the age term (declared secondary check) | 7,294 (cross-fitted) | 7,600 |
 
 The two naive rows are computed from the published class counts. The two age rows come from
 notebook 02 (`data/processed/baselines_validation.csv`): in-sample on validation, with repeated
-5-fold cross-validation over validation trucks in brackets. Test is left for notebook 04.
+5-fold cross-validation over validation trucks in brackets. The model rows come from notebooks
+03–04. **Test was evaluated once, in notebook 04's final section, with everything frozen.**
+Bootstrap 95% intervals for the model's test saving: 1,214–3,665 vs calling everyone in,
+1,094–3,529 vs the fixed-age rule.
 
 A missed repair is so expensive that **calling every truck in beats doing nothing**. That makes a
 good hook for the README, and it's the bar the model has to clear. Age alone barely helps: the

@@ -1,0 +1,6 @@
+compared with,saving_per_1000,ci_low_95,ci_high_95,share_of_bootstraps_model_cheaper
+Run-to-failure,3720.91,2302.06,5172.85,1.0
+Call everyone in now,2446.58,1213.58,3665.22,1.0
+Fixed-age rule (b),2321.7,1093.75,3528.86,1.0
+Age bands (validation-tuned bar),1750.84,816.05,2761.75,1.0
+"Model, no age correction (secondary)",200.59,-465.89,835.71,0.72
