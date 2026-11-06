@@ -58,10 +58,10 @@ table _Measures
 					VAR saving = e0 - best                                 -- expected saving of acting at all
 					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 					-- among equally cheap actions take the least urgent one
-					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 					VAR y = fact_snapshot_scores[actual_class]
-					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], action )
-					RETURN IF ( y > action, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
+					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], chosen )
+					RETURN IF ( y > chosen, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
 				)
 		formatString: #,0
 		displayFolder: Planner
@@ -91,9 +91,9 @@ table _Measures
 						VAR saving = e0 - best                                 -- expected saving of acting at all
 						-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 						-- among equally cheap actions take the least urgent one
-						VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+						VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 						VAR y = fact_snapshot_scores[actual_class]
-						RETURN IF ( action = 0, e0, best )   -- expected cost of the chosen action
+						RETURN IF ( chosen = 0, e0, best )   -- expected cost of the chosen action
 					)
 			RETURN DIVIDE ( expected, [Trucks] ) * 1000
 		formatString: #,0
@@ -117,9 +117,9 @@ table _Measures
 					VAR saving = e0 - best                                 -- expected saving of acting at all
 					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 					-- among equally cheap actions take the least urgent one
-					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 					VAR y = fact_snapshot_scores[actual_class]
-					RETURN IF ( action > 0, 1, 0 )
+					RETURN IF ( chosen > 0, 1, 0 )
 				)
 		formatString: #,0
 		displayFolder: Planner
@@ -148,9 +148,9 @@ table _Measures
 					VAR saving = e0 - best                                 -- expected saving of acting at all
 					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 					-- among equally cheap actions take the least urgent one
-					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 					VAR y = fact_snapshot_scores[actual_class]
-					RETURN IF ( y > 0 && action >= y, 1, 0 )
+					RETURN IF ( y > 0 && chosen >= y, 1, 0 )
 				)
 		formatString: #,0
 		displayFolder: Planner
@@ -179,9 +179,9 @@ table _Measures
 					VAR saving = e0 - best                                 -- expected saving of acting at all
 					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 					-- among equally cheap actions take the least urgent one
-					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 					VAR y = fact_snapshot_scores[actual_class]
-					RETURN IF ( y = 0 && action > 0, 1, 0 )
+					RETURN IF ( y = 0 && chosen > 0, 1, 0 )
 				)
 		formatString: #,0
 		displayFolder: Planner
@@ -206,9 +206,9 @@ table _Measures
 						VAR saving = e0 - best                                 -- expected saving of acting at all
 						-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 						-- among equally cheap actions take the least urgent one
-						VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+						VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 						VAR y = fact_snapshot_scores[actual_class]
-						RETURN action
+						RETURN chosen
 					)
 			)
 		formatString: 0

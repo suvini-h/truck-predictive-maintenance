@@ -111,7 +111,7 @@ def replicate_dax(m: float = 1.0, slots_per_1000: float = 1000.0, frame: pd.Data
     best_action = 1 + e[:, 1:].argmin(axis=1)           # ties -> least urgent, like SWITCH order in DAX
     saving = e[:, 0] - best
     n = len(frame)
-    k = int(round(slots_per_1000 / 1000 * n))
+    k = int(np.floor(slots_per_1000 / 1000 * n + 0.5))   # round half up, like DAX ROUND
     cands = np.sort(saving[saving > 0])[::-1]
     thr = np.inf if k <= 0 else (0.0 if k >= len(cands) else cands[k - 1])
     action = np.where((saving > 0) & (saving >= thr), best_action, 0)

@@ -216,7 +216,7 @@ VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other 
 VAR saving = e0 - best                                 -- expected saving of acting at all
 -- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
 -- among equally cheap actions take the least urgent one
-VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+VAR chosen = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
 VAR y = {F}[actual_class]"""
 
 HEADER = """VAR m = [Miss Cost Multiplier Value]
@@ -247,8 +247,8 @@ VAR total =
 RETURN DIVIDE ( total, [Trucks] ) * 1000"""
 
 
-COST_LOOKUP = "VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], action )"
-COST_BODY = "IF ( y > action, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier"
+COST_LOOKUP = "VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], chosen )"
+COST_BODY = "IF ( y > chosen, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier"
 
 MEASURES = [
     # ---- fleet
@@ -284,20 +284,20 @@ RETURN
     ("Planner Cost per 1000", "DIVIDE ( [Planner Cost], [Trucks] ) * 1000", "#,0", "Planner",
      "Planner cost per 1,000 trucks (headline metric)."),
     ("Planner Expected Cost per 1000",
-     "VAR expected =\n" + indent(planner("IF ( action = 0, e0, best )   -- expected cost of the chosen action")) +
+     "VAR expected =\n" + indent(planner("IF ( chosen = 0, e0, best )   -- expected cost of the chosen action")) +
      "\nRETURN DIVIDE ( expected, [Trucks] ) * 1000", "#,0",
      "Planner", "The model's own forecast of the planner cost per 1,000 trucks (expected cost of the chosen actions, no actual classes used)."),
-    ("Planner Call-ins", planner("IF ( action > 0, 1, 0 )"), "#,0", "Planner",
+    ("Planner Call-ins", planner("IF ( chosen > 0, 1, 0 )"), "#,0", "Planner",
      "Trucks the planner acts on (any action other than 'No action')."),
     ("Planner Call-ins per 1000", "DIVIDE ( [Planner Call-ins], [Trucks] ) * 1000", "#,0", "Planner",
      "Call-ins per 1,000 trucks."),
-    ("Planner Repairs Caught", planner("IF ( y > 0 && action >= y, 1, 0 )"), "#,0", "Planner",
+    ("Planner Repairs Caught", planner("IF ( y > 0 && chosen >= y, 1, 0 )"), "#,0", "Planner",
      "Due repairs caught in time: actual class 1-4 and an action at least as urgent as needed."),
     ("Planner Share Caught", "DIVIDE ( [Planner Repairs Caught], [Repairs Due] )", "0.0%", "Planner",
      "Share of due repairs caught in time."),
-    ("Planner Unnecessary Call-ins", planner("IF ( y = 0 && action > 0, 1, 0 )"), "#,0", "Planner",
+    ("Planner Unnecessary Call-ins", planner("IF ( y = 0 && chosen > 0, 1, 0 )"), "#,0", "Planner",
      "Call-ins of trucks with no repair due within 48 steps."),
-    ("Planner Action", f"IF (\n\tHASONEVALUE ( {F}[vehicle_id] ),\n" + indent(planner("action", iterator="MAXX")) + "\n)", "0",
+    ("Planner Action", f"IF (\n\tHASONEVALUE ( {F}[vehicle_id] ),\n" + indent(planner("chosen", iterator="MAXX")) + "\n)", "0",
      "Planner", "Live planner action (0-4) for a single truck; blank on totals."),
     ("Planner Action Label", "VAR a = [Planner Action]\nRETURN IF ( ISBLANK ( a ), BLANK (), LOOKUPVALUE ( dim_action[label], dim_action[action], a ) )",
      "@", "Planner", "Live planner action as text, e.g. 'Call in now'."),
@@ -349,9 +349,21 @@ RETURN
 ]
 
 
+# Words DAX rejects as variable names (found the hard way: 'VAR action' is a syntax error).
+DAX_RESERVED_VARS = {"action", "column", "table", "measure", "define", "evaluate", "order", "by", "start", "at",
+                     "return", "var", "true", "false", "not", "and", "or", "in", "asc", "desc"}
+
+
+def check_var_names(name: str, dax: str) -> None:
+    import re
+    for v in re.findall(r"\bVAR\s+([A-Za-z_][A-Za-z0-9_]*)", dax):
+        assert v.lower() not in DAX_RESERVED_VARS, f"measure [{name}]: VAR name '{v}' is reserved in DAX"
+
+
 def measures_table() -> str:
     lines = ["table _Measures", f"\tlineageTag: {tag('_Measures')}", ""]
     for name, dax, fmt, folder, doc, *hidden in MEASURES:
+        check_var_names(name, dax)
         lines.append(measure(name, dax, fmt, folder, doc, bool(hidden and hidden[0])))
     lines += ["\tcolumn Value", "\t\tdataType: int64", "\t\tisHidden", f"\t\tlineageTag: {tag('_Measures', 'Value')}",
               "\t\tsummarizeBy: none", "\t\tisNameInferred", "\t\tsourceColumn: [Value]", "",
@@ -747,7 +759,8 @@ def check() -> None:
 
 
 if __name__ == "__main__":
-    for p in (SM, RP):
+    # Rebuild the definitions; leave Power BI Desktop's local .pbi cache folders alone.
+    for p in (SM / "definition", RP / "definition", RP / "StaticResources"):
         if p.exists():
             shutil.rmtree(p)
     write_model()
