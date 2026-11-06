@@ -1,0 +1,7 @@
+policy,tuned_on_validation,cost_per_1000_validation,cv_estimate,thresholds
+Run-to-failure (predict 0 for everyone),no,11375.3,,
+Call every truck in now (predict 4 for everyone),no,9822.8,,
+"KM Bayes rule (age only, no tuning)",no,12129.8,,
+"Fixed-age rule, 1 threshold (call in now above age a)",yes,9701.9,10030.0,"{1: 65.0, 2: 65.0, 3: 65.0, 4: 65.0}"
+"Fixed-age rule, 4 thresholds (baseline b)",yes,9701.9,10028.4,"{1: 65.0, 2: 65.0, 3: 65.0, 4: 65.0}"
+"Age bands, any direction (best class per 50-step band)",yes,8109.4,8354.5,

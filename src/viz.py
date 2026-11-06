@@ -52,9 +52,11 @@ def label_end(ax, x, y, text, color=INK2, dy=0) -> None:
 
 
 def suptitle(fig, title: str, subtitle: str | None = None) -> None:
-    fig.suptitle(title, x=0.01, ha="left", fontsize=13, fontweight="bold", y=1.02)
+    """Figure title + subtitle at a fixed physical spacing, whatever the figure height."""
+    h = fig.get_figheight()
+    fig.suptitle(title, x=0.01, ha="left", fontsize=13, fontweight="bold", y=1 + 0.12 / h)
     if subtitle:
-        fig.text(0.01, 0.985, subtitle, ha="left", va="top", fontsize=9.5, color=INK2)
+        fig.text(0.01, 1 - 0.09 / h, subtitle, ha="left", va="top", fontsize=9.5, color=INK2)
 
 
 def save(fig, name: str, figs_dir) -> Path:

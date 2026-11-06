@@ -26,15 +26,24 @@ It has real calendar dates, so "this week" would be literal.
 > combined cost of breakdowns and early repairs is as low as possible? And how much does that
 > save compared with run-to-failure and with a fixed-age rule?
 
-## Numbers to beat (computed from the published class counts, cost per 1,000 trucks)
+## Numbers to beat (cost per 1,000 trucks)
 
 | Policy | Validation | Test |
 |---|---|---|
 | Run-to-failure (predict 0 for everyone) | 11,375 | 11,120 |
 | Call every truck in now (predict 4 for everyone) | 9,823 | 9,846 |
+| **Fixed-age rule (baseline b)**: age thresholds tuned on validation, older = more urgent; ends up as "call in every truck older than 65" | 9,702 (CV 10,028) | notebook 04 |
+| Age bands, any direction (stricter age-only bar): call in trucks aged 100–250, no action otherwise | 8,109 (CV 8,354) | notebook 04 |
+
+The two naive rows are computed from the published class counts. The two age rows come from
+notebook 02 (`data/processed/baselines_validation.csv`): in-sample on validation, with repeated
+5-fold cross-validation over validation trucks in brackets. Test is left for notebook 04.
 
 A missed repair is so expensive that **calling every truck in beats doing nothing**. That makes a
-good hook for the README, and it's the bar the model has to clear.
+good hook for the README, and it's the bar the model has to clear. Age alone barely helps: the
+wear-out rule is no better than calling everyone in out of sample. On validation, older trucks
+are *less* often due (the opposite of training), which only an age rule tuned on validation can
+exploit. Models must beat 9,702 and should be compared with 8,109 too.
 
 ## Repo structure (same pattern as the EV repo)
 
