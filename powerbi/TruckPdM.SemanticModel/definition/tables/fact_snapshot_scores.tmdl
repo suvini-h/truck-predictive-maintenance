@@ -1,0 +1,297 @@
+/// Test snapshot (notebook 04): one row per test truck, scored once with the frozen model.
+table fact_snapshot_scores
+	lineageTag: 7bfa2992-f3ac-5b39-963f-dcfca252d9f3
+
+	column vehicle_id
+		dataType: int64
+		formatString: 0
+		lineageTag: aebc0c59-8d63-58d0-ba6e-c362cfdd6deb
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_time_step
+		dataType: double
+		formatString: #,0
+		lineageTag: 9055db15-e0bf-5c3a-9729-9f3842297dce
+		summarizeBy: none
+		sourceColumn: age_time_step
+
+		annotation SummarizationSetBy = Automatic
+
+	column p0
+		dataType: double
+		formatString: 0.000
+		lineageTag: 224d673d-0a55-5c57-8b3a-7d7ae1a2fd85
+		summarizeBy: none
+		sourceColumn: p0
+
+		annotation SummarizationSetBy = Automatic
+
+	column p1
+		dataType: double
+		formatString: 0.000
+		lineageTag: 5a99048c-4a18-5e23-9855-460d960caa3f
+		summarizeBy: none
+		sourceColumn: p1
+
+		annotation SummarizationSetBy = Automatic
+
+	column p2
+		dataType: double
+		formatString: 0.000
+		lineageTag: 7fc0b5d7-1a3d-569a-b823-dd163800c35b
+		summarizeBy: none
+		sourceColumn: p2
+
+		annotation SummarizationSetBy = Automatic
+
+	column p3
+		dataType: double
+		formatString: 0.000
+		lineageTag: 19bd497e-ea04-500d-a3b8-a9ca898a1280
+		summarizeBy: none
+		sourceColumn: p3
+
+		annotation SummarizationSetBy = Automatic
+
+	column p4
+		dataType: double
+		formatString: 0.000
+		lineageTag: efa0c0db-bd42-5835-a4fb-5e5d1035e609
+		summarizeBy: none
+		sourceColumn: p4
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_due_within_48
+		dataType: double
+		formatString: 0.0%
+		lineageTag: e8cfa182-f3f4-5334-bbf7-bd15cc9ea56b
+		summarizeBy: none
+		sourceColumn: p_due_within_48
+
+		annotation SummarizationSetBy = Automatic
+
+	column recommended_action
+		dataType: int64
+		formatString: 0
+		lineageTag: fdae9566-f349-5ebe-b9fe-14eaa1693f11
+		summarizeBy: none
+		sourceColumn: recommended_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column recommended_label
+		dataType: string
+		lineageTag: 06d44b19-6075-5f68-9eba-35fb0789d5f6
+		summarizeBy: none
+		sourceColumn: recommended_label
+		sortByColumn: recommended_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column actual_class
+		dataType: int64
+		formatString: 0
+		lineageTag: aad875e2-9c67-57ec-adac-5cb7667c9a1c
+		summarizeBy: none
+		sourceColumn: actual_class
+
+		annotation SummarizationSetBy = Automatic
+
+	column actual_label
+		dataType: string
+		lineageTag: 65365d79-0d21-504a-b93b-12009121d8fb
+		summarizeBy: none
+		sourceColumn: actual_label
+		sortByColumn: actual_class
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_saving_if_called_in
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 59d2b3ec-f03e-5d61-ae11-eec32f4060d6
+		summarizeBy: none
+		sourceColumn: expected_saving_if_called_in
+
+		annotation SummarizationSetBy = Automatic
+
+	column priority_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f9f4724-d328-50d0-ab03-8b29a8963922
+		summarizeBy: none
+		sourceColumn: priority_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column fixed_age_action
+		dataType: int64
+		formatString: 0
+		lineageTag: cfd96a18-d24f-55df-bead-e25da135406f
+		summarizeBy: none
+		sourceColumn: fixed_age_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_band_action
+		dataType: int64
+		formatString: 0
+		lineageTag: a0dec975-a309-57ea-ad4e-8944a9410010
+		summarizeBy: none
+		sourceColumn: age_band_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column L0
+		dataType: double
+		isHidden
+		lineageTag: e2c89d97-1d6c-559f-b2f6-ae3c5b146c8b
+		summarizeBy: none
+		sourceColumn: L0
+
+		annotation SummarizationSetBy = Automatic
+
+	column L1
+		dataType: double
+		isHidden
+		lineageTag: 0ea69f6a-0273-5713-b691-6e43efbfff78
+		summarizeBy: none
+		sourceColumn: L1
+
+		annotation SummarizationSetBy = Automatic
+
+	column L2
+		dataType: double
+		isHidden
+		lineageTag: fdc113f4-f2e2-5bbe-b65b-eb942f81d907
+		summarizeBy: none
+		sourceColumn: L2
+
+		annotation SummarizationSetBy = Automatic
+
+	column L3
+		dataType: double
+		isHidden
+		lineageTag: d4a5b96f-283b-57a2-a911-4371bc5e892b
+		summarizeBy: none
+		sourceColumn: L3
+
+		annotation SummarizationSetBy = Automatic
+
+	column L4
+		dataType: double
+		isHidden
+		lineageTag: 9222d49e-83bc-5783-8d7c-f67a0fadca9e
+		summarizeBy: none
+		sourceColumn: L4
+
+		annotation SummarizationSetBy = Automatic
+
+	column U0
+		dataType: double
+		isHidden
+		lineageTag: cc05bd6c-0cd4-57c1-a38c-0c1ddff2fc6b
+		summarizeBy: none
+		sourceColumn: U0
+
+		annotation SummarizationSetBy = Automatic
+
+	column U1
+		dataType: double
+		isHidden
+		lineageTag: 3fdcbea5-e235-5868-8177-4be39919d8c2
+		summarizeBy: none
+		sourceColumn: U1
+
+		annotation SummarizationSetBy = Automatic
+
+	column U2
+		dataType: double
+		isHidden
+		lineageTag: b322f336-2328-5b58-8384-5d920de68db6
+		summarizeBy: none
+		sourceColumn: U2
+
+		annotation SummarizationSetBy = Automatic
+
+	column U3
+		dataType: double
+		isHidden
+		lineageTag: 1abb08da-b736-589a-997a-85afbed921e0
+		summarizeBy: none
+		sourceColumn: U3
+
+		annotation SummarizationSetBy = Automatic
+
+	column U4
+		dataType: double
+		isHidden
+		lineageTag: 1282dc64-e8c3-5712-a4a8-cf970fca8d91
+		summarizeBy: none
+		sourceColumn: U4
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_1
+		dataType: string
+		lineageTag: cc3dde7b-a163-58c9-b40a-4755b4b7c96e
+		summarizeBy: none
+		sourceColumn: driver_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_1_effect
+		dataType: string
+		lineageTag: 7b286a36-7187-543f-9f74-7d521ccf5998
+		summarizeBy: none
+		sourceColumn: driver_1_effect
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_2
+		dataType: string
+		lineageTag: 474503e1-f434-54f8-9e54-20e7184a5a0e
+		summarizeBy: none
+		sourceColumn: driver_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_2_effect
+		dataType: string
+		lineageTag: 5e37bb45-8cfa-53e3-a74f-09a1eb682d83
+		summarizeBy: none
+		sourceColumn: driver_2_effect
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_3
+		dataType: string
+		lineageTag: 799cab4b-21db-5d45-a59a-f4f451090205
+		summarizeBy: none
+		sourceColumn: driver_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_3_effect
+		dataType: string
+		lineageTag: 79c69ab1-e4cd-5a86-9c8a-975c85cd5ac5
+		summarizeBy: none
+		sourceColumn: driver_3_effect
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_snapshot_scores = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "fact_snapshot_scores.csv"), [Delimiter=",", Columns=32, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"vehicle_id", Int64.Type}, {"age_time_step", type number}, {"p0", type number}, {"p1", type number}, {"p2", type number}, {"p3", type number}, {"p4", type number}, {"p_due_within_48", type number}, {"recommended_action", Int64.Type}, {"recommended_label", type text}, {"actual_class", Int64.Type}, {"actual_label", type text}, {"expected_saving_if_called_in", type number}, {"priority_rank", Int64.Type}, {"fixed_age_action", Int64.Type}, {"age_band_action", Int64.Type}, {"L0", type number}, {"L1", type number}, {"L2", type number}, {"L3", type number}, {"L4", type number}, {"U0", type number}, {"U1", type number}, {"U2", type number}, {"U3", type number}, {"U4", type number}, {"driver_1", type text}, {"driver_1_effect", type text}, {"driver_2", type text}, {"driver_2_effect", type text}, {"driver_3", type text}, {"driver_3_effect", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

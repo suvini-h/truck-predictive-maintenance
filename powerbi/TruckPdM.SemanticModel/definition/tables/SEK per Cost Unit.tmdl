@@ -1,0 +1,29 @@
+/// What-if parameter: ILLUSTRATIVE assumption converting relative cost units to SEK (1,000 = an unnecessary call-in of 10 units costs SEK 10,000).
+table 'SEK per Cost Unit'
+	lineageTag: 359b633e-c545-54bd-be26-44d3324b0736
+
+	/// Selected value of 'SEK per Cost Unit' (1000 when nothing or several values are selected).
+	measure 'SEK per Cost Unit Value' = SELECTEDVALUE ( 'SEK per Cost Unit'[SEK per Cost Unit], 1000 )
+		formatString: #,0
+		displayFolder: Parameters
+		lineageTag: 5b9985c7-baed-50e6-b600-41115ec8be2e
+
+	column 'SEK per Cost Unit'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 5d214730-9ddd-5f78-89e5-1f270d3a7e48
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'SEK per Cost Unit' = calculated
+		mode: import
+		source = GENERATESERIES ( 250, 5000, 250 )
+
+	annotation PBI_Id = d583af48faeebd7a4cfd

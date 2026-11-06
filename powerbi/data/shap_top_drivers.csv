@@ -1,0 +1,4846 @@
+vehicle_id,driver_rank,driver,effect
+1,1,Spec 1,raises risk
+1,2,"counter 837, level",raises risk
+1,3,"histogram 291, total count",raises risk
+46,1,Spec 1,raises risk
+46,2,Spec 7,lowers risk
+46,3,"histogram 291, total count",raises risk
+97,1,"counter 837, level",raises risk
+97,2,"histogram 291, total count",raises risk
+97,3,"counter 100, level",raises risk
+129,1,age (time_step),lowers risk
+129,2,Spec 1,lowers risk
+129,3,"counter 837, level",raises risk
+137,1,Spec 1,raises risk
+137,2,Spec 7,lowers risk
+137,3,age (time_step),raises risk
+157,1,age (time_step),raises risk
+157,2,Spec 7,lowers risk
+157,3,Spec 1,raises risk
+201,1,Spec 7,lowers risk
+201,2,"counter 309, level",lowers risk
+201,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+227,1,age (time_step),raises risk
+227,2,Spec 7,lowers risk
+227,3,Spec 1,raises risk
+238,1,age (time_step),raises risk
+238,2,"counter 837, level",raises risk
+238,3,readouts so far,raises risk
+302,1,Spec 7,lowers risk
+302,2,Spec 1,raises risk
+302,3,readouts so far,raises risk
+473,1,age (time_step),lowers risk
+473,2,Spec 7,lowers risk
+473,3,"histogram 291, total count",raises risk
+543,1,age (time_step),lowers risk
+543,2,Spec 1,raises risk
+543,3,"counter 666, level",raises risk
+591,1,"histogram 459, mean bin (last 5 readouts)",lowers risk
+591,2,Spec 1,raises risk
+591,3,Spec 7,lowers risk
+635,1,Spec 7,lowers risk
+635,2,Spec 1,raises risk
+635,3,"counter 666, level",raises risk
+796,1,Spec 1,raises risk
+796,2,"histogram 459, share in top 2 bins (last 5 readouts)",raises risk
+796,3,"counter 309, level",raises risk
+814,1,Spec 1,raises risk
+814,2,Spec 7,lowers risk
+814,3,"counter 837, level",raises risk
+871,1,Spec 7,lowers risk
+871,2,age (time_step),raises risk
+871,3,Spec 1,raises risk
+872,1,Spec 1,raises risk
+872,2,"counter 837, level",raises risk
+872,3,readouts so far,raises risk
+895,1,age (time_step),raises risk
+895,2,"counter 837, level",raises risk
+895,3,readouts so far,raises risk
+986,1,Spec 1,raises risk
+986,2,age (time_step),raises risk
+986,3,Spec 7,lowers risk
+1002,1,age (time_step),lowers risk
+1002,2,Spec 2,raises risk
+1002,3,"counter 837, level",raises risk
+1011,1,age (time_step),lowers risk
+1011,2,Spec 7,lowers risk
+1011,3,Spec 1,raises risk
+1043,1,age (time_step),lowers risk
+1043,2,Spec 2,raises risk
+1043,3,Spec 1,raises risk
+1069,1,Spec 1,raises risk
+1069,2,Spec 7,lowers risk
+1069,3,"histogram 291, total count",raises risk
+1087,1,"histogram 459, mean bin (last 5 readouts)",lowers risk
+1087,2,"counter 100, level",raises risk
+1087,3,Spec 7,lowers risk
+1150,1,age (time_step),lowers risk
+1150,2,Spec 1,raises risk
+1150,3,"histogram 272, mean bin (lifetime)",lowers risk
+1208,1,age (time_step),lowers risk
+1208,2,Spec 1,raises risk
+1208,3,"counter 837, level",raises risk
+1215,1,Spec 1,raises risk
+1215,2,"histogram 397, change in mean bin over last 5 readouts",lowers risk
+1215,3,age (time_step),raises risk
+1236,1,"counter 666, level",lowers risk
+1236,2,age (time_step),raises risk
+1236,3,Spec 1,raises risk
+1315,1,age (time_step),raises risk
+1315,2,Spec 7,lowers risk
+1315,3,"histogram 459, change in mean bin over last 5 readouts",raises risk
+1333,1,"counter 427, change since previous readout",raises risk
+1333,2,"histogram 167, mean bin (lifetime)",raises risk
+1333,3,Spec 1,raises risk
+1350,1,age (time_step),raises risk
+1350,2,Spec 1,raises risk
+1350,3,Spec 7,lowers risk
+1407,1,age (time_step),raises risk
+1407,2,Spec 1,raises risk
+1407,3,"histogram 459, total count",raises risk
+1430,1,Spec 1,raises risk
+1430,2,"counter 666, level",lowers risk
+1430,3,age (time_step),raises risk
+1456,1,"histogram 291, mean bin (lifetime)",lowers risk
+1456,2,age (time_step),raises risk
+1456,3,"histogram 459, mean bin (lifetime)",raises risk
+1483,1,Spec 7,lowers risk
+1483,2,"histogram 167, mean bin (last 5 readouts)",raises risk
+1483,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+1509,1,age (time_step),raises risk
+1509,2,Spec 1,raises risk
+1509,3,Spec 7,lowers risk
+1525,1,Spec 7,lowers risk
+1525,2,Spec 1,raises risk
+1525,3,"counter 309, level",lowers risk
+1564,1,age (time_step),raises risk
+1564,2,"histogram 167, mean bin (lifetime)",raises risk
+1564,3,Spec 1,raises risk
+1605,1,age (time_step),lowers risk
+1605,2,Spec 7,lowers risk
+1605,3,Spec 1,raises risk
+1641,1,age (time_step),raises risk
+1641,2,Spec 1,raises risk
+1641,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+1665,1,age (time_step),lowers risk
+1665,2,Spec 1,raises risk
+1665,3,"histogram 167, mean bin (lifetime)",raises risk
+1673,1,age (time_step),lowers risk
+1673,2,Spec 1,lowers risk
+1673,3,"counter 837, level",raises risk
+1681,1,age (time_step),raises risk
+1681,2,Spec 7,lowers risk
+1681,3,Spec 1,raises risk
+1707,1,Spec 1,raises risk
+1707,2,Spec 7,lowers risk
+1707,3,age (time_step),raises risk
+1720,1,"counter 309, level",raises risk
+1720,2,"counter 100, level",raises risk
+1720,3,age (time_step),raises risk
+1746,1,Spec 1,raises risk
+1746,2,age (time_step),raises risk
+1746,3,Spec 7,lowers risk
+1755,1,age (time_step),raises risk
+1755,2,Spec 7,lowers risk
+1755,3,"histogram 167, mean bin (lifetime)",raises risk
+1820,1,age (time_step),lowers risk
+1820,2,Spec 1,raises risk
+1820,3,Spec 6,raises risk
+1846,1,age (time_step),raises risk
+1846,2,Spec 7,lowers risk
+1846,3,"counter 666, level",raises risk
+1884,1,"counter 100, rate over last 5 readouts",raises risk
+1884,2,Spec 1,raises risk
+1884,3,age (time_step),raises risk
+1891,1,Spec 2,raises risk
+1891,2,Spec 1,raises risk
+1891,3,"counter 837, level",raises risk
+1899,1,age (time_step),lowers risk
+1899,2,"histogram 291, total count",raises risk
+1899,3,Spec 1,raises risk
+1909,1,Spec 1,raises risk
+1909,2,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+1909,3,Spec 7,lowers risk
+2058,1,Spec 7,lowers risk
+2058,2,Spec 1,raises risk
+2058,3,"counter 666, level",raises risk
+2082,1,age (time_step),lowers risk
+2082,2,"counter 837, level",raises risk
+2082,3,Spec 1,raises risk
+2084,1,age (time_step),raises risk
+2084,2,Spec 1,raises risk
+2084,3,Spec 7,lowers risk
+2096,1,age (time_step),raises risk
+2096,2,Spec 1,raises risk
+2096,3,Spec 7,lowers risk
+2138,1,age (time_step),raises risk
+2138,2,"counter 309, level",lowers risk
+2138,3,Spec 1,raises risk
+2287,1,"counter 309, level",raises risk
+2287,2,Spec 7,lowers risk
+2287,3,"histogram 291, total count",lowers risk
+2311,1,age (time_step),raises risk
+2311,2,Spec 7,lowers risk
+2311,3,Spec 1,raises risk
+2375,1,age (time_step),raises risk
+2375,2,Spec 1,raises risk
+2375,3,Spec 7,lowers risk
+2433,1,Spec 1,raises risk
+2433,2,Spec 7,lowers risk
+2433,3,"histogram 167, mean bin (lifetime)",raises risk
+2439,1,age (time_step),lowers risk
+2439,2,Spec 2,raises risk
+2439,3,"histogram 272, mean bin (lifetime)",raises risk
+2441,1,age (time_step),raises risk
+2441,2,"counter 666, rate since previous readout",raises risk
+2441,3,Spec 1,raises risk
+2488,1,"counter 666, rate since previous readout",raises risk
+2488,2,Spec 1,raises risk
+2488,3,Spec 7,lowers risk
+2501,1,"histogram 397, share in top 2 bins (last 5 readouts)",lowers risk
+2501,2,age (time_step),raises risk
+2501,3,Spec 1,raises risk
+2530,1,Spec 7,lowers risk
+2530,2,Spec 1,raises risk
+2530,3,"counter 309, level",lowers risk
+2535,1,age (time_step),raises risk
+2535,2,Spec 7,lowers risk
+2535,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+2572,1,"counter 309, level",lowers risk
+2572,2,Spec 1,raises risk
+2572,3,Spec 7,lowers risk
+2611,1,Spec 1,raises risk
+2611,2,Spec 7,lowers risk
+2611,3,"counter 666, level",raises risk
+2644,1,Spec 1,raises risk
+2644,2,"counter 837, level",raises risk
+2644,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+2673,1,"counter 309, level",lowers risk
+2673,2,age (time_step),lowers risk
+2673,3,"histogram 291, total count",raises risk
+2674,1,"histogram 272, mean bin (lifetime)",lowers risk
+2674,2,"histogram 167, mean bin (lifetime)",raises risk
+2674,3,Spec 1,raises risk
+2687,1,"histogram 272, mean bin (lifetime)",lowers risk
+2687,2,"histogram 167, mean bin (lifetime)",raises risk
+2687,3,Spec 1,raises risk
+2716,1,age (time_step),lowers risk
+2716,2,Spec 1,raises risk
+2716,3,"histogram 291, total count",raises risk
+2746,1,age (time_step),raises risk
+2746,2,Spec 1,raises risk
+2746,3,"counter 100, change over last 5 readouts",lowers risk
+2774,1,Spec 1,raises risk
+2774,2,Spec 7,lowers risk
+2774,3,age (time_step),raises risk
+2789,1,age (time_step),lowers risk
+2789,2,Spec 1,raises risk
+2789,3,readouts so far,raises risk
+2799,1,"counter 837, level",raises risk
+2799,2,Spec 1,raises risk
+2799,3,"counter 309, level",raises risk
+2809,1,age (time_step),lowers risk
+2809,2,Spec 1,raises risk
+2809,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+2824,1,Spec 1,lowers risk
+2824,2,"counter 837, level",raises risk
+2824,3,Spec 7,lowers risk
+2856,1,age (time_step),lowers risk
+2856,2,Spec 1,raises risk
+2856,3,Spec 7,lowers risk
+2888,1,age (time_step),raises risk
+2888,2,Spec 1,raises risk
+2888,3,Spec 7,lowers risk
+2912,1,age (time_step),lowers risk
+2912,2,"counter 837, level",raises risk
+2912,3,Spec 7,lowers risk
+2945,1,"counter 837, level",raises risk
+2945,2,Spec 1,raises risk
+2945,3,"counter 309, level",raises risk
+2947,1,age (time_step),lowers risk
+2947,2,Spec 1,raises risk
+2947,3,"counter 837, level",raises risk
+3034,1,age (time_step),lowers risk
+3034,2,"counter 309, level",lowers risk
+3034,3,Spec 7,lowers risk
+3055,1,Spec 7,lowers risk
+3055,2,"histogram 291, total count",raises risk
+3055,3,"histogram 291, share in top 2 bins (last 5 readouts)",raises risk
+3065,1,age (time_step),lowers risk
+3065,2,Spec 1,raises risk
+3065,3,"histogram 291, total count",raises risk
+3106,1,age (time_step),lowers risk
+3106,2,Spec 1,raises risk
+3106,3,"counter 666, rate since previous readout",raises risk
+3160,1,age (time_step),raises risk
+3160,2,"histogram 167, mean bin (lifetime)",raises risk
+3160,3,Spec 1,raises risk
+3190,1,Spec 2,raises risk
+3190,2,age (time_step),raises risk
+3190,3,Spec 1,raises risk
+3215,1,age (time_step),lowers risk
+3215,2,readouts so far,raises risk
+3215,3,"counter 837, level",raises risk
+3304,1,age (time_step),lowers risk
+3304,2,Spec 1,raises risk
+3304,3,Spec 7,lowers risk
+3327,1,Spec 1,raises risk
+3327,2,"histogram 167, mean bin (lifetime)",raises risk
+3327,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+3341,1,Spec 1,raises risk
+3341,2,age (time_step),raises risk
+3341,3,Spec 7,lowers risk
+3413,1,Spec 1,raises risk
+3413,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+3413,3,age (time_step),raises risk
+3432,1,Spec 1,raises risk
+3432,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+3432,3,age (time_step),raises risk
+3472,1,Spec 1,raises risk
+3472,2,age (time_step),raises risk
+3472,3,Spec 7,lowers risk
+3502,1,Spec 6,raises risk
+3502,2,age (time_step),raises risk
+3502,3,"counter 666, level",lowers risk
+3519,1,age (time_step),raises risk
+3519,2,"histogram 167, mean bin (lifetime)",raises risk
+3519,3,Spec 1,raises risk
+3548,1,Spec 1,raises risk
+3548,2,Spec 7,lowers risk
+3548,3,age (time_step),lowers risk
+3553,1,age (time_step),raises risk
+3553,2,Spec 1,raises risk
+3553,3,"histogram 167, mean bin (lifetime)",raises risk
+3565,1,Spec 1,raises risk
+3565,2,Spec 7,lowers risk
+3565,3,"histogram 167, mean bin (lifetime)",raises risk
+3689,1,age (time_step),lowers risk
+3689,2,Spec 1,raises risk
+3689,3,"counter 837, level",raises risk
+3713,1,age (time_step),lowers risk
+3713,2,Spec 1,raises risk
+3713,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+3786,1,Spec 1,raises risk
+3786,2,Spec 6,raises risk
+3786,3,age (time_step),raises risk
+3789,1,Spec 1,raises risk
+3789,2,"counter 666, rate since previous readout",raises risk
+3789,3,Spec 6,raises risk
+3798,1,Spec 1,raises risk
+3798,2,age (time_step),raises risk
+3798,3,Spec 7,lowers risk
+3912,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+3912,2,Spec 6,raises risk
+3912,3,"counter 309, level",lowers risk
+4110,1,age (time_step),lowers risk
+4110,2,"counter 837, level",raises risk
+4110,3,readouts so far,raises risk
+4145,1,age (time_step),lowers risk
+4145,2,Spec 1,raises risk
+4145,3,"counter 837, level",raises risk
+4221,1,age (time_step),raises risk
+4221,2,"histogram 397, mean bin (last 5 readouts)",lowers risk
+4221,3,"counter 100, level",raises risk
+4225,1,age (time_step),lowers risk
+4225,2,Spec 1,raises risk
+4225,3,"histogram 291, total count",raises risk
+4279,1,Spec 1,lowers risk
+4279,2,"histogram 167, mean bin (lifetime)",raises risk
+4279,3,Spec 7,lowers risk
+4299,1,age (time_step),lowers risk
+4299,2,Spec 1,raises risk
+4299,3,"histogram 272, mean bin (lifetime)",lowers risk
+4305,1,age (time_step),lowers risk
+4305,2,Spec 7,lowers risk
+4305,3,Spec 1,raises risk
+4367,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+4367,2,Spec 1,lowers risk
+4367,3,"counter 837, level",lowers risk
+4380,1,age (time_step),lowers risk
+4380,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+4380,3,"counter 666, rate since previous readout",raises risk
+4410,1,age (time_step),raises risk
+4410,2,Spec 1,raises risk
+4410,3,"counter 666, level",raises risk
+4422,1,age (time_step),raises risk
+4422,2,Spec 1,raises risk
+4422,3,Spec 7,lowers risk
+4433,1,age (time_step),raises risk
+4433,2,Spec 1,raises risk
+4433,3,"counter 309, level",lowers risk
+4437,1,age (time_step),lowers risk
+4437,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+4437,3,readouts so far,raises risk
+4448,1,age (time_step),raises risk
+4448,2,Spec 7,lowers risk
+4448,3,"counter 100, level",raises risk
+4507,1,age (time_step),lowers risk
+4507,2,Spec 1,raises risk
+4507,3,Spec 7,lowers risk
+4514,1,Spec 7,lowers risk
+4514,2,Spec 1,raises risk
+4514,3,age (time_step),raises risk
+4551,1,age (time_step),lowers risk
+4551,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+4551,3,Spec 1,lowers risk
+4644,1,age (time_step),lowers risk
+4644,2,"counter 837, level",raises risk
+4644,3,"counter 309, level",raises risk
+4655,1,"counter 837, level",raises risk
+4655,2,Spec 1,lowers risk
+4655,3,age (time_step),lowers risk
+4674,1,Spec 1,raises risk
+4674,2,Spec 7,lowers risk
+4674,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+4766,1,age (time_step),lowers risk
+4766,2,Spec 1,raises risk
+4766,3,"histogram 459, mean bin (lifetime)",raises risk
+4871,1,Spec 7,lowers risk
+4871,2,age (time_step),raises risk
+4871,3,Spec 1,raises risk
+4921,1,"counter 666, level",lowers risk
+4921,2,age (time_step),raises risk
+4921,3,Spec 6,raises risk
+5145,1,age (time_step),raises risk
+5145,2,Spec 7,lowers risk
+5145,3,Spec 1,raises risk
+5154,1,Spec 2,raises risk
+5154,2,"counter 309, level",raises risk
+5154,3,Spec 6,raises risk
+5181,1,age (time_step),lowers risk
+5181,2,"counter 837, level",raises risk
+5181,3,"counter 666, change over last 5 readouts",raises risk
+5248,1,age (time_step),raises risk
+5248,2,Spec 1,raises risk
+5248,3,"histogram 167, mean bin (lifetime)",raises risk
+5306,1,age (time_step),lowers risk
+5306,2,Spec 1,raises risk
+5306,3,Spec 7,lowers risk
+5360,1,age (time_step),lowers risk
+5360,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+5360,3,Spec 7,lowers risk
+5364,1,Spec 1,lowers risk
+5364,2,"histogram 459, total count",lowers risk
+5364,3,Spec 7,lowers risk
+5391,1,Spec 2,raises risk
+5391,2,age (time_step),raises risk
+5391,3,"histogram 291, mean bin (lifetime)",raises risk
+5472,1,Spec 1,raises risk
+5472,2,age (time_step),raises risk
+5472,3,Spec 7,lowers risk
+5511,1,age (time_step),raises risk
+5511,2,Spec 1,raises risk
+5511,3,Spec 7,lowers risk
+5515,1,Spec 1,raises risk
+5515,2,"histogram 167, mean bin (lifetime)",raises risk
+5515,3,Spec 7,lowers risk
+5557,1,age (time_step),lowers risk
+5557,2,Spec 1,raises risk
+5557,3,"histogram 459, mean bin (lifetime)",raises risk
+5591,1,Spec 1,raises risk
+5591,2,Spec 7,lowers risk
+5591,3,age (time_step),lowers risk
+5621,1,Spec 1,raises risk
+5621,2,"counter 100, level",raises risk
+5621,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+5627,1,"histogram 167, mean bin (lifetime)",raises risk
+5627,2,age (time_step),raises risk
+5627,3,Spec 1,raises risk
+5655,1,age (time_step),raises risk
+5655,2,Spec 7,lowers risk
+5655,3,Spec 1,raises risk
+5674,1,age (time_step),lowers risk
+5674,2,Spec 1,raises risk
+5674,3,"histogram 291, total count",raises risk
+5712,1,Spec 2,raises risk
+5712,2,"counter 100, level",raises risk
+5712,3,Spec 1,lowers risk
+5728,1,"counter 666, change over last 5 readouts",raises risk
+5728,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+5728,3,"histogram 459, mean bin (last 5 readouts)",raises risk
+5794,1,age (time_step),lowers risk
+5794,2,readouts so far,raises risk
+5794,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+6038,1,age (time_step),lowers risk
+6038,2,Spec 1,raises risk
+6038,3,readouts so far,raises risk
+6040,1,age (time_step),lowers risk
+6040,2,readouts so far,raises risk
+6040,3,"counter 837, level",raises risk
+6055,1,Spec 1,raises risk
+6055,2,Spec 7,lowers risk
+6055,3,"counter 837, level",raises risk
+6056,1,age (time_step),lowers risk
+6056,2,Spec 2,raises risk
+6056,3,"counter 100, level",raises risk
+6085,1,Spec 2,raises risk
+6085,2,"histogram 272, mean bin (lifetime)",raises risk
+6085,3,"counter 309, level",raises risk
+6117,1,Spec 7,lowers risk
+6117,2,Spec 1,raises risk
+6117,3,"histogram 158, mean bin (last 5 readouts)",raises risk
+6118,1,Spec 7,lowers risk
+6118,2,"counter 666, level",raises risk
+6118,3,"histogram 167, mean bin (lifetime)",raises risk
+6204,1,Spec 7,lowers risk
+6204,2,age (time_step),raises risk
+6204,3,Spec 1,raises risk
+6221,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+6221,2,"counter 309, level",lowers risk
+6221,3,"counter 837, level",lowers risk
+6242,1,"histogram 459, mean bin (last 5 readouts)",lowers risk
+6242,2,Spec 7,lowers risk
+6242,3,span of last 5 readouts,raises risk
+6263,1,"counter 309, level",lowers risk
+6263,2,Spec 7,lowers risk
+6263,3,"histogram 459, mean bin (lifetime)",raises risk
+6267,1,age (time_step),lowers risk
+6267,2,"counter 100, rate over last 5 readouts",raises risk
+6267,3,Spec 7,lowers risk
+6327,1,age (time_step),lowers risk
+6327,2,Spec 1,raises risk
+6327,3,"histogram 291, total count",raises risk
+6352,1,"counter 837, level",raises risk
+6352,2,Spec 1,lowers risk
+6352,3,age (time_step),raises risk
+6449,1,age (time_step),lowers risk
+6449,2,Spec 1,raises risk
+6449,3,"histogram 167, mean bin (lifetime)",raises risk
+6491,1,age (time_step),lowers risk
+6491,2,readouts so far,raises risk
+6491,3,Spec 1,raises risk
+6574,1,Spec 1,lowers risk
+6574,2,"counter 837, level",raises risk
+6574,3,"histogram 459, mean bin (lifetime)",raises risk
+6667,1,age (time_step),lowers risk
+6667,2,Spec 1,raises risk
+6667,3,readouts so far,raises risk
+6710,1,age (time_step),lowers risk
+6710,2,Spec 2,raises risk
+6710,3,Spec 1,lowers risk
+6791,1,age (time_step),raises risk
+6791,2,Spec 1,raises risk
+6791,3,"counter 100, level",raises risk
+6891,1,Spec 1,raises risk
+6891,2,Spec 7,lowers risk
+6891,3,"histogram 167, mean bin (lifetime)",raises risk
+6899,1,Spec 7,lowers risk
+6899,2,Spec 1,raises risk
+6899,3,span of last 5 readouts,raises risk
+6933,1,age (time_step),lowers risk
+6933,2,"counter 309, level",raises risk
+6933,3,Spec 1,raises risk
+6982,1,"histogram 167, mean bin (lifetime)",raises risk
+6982,2,Spec 1,raises risk
+6982,3,age (time_step),raises risk
+7039,1,age (time_step),lowers risk
+7039,2,"histogram 459, mean bin (lifetime)",raises risk
+7039,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+7046,1,Spec 1,raises risk
+7046,2,age (time_step),raises risk
+7046,3,Spec 7,lowers risk
+7074,1,age (time_step),lowers risk
+7074,2,"counter 837, level",raises risk
+7074,3,Spec 1,raises risk
+7099,1,age (time_step),lowers risk
+7099,2,"histogram 291, total count",raises risk
+7099,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+7205,1,age (time_step),raises risk
+7205,2,Spec 1,raises risk
+7205,3,Spec 7,lowers risk
+7250,1,Spec 2,raises risk
+7250,2,age (time_step),raises risk
+7250,3,"counter 837, level",raises risk
+7269,1,Spec 1,raises risk
+7269,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+7269,3,Spec 7,lowers risk
+7339,1,age (time_step),raises risk
+7339,2,"counter 309, level",raises risk
+7339,3,Spec 1,raises risk
+7404,1,Spec 1,raises risk
+7404,2,"histogram 167, mean bin (lifetime)",raises risk
+7404,3,Spec 7,lowers risk
+7406,1,Spec 2,raises risk
+7406,2,age (time_step),raises risk
+7406,3,"counter 100, rate over last 5 readouts",raises risk
+7411,1,age (time_step),lowers risk
+7411,2,Spec 1,raises risk
+7411,3,"histogram 291, total count",raises risk
+7458,1,age (time_step),lowers risk
+7458,2,Spec 1,raises risk
+7458,3,"counter 837, level",raises risk
+7584,1,age (time_step),lowers risk
+7584,2,Spec 2,raises risk
+7584,3,"counter 837, level",raises risk
+7606,1,age (time_step),lowers risk
+7606,2,Spec 1,raises risk
+7606,3,"histogram 291, total count",raises risk
+7610,1,"histogram 272, mean bin (lifetime)",lowers risk
+7610,2,readouts so far,raises risk
+7610,3,"histogram 291, mean bin (lifetime)",lowers risk
+7624,1,age (time_step),raises risk
+7624,2,Spec 7,lowers risk
+7624,3,Spec 1,raises risk
+7658,1,Spec 1,raises risk
+7658,2,age (time_step),lowers risk
+7658,3,"histogram 167, mean bin (lifetime)",raises risk
+7672,1,age (time_step),lowers risk
+7672,2,Spec 6,raises risk
+7672,3,"histogram 167, mean bin (lifetime)",lowers risk
+7749,1,age (time_step),lowers risk
+7749,2,Spec 1,raises risk
+7749,3,"histogram 291, total count",raises risk
+7807,1,age (time_step),lowers risk
+7807,2,Spec 1,raises risk
+7807,3,"histogram 291, total count",raises risk
+7846,1,Spec 1,raises risk
+7846,2,"histogram 167, mean bin (lifetime)",raises risk
+7846,3,"counter 100, level",lowers risk
+7875,1,age (time_step),raises risk
+7875,2,Spec 1,raises risk
+7875,3,Spec 7,lowers risk
+7903,1,Spec 1,raises risk
+7903,2,Spec 7,lowers risk
+7903,3,"counter 666, level",raises risk
+7970,1,"counter 309, level",lowers risk
+7970,2,Spec 2,raises risk
+7970,3,age (time_step),raises risk
+7993,1,Spec 2,raises risk
+7993,2,Spec 1,raises risk
+7993,3,"histogram 291, total count",raises risk
+8009,1,Spec 1,raises risk
+8009,2,age (time_step),raises risk
+8009,3,"histogram 167, mean bin (lifetime)",raises risk
+8010,1,age (time_step),lowers risk
+8010,2,Spec 1,raises risk
+8010,3,Spec 7,lowers risk
+8037,1,Spec 1,raises risk
+8037,2,Spec 7,lowers risk
+8037,3,"histogram 167, mean bin (lifetime)",raises risk
+8062,1,"counter 837, level",raises risk
+8062,2,Spec 1,raises risk
+8062,3,"counter 837, rate since previous readout",raises risk
+8082,1,Spec 2,raises risk
+8082,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+8082,3,"histogram 459, mean bin (lifetime)",raises risk
+8116,1,Spec 1,raises risk
+8116,2,age (time_step),raises risk
+8116,3,"histogram 167, mean bin (lifetime)",raises risk
+8135,1,Spec 2,raises risk
+8135,2,"histogram 459, mean bin (lifetime)",raises risk
+8135,3,"counter 309, level",raises risk
+8141,1,Spec 6,raises risk
+8141,2,Spec 1,raises risk
+8141,3,"counter 837, level",lowers risk
+8201,1,Spec 2,raises risk
+8201,2,age (time_step),raises risk
+8201,3,"counter 100, change since previous readout",raises risk
+8238,1,age (time_step),lowers risk
+8238,2,readouts so far,raises risk
+8238,3,"counter 837, level",raises risk
+8279,1,Spec 2,raises risk
+8279,2,age (time_step),lowers risk
+8279,3,"counter 837, level",raises risk
+8291,1,age (time_step),lowers risk
+8291,2,"counter 666, rate since previous readout",raises risk
+8291,3,"counter 309, level",raises risk
+8326,1,age (time_step),raises risk
+8326,2,"histogram 167, mean bin (lifetime)",raises risk
+8326,3,Spec 7,lowers risk
+8336,1,age (time_step),lowers risk
+8336,2,Spec 7,lowers risk
+8336,3,span of last 5 readouts,raises risk
+8387,1,"counter 309, level",raises risk
+8387,2,Spec 1,raises risk
+8387,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+8401,1,Spec 1,raises risk
+8401,2,age (time_step),raises risk
+8401,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+8413,1,age (time_step),lowers risk
+8413,2,"counter 100, rate over last 5 readouts",raises risk
+8413,3,"counter 837, level",raises risk
+8417,1,"histogram 459, mean bin (lifetime)",raises risk
+8417,2,age (time_step),raises risk
+8417,3,Spec 2,raises risk
+8470,1,age (time_step),lowers risk
+8470,2,Spec 7,lowers risk
+8470,3,Spec 6,raises risk
+8501,1,Spec 1,raises risk
+8501,2,Spec 7,lowers risk
+8501,3,"histogram 158, share in top 2 bins (last 5 readouts)",lowers risk
+8553,1,Spec 7,lowers risk
+8553,2,"counter 309, level",raises risk
+8553,3,"counter 837, rate since previous readout",raises risk
+8591,1,Spec 1,raises risk
+8591,2,"counter 309, level",lowers risk
+8591,3,age (time_step),lowers risk
+8624,1,age (time_step),lowers risk
+8624,2,Spec 7,lowers risk
+8624,3,readouts so far,raises risk
+8658,1,Spec 1,lowers risk
+8658,2,Spec 7,lowers risk
+8658,3,age (time_step),raises risk
+8681,1,Spec 2,raises risk
+8681,2,"counter 837, level",raises risk
+8681,3,age (time_step),lowers risk
+8705,1,Spec 2,raises risk
+8705,2,age (time_step),lowers risk
+8705,3,"counter 837, level",raises risk
+8724,1,Spec 7,lowers risk
+8724,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+8724,3,Spec 1,lowers risk
+8753,1,age (time_step),lowers risk
+8753,2,Spec 7,lowers risk
+8753,3,"histogram 291, total count",raises risk
+8754,1,Spec 1,raises risk
+8754,2,"counter 837, level",raises risk
+8754,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+8756,1,Spec 2,raises risk
+8756,2,"counter 309, level",raises risk
+8756,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+8763,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+8763,2,"counter 309, level",raises risk
+8763,3,Spec 7,lowers risk
+8787,1,"counter 309, level",raises risk
+8787,2,"histogram 459, mean bin (lifetime)",raises risk
+8787,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+8835,1,age (time_step),lowers risk
+8835,2,"histogram 459, mean bin (lifetime)",raises risk
+8835,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+8840,1,age (time_step),raises risk
+8840,2,Spec 1,raises risk
+8840,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+8922,1,"counter 837, level",raises risk
+8922,2,Spec 2,lowers risk
+8922,3,"histogram 459, mean bin (lifetime)",raises risk
+9036,1,age (time_step),lowers risk
+9036,2,Spec 1,raises risk
+9036,3,"counter 666, level",raises risk
+9075,1,"counter 666, rate since previous readout",raises risk
+9075,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+9075,3,"counter 666, change over last 5 readouts",raises risk
+9089,1,"histogram 167, mean bin (lifetime)",lowers risk
+9089,2,Spec 2,lowers risk
+9089,3,"histogram 291, total count",raises risk
+9107,1,Spec 1,raises risk
+9107,2,age (time_step),raises risk
+9107,3,"histogram 167, mean bin (lifetime)",lowers risk
+9127,1,"counter 666, rate since previous readout",raises risk
+9127,2,Spec 6,raises risk
+9127,3,"histogram 291, total count",raises risk
+9149,1,"counter 100, level",raises risk
+9149,2,readouts so far,raises risk
+9149,3,"counter 427, level",raises risk
+9162,1,"counter 100, level",lowers risk
+9162,2,Spec 2,raises risk
+9162,3,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+9168,1,Spec 1,raises risk
+9168,2,age (time_step),lowers risk
+9168,3,Spec 7,lowers risk
+9182,1,Spec 1,raises risk
+9182,2,"histogram 459, mean bin (last 5 readouts)",raises risk
+9182,3,"histogram 167, mean bin (lifetime)",raises risk
+9185,1,Spec 7,lowers risk
+9185,2,age (time_step),raises risk
+9185,3,Spec 1,raises risk
+9207,1,age (time_step),raises risk
+9207,2,"counter 309, level",lowers risk
+9207,3,Spec 1,raises risk
+9235,1,"counter 309, level",lowers risk
+9235,2,Spec 1,raises risk
+9235,3,Spec 6,raises risk
+9351,1,age (time_step),raises risk
+9351,2,Spec 1,raises risk
+9351,3,Spec 7,lowers risk
+9364,1,Spec 1,raises risk
+9364,2,"histogram 167, mean bin (lifetime)",raises risk
+9364,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+9408,1,age (time_step),raises risk
+9408,2,Spec 7,lowers risk
+9408,3,Spec 1,raises risk
+9450,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+9450,2,Spec 1,raises risk
+9450,3,"counter 666, rate since previous readout",raises risk
+9464,1,Spec 1,raises risk
+9464,2,"counter 427, change since previous readout",raises risk
+9464,3,Spec 7,lowers risk
+9516,1,Spec 1,raises risk
+9516,2,span of last 5 readouts,raises risk
+9516,3,"histogram 167, mean bin (lifetime)",raises risk
+9517,1,Spec 7,raises risk
+9517,2,Spec 1,raises risk
+9517,3,"histogram 167, mean bin (lifetime)",raises risk
+9554,1,Spec 7,raises risk
+9554,2,age (time_step),raises risk
+9554,3,Spec 1,lowers risk
+9584,1,"counter 837, level",raises risk
+9584,2,Spec 2,raises risk
+9584,3,"histogram 167, mean bin (lifetime)",lowers risk
+9599,1,Spec 7,raises risk
+9599,2,age (time_step),raises risk
+9599,3,Spec 1,raises risk
+9616,1,"histogram 459, total count",lowers risk
+9616,2,age (time_step),lowers risk
+9616,3,Spec 1,lowers risk
+9668,1,Spec 1,lowers risk
+9668,2,"counter 837, level",raises risk
+9668,3,"histogram 167, mean bin (last 5 readouts)",lowers risk
+9673,1,Spec 7,raises risk
+9673,2,Spec 1,lowers risk
+9673,3,"histogram 459, mean bin (lifetime)",lowers risk
+9678,1,Spec 7,raises risk
+9678,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+9678,3,Spec 6,raises risk
+9692,1,Spec 7,raises risk
+9692,2,Spec 6,raises risk
+9692,3,"histogram 291, total count",raises risk
+9701,1,Spec 1,lowers risk
+9701,2,Spec 7,raises risk
+9701,3,age (time_step),raises risk
+9775,1,Spec 7,raises risk
+9775,2,"counter 309, level",raises risk
+9775,3,"histogram 291, change in mean bin over last 5 readouts",raises risk
+9796,1,Spec 7,raises risk
+9796,2,Spec 1,raises risk
+9796,3,"counter 837, level",raises risk
+9823,1,Spec 1,raises risk
+9823,2,age (time_step),raises risk
+9823,3,"counter 309, level",raises risk
+9850,1,Spec 1,lowers risk
+9850,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+9850,3,"histogram 397, share in top 2 bins (lifetime)",lowers risk
+9851,1,Spec 7,raises risk
+9851,2,"histogram 167, share in top 2 bins (lifetime)",lowers risk
+9851,3,Spec 1,raises risk
+9860,1,"counter 837, level",raises risk
+9860,2,"counter 100, rate over last 5 readouts",raises risk
+9860,3,Spec 7,raises risk
+9862,1,"counter 309, level",raises risk
+9862,2,Spec 2,raises risk
+9862,3,Spec 7,raises risk
+9874,1,Spec 7,raises risk
+9874,2,"counter 100, rate over last 5 readouts",lowers risk
+9874,3,Spec 1,raises risk
+9879,1,Spec 1,raises risk
+9879,2,"histogram 167, mean bin (lifetime)",raises risk
+9879,3,age (time_step),raises risk
+9908,1,Spec 7,raises risk
+9908,2,Spec 1,raises risk
+9908,3,"counter 666, level",raises risk
+9912,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+9912,2,Spec 7,raises risk
+9912,3,age (time_step),raises risk
+9920,1,"histogram 291, share in top 2 bins (lifetime)",raises risk
+9920,2,"counter 100, level",lowers risk
+9920,3,Spec 6,raises risk
+9925,1,age (time_step),raises risk
+9925,2,Spec 7,raises risk
+9925,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+9926,1,"counter 309, level",lowers risk
+9926,2,"counter 837, level",lowers risk
+9926,3,Spec 1,raises risk
+9963,1,Spec 1,raises risk
+9963,2,age (time_step),raises risk
+9963,3,"histogram 397, mean bin (last 5 readouts)",lowers risk
+9967,1,Spec 1,raises risk
+9967,2,"counter 309, level",lowers risk
+9967,3,"histogram 167, mean bin (lifetime)",raises risk
+10001,1,Spec 1,lowers risk
+10001,2,Spec 2,raises risk
+10001,3,age (time_step),raises risk
+10018,1,Spec 7,raises risk
+10018,2,"counter 837, level",raises risk
+10018,3,"counter 100, rate over last 5 readouts",raises risk
+10141,1,"counter 100, level",lowers risk
+10141,2,Spec 1,raises risk
+10141,3,age (time_step),raises risk
+10143,1,Spec 1,lowers risk
+10143,2,Spec 7,raises risk
+10143,3,age (time_step),raises risk
+10167,1,Spec 1,raises risk
+10167,2,age (time_step),raises risk
+10167,3,Spec 7,raises risk
+10184,1,"histogram 167, mean bin (lifetime)",raises risk
+10184,2,Spec 1,raises risk
+10184,3,"counter 666, level",raises risk
+10196,1,Spec 7,raises risk
+10196,2,Spec 1,lowers risk
+10196,3,"histogram 167, mean bin (lifetime)",raises risk
+10214,1,"histogram 459, total count",lowers risk
+10214,2,Spec 7,raises risk
+10214,3,"counter 100, change over last 5 readouts",lowers risk
+10221,1,age (time_step),raises risk
+10221,2,Spec 2,raises risk
+10221,3,Spec 7,raises risk
+10223,1,Spec 7,raises risk
+10223,2,span of last 5 readouts,raises risk
+10223,3,"counter 309, level",raises risk
+10271,1,Spec 1,raises risk
+10271,2,age (time_step),raises risk
+10271,3,"histogram 397, mean bin (last 5 readouts)",lowers risk
+10274,1,"histogram 459, mean bin (lifetime)",raises risk
+10274,2,"counter 837, level",raises risk
+10274,3,Spec 7,raises risk
+10284,1,Spec 7,raises risk
+10284,2,"counter 837, level",raises risk
+10284,3,Spec 1,raises risk
+10322,1,age (time_step),raises risk
+10322,2,Spec 7,raises risk
+10322,3,"counter 666, level",raises risk
+10326,1,age (time_step),raises risk
+10326,2,Spec 7,raises risk
+10326,3,Spec 1,lowers risk
+10333,1,age (time_step),raises risk
+10333,2,Spec 1,raises risk
+10333,3,"histogram 167, mean bin (lifetime)",lowers risk
+10345,1,age (time_step),raises risk
+10345,2,"histogram 272, mean bin (lifetime)",lowers risk
+10345,3,Spec 7,raises risk
+10352,1,"counter 837, level",raises risk
+10352,2,Spec 7,raises risk
+10352,3,"histogram 291, total count",raises risk
+10366,1,Spec 7,raises risk
+10366,2,Spec 1,lowers risk
+10366,3,age (time_step),raises risk
+10384,1,"counter 666, rate since previous readout",raises risk
+10384,2,Spec 7,raises risk
+10384,3,age (time_step),raises risk
+10462,1,Spec 1,lowers risk
+10462,2,"counter 837, level",raises risk
+10462,3,age (time_step),raises risk
+10470,1,"histogram 167, mean bin (lifetime)",lowers risk
+10470,2,Spec 1,lowers risk
+10470,3,age (time_step),raises risk
+10471,1,age (time_step),raises risk
+10471,2,"counter 837, level",raises risk
+10471,3,"counter 309, level",raises risk
+10478,1,Spec 7,raises risk
+10478,2,age (time_step),raises risk
+10478,3,"counter 666, level",raises risk
+10479,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+10479,2,Spec 7,raises risk
+10479,3,Spec 1,lowers risk
+10484,1,Spec 7,raises risk
+10484,2,age (time_step),raises risk
+10484,3,"counter 309, level",raises risk
+10521,1,Spec 7,raises risk
+10521,2,age (time_step),raises risk
+10521,3,"counter 309, level",raises risk
+10528,1,age (time_step),raises risk
+10528,2,"counter 666, level",raises risk
+10528,3,"histogram 291, total count",raises risk
+10547,1,Spec 1,lowers risk
+10547,2,age (time_step),raises risk
+10547,3,"histogram 459, mean bin (lifetime)",raises risk
+10590,1,Spec 1,lowers risk
+10590,2,"counter 837, level",raises risk
+10590,3,age (time_step),raises risk
+10600,1,age (time_step),raises risk
+10600,2,Spec 7,raises risk
+10600,3,"counter 100, level",raises risk
+10606,1,readouts so far,raises risk
+10606,2,span of last 5 readouts,raises risk
+10606,3,age (time_step),raises risk
+10608,1,age (time_step),raises risk
+10608,2,Spec 7,raises risk
+10608,3,"counter 100, level",raises risk
+10609,1,Spec 7,raises risk
+10609,2,"counter 309, level",raises risk
+10609,3,"counter 100, change over last 5 readouts",lowers risk
+10640,1,age (time_step),raises risk
+10640,2,Spec 7,raises risk
+10640,3,"counter 100, level",raises risk
+10642,1,"histogram 291, mean bin (last 5 readouts)",lowers risk
+10642,2,age (time_step),raises risk
+10642,3,Spec 7,raises risk
+10651,1,"histogram 167, mean bin (lifetime)",lowers risk
+10651,2,"counter 309, level",raises risk
+10651,3,"histogram 459, mean bin (lifetime)",raises risk
+10653,1,Spec 1,lowers risk
+10653,2,age (time_step),raises risk
+10653,3,Spec 7,raises risk
+10656,1,Spec 7,raises risk
+10656,2,age (time_step),raises risk
+10656,3,"histogram 291, total count",raises risk
+10682,1,age (time_step),raises risk
+10682,2,Spec 1,raises risk
+10682,3,Spec 7,raises risk
+10687,1,Spec 7,raises risk
+10687,2,age (time_step),raises risk
+10687,3,"counter 309, level",lowers risk
+10694,1,Spec 1,lowers risk
+10694,2,age (time_step),raises risk
+10694,3,"histogram 291, total count",raises risk
+10696,1,Spec 7,raises risk
+10696,2,age (time_step),raises risk
+10696,3,Spec 1,raises risk
+10710,1,age (time_step),raises risk
+10710,2,"counter 837, level",raises risk
+10710,3,"counter 100, level",lowers risk
+10711,1,age (time_step),raises risk
+10711,2,Spec 1,raises risk
+10711,3,Spec 6,raises risk
+10726,1,Spec 7,raises risk
+10726,2,Spec 1,lowers risk
+10726,3,"counter 837, level",raises risk
+10741,1,age (time_step),raises risk
+10741,2,Spec 7,raises risk
+10741,3,Spec 2,raises risk
+10755,1,Spec 7,raises risk
+10755,2,age (time_step),raises risk
+10755,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+10756,1,Spec 1,lowers risk
+10756,2,Spec 7,raises risk
+10756,3,"counter 100, rate over last 5 readouts",raises risk
+10760,1,age (time_step),raises risk
+10760,2,Spec 7,raises risk
+10760,3,Spec 1,lowers risk
+10762,1,Spec 7,raises risk
+10762,2,Spec 1,raises risk
+10762,3,age (time_step),raises risk
+10763,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+10763,2,age (time_step),raises risk
+10763,3,Spec 7,raises risk
+10775,1,"counter 837, level",raises risk
+10775,2,Spec 1,lowers risk
+10775,3,age (time_step),raises risk
+10792,1,Spec 1,raises risk
+10792,2,Spec 7,raises risk
+10792,3,span of last 5 readouts,raises risk
+10808,1,"counter 666, level",lowers risk
+10808,2,"counter 309, level",lowers risk
+10808,3,Spec 7,lowers risk
+10841,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+10841,2,"counter 666, change over last 5 readouts",raises risk
+10841,3,Spec 1,raises risk
+10843,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+10843,2,age (time_step),raises risk
+10843,3,Spec 7,raises risk
+10885,1,age (time_step),raises risk
+10885,2,Spec 7,raises risk
+10885,3,"histogram 291, mean bin (lifetime)",lowers risk
+10887,1,Spec 1,raises risk
+10887,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+10887,3,age (time_step),raises risk
+10895,1,"histogram 167, mean bin (lifetime)",lowers risk
+10895,2,age (time_step),raises risk
+10895,3,"histogram 167, mean bin (last 5 readouts)",lowers risk
+10902,1,age (time_step),raises risk
+10902,2,Spec 7,raises risk
+10902,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+10910,1,age (time_step),raises risk
+10910,2,"counter 837, level",raises risk
+10910,3,"counter 309, level",raises risk
+10914,1,Spec 1,lowers risk
+10914,2,"histogram 167, change in mean bin over last 5 readouts",raises risk
+10914,3,Spec 7,raises risk
+10932,1,"histogram 167, mean bin (lifetime)",lowers risk
+10932,2,age (time_step),raises risk
+10932,3,Spec 7,raises risk
+10951,1,age (time_step),raises risk
+10951,2,Spec 7,raises risk
+10951,3,Spec 1,lowers risk
+10956,1,age (time_step),raises risk
+10956,2,"counter 837, level",raises risk
+10956,3,Spec 2,raises risk
+10970,1,Spec 7,raises risk
+10970,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+10970,3,age (time_step),raises risk
+10992,1,age (time_step),raises risk
+10992,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+10992,3,"histogram 459, mean bin (lifetime)",raises risk
+11005,1,age (time_step),raises risk
+11005,2,Spec 7,raises risk
+11005,3,span of last 5 readouts,raises risk
+11015,1,Spec 1,lowers risk
+11015,2,Spec 7,raises risk
+11015,3,age (time_step),raises risk
+11023,1,age (time_step),raises risk
+11023,2,Spec 7,raises risk
+11023,3,Spec 1,raises risk
+11032,1,Spec 7,raises risk
+11032,2,age (time_step),raises risk
+11032,3,"counter 666, level",raises risk
+11034,1,age (time_step),raises risk
+11034,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+11034,3,"counter 837, level",raises risk
+11037,1,"histogram 167, mean bin (lifetime)",lowers risk
+11037,2,Spec 1,raises risk
+11037,3,age (time_step),raises risk
+11040,1,Spec 1,lowers risk
+11040,2,age (time_step),raises risk
+11040,3,Spec 7,raises risk
+11079,1,"histogram 167, mean bin (lifetime)",lowers risk
+11079,2,"counter 837, level",raises risk
+11079,3,"histogram 272, mean bin (last 5 readouts)",lowers risk
+11101,1,Spec 7,raises risk
+11101,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+11101,3,"counter 666, rate since previous readout",raises risk
+11103,1,age (time_step),raises risk
+11103,2,"histogram 459, share in top 2 bins (lifetime)",raises risk
+11103,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+11133,1,Spec 1,lowers risk
+11133,2,age (time_step),raises risk
+11133,3,"counter 100, rate over last 5 readouts",raises risk
+11142,1,Spec 7,raises risk
+11142,2,age (time_step),raises risk
+11142,3,Spec 1,raises risk
+11149,1,Spec 7,raises risk
+11149,2,age (time_step),raises risk
+11149,3,Spec 1,raises risk
+11155,1,age (time_step),raises risk
+11155,2,Spec 7,raises risk
+11155,3,"counter 100, change over last 5 readouts",lowers risk
+11156,1,Spec 7,raises risk
+11156,2,age (time_step),raises risk
+11156,3,"histogram 167, mean bin (lifetime)",lowers risk
+11159,1,age (time_step),raises risk
+11159,2,"counter 309, level",lowers risk
+11159,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+11168,1,Spec 1,lowers risk
+11168,2,Spec 7,raises risk
+11168,3,age (time_step),raises risk
+11172,1,Spec 1,raises risk
+11172,2,Spec 7,raises risk
+11172,3,"histogram 167, mean bin (lifetime)",raises risk
+11192,1,age (time_step),raises risk
+11192,2,"counter 100, level",raises risk
+11192,3,span of last 5 readouts,raises risk
+11229,1,Spec 7,raises risk
+11229,2,age (time_step),raises risk
+11229,3,"counter 837, level",raises risk
+11250,1,"histogram 167, mean bin (lifetime)",lowers risk
+11250,2,"histogram 459, total count",lowers risk
+11250,3,age (time_step),raises risk
+11256,1,Spec 1,raises risk
+11256,2,age (time_step),raises risk
+11256,3,Spec 6,raises risk
+11286,1,age (time_step),raises risk
+11286,2,Spec 7,raises risk
+11286,3,"counter 309, level",raises risk
+11291,1,age (time_step),raises risk
+11291,2,Spec 1,raises risk
+11291,3,Spec 7,raises risk
+11297,1,Spec 1,lowers risk
+11297,2,Spec 7,raises risk
+11297,3,age (time_step),raises risk
+11308,1,Spec 7,raises risk
+11308,2,age (time_step),raises risk
+11308,3,"counter 837, level",raises risk
+11322,1,Spec 7,raises risk
+11322,2,age (time_step),raises risk
+11322,3,Spec 1,lowers risk
+11374,1,Spec 7,raises risk
+11374,2,"counter 666, rate since previous readout",raises risk
+11374,3,Spec 1,lowers risk
+11375,1,Spec 7,raises risk
+11375,2,age (time_step),raises risk
+11375,3,"counter 100, level",raises risk
+11381,1,Spec 7,raises risk
+11381,2,age (time_step),raises risk
+11381,3,Spec 1,lowers risk
+11411,1,Spec 7,raises risk
+11411,2,Spec 6,raises risk
+11411,3,age (time_step),raises risk
+11413,1,"counter 666, change over last 5 readouts",raises risk
+11413,2,Spec 7,raises risk
+11413,3,"counter 837, level",raises risk
+11417,1,Spec 7,raises risk
+11417,2,age (time_step),raises risk
+11417,3,Spec 1,raises risk
+11425,1,Spec 7,raises risk
+11425,2,Spec 1,lowers risk
+11425,3,"counter 100, level",lowers risk
+11426,1,age (time_step),raises risk
+11426,2,Spec 7,raises risk
+11426,3,Spec 6,raises risk
+11444,1,Spec 7,raises risk
+11444,2,Spec 1,lowers risk
+11444,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+11475,1,Spec 7,raises risk
+11475,2,Spec 1,lowers risk
+11475,3,age (time_step),raises risk
+11478,1,"counter 666, level",raises risk
+11478,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+11478,3,Spec 1,raises risk
+11484,1,Spec 7,raises risk
+11484,2,Spec 1,lowers risk
+11484,3,"counter 100, level",lowers risk
+11489,1,age (time_step),raises risk
+11489,2,"counter 100, level",raises risk
+11489,3,Spec 2,raises risk
+11498,1,age (time_step),raises risk
+11498,2,Spec 2,raises risk
+11498,3,"counter 100, level",lowers risk
+11502,1,age (time_step),raises risk
+11502,2,Spec 7,raises risk
+11502,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+11537,1,"histogram 167, mean bin (lifetime)",lowers risk
+11537,2,age (time_step),raises risk
+11537,3,Spec 7,raises risk
+11553,1,age (time_step),raises risk
+11553,2,span of last 5 readouts,raises risk
+11553,3,Spec 6,raises risk
+11556,1,age (time_step),raises risk
+11556,2,Spec 7,raises risk
+11556,3,Spec 1,lowers risk
+11557,1,age (time_step),raises risk
+11557,2,Spec 1,lowers risk
+11557,3,Spec 7,raises risk
+11580,1,Spec 7,raises risk
+11580,2,age (time_step),raises risk
+11580,3,"counter 837, level",raises risk
+11584,1,Spec 7,raises risk
+11584,2,age (time_step),raises risk
+11584,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+11594,1,Spec 7,raises risk
+11594,2,"histogram 397, share in top 2 bins (last 5 readouts)",lowers risk
+11594,3,Spec 1,raises risk
+11599,1,age (time_step),raises risk
+11599,2,Spec 7,raises risk
+11599,3,Spec 1,raises risk
+11607,1,Spec 7,raises risk
+11607,2,age (time_step),raises risk
+11607,3,Spec 1,lowers risk
+11613,1,Spec 1,lowers risk
+11613,2,age (time_step),raises risk
+11613,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+11620,1,Spec 7,raises risk
+11620,2,age (time_step),raises risk
+11620,3,Spec 1,raises risk
+11621,1,Spec 1,raises risk
+11621,2,Spec 7,raises risk
+11621,3,"counter 309, level",raises risk
+11664,1,age (time_step),raises risk
+11664,2,Spec 7,raises risk
+11664,3,Spec 6,raises risk
+11687,1,age (time_step),raises risk
+11687,2,Spec 7,raises risk
+11687,3,"counter 837, level",raises risk
+11691,1,age (time_step),raises risk
+11691,2,Spec 1,raises risk
+11691,3,Spec 7,raises risk
+11709,1,Spec 1,lowers risk
+11709,2,age (time_step),raises risk
+11709,3,"counter 309, level",raises risk
+11713,1,age (time_step),raises risk
+11713,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+11713,3,Spec 7,raises risk
+11717,1,Spec 7,raises risk
+11717,2,age (time_step),raises risk
+11717,3,span of last 5 readouts,raises risk
+11745,1,"histogram 167, mean bin (lifetime)",lowers risk
+11745,2,age (time_step),raises risk
+11745,3,Spec 6,raises risk
+11754,1,"histogram 167, mean bin (lifetime)",lowers risk
+11754,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+11754,3,"histogram 167, mean bin (last 5 readouts)",lowers risk
+11764,1,Spec 7,raises risk
+11764,2,age (time_step),raises risk
+11764,3,Spec 1,lowers risk
+11771,1,age (time_step),raises risk
+11771,2,Spec 1,raises risk
+11771,3,Spec 7,raises risk
+11776,1,Spec 7,raises risk
+11776,2,"counter 666, level",raises risk
+11776,3,"histogram 167, mean bin (lifetime)",raises risk
+11805,1,Spec 1,raises risk
+11805,2,"counter 837, level",raises risk
+11805,3,"histogram 459, mean bin (lifetime)",raises risk
+11818,1,"counter 837, level",raises risk
+11818,2,age (time_step),raises risk
+11818,3,"counter 309, level",raises risk
+11827,1,Spec 1,raises risk
+11827,2,Spec 7,raises risk
+11827,3,age (time_step),raises risk
+11853,1,age (time_step),raises risk
+11853,2,Spec 7,raises risk
+11853,3,"counter 666, level",raises risk
+11883,1,age (time_step),raises risk
+11883,2,"histogram 459, mean bin (lifetime)",raises risk
+11883,3,"counter 666, level",raises risk
+11905,1,age (time_step),raises risk
+11905,2,Spec 1,lowers risk
+11905,3,Spec 7,raises risk
+11907,1,Spec 7,raises risk
+11907,2,age (time_step),raises risk
+11907,3,Spec 1,raises risk
+11922,1,"counter 666, level",raises risk
+11922,2,"counter 100, rate over last 5 readouts",raises risk
+11922,3,"counter 100, level",raises risk
+11932,1,Spec 7,raises risk
+11932,2,Spec 1,lowers risk
+11932,3,age (time_step),raises risk
+11933,1,age (time_step),raises risk
+11933,2,Spec 7,raises risk
+11933,3,"histogram 459, change in mean bin over last 5 readouts",raises risk
+11953,1,Spec 1,lowers risk
+11953,2,Spec 7,raises risk
+11953,3,age (time_step),raises risk
+11968,1,Spec 7,raises risk
+11968,2,Spec 1,raises risk
+11968,3,age (time_step),raises risk
+11969,1,"counter 837, level",lowers risk
+11969,2,Spec 7,raises risk
+11969,3,"counter 309, level",lowers risk
+11993,1,age (time_step),raises risk
+11993,2,"counter 309, level",raises risk
+11993,3,Spec 7,raises risk
+12001,1,age (time_step),raises risk
+12001,2,"histogram 291, total count",raises risk
+12001,3,"counter 100, level",raises risk
+12010,1,age (time_step),raises risk
+12010,2,Spec 7,raises risk
+12010,3,"histogram 291, total count",raises risk
+12012,1,Spec 7,raises risk
+12012,2,age (time_step),raises risk
+12012,3,Spec 1,lowers risk
+12016,1,Spec 1,raises risk
+12016,2,age (time_step),raises risk
+12016,3,Spec 7,raises risk
+12030,1,age (time_step),raises risk
+12030,2,Spec 7,raises risk
+12030,3,Spec 1,raises risk
+12045,1,Spec 7,raises risk
+12045,2,"histogram 167, mean bin (lifetime)",raises risk
+12045,3,age (time_step),raises risk
+12053,1,age (time_step),raises risk
+12053,2,"counter 837, level",raises risk
+12053,3,"counter 100, level",raises risk
+12059,1,age (time_step),raises risk
+12059,2,span of last 5 readouts,raises risk
+12059,3,"counter 837, level",raises risk
+12073,1,Spec 7,raises risk
+12073,2,age (time_step),raises risk
+12073,3,Spec 1,raises risk
+12079,1,age (time_step),raises risk
+12079,2,Spec 7,raises risk
+12079,3,Spec 1,lowers risk
+12086,1,"counter 666, level",lowers risk
+12086,2,Spec 1,raises risk
+12086,3,Spec 6,raises risk
+12130,1,Spec 7,raises risk
+12130,2,Spec 1,lowers risk
+12130,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+12144,1,age (time_step),raises risk
+12144,2,"histogram 158, share in top 2 bins (last 5 readouts)",lowers risk
+12144,3,Spec 7,raises risk
+12155,1,age (time_step),raises risk
+12155,2,"histogram 167, mean bin (lifetime)",lowers risk
+12155,3,"counter 309, level",raises risk
+12156,1,age (time_step),raises risk
+12156,2,"histogram 459, mean bin (lifetime)",raises risk
+12156,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+12167,1,age (time_step),raises risk
+12167,2,Spec 7,raises risk
+12167,3,"counter 309, level",raises risk
+12198,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+12198,2,Spec 7,raises risk
+12198,3,"counter 837, level",raises risk
+12213,1,Spec 1,lowers risk
+12213,2,Spec 7,raises risk
+12213,3,age (time_step),raises risk
+12226,1,Spec 7,raises risk
+12226,2,Spec 1,lowers risk
+12226,3,age (time_step),raises risk
+12238,1,age (time_step),raises risk
+12238,2,Spec 7,raises risk
+12238,3,"counter 837, level",raises risk
+12247,1,Spec 1,raises risk
+12247,2,Spec 7,raises risk
+12247,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+12249,1,Spec 7,raises risk
+12249,2,Spec 1,raises risk
+12249,3,age (time_step),raises risk
+12281,1,Spec 7,raises risk
+12281,2,Spec 1,lowers risk
+12281,3,age (time_step),raises risk
+12287,1,Spec 7,raises risk
+12287,2,"counter 100, level",lowers risk
+12287,3,"counter 837, level",raises risk
+12293,1,age (time_step),raises risk
+12293,2,"counter 309, level",raises risk
+12293,3,"counter 666, level",raises risk
+12298,1,Spec 1,raises risk
+12298,2,age (time_step),raises risk
+12298,3,span of last 5 readouts,raises risk
+12316,1,"histogram 167, mean bin (lifetime)",lowers risk
+12316,2,Spec 1,raises risk
+12316,3,"histogram 459, mean bin (lifetime)",raises risk
+12335,1,Spec 1,lowers risk
+12335,2,age (time_step),raises risk
+12335,3,"histogram 459, mean bin (lifetime)",raises risk
+12340,1,"histogram 291, change in mean bin over last 5 readouts",raises risk
+12340,2,Spec 7,raises risk
+12340,3,age (time_step),raises risk
+12342,1,Spec 1,raises risk
+12342,2,age (time_step),raises risk
+12342,3,"histogram 167, mean bin (lifetime)",raises risk
+12365,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+12365,2,age (time_step),raises risk
+12365,3,Spec 7,raises risk
+12392,1,Spec 7,raises risk
+12392,2,age (time_step),raises risk
+12392,3,Spec 1,lowers risk
+12398,1,Spec 1,lowers risk
+12398,2,"counter 309, level",raises risk
+12398,3,"counter 100, level",raises risk
+12403,1,age (time_step),raises risk
+12403,2,Spec 7,raises risk
+12403,3,"counter 100, level",lowers risk
+12404,1,Spec 7,raises risk
+12404,2,Spec 1,raises risk
+12404,3,age (time_step),raises risk
+12417,1,"histogram 459, total count",lowers risk
+12417,2,age (time_step),raises risk
+12417,3,span of last 5 readouts,raises risk
+12432,1,"counter 837, level",raises risk
+12432,2,Spec 7,raises risk
+12432,3,age (time_step),raises risk
+12438,1,Spec 7,raises risk
+12438,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+12438,3,"histogram 167, mean bin (lifetime)",raises risk
+12439,1,Spec 1,raises risk
+12439,2,Spec 7,raises risk
+12439,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+12486,1,Spec 1,lowers risk
+12486,2,"counter 309, level",raises risk
+12486,3,Spec 7,raises risk
+12491,1,age (time_step),raises risk
+12491,2,Spec 2,raises risk
+12491,3,Spec 7,raises risk
+12514,1,Spec 7,raises risk
+12514,2,age (time_step),raises risk
+12514,3,"counter 837, level",raises risk
+12521,1,Spec 7,raises risk
+12521,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+12521,3,age (time_step),raises risk
+12532,1,Spec 7,raises risk
+12532,2,age (time_step),raises risk
+12532,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+12534,1,Spec 1,raises risk
+12534,2,age (time_step),raises risk
+12534,3,"histogram 272, mean bin (lifetime)",lowers risk
+12540,1,age (time_step),raises risk
+12540,2,Spec 7,raises risk
+12540,3,"counter 666, level",raises risk
+12546,1,Spec 1,raises risk
+12546,2,Spec 7,raises risk
+12546,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+12560,1,Spec 7,raises risk
+12560,2,age (time_step),raises risk
+12560,3,"counter 309, level",lowers risk
+12574,1,Spec 1,raises risk
+12574,2,Spec 7,raises risk
+12574,3,age (time_step),raises risk
+12586,1,Spec 1,raises risk
+12586,2,age (time_step),raises risk
+12586,3,Spec 7,raises risk
+12606,1,Spec 1,raises risk
+12606,2,Spec 7,raises risk
+12606,3,"histogram 167, change in mean bin over last 5 readouts",raises risk
+12621,1,age (time_step),raises risk
+12621,2,Spec 7,raises risk
+12621,3,Spec 1,raises risk
+12637,1,Spec 1,raises risk
+12637,2,Spec 7,raises risk
+12637,3,"counter 666, level",raises risk
+12709,1,Spec 1,lowers risk
+12709,2,age (time_step),raises risk
+12709,3,"counter 666, level",raises risk
+12711,1,Spec 1,lowers risk
+12711,2,age (time_step),raises risk
+12711,3,"histogram 459, mean bin (lifetime)",raises risk
+12722,1,Spec 1,lowers risk
+12722,2,age (time_step),raises risk
+12722,3,Spec 7,raises risk
+12730,1,"counter 100, level",lowers risk
+12730,2,age (time_step),raises risk
+12730,3,Spec 1,raises risk
+12731,1,age (time_step),raises risk
+12731,2,Spec 7,raises risk
+12731,3,Spec 1,lowers risk
+12781,1,Spec 7,raises risk
+12781,2,age (time_step),raises risk
+12781,3,"counter 100, level",raises risk
+12784,1,Spec 1,lowers risk
+12784,2,Spec 7,raises risk
+12784,3,age (time_step),raises risk
+12800,1,age (time_step),raises risk
+12800,2,"histogram 167, mean bin (lifetime)",raises risk
+12800,3,Spec 6,raises risk
+12835,1,"counter 666, rate since previous readout",raises risk
+12835,2,Spec 7,raises risk
+12835,3,"counter 837, level",raises risk
+12849,1,Spec 1,lowers risk
+12849,2,Spec 7,raises risk
+12849,3,age (time_step),raises risk
+12885,1,Spec 7,raises risk
+12885,2,"counter 309, level",lowers risk
+12885,3,age (time_step),raises risk
+12891,1,Spec 1,lowers risk
+12891,2,Spec 7,raises risk
+12891,3,"counter 100, level",lowers risk
+12896,1,Spec 1,raises risk
+12896,2,"counter 837, level",raises risk
+12896,3,age (time_step),raises risk
+12899,1,Spec 7,raises risk
+12899,2,Spec 1,lowers risk
+12899,3,age (time_step),raises risk
+12918,1,age (time_step),raises risk
+12918,2,Spec 1,raises risk
+12918,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+12942,1,Spec 1,raises risk
+12942,2,"counter 309, level",raises risk
+12942,3,Spec 7,raises risk
+12946,1,Spec 7,raises risk
+12946,2,age (time_step),raises risk
+12946,3,Spec 1,raises risk
+12973,1,Spec 1,raises risk
+12973,2,age (time_step),raises risk
+12973,3,"histogram 167, mean bin (lifetime)",raises risk
+12976,1,Spec 1,raises risk
+12976,2,age (time_step),raises risk
+12976,3,Spec 7,raises risk
+12999,1,Spec 1,lowers risk
+12999,2,"counter 100, level",lowers risk
+12999,3,span of last 5 readouts,raises risk
+13012,1,"counter 837, level",raises risk
+13012,2,age (time_step),raises risk
+13012,3,"counter 309, level",raises risk
+13019,1,Spec 7,raises risk
+13019,2,age (time_step),raises risk
+13019,3,"counter 837, level",raises risk
+13022,1,Spec 7,raises risk
+13022,2,Spec 1,raises risk
+13022,3,age (time_step),raises risk
+13040,1,Spec 1,raises risk
+13040,2,Spec 7,raises risk
+13040,3,"counter 100, change over last 5 readouts",lowers risk
+13052,1,"counter 666, level",raises risk
+13052,2,Spec 1,raises risk
+13052,3,age (time_step),raises risk
+13056,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13056,2,"counter 837, level",raises risk
+13056,3,Spec 7,raises risk
+13103,1,Spec 1,raises risk
+13103,2,Spec 7,raises risk
+13103,3,"counter 666, level",raises risk
+13113,1,Spec 1,raises risk
+13113,2,Spec 7,raises risk
+13113,3,"counter 666, level",raises risk
+13118,1,"counter 100, rate over last 5 readouts",raises risk
+13118,2,age (time_step),raises risk
+13118,3,Spec 7,raises risk
+13119,1,age (time_step),raises risk
+13119,2,Spec 7,raises risk
+13119,3,"counter 427, rate over last 5 readouts",raises risk
+13159,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+13159,2,Spec 7,raises risk
+13159,3,"counter 666, change over last 5 readouts",raises risk
+13180,1,Spec 1,raises risk
+13180,2,Spec 7,raises risk
+13180,3,"histogram 167, mean bin (lifetime)",raises risk
+13201,1,Spec 7,raises risk
+13201,2,Spec 1,lowers risk
+13201,3,"counter 837, rate since previous readout",raises risk
+13217,1,Spec 1,lowers risk
+13217,2,age (time_step),raises risk
+13217,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+13226,1,"counter 100, change over last 5 readouts",lowers risk
+13226,2,Spec 7,raises risk
+13226,3,"counter 666, level",raises risk
+13272,1,Spec 7,raises risk
+13272,2,"counter 100, level",lowers risk
+13272,3,"counter 666, level",raises risk
+13277,1,age (time_step),raises risk
+13277,2,Spec 7,raises risk
+13277,3,"counter 100, level",lowers risk
+13278,1,Spec 1,raises risk
+13278,2,"histogram 167, mean bin (lifetime)",lowers risk
+13278,3,Spec 6,raises risk
+13297,1,age (time_step),raises risk
+13297,2,Spec 7,raises risk
+13297,3,"counter 666, level",raises risk
+13313,1,Spec 1,raises risk
+13313,2,age (time_step),raises risk
+13313,3,Spec 7,raises risk
+13337,1,Spec 7,raises risk
+13337,2,age (time_step),raises risk
+13337,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+13339,1,Spec 7,raises risk
+13339,2,"counter 837, level",raises risk
+13339,3,"histogram 291, change in mean bin over last 5 readouts",raises risk
+13342,1,"counter 100, level",raises risk
+13342,2,"histogram 167, mean bin (lifetime)",lowers risk
+13342,3,"counter 100, rate over last 5 readouts",raises risk
+13346,1,Spec 1,lowers risk
+13346,2,"counter 100, level",raises risk
+13346,3,"histogram 459, mean bin (lifetime)",raises risk
+13353,1,age (time_step),raises risk
+13353,2,"counter 100, level",raises risk
+13353,3,Spec 7,raises risk
+13367,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13367,2,Spec 7,raises risk
+13367,3,"histogram 459, mean bin (lifetime)",raises risk
+13389,1,Spec 1,raises risk
+13389,2,age (time_step),raises risk
+13389,3,Spec 7,raises risk
+13391,1,"counter 309, level",raises risk
+13391,2,Spec 1,lowers risk
+13391,3,Spec 7,raises risk
+13418,1,Spec 1,raises risk
+13418,2,Spec 7,raises risk
+13418,3,age (time_step),raises risk
+13447,1,Spec 7,raises risk
+13447,2,"counter 666, change over last 5 readouts",raises risk
+13447,3,Spec 1,raises risk
+13455,1,Spec 7,raises risk
+13455,2,Spec 1,raises risk
+13455,3,"counter 666, level",raises risk
+13489,1,Spec 7,raises risk
+13489,2,Spec 1,raises risk
+13489,3,span of last 5 readouts,raises risk
+13494,1,Spec 1,lowers risk
+13494,2,Spec 7,raises risk
+13494,3,age (time_step),raises risk
+13499,1,Spec 1,raises risk
+13499,2,"counter 666, rate since previous readout",raises risk
+13499,3,"counter 100, level",lowers risk
+13551,1,Spec 1,raises risk
+13551,2,Spec 7,raises risk
+13551,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+13589,1,age (time_step),raises risk
+13589,2,Spec 7,raises risk
+13589,3,Spec 1,lowers risk
+13590,1,Spec 7,raises risk
+13590,2,age (time_step),raises risk
+13590,3,"counter 100, level",lowers risk
+13616,1,Spec 7,raises risk
+13616,2,"histogram 291, change in mean bin over last 5 readouts",raises risk
+13616,3,"counter 100, level",lowers risk
+13617,1,Spec 7,raises risk
+13617,2,"histogram 167, mean bin (lifetime)",raises risk
+13617,3,Spec 1,raises risk
+13654,1,Spec 7,raises risk
+13654,2,"counter 100, level",lowers risk
+13654,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+13657,1,"counter 100, level",raises risk
+13657,2,Spec 1,lowers risk
+13657,3,"counter 100, rate over last 5 readouts",raises risk
+13665,1,Spec 7,raises risk
+13665,2,"counter 666, level",raises risk
+13665,3,age (time_step),raises risk
+13670,1,age (time_step),raises risk
+13670,2,Spec 1,lowers risk
+13670,3,"counter 309, level",raises risk
+13677,1,"histogram 459, mean bin (lifetime)",raises risk
+13677,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+13677,3,Spec 7,raises risk
+13689,1,Spec 1,raises risk
+13689,2,Spec 7,raises risk
+13689,3,age (time_step),lowers risk
+13704,1,Spec 1,raises risk
+13704,2,Spec 7,raises risk
+13704,3,"histogram 167, mean bin (lifetime)",raises risk
+13707,1,"counter 837, level",raises risk
+13707,2,Spec 7,raises risk
+13707,3,"counter 666, level",raises risk
+13713,1,Spec 7,raises risk
+13713,2,age (time_step),raises risk
+13713,3,"histogram 158, share in top 2 bins (last 5 readouts)",lowers risk
+13723,1,"histogram 459, mean bin (lifetime)",raises risk
+13723,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13723,3,"counter 666, level",raises risk
+13753,1,Spec 7,raises risk
+13753,2,"counter 837, level",raises risk
+13753,3,"counter 309, level",raises risk
+13783,1,Spec 1,raises risk
+13783,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+13783,3,Spec 7,raises risk
+13801,1,Spec 7,raises risk
+13801,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+13801,3,"counter 666, level",raises risk
+13804,1,Spec 7,raises risk
+13804,2,"histogram 291, mean bin (lifetime)",lowers risk
+13804,3,"counter 666, level",raises risk
+13805,1,Spec 7,raises risk
+13805,2,age (time_step),raises risk
+13805,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13837,1,Spec 1,raises risk
+13837,2,Spec 2,raises risk
+13837,3,"counter 309, level",raises risk
+13841,1,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+13841,2,Spec 7,raises risk
+13841,3,"counter 837, level",raises risk
+13876,1,Spec 7,raises risk
+13876,2,"counter 309, level",lowers risk
+13876,3,"counter 666, level",raises risk
+13887,1,Spec 7,raises risk
+13887,2,"counter 666, level",raises risk
+13887,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13891,1,Spec 7,raises risk
+13891,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13891,3,"histogram 459, mean bin (lifetime)",lowers risk
+13900,1,Spec 7,raises risk
+13900,2,age (time_step),raises risk
+13900,3,Spec 1,raises risk
+13903,1,Spec 1,lowers risk
+13903,2,"counter 837, level",raises risk
+13903,3,Spec 7,raises risk
+13915,1,"histogram 158, change in mean bin over last 5 readouts",raises risk
+13915,2,Spec 7,raises risk
+13915,3,span of last 5 readouts,raises risk
+13923,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13923,2,"counter 666, level",raises risk
+13923,3,Spec 7,raises risk
+13924,1,"histogram 167, mean bin (lifetime)",lowers risk
+13924,2,"histogram 459, mean bin (lifetime)",raises risk
+13924,3,"counter 171, level",raises risk
+13947,1,"histogram 167, change in mean bin over last 5 readouts",lowers risk
+13947,2,Spec 7,raises risk
+13947,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+13957,1,Spec 7,raises risk
+13957,2,"histogram 167, mean bin (lifetime)",raises risk
+13957,3,span of last 5 readouts,raises risk
+13975,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13975,2,Spec 1,raises risk
+13975,3,Spec 7,raises risk
+13984,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+13984,2,"counter 666, rate since previous readout",raises risk
+13984,3,Spec 7,raises risk
+14025,1,"histogram 167, mean bin (lifetime)",lowers risk
+14025,2,Spec 7,raises risk
+14025,3,"counter 837, level",raises risk
+14071,1,Spec 7,raises risk
+14071,2,Spec 1,lowers risk
+14071,3,"counter 100, rate over last 5 readouts",raises risk
+14113,1,Spec 7,raises risk
+14113,2,Spec 1,raises risk
+14113,3,age (time_step),raises risk
+14119,1,Spec 7,raises risk
+14119,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+14119,3,"counter 100, level",lowers risk
+14129,1,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+14129,2,Spec 1,raises risk
+14129,3,Spec 7,raises risk
+14139,1,Spec 7,raises risk
+14139,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+14139,3,span of last 5 readouts,raises risk
+14190,1,"histogram 291, total count",raises risk
+14190,2,"histogram 459, mean bin (lifetime)",raises risk
+14190,3,"counter 309, level",raises risk
+14229,1,"counter 837, level",raises risk
+14229,2,"histogram 291, mean bin (lifetime)",lowers risk
+14229,3,Spec 1,raises risk
+14456,1,age (time_step),raises risk
+14456,2,"counter 666, level",lowers risk
+14456,3,Spec 1,raises risk
+14457,1,"counter 837, level",raises risk
+14457,2,"counter 100, level",raises risk
+14457,3,"histogram 291, total count",raises risk
+14497,1,Spec 7,lowers risk
+14497,2,"counter 309, level",raises risk
+14497,3,age (time_step),raises risk
+14511,1,age (time_step),raises risk
+14511,2,Spec 1,raises risk
+14511,3,"histogram 167, mean bin (lifetime)",raises risk
+14539,1,Spec 1,raises risk
+14539,2,age (time_step),lowers risk
+14539,3,"counter 837, level",raises risk
+14603,1,"counter 666, level",raises risk
+14603,2,"counter 309, level",raises risk
+14603,3,"counter 837, level",raises risk
+14638,1,age (time_step),lowers risk
+14638,2,Spec 7,lowers risk
+14638,3,Spec 1,raises risk
+14642,1,age (time_step),raises risk
+14642,2,Spec 1,raises risk
+14642,3,Spec 7,lowers risk
+14675,1,age (time_step),raises risk
+14675,2,Spec 1,raises risk
+14675,3,Spec 7,lowers risk
+14731,1,age (time_step),lowers risk
+14731,2,readouts so far,raises risk
+14731,3,"counter 309, level",raises risk
+14799,1,age (time_step),lowers risk
+14799,2,"histogram 158, share in top 2 bins (last 5 readouts)",lowers risk
+14799,3,"counter 837, level",raises risk
+14851,1,"histogram 291, share in top 2 bins (lifetime)",raises risk
+14851,2,Spec 7,lowers risk
+14851,3,"counter 837, level",raises risk
+14853,1,Spec 1,raises risk
+14853,2,age (time_step),raises risk
+14853,3,"histogram 167, mean bin (lifetime)",raises risk
+14924,1,Spec 1,raises risk
+14924,2,age (time_step),raises risk
+14924,3,"histogram 167, mean bin (lifetime)",raises risk
+14950,1,"counter 837, level",raises risk
+14950,2,Spec 1,lowers risk
+14950,3,age (time_step),raises risk
+14965,1,age (time_step),lowers risk
+14965,2,"histogram 291, total count",raises risk
+14965,3,Spec 7,lowers risk
+14982,1,age (time_step),lowers risk
+14982,2,"counter 427, level",raises risk
+14982,3,Spec 1,raises risk
+15065,1,age (time_step),lowers risk
+15065,2,Spec 2,raises risk
+15065,3,Spec 1,raises risk
+15088,1,age (time_step),raises risk
+15088,2,Spec 1,raises risk
+15088,3,"counter 309, level",raises risk
+15103,1,age (time_step),lowers risk
+15103,2,Spec 1,raises risk
+15103,3,readouts so far,raises risk
+15125,1,Spec 1,raises risk
+15125,2,Spec 7,lowers risk
+15125,3,"counter 309, level",raises risk
+15137,1,"histogram 167, mean bin (last 5 readouts)",raises risk
+15137,2,"counter 837, level",raises risk
+15137,3,"counter 666, rate since previous readout",raises risk
+15138,1,Spec 1,raises risk
+15138,2,"histogram 291, total count",raises risk
+15138,3,"counter 837, level",raises risk
+15161,1,age (time_step),raises risk
+15161,2,Spec 7,lowers risk
+15161,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+15162,1,age (time_step),lowers risk
+15162,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+15162,3,Spec 7,lowers risk
+15183,1,Spec 2,raises risk
+15183,2,"histogram 459, mean bin (lifetime)",raises risk
+15183,3,"counter 837, level",raises risk
+15205,1,age (time_step),lowers risk
+15205,2,readouts so far,raises risk
+15205,3,"histogram 167, change in mean bin over last 5 readouts",raises risk
+15222,1,age (time_step),lowers risk
+15222,2,"counter 837, level",raises risk
+15222,3,Spec 1,raises risk
+15263,1,Spec 7,lowers risk
+15263,2,Spec 1,raises risk
+15263,3,"histogram 167, mean bin (lifetime)",raises risk
+15345,1,Spec 1,raises risk
+15345,2,age (time_step),lowers risk
+15345,3,"counter 837, level",raises risk
+15384,1,age (time_step),raises risk
+15384,2,"histogram 291, mean bin (lifetime)",lowers risk
+15384,3,Spec 1,raises risk
+15441,1,"counter 837, level",raises risk
+15441,2,Spec 1,raises risk
+15441,3,Spec 7,lowers risk
+15459,1,"counter 666, level",lowers risk
+15459,2,age (time_step),raises risk
+15459,3,"counter 666, rate since previous readout",raises risk
+15472,1,"counter 309, level",raises risk
+15472,2,Spec 7,lowers risk
+15472,3,"counter 666, level",raises risk
+15473,1,age (time_step),lowers risk
+15473,2,Spec 1,raises risk
+15473,3,"counter 427, level",raises risk
+15497,1,Spec 1,raises risk
+15497,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+15497,3,"counter 100, level",raises risk
+15527,1,age (time_step),raises risk
+15527,2,"counter 427, change since previous readout",raises risk
+15527,3,"histogram 291, total count",raises risk
+15536,1,age (time_step),lowers risk
+15536,2,Spec 1,raises risk
+15536,3,"counter 837, level",raises risk
+15583,1,Spec 1,raises risk
+15583,2,Spec 7,lowers risk
+15583,3,"counter 309, level",lowers risk
+15611,1,age (time_step),lowers risk
+15611,2,"histogram 167, share in top 2 bins (lifetime)",raises risk
+15611,3,Spec 1,raises risk
+15632,1,age (time_step),lowers risk
+15632,2,readouts so far,raises risk
+15632,3,Spec 1,raises risk
+15666,1,age (time_step),lowers risk
+15666,2,readouts so far,raises risk
+15666,3,Spec 1,raises risk
+15739,1,age (time_step),lowers risk
+15739,2,Spec 2,raises risk
+15739,3,"histogram 459, share in top 2 bins (lifetime)",lowers risk
+15748,1,Spec 1,raises risk
+15748,2,readouts so far,raises risk
+15748,3,"histogram 397, share in top 2 bins (last 5 readouts)",lowers risk
+15777,1,age (time_step),lowers risk
+15777,2,Spec 2,raises risk
+15777,3,"histogram 459, mean bin (lifetime)",raises risk
+15875,1,Spec 7,lowers risk
+15875,2,Spec 1,raises risk
+15875,3,readouts so far,raises risk
+15973,1,age (time_step),raises risk
+15973,2,Spec 1,raises risk
+15973,3,Spec 7,lowers risk
+16014,1,Spec 7,lowers risk
+16014,2,span of last 5 readouts,raises risk
+16014,3,Spec 1,raises risk
+16043,1,Spec 2,raises risk
+16043,2,Spec 1,raises risk
+16043,3,age (time_step),raises risk
+16061,1,"counter 666, change over last 5 readouts",raises risk
+16061,2,age (time_step),raises risk
+16061,3,"counter 100, change over last 5 readouts",lowers risk
+16074,1,Spec 7,lowers risk
+16074,2,readouts so far,raises risk
+16074,3,Spec 1,raises risk
+16091,1,Spec 6,raises risk
+16091,2,Spec 1,lowers risk
+16091,3,age (time_step),raises risk
+16172,1,"histogram 167, mean bin (lifetime)",raises risk
+16172,2,age (time_step),raises risk
+16172,3,Spec 7,lowers risk
+16205,1,Spec 1,raises risk
+16205,2,age (time_step),raises risk
+16205,3,Spec 7,lowers risk
+16227,1,Spec 1,raises risk
+16227,2,age (time_step),raises risk
+16227,3,Spec 7,lowers risk
+16260,1,"counter 837, level",raises risk
+16260,2,Spec 7,lowers risk
+16260,3,Spec 1,raises risk
+16261,1,Spec 7,lowers risk
+16261,2,Spec 1,raises risk
+16261,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+16294,1,age (time_step),lowers risk
+16294,2,Spec 6,raises risk
+16294,3,Spec 7,lowers risk
+16336,1,age (time_step),raises risk
+16336,2,"histogram 291, total count",raises risk
+16336,3,Spec 7,lowers risk
+16471,1,age (time_step),raises risk
+16471,2,"counter 837, level",raises risk
+16471,3,Spec 1,raises risk
+16477,1,"counter 666, rate since previous readout",raises risk
+16477,2,Spec 7,lowers risk
+16477,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+16544,1,age (time_step),lowers risk
+16544,2,Spec 1,raises risk
+16544,3,readouts so far,raises risk
+16577,1,"counter 309, level",lowers risk
+16577,2,Spec 1,raises risk
+16577,3,age (time_step),raises risk
+16584,1,"histogram 291, change in mean bin over last 5 readouts",raises risk
+16584,2,age (time_step),lowers risk
+16584,3,Spec 1,raises risk
+16611,1,age (time_step),raises risk
+16611,2,Spec 1,raises risk
+16611,3,Spec 7,lowers risk
+16613,1,age (time_step),raises risk
+16613,2,Spec 1,raises risk
+16613,3,Spec 7,lowers risk
+16674,1,age (time_step),lowers risk
+16674,2,readouts so far,raises risk
+16674,3,"histogram 167, change in mean bin over last 5 readouts",raises risk
+16676,1,age (time_step),lowers risk
+16676,2,Spec 1,raises risk
+16676,3,"counter 309, level",raises risk
+16679,1,Spec 1,raises risk
+16679,2,Spec 7,lowers risk
+16679,3,"histogram 167, share in top 2 bins (lifetime)",lowers risk
+16690,1,age (time_step),raises risk
+16690,2,Spec 1,raises risk
+16690,3,Spec 7,lowers risk
+16702,1,Spec 1,raises risk
+16702,2,"counter 100, level",raises risk
+16702,3,Spec 7,lowers risk
+16758,1,age (time_step),raises risk
+16758,2,"counter 837, level",raises risk
+16758,3,Spec 1,raises risk
+16786,1,age (time_step),lowers risk
+16786,2,Spec 2,raises risk
+16786,3,Spec 1,raises risk
+16866,1,Spec 1,raises risk
+16866,2,Spec 7,lowers risk
+16866,3,"counter 666, rate since previous readout",raises risk
+16914,1,age (time_step),lowers risk
+16914,2,Spec 1,raises risk
+16914,3,"counter 666, rate since previous readout",raises risk
+16930,1,age (time_step),raises risk
+16930,2,"counter 309, level",lowers risk
+16930,3,Spec 7,lowers risk
+17004,1,age (time_step),lowers risk
+17004,2,Spec 1,raises risk
+17004,3,Spec 7,lowers risk
+17047,1,age (time_step),lowers risk
+17047,2,readouts so far,raises risk
+17047,3,"counter 100, level",raises risk
+17084,1,age (time_step),lowers risk
+17084,2,Spec 1,raises risk
+17084,3,"counter 837, level",raises risk
+17092,1,age (time_step),raises risk
+17092,2,Spec 6,raises risk
+17092,3,Spec 7,lowers risk
+17099,1,"histogram 167, change in mean bin over last 5 readouts",lowers risk
+17099,2,age (time_step),raises risk
+17099,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+17103,1,"counter 666, change over last 5 readouts",raises risk
+17103,2,"counter 100, level",lowers risk
+17103,3,age (time_step),lowers risk
+17142,1,age (time_step),lowers risk
+17142,2,"histogram 291, total count",raises risk
+17142,3,readouts so far,raises risk
+17181,1,age (time_step),lowers risk
+17181,2,Spec 1,raises risk
+17181,3,"histogram 291, mean bin (lifetime)",lowers risk
+17196,1,"histogram 167, mean bin (lifetime)",raises risk
+17196,2,Spec 1,raises risk
+17196,3,Spec 7,lowers risk
+17234,1,Spec 1,raises risk
+17234,2,age (time_step),raises risk
+17234,3,"counter 666, level",raises risk
+17261,1,Spec 1,raises risk
+17261,2,age (time_step),raises risk
+17261,3,Spec 7,lowers risk
+17319,1,age (time_step),lowers risk
+17319,2,Spec 1,raises risk
+17319,3,"histogram 167, mean bin (lifetime)",raises risk
+17381,1,age (time_step),raises risk
+17381,2,Spec 1,raises risk
+17381,3,Spec 6,raises risk
+17414,1,Spec 1,raises risk
+17414,2,age (time_step),raises risk
+17414,3,Spec 7,lowers risk
+17416,1,Spec 7,lowers risk
+17416,2,Spec 1,raises risk
+17416,3,"histogram 291, change in mean bin over last 5 readouts",raises risk
+17468,1,Spec 6,raises risk
+17468,2,age (time_step),raises risk
+17468,3,"counter 309, level",lowers risk
+17470,1,age (time_step),lowers risk
+17470,2,Spec 2,raises risk
+17470,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+17473,1,Spec 1,raises risk
+17473,2,"histogram 167, mean bin (lifetime)",raises risk
+17473,3,"counter 666, level",raises risk
+17488,1,Spec 7,lowers risk
+17488,2,Spec 1,raises risk
+17488,3,"counter 666, level",raises risk
+17562,1,Spec 6,raises risk
+17562,2,"histogram 167, mean bin (lifetime)",raises risk
+17562,3,Spec 1,raises risk
+17593,1,age (time_step),lowers risk
+17593,2,Spec 1,raises risk
+17593,3,readouts so far,raises risk
+17600,1,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+17600,2,"counter 837, level",raises risk
+17600,3,Spec 1,raises risk
+17701,1,age (time_step),lowers risk
+17701,2,"counter 100, level",raises risk
+17701,3,Spec 7,lowers risk
+17743,1,Spec 1,raises risk
+17743,2,age (time_step),lowers risk
+17743,3,Spec 7,lowers risk
+17755,1,age (time_step),lowers risk
+17755,2,Spec 1,raises risk
+17755,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+17772,1,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+17772,2,age (time_step),raises risk
+17772,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+17784,1,age (time_step),raises risk
+17784,2,"counter 309, level",lowers risk
+17784,3,"counter 100, change over last 5 readouts",lowers risk
+17795,1,age (time_step),lowers risk
+17795,2,"counter 837, level",lowers risk
+17795,3,Spec 7,lowers risk
+17797,1,age (time_step),raises risk
+17797,2,Spec 1,raises risk
+17797,3,"counter 666, level",raises risk
+17824,1,Spec 1,raises risk
+17824,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+17824,3,"counter 666, level",raises risk
+17826,1,age (time_step),lowers risk
+17826,2,Spec 1,raises risk
+17826,3,Spec 7,lowers risk
+17867,1,age (time_step),raises risk
+17867,2,Spec 7,lowers risk
+17867,3,Spec 1,raises risk
+17898,1,age (time_step),lowers risk
+17898,2,"counter 837, level",raises risk
+17898,3,Spec 1,raises risk
+17966,1,Spec 1,raises risk
+17966,2,age (time_step),raises risk
+17966,3,Spec 7,lowers risk
+17967,1,age (time_step),lowers risk
+17967,2,Spec 1,raises risk
+17967,3,Spec 6,raises risk
+17983,1,age (time_step),raises risk
+17983,2,Spec 1,raises risk
+17983,3,Spec 7,lowers risk
+18024,1,Spec 7,lowers risk
+18024,2,age (time_step),raises risk
+18024,3,Spec 1,raises risk
+18367,1,Spec 7,lowers risk
+18367,2,Spec 1,raises risk
+18367,3,"counter 100, level",raises risk
+18371,1,age (time_step),raises risk
+18371,2,Spec 7,lowers risk
+18371,3,"histogram 167, change in mean bin over last 5 readouts",raises risk
+18382,1,"histogram 291, total count",raises risk
+18382,2,Spec 7,lowers risk
+18382,3,Spec 1,raises risk
+18383,1,Spec 7,lowers risk
+18383,2,Spec 1,raises risk
+18383,3,age (time_step),raises risk
+18406,1,Spec 7,lowers risk
+18406,2,"histogram 459, mean bin (last 5 readouts)",lowers risk
+18406,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+18453,1,Spec 1,raises risk
+18453,2,Spec 7,lowers risk
+18453,3,"histogram 167, mean bin (lifetime)",raises risk
+18486,1,age (time_step),lowers risk
+18486,2,readouts so far,raises risk
+18486,3,"counter 427, level",raises risk
+18514,1,Spec 1,raises risk
+18514,2,age (time_step),lowers risk
+18514,3,Spec 7,lowers risk
+18525,1,age (time_step),lowers risk
+18525,2,Spec 6,raises risk
+18525,3,"histogram 291, total count",raises risk
+18531,1,age (time_step),lowers risk
+18531,2,readouts so far,raises risk
+18531,3,"counter 100, rate over last 5 readouts",raises risk
+18542,1,age (time_step),lowers risk
+18542,2,readouts so far,raises risk
+18542,3,"histogram 291, total count",raises risk
+18555,1,age (time_step),lowers risk
+18555,2,"counter 837, level",raises risk
+18555,3,"counter 309, level",raises risk
+18566,1,age (time_step),lowers risk
+18566,2,"counter 837, level",raises risk
+18566,3,readouts so far,raises risk
+18569,1,age (time_step),lowers risk
+18569,2,"counter 837, level",raises risk
+18569,3,"histogram 291, total count",raises risk
+18607,1,age (time_step),raises risk
+18607,2,Spec 7,lowers risk
+18607,3,"histogram 167, mean bin (lifetime)",raises risk
+18630,1,age (time_step),lowers risk
+18630,2,Spec 1,raises risk
+18630,3,"counter 309, level",lowers risk
+18659,1,Spec 1,raises risk
+18659,2,"histogram 291, mean bin (lifetime)",lowers risk
+18659,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+18671,1,Spec 1,raises risk
+18671,2,"counter 100, level",raises risk
+18671,3,"histogram 167, mean bin (lifetime)",raises risk
+18705,1,age (time_step),lowers risk
+18705,2,Spec 1,raises risk
+18705,3,"counter 309, level",raises risk
+18790,1,age (time_step),lowers risk
+18790,2,Spec 1,raises risk
+18790,3,Spec 7,lowers risk
+18800,1,age (time_step),lowers risk
+18800,2,"histogram 272, mean bin (lifetime)",lowers risk
+18800,3,"counter 309, level",lowers risk
+18858,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+18858,2,"counter 666, level",lowers risk
+18858,3,"counter 309, level",lowers risk
+18865,1,age (time_step),lowers risk
+18865,2,Spec 7,lowers risk
+18865,3,"counter 666, level",raises risk
+18867,1,age (time_step),raises risk
+18867,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+18867,3,Spec 7,lowers risk
+18878,1,age (time_step),lowers risk
+18878,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+18878,3,"counter 100, level",raises risk
+18880,1,age (time_step),lowers risk
+18880,2,Spec 7,lowers risk
+18880,3,"counter 837, level",raises risk
+18897,1,age (time_step),raises risk
+18897,2,Spec 1,raises risk
+18897,3,"counter 666, level",raises risk
+18956,1,age (time_step),lowers risk
+18956,2,"histogram 291, total count",raises risk
+18956,3,"counter 100, level",raises risk
+18972,1,age (time_step),lowers risk
+18972,2,"counter 837, level",raises risk
+18972,3,Spec 2,raises risk
+18978,1,age (time_step),lowers risk
+18978,2,Spec 6,raises risk
+18978,3,Spec 1,raises risk
+19000,1,age (time_step),raises risk
+19000,2,Spec 1,raises risk
+19000,3,"counter 666, level",raises risk
+19045,1,Spec 1,raises risk
+19045,2,age (time_step),raises risk
+19045,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+19067,1,age (time_step),lowers risk
+19067,2,Spec 1,raises risk
+19067,3,readouts so far,raises risk
+19093,1,age (time_step),lowers risk
+19093,2,"counter 837, level",raises risk
+19093,3,Spec 1,raises risk
+19145,1,age (time_step),raises risk
+19145,2,"counter 100, rate over last 5 readouts",raises risk
+19145,3,Spec 7,lowers risk
+19196,1,age (time_step),lowers risk
+19196,2,Spec 1,raises risk
+19196,3,Spec 7,lowers risk
+19235,1,age (time_step),raises risk
+19235,2,Spec 7,lowers risk
+19235,3,"counter 666, level",raises risk
+19240,1,"histogram 291, total count",raises risk
+19240,2,"histogram 272, mean bin (lifetime)",raises risk
+19240,3,Spec 7,lowers risk
+19257,1,Spec 7,lowers risk
+19257,2,"counter 100, level",lowers risk
+19257,3,Spec 1,raises risk
+19266,1,Spec 1,raises risk
+19266,2,age (time_step),raises risk
+19266,3,"histogram 167, mean bin (lifetime)",raises risk
+19298,1,age (time_step),lowers risk
+19298,2,Spec 7,lowers risk
+19298,3,"counter 837, level",raises risk
+19304,1,age (time_step),raises risk
+19304,2,Spec 1,raises risk
+19304,3,Spec 7,lowers risk
+19310,1,age (time_step),raises risk
+19310,2,Spec 7,lowers risk
+19310,3,Spec 1,raises risk
+19344,1,Spec 1,raises risk
+19344,2,age (time_step),raises risk
+19344,3,"histogram 167, mean bin (lifetime)",raises risk
+19367,1,"histogram 459, mean bin (last 5 readouts)",lowers risk
+19367,2,"counter 837, level",raises risk
+19367,3,age (time_step),lowers risk
+19383,1,"counter 837, level",raises risk
+19383,2,Spec 2,raises risk
+19383,3,age (time_step),raises risk
+19402,1,"counter 837, level",raises risk
+19402,2,Spec 1,raises risk
+19402,3,"histogram 291, total count",raises risk
+19404,1,Spec 1,raises risk
+19404,2,Spec 7,lowers risk
+19404,3,"counter 837, level",raises risk
+19412,1,age (time_step),lowers risk
+19412,2,"counter 837, level",raises risk
+19412,3,Spec 1,raises risk
+19487,1,age (time_step),raises risk
+19487,2,Spec 7,lowers risk
+19487,3,Spec 1,raises risk
+19495,1,Spec 1,raises risk
+19495,2,age (time_step),raises risk
+19495,3,"counter 100, level",raises risk
+19498,1,age (time_step),lowers risk
+19498,2,Spec 1,raises risk
+19498,3,Spec 7,lowers risk
+19539,1,Spec 7,lowers risk
+19539,2,age (time_step),raises risk
+19539,3,"histogram 167, mean bin (lifetime)",raises risk
+19591,1,age (time_step),lowers risk
+19591,2,"counter 837, level",raises risk
+19591,3,readouts so far,raises risk
+19597,1,age (time_step),lowers risk
+19597,2,"counter 837, level",raises risk
+19597,3,readouts so far,raises risk
+19605,1,Spec 2,raises risk
+19605,2,Spec 6,raises risk
+19605,3,"counter 100, level",lowers risk
+19649,1,age (time_step),raises risk
+19649,2,Spec 7,lowers risk
+19649,3,"counter 100, level",raises risk
+19655,1,age (time_step),raises risk
+19655,2,Spec 1,raises risk
+19655,3,Spec 7,lowers risk
+19663,1,Spec 1,raises risk
+19663,2,age (time_step),raises risk
+19663,3,Spec 7,lowers risk
+19670,1,age (time_step),lowers risk
+19670,2,Spec 7,lowers risk
+19670,3,readouts so far,raises risk
+19671,1,age (time_step),lowers risk
+19671,2,Spec 2,raises risk
+19671,3,"counter 837, level",raises risk
+19696,1,Spec 7,lowers risk
+19696,2,age (time_step),raises risk
+19696,3,Spec 1,raises risk
+19740,1,age (time_step),raises risk
+19740,2,Spec 1,raises risk
+19740,3,Spec 7,lowers risk
+19782,1,Spec 1,raises risk
+19782,2,age (time_step),raises risk
+19782,3,"histogram 291, total count",raises risk
+19788,1,age (time_step),lowers risk
+19788,2,Spec 1,raises risk
+19788,3,"counter 666, rate since previous readout",raises risk
+19860,1,age (time_step),raises risk
+19860,2,Spec 1,raises risk
+19860,3,"counter 100, change over last 5 readouts",lowers risk
+19890,1,age (time_step),lowers risk
+19890,2,Spec 1,raises risk
+19890,3,"counter 837, level",raises risk
+19891,1,age (time_step),raises risk
+19891,2,"histogram 167, mean bin (lifetime)",raises risk
+19891,3,"histogram 291, total count",raises risk
+19898,1,age (time_step),lowers risk
+19898,2,Spec 7,lowers risk
+19898,3,"counter 837, level",raises risk
+19911,1,age (time_step),lowers risk
+19911,2,Spec 1,lowers risk
+19911,3,"counter 666, rate since previous readout",raises risk
+19928,1,age (time_step),raises risk
+19928,2,Spec 7,lowers risk
+19928,3,Spec 1,raises risk
+19932,1,Spec 1,raises risk
+19932,2,age (time_step),raises risk
+19932,3,"histogram 167, mean bin (lifetime)",raises risk
+19938,1,Spec 1,raises risk
+19938,2,"counter 837, level",raises risk
+19938,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+19946,1,Spec 7,lowers risk
+19946,2,age (time_step),raises risk
+19946,3,Spec 1,raises risk
+19994,1,age (time_step),lowers risk
+19994,2,"counter 837, level",raises risk
+19994,3,Spec 2,raises risk
+19997,1,age (time_step),lowers risk
+19997,2,Spec 1,raises risk
+19997,3,Spec 7,lowers risk
+19999,1,"histogram 459, mean bin (lifetime)",raises risk
+19999,2,"counter 309, level",raises risk
+19999,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+20040,1,age (time_step),raises risk
+20040,2,Spec 7,lowers risk
+20040,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+20052,1,age (time_step),raises risk
+20052,2,Spec 1,raises risk
+20052,3,"counter 666, level",raises risk
+20088,1,Spec 1,raises risk
+20088,2,Spec 7,lowers risk
+20088,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+20190,1,age (time_step),raises risk
+20190,2,"counter 309, level",raises risk
+20190,3,Spec 1,raises risk
+20211,1,"counter 666, level",lowers risk
+20211,2,age (time_step),raises risk
+20211,3,"counter 837, level",lowers risk
+20295,1,Spec 1,raises risk
+20295,2,Spec 7,lowers risk
+20295,3,age (time_step),lowers risk
+20320,1,"histogram 459, mean bin (lifetime)",raises risk
+20320,2,Spec 1,lowers risk
+20320,3,"counter 100, level",raises risk
+20330,1,age (time_step),lowers risk
+20330,2,Spec 1,raises risk
+20330,3,"counter 666, level",raises risk
+20395,1,age (time_step),raises risk
+20395,2,Spec 7,lowers risk
+20395,3,Spec 1,raises risk
+20405,1,"histogram 167, mean bin (lifetime)",raises risk
+20405,2,age (time_step),raises risk
+20405,3,Spec 1,raises risk
+20495,1,age (time_step),lowers risk
+20495,2,readouts so far,raises risk
+20495,3,Spec 1,raises risk
+20504,1,Spec 2,raises risk
+20504,2,"counter 309, level",raises risk
+20504,3,age (time_step),raises risk
+20572,1,"counter 309, level",lowers risk
+20572,2,Spec 1,lowers risk
+20572,3,"histogram 291, total count",raises risk
+20623,1,age (time_step),lowers risk
+20623,2,Spec 1,raises risk
+20623,3,"counter 837, level",raises risk
+20628,1,"counter 100, level",lowers risk
+20628,2,age (time_step),raises risk
+20628,3,Spec 6,raises risk
+20686,1,"histogram 167, mean bin (lifetime)",raises risk
+20686,2,Spec 1,raises risk
+20686,3,Spec 7,lowers risk
+20703,1,age (time_step),raises risk
+20703,2,Spec 1,raises risk
+20703,3,Spec 7,lowers risk
+20764,1,age (time_step),lowers risk
+20764,2,"counter 837, level",raises risk
+20764,3,Spec 1,raises risk
+20767,1,age (time_step),raises risk
+20767,2,Spec 1,raises risk
+20767,3,"counter 666, level",raises risk
+20768,1,Spec 1,raises risk
+20768,2,age (time_step),lowers risk
+20768,3,"counter 309, level",raises risk
+20772,1,age (time_step),lowers risk
+20772,2,Spec 1,raises risk
+20772,3,"histogram 291, total count",raises risk
+20838,1,Spec 1,raises risk
+20838,2,Spec 7,lowers risk
+20838,3,age (time_step),lowers risk
+20866,1,age (time_step),lowers risk
+20866,2,Spec 1,raises risk
+20866,3,"histogram 167, mean bin (lifetime)",raises risk
+20887,1,Spec 1,raises risk
+20887,2,"histogram 291, total count",raises risk
+20887,3,Spec 7,lowers risk
+20893,1,age (time_step),lowers risk
+20893,2,"counter 427, level",raises risk
+20893,3,"histogram 397, mean bin (last 5 readouts)",lowers risk
+20904,1,age (time_step),raises risk
+20904,2,"counter 100, level",raises risk
+20904,3,"counter 309, level",lowers risk
+20908,1,Spec 1,raises risk
+20908,2,"counter 100, level",lowers risk
+20908,3,"counter 837, level",raises risk
+20909,1,age (time_step),raises risk
+20909,2,"counter 100, level",raises risk
+20909,3,Spec 6,raises risk
+20937,1,age (time_step),lowers risk
+20937,2,Spec 1,raises risk
+20937,3,Spec 7,lowers risk
+20944,1,age (time_step),raises risk
+20944,2,Spec 1,raises risk
+20944,3,"histogram 158, mean bin (last 5 readouts)",raises risk
+20956,1,age (time_step),lowers risk
+20956,2,"histogram 167, share in top 2 bins (last 5 readouts)",raises risk
+20956,3,"counter 309, level",raises risk
+20980,1,age (time_step),lowers risk
+20980,2,"histogram 291, total count",raises risk
+20980,3,"counter 309, level",raises risk
+20996,1,age (time_step),raises risk
+20996,2,"counter 309, level",lowers risk
+20996,3,Spec 1,raises risk
+21009,1,age (time_step),lowers risk
+21009,2,"histogram 291, total count",raises risk
+21009,3,Spec 1,raises risk
+21029,1,age (time_step),lowers risk
+21029,2,"counter 837, level",raises risk
+21029,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+21041,1,age (time_step),lowers risk
+21041,2,Spec 1,raises risk
+21041,3,"counter 427, level",raises risk
+21106,1,age (time_step),lowers risk
+21106,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+21106,3,Spec 1,raises risk
+21126,1,"histogram 291, total count",raises risk
+21126,2,Spec 7,lowers risk
+21126,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+21132,1,"counter 837, level",raises risk
+21132,2,Spec 1,raises risk
+21132,3,age (time_step),raises risk
+21136,1,"counter 837, level",raises risk
+21136,2,age (time_step),lowers risk
+21136,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+21154,1,age (time_step),lowers risk
+21154,2,"counter 666, rate since previous readout",raises risk
+21154,3,Spec 1,raises risk
+21156,1,age (time_step),lowers risk
+21156,2,readouts so far,raises risk
+21156,3,Spec 1,raises risk
+21166,1,"counter 309, level",lowers risk
+21166,2,"counter 837, level",lowers risk
+21166,3,Spec 7,lowers risk
+21172,1,Spec 7,lowers risk
+21172,2,age (time_step),raises risk
+21172,3,"histogram 167, mean bin (lifetime)",raises risk
+21175,1,Spec 7,lowers risk
+21175,2,"counter 309, level",lowers risk
+21175,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+21189,1,age (time_step),lowers risk
+21189,2,"counter 837, level",raises risk
+21189,3,Spec 7,lowers risk
+21211,1,Spec 7,lowers risk
+21211,2,Spec 1,raises risk
+21211,3,age (time_step),lowers risk
+21277,1,Spec 7,lowers risk
+21277,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+21277,3,Spec 1,raises risk
+21330,1,age (time_step),lowers risk
+21330,2,Spec 1,raises risk
+21330,3,readouts so far,raises risk
+21335,1,Spec 7,lowers risk
+21335,2,"counter 666, level",raises risk
+21335,3,Spec 1,raises risk
+21376,1,Spec 7,lowers risk
+21376,2,"counter 100, change over last 5 readouts",lowers risk
+21376,3,age (time_step),raises risk
+21378,1,age (time_step),lowers risk
+21378,2,Spec 7,lowers risk
+21378,3,readouts so far,raises risk
+21439,1,Spec 1,raises risk
+21439,2,"counter 666, rate since previous readout",raises risk
+21439,3,"counter 309, level",raises risk
+21440,1,"counter 100, level",lowers risk
+21440,2,age (time_step),raises risk
+21440,3,Spec 7,lowers risk
+21455,1,age (time_step),raises risk
+21455,2,Spec 7,lowers risk
+21455,3,Spec 1,raises risk
+21513,1,Spec 7,lowers risk
+21513,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+21513,3,"histogram 167, mean bin (lifetime)",raises risk
+21548,1,age (time_step),lowers risk
+21548,2,Spec 1,raises risk
+21548,3,Spec 7,lowers risk
+21560,1,age (time_step),raises risk
+21560,2,Spec 1,raises risk
+21560,3,Spec 7,lowers risk
+21595,1,"counter 837, level",raises risk
+21595,2,"counter 100, rate over last 5 readouts",raises risk
+21595,3,"counter 309, level",raises risk
+21623,1,Spec 1,raises risk
+21623,2,Spec 7,lowers risk
+21623,3,age (time_step),lowers risk
+21626,1,Spec 2,raises risk
+21626,2,"counter 837, level",raises risk
+21626,3,"histogram 291, total count",raises risk
+21651,1,age (time_step),lowers risk
+21651,2,Spec 7,lowers risk
+21651,3,"counter 837, level",raises risk
+21659,1,age (time_step),lowers risk
+21659,2,Spec 1,raises risk
+21659,3,Spec 7,lowers risk
+21690,1,age (time_step),lowers risk
+21690,2,Spec 1,raises risk
+21690,3,"counter 837, level",raises risk
+21709,1,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+21709,2,Spec 2,raises risk
+21709,3,"histogram 291, mean bin (lifetime)",lowers risk
+21713,1,Spec 1,raises risk
+21713,2,Spec 7,lowers risk
+21713,3,age (time_step),raises risk
+21718,1,age (time_step),lowers risk
+21718,2,Spec 1,raises risk
+21718,3,"counter 837, level",raises risk
+21736,1,age (time_step),lowers risk
+21736,2,Spec 1,raises risk
+21736,3,Spec 7,lowers risk
+21738,1,"histogram 167, change in mean bin over last 5 readouts",lowers risk
+21738,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+21738,3,age (time_step),raises risk
+21763,1,Spec 1,raises risk
+21763,2,age (time_step),raises risk
+21763,3,"histogram 167, mean bin (lifetime)",raises risk
+21765,1,age (time_step),lowers risk
+21765,2,Spec 1,raises risk
+21765,3,"counter 837, level",raises risk
+21786,1,age (time_step),lowers risk
+21786,2,"histogram 272, mean bin (lifetime)",lowers risk
+21786,3,Spec 1,raises risk
+21812,1,age (time_step),lowers risk
+21812,2,Spec 1,raises risk
+21812,3,"counter 837, level",raises risk
+21818,1,Spec 6,raises risk
+21818,2,Spec 2,raises risk
+21818,3,Spec 1,raises risk
+21822,1,age (time_step),lowers risk
+21822,2,Spec 6,raises risk
+21822,3,Spec 1,raises risk
+21839,1,age (time_step),lowers risk
+21839,2,Spec 1,raises risk
+21839,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+21855,1,Spec 7,lowers risk
+21855,2,Spec 1,raises risk
+21855,3,"counter 666, level",raises risk
+21877,1,age (time_step),lowers risk
+21877,2,Spec 7,lowers risk
+21877,3,"counter 309, level",lowers risk
+21888,1,"counter 666, change over last 5 readouts",raises risk
+21888,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+21888,3,age (time_step),lowers risk
+21962,1,age (time_step),lowers risk
+21962,2,"counter 100, change over last 5 readouts",lowers risk
+21962,3,Spec 7,lowers risk
+21965,1,"histogram 167, mean bin (lifetime)",raises risk
+21965,2,Spec 7,lowers risk
+21965,3,Spec 1,raises risk
+21972,1,age (time_step),raises risk
+21972,2,"counter 309, level",lowers risk
+21972,3,Spec 6,raises risk
+21983,1,"counter 666, level",lowers risk
+21983,2,age (time_step),raises risk
+21983,3,Spec 1,raises risk
+21993,1,age (time_step),lowers risk
+21993,2,Spec 1,raises risk
+21993,3,readouts so far,raises risk
+22009,1,age (time_step),lowers risk
+22009,2,Spec 1,raises risk
+22009,3,"counter 309, level",raises risk
+22033,1,Spec 1,raises risk
+22033,2,"histogram 167, mean bin (lifetime)",raises risk
+22033,3,age (time_step),raises risk
+22034,1,age (time_step),lowers risk
+22034,2,Spec 1,raises risk
+22034,3,Spec 7,lowers risk
+22039,1,age (time_step),lowers risk
+22039,2,"counter 837, level",raises risk
+22039,3,"counter 100, level",raises risk
+22054,1,age (time_step),lowers risk
+22054,2,Spec 7,lowers risk
+22054,3,Spec 1,raises risk
+22092,1,age (time_step),lowers risk
+22092,2,Spec 1,raises risk
+22092,3,"histogram 167, mean bin (lifetime)",raises risk
+22115,1,age (time_step),lowers risk
+22115,2,Spec 1,raises risk
+22115,3,Spec 7,lowers risk
+22121,1,age (time_step),lowers risk
+22121,2,Spec 7,lowers risk
+22121,3,"histogram 167, mean bin (lifetime)",raises risk
+22133,1,age (time_step),lowers risk
+22133,2,Spec 7,lowers risk
+22133,3,Spec 1,raises risk
+22161,1,age (time_step),raises risk
+22161,2,Spec 1,raises risk
+22161,3,Spec 7,lowers risk
+22170,1,age (time_step),lowers risk
+22170,2,readouts so far,raises risk
+22170,3,"histogram 291, total count",raises risk
+22199,1,age (time_step),lowers risk
+22199,2,Spec 1,raises risk
+22199,3,"counter 837, level",raises risk
+22201,1,Spec 7,lowers risk
+22201,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+22201,3,"counter 666, rate since previous readout",raises risk
+22227,1,"counter 427, level",raises risk
+22227,2,age (time_step),lowers risk
+22227,3,Spec 1,raises risk
+22244,1,"histogram 291, total count",raises risk
+22244,2,age (time_step),lowers risk
+22244,3,Spec 1,raises risk
+22247,1,age (time_step),raises risk
+22247,2,"histogram 167, mean bin (lifetime)",raises risk
+22247,3,Spec 1,raises risk
+22256,1,Spec 7,lowers risk
+22256,2,Spec 1,raises risk
+22256,3,age (time_step),lowers risk
+22264,1,"counter 100, rate over last 5 readouts",raises risk
+22264,2,age (time_step),raises risk
+22264,3,"histogram 167, mean bin (lifetime)",raises risk
+22272,1,"counter 837, level",raises risk
+22272,2,Spec 1,raises risk
+22272,3,Spec 7,lowers risk
+22273,1,"counter 427, rate over last 5 readouts",raises risk
+22273,2,Spec 1,raises risk
+22273,3,"counter 666, rate since previous readout",lowers risk
+22290,1,age (time_step),lowers risk
+22290,2,Spec 1,raises risk
+22290,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+22303,1,Spec 1,raises risk
+22303,2,"histogram 167, mean bin (lifetime)",raises risk
+22303,3,"histogram 459, share in top 2 bins (last 5 readouts)",raises risk
+22307,1,age (time_step),lowers risk
+22307,2,Spec 1,raises risk
+22307,3,readouts so far,raises risk
+22325,1,Spec 1,raises risk
+22325,2,age (time_step),raises risk
+22325,3,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+22370,1,Spec 1,raises risk
+22370,2,"histogram 291, total count",raises risk
+22370,3,"counter 837, level",raises risk
+22381,1,age (time_step),lowers risk
+22381,2,"histogram 167, mean bin (lifetime)",lowers risk
+22381,3,Spec 1,raises risk
+22402,1,age (time_step),lowers risk
+22402,2,"counter 837, level",raises risk
+22402,3,"histogram 459, mean bin (lifetime)",raises risk
+22420,1,Spec 2,raises risk
+22420,2,"counter 837, level",raises risk
+22420,3,"counter 309, level",raises risk
+22424,1,age (time_step),raises risk
+22424,2,"counter 837, level",raises risk
+22424,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+22435,1,age (time_step),lowers risk
+22435,2,Spec 7,lowers risk
+22435,3,"histogram 167, mean bin (lifetime)",raises risk
+22436,1,"histogram 459, mean bin (lifetime)",raises risk
+22436,2,Spec 6,lowers risk
+22436,3,"counter 837, level",raises risk
+22462,1,age (time_step),lowers risk
+22462,2,Spec 7,lowers risk
+22462,3,Spec 1,raises risk
+22486,1,age (time_step),raises risk
+22486,2,Spec 1,raises risk
+22486,3,Spec 7,lowers risk
+22492,1,age (time_step),lowers risk
+22492,2,Spec 1,raises risk
+22492,3,"counter 837, level",raises risk
+22496,1,age (time_step),lowers risk
+22496,2,Spec 1,raises risk
+22496,3,Spec 7,lowers risk
+22520,1,age (time_step),raises risk
+22520,2,Spec 7,lowers risk
+22520,3,Spec 1,raises risk
+22521,1,Spec 1,raises risk
+22521,2,age (time_step),lowers risk
+22521,3,"histogram 291, total count",raises risk
+22580,1,age (time_step),lowers risk
+22580,2,Spec 1,raises risk
+22580,3,Spec 7,lowers risk
+22587,1,"histogram 459, mean bin (lifetime)",raises risk
+22587,2,readouts so far,lowers risk
+22587,3,"histogram 167, change in mean bin over last 5 readouts",raises risk
+22590,1,age (time_step),raises risk
+22590,2,Spec 7,lowers risk
+22590,3,"histogram 167, mean bin (lifetime)",raises risk
+22636,1,age (time_step),lowers risk
+22636,2,readouts so far,raises risk
+22636,3,Spec 1,raises risk
+22666,1,age (time_step),lowers risk
+22666,2,readouts so far,raises risk
+22666,3,Spec 1,raises risk
+22686,1,Spec 1,raises risk
+22686,2,"histogram 167, mean bin (lifetime)",raises risk
+22686,3,Spec 7,lowers risk
+22703,1,age (time_step),lowers risk
+22703,2,Spec 1,raises risk
+22703,3,Spec 7,lowers risk
+22769,1,age (time_step),lowers risk
+22769,2,Spec 1,raises risk
+22769,3,"histogram 291, total count",raises risk
+22781,1,Spec 1,raises risk
+22781,2,"histogram 291, total count",raises risk
+22781,3,Spec 7,lowers risk
+22807,1,Spec 1,raises risk
+22807,2,"counter 837, level",raises risk
+22807,3,"counter 100, change over last 5 readouts",lowers risk
+22851,1,age (time_step),raises risk
+22851,2,Spec 1,raises risk
+22851,3,Spec 7,lowers risk
+22859,1,Spec 1,raises risk
+22859,2,"counter 309, level",lowers risk
+22859,3,Spec 7,lowers risk
+22907,1,Spec 1,raises risk
+22907,2,Spec 7,lowers risk
+22907,3,"histogram 167, mean bin (lifetime)",raises risk
+22915,1,Spec 1,raises risk
+22915,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+22915,3,Spec 7,lowers risk
+22924,1,Spec 6,raises risk
+22924,2,Spec 2,raises risk
+22924,3,Spec 1,raises risk
+22970,1,age (time_step),raises risk
+22970,2,"counter 666, rate since previous readout",raises risk
+22970,3,"counter 666, change over last 5 readouts",raises risk
+22993,1,age (time_step),lowers risk
+22993,2,Spec 1,raises risk
+22993,3,Spec 7,lowers risk
+22999,1,Spec 7,lowers risk
+22999,2,Spec 1,raises risk
+22999,3,"histogram 158, mean bin (last 5 readouts)",raises risk
+23025,1,"histogram 291, mean bin (lifetime)",lowers risk
+23025,2,Spec 7,lowers risk
+23025,3,Spec 2,raises risk
+23055,1,age (time_step),raises risk
+23055,2,"histogram 167, mean bin (lifetime)",lowers risk
+23055,3,"counter 100, level",raises risk
+23060,1,"counter 666, rate since previous readout",raises risk
+23060,2,Spec 1,raises risk
+23060,3,"histogram 167, mean bin (lifetime)",raises risk
+23071,1,Spec 1,raises risk
+23071,2,age (time_step),raises risk
+23071,3,"counter 100, level",raises risk
+23090,1,Spec 6,raises risk
+23090,2,"histogram 272, change in mean bin over last 5 readouts",raises risk
+23090,3,"counter 666, level",lowers risk
+23126,1,Spec 1,raises risk
+23126,2,age (time_step),raises risk
+23126,3,span of last 5 readouts,raises risk
+23207,1,age (time_step),lowers risk
+23207,2,Spec 1,raises risk
+23207,3,Spec 7,lowers risk
+23279,1,Spec 1,raises risk
+23279,2,Spec 6,raises risk
+23279,3,age (time_step),raises risk
+23329,1,"histogram 167, mean bin (lifetime)",raises risk
+23329,2,age (time_step),raises risk
+23329,3,"counter 100, level",lowers risk
+23409,1,age (time_step),raises risk
+23409,2,"counter 666, level",lowers risk
+23409,3,Spec 6,raises risk
+23426,1,Spec 7,lowers risk
+23426,2,Spec 1,raises risk
+23426,3,"counter 100, level",raises risk
+23455,1,age (time_step),raises risk
+23455,2,Spec 7,lowers risk
+23455,3,Spec 1,raises risk
+23473,1,Spec 7,lowers risk
+23473,2,Spec 1,raises risk
+23473,3,age (time_step),lowers risk
+23515,1,age (time_step),raises risk
+23515,2,Spec 1,raises risk
+23515,3,Spec 7,lowers risk
+23535,1,"histogram 459, mean bin (lifetime)",raises risk
+23535,2,Spec 6,raises risk
+23535,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+23573,1,Spec 1,raises risk
+23573,2,Spec 7,lowers risk
+23573,3,age (time_step),lowers risk
+23595,1,Spec 1,raises risk
+23595,2,age (time_step),raises risk
+23595,3,Spec 7,lowers risk
+23631,1,Spec 7,lowers risk
+23631,2,Spec 1,raises risk
+23631,3,"histogram 272, mean bin (last 5 readouts)",lowers risk
+23641,1,Spec 7,lowers risk
+23641,2,Spec 1,raises risk
+23641,3,"counter 100, change over last 5 readouts",lowers risk
+23653,1,age (time_step),lowers risk
+23653,2,"counter 837, level",raises risk
+23653,3,Spec 1,raises risk
+23694,1,"histogram 158, change in mean bin over last 5 readouts",raises risk
+23694,2,Spec 1,raises risk
+23694,3,"counter 666, level",raises risk
+23704,1,Spec 1,raises risk
+23704,2,Spec 7,lowers risk
+23704,3,"histogram 167, mean bin (lifetime)",raises risk
+23746,1,Spec 7,lowers risk
+23746,2,Spec 1,raises risk
+23746,3,"counter 666, level",raises risk
+23754,1,Spec 1,raises risk
+23754,2,"counter 666, level",raises risk
+23754,3,"counter 309, level",lowers risk
+23780,1,"counter 837, level",raises risk
+23780,2,Spec 7,lowers risk
+23780,3,Spec 1,raises risk
+23823,1,Spec 1,raises risk
+23823,2,Spec 7,lowers risk
+23823,3,"counter 666, rate since previous readout",raises risk
+23859,1,"counter 309, level",lowers risk
+23859,2,Spec 1,raises risk
+23859,3,Spec 7,lowers risk
+23872,1,Spec 1,raises risk
+23872,2,age (time_step),lowers risk
+23872,3,Spec 7,lowers risk
+23880,1,Spec 1,raises risk
+23880,2,"counter 837, level",lowers risk
+23880,3,"counter 309, level",lowers risk
+23900,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+23900,2,"histogram 459, share in top 2 bins (lifetime)",raises risk
+23900,3,"histogram 459, change in mean bin over last 5 readouts",lowers risk
+23949,1,Spec 7,lowers risk
+23949,2,"counter 666, level",raises risk
+23949,3,"histogram 167, mean bin (lifetime)",raises risk
+23966,1,age (time_step),lowers risk
+23966,2,Spec 1,raises risk
+23966,3,Spec 7,lowers risk
+23981,1,Spec 1,raises risk
+23981,2,Spec 7,lowers risk
+23981,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+24026,1,age (time_step),raises risk
+24026,2,"counter 100, level",lowers risk
+24026,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+24053,1,Spec 7,lowers risk
+24053,2,Spec 1,raises risk
+24053,3,age (time_step),lowers risk
+24081,1,Spec 1,raises risk
+24081,2,age (time_step),raises risk
+24081,3,Spec 7,lowers risk
+24121,1,"counter 309, level",lowers risk
+24121,2,Spec 1,raises risk
+24121,3,Spec 7,lowers risk
+24145,1,Spec 1,raises risk
+24145,2,"counter 100, level",raises risk
+24145,3,"counter 666, level",raises risk
+24161,1,age (time_step),raises risk
+24161,2,Spec 7,lowers risk
+24161,3,Spec 1,raises risk
+24177,1,Spec 7,lowers risk
+24177,2,"counter 837, level",lowers risk
+24177,3,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+24187,1,Spec 1,raises risk
+24187,2,"counter 309, level",raises risk
+24187,3,"counter 837, level",raises risk
+24250,1,"histogram 158, change in mean bin over last 5 readouts",raises risk
+24250,2,Spec 7,lowers risk
+24250,3,Spec 1,raises risk
+24293,1,age (time_step),raises risk
+24293,2,"counter 100, rate over last 5 readouts",raises risk
+24293,3,"counter 100, level",raises risk
+24347,1,age (time_step),raises risk
+24347,2,Spec 1,raises risk
+24347,3,"counter 666, level",raises risk
+24348,1,Spec 1,raises risk
+24348,2,"histogram 291, total count",raises risk
+24348,3,Spec 7,lowers risk
+24350,1,Spec 1,raises risk
+24350,2,Spec 7,lowers risk
+24350,3,age (time_step),lowers risk
+24362,1,Spec 1,raises risk
+24362,2,Spec 7,lowers risk
+24362,3,readouts so far,raises risk
+24364,1,Spec 7,lowers risk
+24364,2,age (time_step),lowers risk
+24364,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+24366,1,Spec 1,raises risk
+24366,2,Spec 7,lowers risk
+24366,3,"counter 309, level",lowers risk
+24379,1,"counter 666, change over last 5 readouts",raises risk
+24379,2,Spec 1,raises risk
+24379,3,Spec 7,lowers risk
+24406,1,Spec 1,raises risk
+24406,2,age (time_step),raises risk
+24406,3,"counter 309, level",lowers risk
+24436,1,"counter 427, level",raises risk
+24436,2,"histogram 397, share in top 2 bins (last 5 readouts)",lowers risk
+24436,3,Spec 1,raises risk
+24440,1,Spec 1,raises risk
+24440,2,age (time_step),raises risk
+24440,3,Spec 7,lowers risk
+24441,1,Spec 1,raises risk
+24441,2,"histogram 291, total count",raises risk
+24441,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+24464,1,Spec 1,raises risk
+24464,2,Spec 7,lowers risk
+24464,3,"counter 837, level",raises risk
+24490,1,Spec 1,lowers risk
+24490,2,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+24490,3,"histogram 459, mean bin (lifetime)",raises risk
+24496,1,Spec 1,raises risk
+24496,2,Spec 7,raises risk
+24496,3,"counter 666, level",raises risk
+24497,1,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+24497,2,Spec 7,raises risk
+24497,3,Spec 1,raises risk
+24502,1,Spec 7,raises risk
+24502,2,"histogram 291, mean bin (lifetime)",lowers risk
+24502,3,"counter 100, level",raises risk
+24508,1,age (time_step),raises risk
+24508,2,Spec 7,raises risk
+24508,3,"counter 309, level",lowers risk
+24512,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+24512,2,Spec 7,raises risk
+24512,3,"counter 666, rate since previous readout",raises risk
+24527,1,"counter 666, rate since previous readout",raises risk
+24527,2,Spec 1,raises risk
+24527,3,Spec 7,raises risk
+24541,1,Spec 1,raises risk
+24541,2,"counter 837, level",raises risk
+24541,3,"counter 309, level",raises risk
+24560,1,Spec 7,raises risk
+24560,2,"counter 837, level",raises risk
+24560,3,"histogram 291, total count",raises risk
+24570,1,"histogram 167, mean bin (lifetime)",lowers risk
+24570,2,Spec 7,raises risk
+24570,3,Spec 1,raises risk
+24595,1,"histogram 291, total count",raises risk
+24595,2,Spec 7,raises risk
+24595,3,"counter 100, level",raises risk
+24601,1,Spec 1,raises risk
+24601,2,age (time_step),raises risk
+24601,3,"counter 666, level",raises risk
+24613,1,Spec 7,raises risk
+24613,2,age (time_step),raises risk
+24613,3,Spec 1,raises risk
+24617,1,Spec 7,raises risk
+24617,2,age (time_step),raises risk
+24617,3,Spec 1,raises risk
+24634,1,age (time_step),raises risk
+24634,2,Spec 7,raises risk
+24634,3,"counter 666, level",raises risk
+24635,1,Spec 7,raises risk
+24635,2,age (time_step),raises risk
+24635,3,"counter 666, level",raises risk
+24636,1,Spec 7,raises risk
+24636,2,"histogram 167, mean bin (lifetime)",lowers risk
+24636,3,Spec 1,raises risk
+24642,1,"histogram 272, mean bin (last 5 readouts)",lowers risk
+24642,2,Spec 7,raises risk
+24642,3,"histogram 291, total count",raises risk
+24646,1,Spec 7,raises risk
+24646,2,age (time_step),raises risk
+24646,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+24648,1,age (time_step),raises risk
+24648,2,"counter 666, change over last 5 readouts",raises risk
+24648,3,Spec 1,raises risk
+24654,1,Spec 7,raises risk
+24654,2,age (time_step),raises risk
+24654,3,Spec 1,raises risk
+24658,1,Spec 1,raises risk
+24658,2,Spec 7,raises risk
+24658,3,age (time_step),raises risk
+24662,1,age (time_step),raises risk
+24662,2,"counter 309, level",lowers risk
+24662,3,"counter 837, level",lowers risk
+24665,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+24665,2,age (time_step),lowers risk
+24665,3,Spec 7,raises risk
+24672,1,Spec 7,raises risk
+24672,2,Spec 1,raises risk
+24672,3,"counter 666, level",raises risk
+24688,1,"counter 837, level",lowers risk
+24688,2,age (time_step),raises risk
+24688,3,"counter 309, level",lowers risk
+24705,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+24705,2,Spec 7,raises risk
+24705,3,"counter 100, level",raises risk
+24710,1,Spec 7,raises risk
+24710,2,"counter 666, level",raises risk
+24710,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+24712,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+24712,2,"histogram 291, total count",raises risk
+24712,3,"counter 309, level",raises risk
+24722,1,age (time_step),raises risk
+24722,2,Spec 7,raises risk
+24722,3,Spec 1,raises risk
+24724,1,Spec 1,raises risk
+24724,2,Spec 7,raises risk
+24724,3,"counter 100, level",raises risk
+24729,1,age (time_step),lowers risk
+24729,2,Spec 7,raises risk
+24729,3,"histogram 291, total count",raises risk
+24745,1,Spec 1,raises risk
+24745,2,"histogram 167, share in top 2 bins (lifetime)",raises risk
+24745,3,Spec 7,raises risk
+24758,1,age (time_step),raises risk
+24758,2,Spec 7,raises risk
+24758,3,"counter 837, level",raises risk
+24762,1,age (time_step),raises risk
+24762,2,Spec 7,raises risk
+24762,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+24766,1,age (time_step),raises risk
+24766,2,Spec 7,raises risk
+24766,3,"counter 100, level",raises risk
+24779,1,"counter 666, rate since previous readout",raises risk
+24779,2,"histogram 167, mean bin (lifetime)",lowers risk
+24779,3,age (time_step),raises risk
+24785,1,"histogram 459, total count",lowers risk
+24785,2,Spec 1,raises risk
+24785,3,"counter 837, level",lowers risk
+24807,1,Spec 7,raises risk
+24807,2,"counter 666, level",raises risk
+24807,3,Spec 1,raises risk
+24823,1,Spec 7,raises risk
+24823,2,"histogram 291, total count",raises risk
+24823,3,Spec 1,raises risk
+24881,1,age (time_step),raises risk
+24881,2,Spec 7,raises risk
+24881,3,"counter 309, level",raises risk
+24886,1,Spec 7,raises risk
+24886,2,"counter 666, level",raises risk
+24886,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+24898,1,Spec 7,raises risk
+24898,2,Spec 1,raises risk
+24898,3,age (time_step),raises risk
+24905,1,Spec 7,raises risk
+24905,2,Spec 1,raises risk
+24905,3,"counter 666, level",raises risk
+24915,1,"histogram 459, mean bin (lifetime)",raises risk
+24915,2,Spec 7,raises risk
+24915,3,Spec 1,raises risk
+24925,1,Spec 1,raises risk
+24925,2,Spec 7,raises risk
+24925,3,age (time_step),raises risk
+24944,1,age (time_step),lowers risk
+24944,2,Spec 7,raises risk
+24944,3,"counter 837, level",raises risk
+24945,1,Spec 7,raises risk
+24945,2,Spec 1,raises risk
+24945,3,"counter 666, level",raises risk
+24950,1,"counter 100, level",lowers risk
+24950,2,Spec 1,raises risk
+24950,3,"counter 666, level",raises risk
+24970,1,Spec 1,raises risk
+24970,2,age (time_step),raises risk
+24970,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+24973,1,age (time_step),raises risk
+24973,2,Spec 7,raises risk
+24973,3,span of last 5 readouts,lowers risk
+24974,1,Spec 7,raises risk
+24974,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+24974,3,readouts so far,raises risk
+24984,1,age (time_step),lowers risk
+24984,2,Spec 1,raises risk
+24984,3,Spec 7,raises risk
+24995,1,Spec 7,raises risk
+24995,2,age (time_step),raises risk
+24995,3,Spec 1,raises risk
+25012,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+25012,2,Spec 7,raises risk
+25012,3,"counter 100, level",raises risk
+25018,1,Spec 7,raises risk
+25018,2,age (time_step),raises risk
+25018,3,Spec 1,raises risk
+25026,1,age (time_step),raises risk
+25026,2,Spec 7,raises risk
+25026,3,"histogram 291, total count",raises risk
+25030,1,Spec 1,raises risk
+25030,2,age (time_step),raises risk
+25030,3,"counter 100, level",lowers risk
+25047,1,Spec 7,raises risk
+25047,2,"histogram 291, total count",raises risk
+25047,3,"counter 100, change over last 5 readouts",lowers risk
+25068,1,"histogram 167, mean bin (lifetime)",lowers risk
+25068,2,age (time_step),raises risk
+25068,3,span of last 5 readouts,raises risk
+25072,1,age (time_step),raises risk
+25072,2,Spec 7,raises risk
+25072,3,"counter 666, level",raises risk
+25079,1,age (time_step),raises risk
+25079,2,Spec 7,raises risk
+25079,3,"counter 100, level",raises risk
+25082,1,Spec 1,raises risk
+25082,2,age (time_step),raises risk
+25082,3,Spec 7,raises risk
+25089,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+25089,2,age (time_step),lowers risk
+25089,3,Spec 7,raises risk
+25093,1,Spec 1,raises risk
+25093,2,Spec 7,raises risk
+25093,3,age (time_step),raises risk
+25095,1,"histogram 167, mean bin (lifetime)",raises risk
+25095,2,age (time_step),raises risk
+25095,3,Spec 1,raises risk
+25098,1,Spec 1,raises risk
+25098,2,"histogram 397, share in top 2 bins (last 5 readouts)",lowers risk
+25098,3,"histogram 459, mean bin (lifetime)",raises risk
+25110,1,"counter 837, level",raises risk
+25110,2,"counter 309, level",raises risk
+25110,3,age (time_step),raises risk
+25113,1,Spec 1,raises risk
+25113,2,age (time_step),raises risk
+25113,3,Spec 6,raises risk
+25124,1,Spec 7,raises risk
+25124,2,Spec 1,raises risk
+25124,3,"counter 666, level",raises risk
+25134,1,Spec 1,raises risk
+25134,2,"counter 837, level",raises risk
+25134,3,"histogram 167, mean bin (lifetime)",raises risk
+25149,1,Spec 7,raises risk
+25149,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+25149,3,"counter 309, level",lowers risk
+25173,1,Spec 1,raises risk
+25173,2,Spec 7,raises risk
+25173,3,"counter 666, level",raises risk
+25178,1,Spec 7,raises risk
+25178,2,"counter 100, level",raises risk
+25178,3,"histogram 291, total count",raises risk
+25187,1,"counter 309, level",raises risk
+25187,2,Spec 7,raises risk
+25187,3,age (time_step),raises risk
+25197,1,Spec 7,raises risk
+25197,2,age (time_step),raises risk
+25197,3,Spec 1,raises risk
+25203,1,Spec 7,raises risk
+25203,2,age (time_step),raises risk
+25203,3,Spec 1,raises risk
+25213,1,Spec 7,raises risk
+25213,2,age (time_step),raises risk
+25213,3,"counter 666, rate since previous readout",raises risk
+25228,1,Spec 7,raises risk
+25228,2,Spec 1,raises risk
+25228,3,"counter 666, level",raises risk
+25232,1,age (time_step),raises risk
+25232,2,"counter 309, level",raises risk
+25232,3,Spec 1,raises risk
+25235,1,age (time_step),raises risk
+25235,2,"counter 837, level",raises risk
+25235,3,"counter 309, level",raises risk
+25240,1,Spec 7,raises risk
+25240,2,age (time_step),raises risk
+25240,3,"counter 666, level",raises risk
+25241,1,Spec 7,raises risk
+25241,2,age (time_step),raises risk
+25241,3,"counter 100, level",lowers risk
+25243,1,Spec 7,raises risk
+25243,2,age (time_step),raises risk
+25243,3,Spec 1,raises risk
+25251,1,Spec 7,raises risk
+25251,2,Spec 1,lowers risk
+25251,3,"counter 837, level",raises risk
+25266,1,age (time_step),raises risk
+25266,2,Spec 7,raises risk
+25266,3,Spec 1,raises risk
+25282,1,Spec 1,raises risk
+25282,2,"counter 100, change over last 5 readouts",lowers risk
+25282,3,Spec 7,raises risk
+25287,1,age (time_step),raises risk
+25287,2,Spec 1,raises risk
+25287,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+25298,1,"counter 309, level",raises risk
+25298,2,"counter 666, rate since previous readout",raises risk
+25298,3,"counter 837, level",raises risk
+25304,1,Spec 7,raises risk
+25304,2,Spec 1,raises risk
+25304,3,"histogram 167, mean bin (lifetime)",raises risk
+25315,1,Spec 7,raises risk
+25315,2,Spec 1,raises risk
+25315,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+25318,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+25318,2,age (time_step),raises risk
+25318,3,Spec 7,raises risk
+25331,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+25331,2,"counter 666, change over last 5 readouts",raises risk
+25331,3,"counter 309, level",lowers risk
+25334,1,Spec 7,raises risk
+25334,2,age (time_step),raises risk
+25334,3,"counter 666, level",raises risk
+25336,1,Spec 7,raises risk
+25336,2,age (time_step),raises risk
+25336,3,"counter 100, change over last 5 readouts",lowers risk
+25350,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+25350,2,Spec 7,raises risk
+25350,3,"counter 666, level",raises risk
+25351,1,"histogram 167, mean bin (last 5 readouts)",raises risk
+25351,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+25351,3,"counter 309, level",lowers risk
+25352,1,Spec 7,raises risk
+25352,2,age (time_step),raises risk
+25352,3,"counter 666, level",raises risk
+25382,1,Spec 7,raises risk
+25382,2,age (time_step),raises risk
+25382,3,Spec 1,raises risk
+25431,1,Spec 1,lowers risk
+25431,2,Spec 7,raises risk
+25431,3,"histogram 291, total count",raises risk
+25442,1,Spec 7,raises risk
+25442,2,age (time_step),raises risk
+25442,3,"histogram 167, mean bin (lifetime)",raises risk
+25450,1,Spec 7,raises risk
+25450,2,age (time_step),raises risk
+25450,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+25493,1,age (time_step),raises risk
+25493,2,Spec 1,raises risk
+25493,3,"histogram 167, mean bin (lifetime)",raises risk
+25502,1,age (time_step),raises risk
+25502,2,"counter 100, level",raises risk
+25502,3,"counter 309, level",raises risk
+25508,1,Spec 7,raises risk
+25508,2,"counter 666, level",raises risk
+25508,3,Spec 1,raises risk
+25512,1,Spec 1,raises risk
+25512,2,age (time_step),raises risk
+25512,3,Spec 7,raises risk
+25516,1,Spec 7,raises risk
+25516,2,Spec 1,raises risk
+25516,3,age (time_step),raises risk
+25538,1,Spec 7,raises risk
+25538,2,age (time_step),raises risk
+25538,3,"counter 100, level",lowers risk
+25541,1,Spec 1,raises risk
+25541,2,Spec 7,raises risk
+25541,3,age (time_step),raises risk
+25542,1,Spec 7,raises risk
+25542,2,"counter 666, level",raises risk
+25542,3,age (time_step),raises risk
+25552,1,"counter 837, level",raises risk
+25552,2,age (time_step),raises risk
+25552,3,"counter 666, level",raises risk
+25569,1,Spec 7,raises risk
+25569,2,age (time_step),raises risk
+25569,3,Spec 1,raises risk
+25616,1,Spec 1,raises risk
+25616,2,"counter 100, level",lowers risk
+25616,3,Spec 7,raises risk
+25644,1,Spec 1,raises risk
+25644,2,"counter 100, level",lowers risk
+25644,3,"counter 666, level",raises risk
+25662,1,Spec 1,raises risk
+25662,2,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+25662,3,"histogram 397, change in mean bin over last 5 readouts",lowers risk
+25670,1,Spec 7,raises risk
+25670,2,Spec 1,raises risk
+25670,3,age (time_step),raises risk
+25671,1,Spec 7,raises risk
+25671,2,Spec 1,raises risk
+25671,3,Spec 6,raises risk
+25681,1,Spec 7,raises risk
+25681,2,"counter 666, level",raises risk
+25681,3,"counter 100, level",raises risk
+25695,1,Spec 1,raises risk
+25695,2,"counter 309, level",lowers risk
+25695,3,"histogram 291, total count",raises risk
+25698,1,Spec 7,raises risk
+25698,2,Spec 1,raises risk
+25698,3,"counter 100, level",raises risk
+25713,1,"counter 666, level",lowers risk
+25713,2,"histogram 397, share in top 2 bins (lifetime)",raises risk
+25713,3,"counter 309, level",lowers risk
+25716,1,Spec 1,raises risk
+25716,2,age (time_step),raises risk
+25716,3,Spec 7,raises risk
+25722,1,Spec 7,raises risk
+25722,2,"counter 100, level",raises risk
+25722,3,Spec 1,raises risk
+25728,1,"histogram 167, mean bin (lifetime)",raises risk
+25728,2,Spec 1,raises risk
+25728,3,Spec 7,raises risk
+25729,1,Spec 7,raises risk
+25729,2,"counter 837, level",raises risk
+25729,3,readouts so far,raises risk
+25737,1,Spec 7,raises risk
+25737,2,"histogram 167, mean bin (lifetime)",raises risk
+25737,3,Spec 1,raises risk
+25745,1,age (time_step),raises risk
+25745,2,"counter 666, level",raises risk
+25745,3,"counter 666, rate since previous readout",lowers risk
+25756,1,age (time_step),raises risk
+25756,2,Spec 7,raises risk
+25756,3,"counter 309, level",lowers risk
+25757,1,Spec 7,raises risk
+25757,2,Spec 1,raises risk
+25757,3,"counter 666, level",raises risk
+25769,1,"counter 309, level",raises risk
+25769,2,age (time_step),raises risk
+25769,3,Spec 2,raises risk
+25772,1,Spec 1,raises risk
+25772,2,"counter 837, level",raises risk
+25772,3,"histogram 397, mean bin (last 5 readouts)",lowers risk
+25785,1,"histogram 167, mean bin (lifetime)",lowers risk
+25785,2,age (time_step),raises risk
+25785,3,"counter 837, level",raises risk
+25801,1,Spec 7,raises risk
+25801,2,age (time_step),raises risk
+25801,3,Spec 1,raises risk
+25861,1,age (time_step),raises risk
+25861,2,"counter 100, level",raises risk
+25861,3,Spec 7,raises risk
+25875,1,Spec 7,raises risk
+25875,2,age (time_step),raises risk
+25875,3,Spec 1,raises risk
+25902,1,Spec 7,raises risk
+25902,2,Spec 1,raises risk
+25902,3,age (time_step),raises risk
+25916,1,age (time_step),raises risk
+25916,2,Spec 7,raises risk
+25916,3,Spec 1,raises risk
+25922,1,age (time_step),raises risk
+25922,2,"histogram 459, share in top 2 bins (lifetime)",raises risk
+25922,3,Spec 1,raises risk
+25923,1,Spec 7,raises risk
+25923,2,age (time_step),raises risk
+25923,3,Spec 1,raises risk
+25924,1,"counter 309, level",raises risk
+25924,2,Spec 7,raises risk
+25924,3,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+25931,1,Spec 1,raises risk
+25931,2,age (time_step),raises risk
+25931,3,"counter 666, level",raises risk
+25947,1,age (time_step),raises risk
+25947,2,Spec 7,raises risk
+25947,3,Spec 1,raises risk
+25950,1,Spec 1,raises risk
+25950,2,Spec 7,raises risk
+25950,3,"counter 309, level",raises risk
+25955,1,age (time_step),raises risk
+25955,2,Spec 7,raises risk
+25955,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+25963,1,Spec 7,raises risk
+25963,2,age (time_step),raises risk
+25963,3,"histogram 167, mean bin (lifetime)",raises risk
+25965,1,age (time_step),raises risk
+25965,2,Spec 7,raises risk
+25965,3,Spec 1,raises risk
+25979,1,"counter 666, change over last 5 readouts",raises risk
+25979,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+25979,3,age (time_step),raises risk
+25982,1,age (time_step),raises risk
+25982,2,Spec 1,raises risk
+25982,3,"counter 666, level",raises risk
+25983,1,"histogram 459, total count",lowers risk
+25983,2,age (time_step),raises risk
+25983,3,Spec 6,raises risk
+25984,1,Spec 7,raises risk
+25984,2,Spec 1,raises risk
+25984,3,age (time_step),lowers risk
+25991,1,age (time_step),raises risk
+25991,2,"counter 666, level",raises risk
+25991,3,"counter 100, level",raises risk
+25996,1,Spec 7,raises risk
+25996,2,"counter 100, level",raises risk
+25996,3,"histogram 291, total count",raises risk
+26007,1,Spec 7,raises risk
+26007,2,age (time_step),raises risk
+26007,3,"counter 100, change over last 5 readouts",lowers risk
+26008,1,age (time_step),raises risk
+26008,2,Spec 7,raises risk
+26008,3,Spec 1,raises risk
+26047,1,age (time_step),raises risk
+26047,2,Spec 7,raises risk
+26047,3,"counter 666, level",raises risk
+26056,1,Spec 7,raises risk
+26056,2,Spec 1,lowers risk
+26056,3,age (time_step),raises risk
+26073,1,age (time_step),raises risk
+26073,2,Spec 7,raises risk
+26073,3,Spec 1,raises risk
+26075,1,Spec 1,raises risk
+26075,2,"counter 837, level",raises risk
+26075,3,age (time_step),raises risk
+26094,1,"histogram 167, mean bin (lifetime)",lowers risk
+26094,2,age (time_step),raises risk
+26094,3,"counter 100, level",raises risk
+26115,1,Spec 7,raises risk
+26115,2,age (time_step),raises risk
+26115,3,"counter 837, level",lowers risk
+26149,1,age (time_step),raises risk
+26149,2,Spec 1,raises risk
+26149,3,Spec 7,raises risk
+26168,1,Spec 7,raises risk
+26168,2,age (time_step),raises risk
+26168,3,"counter 837, level",lowers risk
+26174,1,Spec 7,raises risk
+26174,2,age (time_step),raises risk
+26174,3,Spec 1,raises risk
+26186,1,age (time_step),raises risk
+26186,2,Spec 7,raises risk
+26186,3,Spec 1,raises risk
+26212,1,Spec 7,raises risk
+26212,2,Spec 1,raises risk
+26212,3,age (time_step),raises risk
+26213,1,Spec 1,raises risk
+26213,2,Spec 7,raises risk
+26213,3,age (time_step),raises risk
+26217,1,Spec 7,raises risk
+26217,2,age (time_step),raises risk
+26217,3,Spec 1,raises risk
+26218,1,"counter 837, level",raises risk
+26218,2,"histogram 291, total count",raises risk
+26218,3,age (time_step),raises risk
+26229,1,Spec 7,raises risk
+26229,2,Spec 1,raises risk
+26229,3,"counter 666, level",raises risk
+26279,1,Spec 7,raises risk
+26279,2,Spec 1,raises risk
+26279,3,"counter 666, level",raises risk
+26295,1,"histogram 167, mean bin (lifetime)",lowers risk
+26295,2,Spec 1,raises risk
+26295,3,age (time_step),raises risk
+26339,1,Spec 1,raises risk
+26339,2,Spec 7,raises risk
+26339,3,age (time_step),raises risk
+26344,1,Spec 1,raises risk
+26344,2,age (time_step),raises risk
+26344,3,Spec 7,raises risk
+26380,1,Spec 7,raises risk
+26380,2,"counter 666, level",raises risk
+26380,3,age (time_step),raises risk
+26381,1,Spec 1,raises risk
+26381,2,age (time_step),raises risk
+26381,3,"histogram 167, mean bin (lifetime)",raises risk
+26387,1,Spec 7,raises risk
+26387,2,age (time_step),raises risk
+26387,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+26409,1,age (time_step),raises risk
+26409,2,Spec 1,raises risk
+26409,3,Spec 7,raises risk
+26410,1,age (time_step),raises risk
+26410,2,Spec 7,raises risk
+26410,3,Spec 1,raises risk
+26415,1,Spec 7,raises risk
+26415,2,"counter 837, level",raises risk
+26415,3,age (time_step),raises risk
+26417,1,age (time_step),raises risk
+26417,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+26417,3,Spec 1,raises risk
+26422,1,Spec 1,raises risk
+26422,2,Spec 7,raises risk
+26422,3,age (time_step),raises risk
+26425,1,age (time_step),raises risk
+26425,2,Spec 7,raises risk
+26425,3,"counter 309, level",lowers risk
+26427,1,age (time_step),raises risk
+26427,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+26427,3,Spec 1,raises risk
+26430,1,Spec 7,raises risk
+26430,2,age (time_step),raises risk
+26430,3,Spec 1,raises risk
+26448,1,age (time_step),raises risk
+26448,2,Spec 1,raises risk
+26448,3,"counter 666, level",raises risk
+26463,1,Spec 7,raises risk
+26463,2,age (time_step),raises risk
+26463,3,"counter 666, level",raises risk
+26477,1,age (time_step),raises risk
+26477,2,Spec 7,raises risk
+26477,3,"counter 837, level",lowers risk
+26478,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+26478,2,Spec 7,raises risk
+26478,3,"histogram 291, total count",raises risk
+26486,1,age (time_step),raises risk
+26486,2,"counter 309, level",lowers risk
+26486,3,Spec 1,raises risk
+26504,1,Spec 7,raises risk
+26504,2,Spec 1,raises risk
+26504,3,age (time_step),raises risk
+26520,1,Spec 7,raises risk
+26520,2,"counter 100, level",raises risk
+26520,3,"histogram 291, total count",raises risk
+26521,1,Spec 7,raises risk
+26521,2,age (time_step),raises risk
+26521,3,"histogram 167, mean bin (lifetime)",raises risk
+26522,1,age (time_step),raises risk
+26522,2,"histogram 397, share in top 2 bins (last 5 readouts)",lowers risk
+26522,3,Spec 6,raises risk
+26525,1,age (time_step),raises risk
+26525,2,Spec 7,raises risk
+26525,3,"histogram 291, total count",raises risk
+26553,1,"counter 100, level",lowers risk
+26553,2,"histogram 397, share in top 2 bins (lifetime)",lowers risk
+26553,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+26554,1,"histogram 167, share in top 2 bins (lifetime)",raises risk
+26554,2,Spec 1,raises risk
+26554,3,age (time_step),raises risk
+26569,1,Spec 7,raises risk
+26569,2,age (time_step),raises risk
+26569,3,"counter 666, level",raises risk
+26588,1,Spec 7,raises risk
+26588,2,age (time_step),raises risk
+26588,3,Spec 1,raises risk
+26606,1,"counter 100, level",lowers risk
+26606,2,age (time_step),raises risk
+26606,3,Spec 7,raises risk
+26614,1,age (time_step),raises risk
+26614,2,Spec 7,raises risk
+26614,3,Spec 1,raises risk
+26650,1,Spec 1,raises risk
+26650,2,age (time_step),raises risk
+26650,3,"counter 309, level",raises risk
+26651,1,age (time_step),raises risk
+26651,2,Spec 1,raises risk
+26651,3,"counter 666, rate since previous readout",raises risk
+26652,1,Spec 1,raises risk
+26652,2,age (time_step),raises risk
+26652,3,Spec 7,raises risk
+26654,1,Spec 7,raises risk
+26654,2,Spec 1,raises risk
+26654,3,age (time_step),raises risk
+26679,1,Spec 7,raises risk
+26679,2,Spec 1,raises risk
+26679,3,age (time_step),raises risk
+26702,1,"counter 100, level",lowers risk
+26702,2,Spec 1,raises risk
+26702,3,"counter 666, level",raises risk
+26708,1,age (time_step),raises risk
+26708,2,Spec 7,raises risk
+26708,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+26711,1,Spec 1,raises risk
+26711,2,age (time_step),raises risk
+26711,3,Spec 7,raises risk
+26715,1,Spec 1,raises risk
+26715,2,Spec 7,raises risk
+26715,3,age (time_step),raises risk
+26725,1,age (time_step),raises risk
+26725,2,Spec 7,raises risk
+26725,3,Spec 1,raises risk
+26752,1,Spec 7,raises risk
+26752,2,"counter 666, level",raises risk
+26752,3,Spec 1,raises risk
+26756,1,Spec 1,raises risk
+26756,2,age (time_step),raises risk
+26756,3,"histogram 167, mean bin (lifetime)",raises risk
+26777,1,Spec 7,raises risk
+26777,2,age (time_step),raises risk
+26777,3,"histogram 459, mean bin (lifetime)",raises risk
+26789,1,Spec 7,raises risk
+26789,2,Spec 1,raises risk
+26789,3,age (time_step),raises risk
+26796,1,age (time_step),raises risk
+26796,2,Spec 7,raises risk
+26796,3,Spec 1,raises risk
+26803,1,age (time_step),raises risk
+26803,2,"counter 100, level",raises risk
+26803,3,"histogram 291, total count",raises risk
+26809,1,age (time_step),raises risk
+26809,2,Spec 7,raises risk
+26809,3,"counter 837, level",raises risk
+26815,1,age (time_step),raises risk
+26815,2,Spec 7,raises risk
+26815,3,Spec 1,raises risk
+26818,1,Spec 7,raises risk
+26818,2,age (time_step),raises risk
+26818,3,"counter 666, level",raises risk
+26831,1,age (time_step),raises risk
+26831,2,"histogram 167, mean bin (lifetime)",raises risk
+26831,3,Spec 7,raises risk
+26832,1,age (time_step),raises risk
+26832,2,Spec 7,raises risk
+26832,3,Spec 1,raises risk
+26847,1,age (time_step),raises risk
+26847,2,Spec 7,raises risk
+26847,3,"counter 666, level",raises risk
+26851,1,age (time_step),raises risk
+26851,2,Spec 7,raises risk
+26851,3,Spec 1,raises risk
+26856,1,age (time_step),raises risk
+26856,2,Spec 7,raises risk
+26856,3,span of last 5 readouts,raises risk
+26866,1,"counter 837, level",raises risk
+26866,2,Spec 1,lowers risk
+26866,3,age (time_step),raises risk
+26868,1,age (time_step),raises risk
+26868,2,Spec 7,raises risk
+26868,3,"counter 100, level",raises risk
+26873,1,Spec 1,raises risk
+26873,2,Spec 7,raises risk
+26873,3,"counter 666, level",raises risk
+26877,1,"histogram 397, change in mean bin over last 5 readouts",lowers risk
+26877,2,Spec 2,raises risk
+26877,3,"counter 666, level",raises risk
+26901,1,Spec 1,raises risk
+26901,2,Spec 7,raises risk
+26901,3,age (time_step),raises risk
+26917,1,Spec 7,raises risk
+26917,2,age (time_step),raises risk
+26917,3,Spec 1,raises risk
+26918,1,age (time_step),raises risk
+26918,2,Spec 7,raises risk
+26918,3,Spec 1,raises risk
+26929,1,age (time_step),raises risk
+26929,2,Spec 7,raises risk
+26929,3,Spec 1,raises risk
+26961,1,Spec 1,raises risk
+26961,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+26961,3,age (time_step),raises risk
+26989,1,age (time_step),raises risk
+26989,2,Spec 7,raises risk
+26989,3,"histogram 167, mean bin (last 5 readouts)",lowers risk
+27007,1,"counter 837, level",raises risk
+27007,2,age (time_step),raises risk
+27007,3,Spec 1,raises risk
+27009,1,Spec 1,raises risk
+27009,2,age (time_step),raises risk
+27009,3,"counter 666, level",raises risk
+27010,1,age (time_step),raises risk
+27010,2,Spec 7,raises risk
+27010,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+27036,1,Spec 7,raises risk
+27036,2,"histogram 167, mean bin (lifetime)",raises risk
+27036,3,span of last 5 readouts,raises risk
+27037,1,Spec 7,raises risk
+27037,2,"counter 309, level",lowers risk
+27037,3,age (time_step),raises risk
+27049,1,Spec 7,raises risk
+27049,2,Spec 1,raises risk
+27049,3,age (time_step),raises risk
+27051,1,Spec 7,raises risk
+27051,2,age (time_step),raises risk
+27051,3,"counter 666, level",raises risk
+27091,1,Spec 7,raises risk
+27091,2,age (time_step),raises risk
+27091,3,"counter 666, level",raises risk
+27118,1,age (time_step),raises risk
+27118,2,Spec 7,raises risk
+27118,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+27123,1,Spec 7,raises risk
+27123,2,age (time_step),raises risk
+27123,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+27125,1,"counter 837, level",raises risk
+27125,2,age (time_step),raises risk
+27125,3,"counter 666, level",raises risk
+27128,1,"counter 666, rate since previous readout",raises risk
+27128,2,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+27128,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+27142,1,Spec 7,raises risk
+27142,2,age (time_step),raises risk
+27142,3,Spec 1,raises risk
+27148,1,Spec 7,raises risk
+27148,2,age (time_step),raises risk
+27148,3,Spec 1,raises risk
+27163,1,Spec 1,raises risk
+27163,2,age (time_step),raises risk
+27163,3,Spec 7,raises risk
+27176,1,Spec 7,raises risk
+27176,2,Spec 1,raises risk
+27176,3,"counter 666, level",raises risk
+27213,1,age (time_step),raises risk
+27213,2,Spec 7,raises risk
+27213,3,Spec 1,raises risk
+27215,1,Spec 1,raises risk
+27215,2,"counter 666, level",raises risk
+27215,3,Spec 7,raises risk
+27226,1,Spec 1,raises risk
+27226,2,age (time_step),raises risk
+27226,3,Spec 7,raises risk
+27237,1,age (time_step),raises risk
+27237,2,Spec 1,raises risk
+27237,3,"counter 666, level",raises risk
+27239,1,Spec 7,raises risk
+27239,2,"counter 100, change over last 5 readouts",lowers risk
+27239,3,age (time_step),raises risk
+27261,1,age (time_step),raises risk
+27261,2,Spec 7,raises risk
+27261,3,"counter 309, level",lowers risk
+27268,1,age (time_step),raises risk
+27268,2,Spec 7,raises risk
+27268,3,"histogram 167, mean bin (lifetime)",raises risk
+27342,1,Spec 7,raises risk
+27342,2,age (time_step),raises risk
+27342,3,Spec 1,raises risk
+27372,1,Spec 7,raises risk
+27372,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+27372,3,age (time_step),raises risk
+27383,1,age (time_step),raises risk
+27383,2,Spec 7,raises risk
+27383,3,Spec 1,raises risk
+27404,1,age (time_step),raises risk
+27404,2,Spec 7,raises risk
+27404,3,Spec 1,raises risk
+27453,1,Spec 7,raises risk
+27453,2,age (time_step),raises risk
+27453,3,"histogram 167, mean bin (lifetime)",raises risk
+27463,1,age (time_step),raises risk
+27463,2,Spec 1,raises risk
+27463,3,Spec 7,raises risk
+27474,1,Spec 7,raises risk
+27474,2,Spec 1,raises risk
+27474,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+27479,1,Spec 1,raises risk
+27479,2,Spec 7,raises risk
+27479,3,age (time_step),raises risk
+27492,1,Spec 7,raises risk
+27492,2,Spec 1,raises risk
+27492,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+27517,1,Spec 1,raises risk
+27517,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+27517,3,"histogram 167, mean bin (lifetime)",raises risk
+27535,1,Spec 7,raises risk
+27535,2,age (time_step),raises risk
+27535,3,Spec 1,raises risk
+27544,1,age (time_step),raises risk
+27544,2,"counter 100, change over last 5 readouts",lowers risk
+27544,3,Spec 7,raises risk
+27549,1,Spec 7,raises risk
+27549,2,age (time_step),raises risk
+27549,3,Spec 1,raises risk
+27555,1,age (time_step),raises risk
+27555,2,"counter 837, level",raises risk
+27555,3,Spec 7,raises risk
+27570,1,Spec 7,raises risk
+27570,2,age (time_step),raises risk
+27570,3,"histogram 291, total count",raises risk
+27595,1,Spec 7,raises risk
+27595,2,"histogram 291, mean bin (last 5 readouts)",lowers risk
+27595,3,age (time_step),raises risk
+27614,1,age (time_step),raises risk
+27614,2,Spec 7,raises risk
+27614,3,Spec 1,raises risk
+27639,1,Spec 1,lowers risk
+27639,2,age (time_step),raises risk
+27639,3,"histogram 291, total count",raises risk
+27649,1,age (time_step),raises risk
+27649,2,Spec 7,raises risk
+27649,3,"counter 837, level",raises risk
+27677,1,age (time_step),raises risk
+27677,2,Spec 7,raises risk
+27677,3,"counter 666, level",raises risk
+27685,1,age (time_step),raises risk
+27685,2,Spec 7,raises risk
+27685,3,"counter 666, level",raises risk
+27709,1,age (time_step),raises risk
+27709,2,Spec 7,raises risk
+27709,3,Spec 1,raises risk
+27730,1,Spec 7,raises risk
+27730,2,"counter 309, level",raises risk
+27730,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+27738,1,Spec 7,raises risk
+27738,2,age (time_step),raises risk
+27738,3,Spec 1,raises risk
+27755,1,Spec 7,raises risk
+27755,2,age (time_step),raises risk
+27755,3,Spec 1,raises risk
+27766,1,age (time_step),raises risk
+27766,2,"counter 100, level",raises risk
+27766,3,"histogram 459, mean bin (lifetime)",raises risk
+27787,1,Spec 1,raises risk
+27787,2,Spec 7,raises risk
+27787,3,age (time_step),raises risk
+27791,1,Spec 7,raises risk
+27791,2,age (time_step),raises risk
+27791,3,"counter 666, level",raises risk
+27804,1,Spec 7,raises risk
+27804,2,age (time_step),raises risk
+27804,3,Spec 1,lowers risk
+27810,1,age (time_step),raises risk
+27810,2,Spec 1,raises risk
+27810,3,Spec 7,raises risk
+27836,1,Spec 1,raises risk
+27836,2,Spec 7,raises risk
+27836,3,age (time_step),raises risk
+27858,1,age (time_step),raises risk
+27858,2,Spec 7,raises risk
+27858,3,"counter 666, level",raises risk
+27866,1,age (time_step),raises risk
+27866,2,"histogram 459, mean bin (lifetime)",raises risk
+27866,3,"counter 837, level",raises risk
+27874,1,"counter 837, level",raises risk
+27874,2,age (time_step),raises risk
+27874,3,Spec 2,raises risk
+27875,1,Spec 7,raises risk
+27875,2,"counter 666, level",raises risk
+27875,3,Spec 1,raises risk
+27877,1,age (time_step),raises risk
+27877,2,Spec 7,raises risk
+27877,3,Spec 1,raises risk
+27899,1,age (time_step),raises risk
+27899,2,Spec 7,raises risk
+27899,3,Spec 6,raises risk
+27903,1,Spec 7,raises risk
+27903,2,age (time_step),raises risk
+27903,3,"counter 666, level",raises risk
+27916,1,age (time_step),raises risk
+27916,2,"counter 837, level",raises risk
+27916,3,Spec 1,raises risk
+27938,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+27938,2,"counter 666, level",lowers risk
+27938,3,"counter 309, level",lowers risk
+27941,1,Spec 1,raises risk
+27941,2,Spec 7,raises risk
+27941,3,"counter 100, level",lowers risk
+27942,1,Spec 1,raises risk
+27942,2,Spec 7,raises risk
+27942,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+27954,1,Spec 7,raises risk
+27954,2,Spec 1,raises risk
+27954,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+27957,1,age (time_step),raises risk
+27957,2,Spec 7,raises risk
+27957,3,Spec 1,raises risk
+27959,1,Spec 1,raises risk
+27959,2,"histogram 167, mean bin (lifetime)",raises risk
+27959,3,Spec 7,raises risk
+27973,1,age (time_step),raises risk
+27973,2,Spec 1,raises risk
+27973,3,Spec 7,raises risk
+27987,1,Spec 1,lowers risk
+27987,2,Spec 7,raises risk
+27987,3,age (time_step),raises risk
+28003,1,Spec 7,raises risk
+28003,2,age (time_step),raises risk
+28003,3,"counter 666, level",raises risk
+28012,1,age (time_step),raises risk
+28012,2,Spec 1,raises risk
+28012,3,Spec 7,raises risk
+28021,1,Spec 7,raises risk
+28021,2,Spec 1,raises risk
+28021,3,age (time_step),raises risk
+28062,1,age (time_step),raises risk
+28062,2,Spec 1,raises risk
+28062,3,"counter 309, level",raises risk
+28095,1,Spec 1,raises risk
+28095,2,"counter 100, level",raises risk
+28095,3,"counter 100, rate over last 5 readouts",raises risk
+28098,1,age (time_step),raises risk
+28098,2,Spec 1,raises risk
+28098,3,Spec 7,raises risk
+28102,1,Spec 7,raises risk
+28102,2,age (time_step),raises risk
+28102,3,"histogram 459, total count",raises risk
+28114,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+28114,2,age (time_step),raises risk
+28114,3,"counter 837, level",raises risk
+28128,1,age (time_step),raises risk
+28128,2,"counter 666, rate since previous readout",raises risk
+28128,3,Spec 7,raises risk
+28132,1,Spec 1,raises risk
+28132,2,Spec 7,raises risk
+28132,3,age (time_step),raises risk
+28141,1,Spec 1,raises risk
+28141,2,age (time_step),raises risk
+28141,3,"histogram 167, mean bin (lifetime)",lowers risk
+28160,1,Spec 7,raises risk
+28160,2,"counter 309, level",raises risk
+28160,3,age (time_step),raises risk
+28161,1,Spec 7,raises risk
+28161,2,age (time_step),raises risk
+28161,3,Spec 1,raises risk
+28162,1,Spec 7,raises risk
+28162,2,Spec 1,raises risk
+28162,3,"histogram 158, change in mean bin over last 5 readouts",raises risk
+28179,1,age (time_step),raises risk
+28179,2,Spec 7,raises risk
+28179,3,Spec 1,raises risk
+28200,1,Spec 1,raises risk
+28200,2,Spec 7,raises risk
+28200,3,age (time_step),raises risk
+28207,1,Spec 7,raises risk
+28207,2,age (time_step),raises risk
+28207,3,"counter 666, level",raises risk
+28211,1,Spec 7,raises risk
+28211,2,Spec 6,raises risk
+28211,3,age (time_step),raises risk
+28240,1,age (time_step),raises risk
+28240,2,Spec 7,raises risk
+28240,3,"counter 309, level",lowers risk
+28252,1,Spec 7,raises risk
+28252,2,age (time_step),raises risk
+28252,3,Spec 1,raises risk
+28265,1,"histogram 272, mean bin (lifetime)",lowers risk
+28265,2,Spec 1,raises risk
+28265,3,age (time_step),raises risk
+28274,1,Spec 7,raises risk
+28274,2,Spec 1,raises risk
+28274,3,age (time_step),raises risk
+28278,1,Spec 7,raises risk
+28278,2,age (time_step),raises risk
+28278,3,"counter 666, level",raises risk
+28288,1,age (time_step),raises risk
+28288,2,Spec 7,raises risk
+28288,3,"counter 666, level",raises risk
+28302,1,Spec 7,raises risk
+28302,2,"counter 837, level",raises risk
+28302,3,Spec 1,raises risk
+28311,1,"counter 666, level",lowers risk
+28311,2,Spec 1,raises risk
+28311,3,age (time_step),raises risk
+28317,1,Spec 7,raises risk
+28317,2,"counter 837, level",raises risk
+28317,3,"counter 666, level",raises risk
+28333,1,Spec 1,raises risk
+28333,2,Spec 7,raises risk
+28333,3,"histogram 167, mean bin (lifetime)",raises risk
+28334,1,Spec 7,raises risk
+28334,2,age (time_step),raises risk
+28334,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+28335,1,Spec 1,lowers risk
+28335,2,"histogram 291, mean bin (lifetime)",lowers risk
+28335,3,"histogram 167, mean bin (lifetime)",raises risk
+28341,1,age (time_step),raises risk
+28341,2,Spec 7,raises risk
+28341,3,Spec 1,raises risk
+28345,1,Spec 7,raises risk
+28345,2,age (time_step),raises risk
+28345,3,Spec 1,raises risk
+28356,1,age (time_step),raises risk
+28356,2,Spec 7,raises risk
+28356,3,"counter 100, level",raises risk
+28359,1,age (time_step),raises risk
+28359,2,Spec 7,raises risk
+28359,3,"counter 666, level",raises risk
+28396,1,Spec 7,raises risk
+28396,2,age (time_step),raises risk
+28396,3,Spec 1,lowers risk
+28398,1,age (time_step),raises risk
+28398,2,Spec 1,raises risk
+28398,3,Spec 7,raises risk
+28413,1,Spec 7,raises risk
+28413,2,age (time_step),raises risk
+28413,3,"counter 309, level",lowers risk
+28417,1,Spec 1,lowers risk
+28417,2,age (time_step),raises risk
+28417,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+28426,1,"counter 837, level",raises risk
+28426,2,age (time_step),raises risk
+28426,3,"histogram 167, mean bin (last 5 readouts)",lowers risk
+28427,1,Spec 7,raises risk
+28427,2,age (time_step),raises risk
+28427,3,Spec 1,raises risk
+28432,1,Spec 1,raises risk
+28432,2,"histogram 272, mean bin (lifetime)",lowers risk
+28432,3,age (time_step),raises risk
+28465,1,Spec 7,raises risk
+28465,2,age (time_step),raises risk
+28465,3,"counter 666, level",raises risk
+28469,1,Spec 7,raises risk
+28469,2,age (time_step),raises risk
+28469,3,"counter 100, change over last 5 readouts",lowers risk
+28478,1,Spec 1,raises risk
+28478,2,"histogram 167, mean bin (lifetime)",lowers risk
+28478,3,"histogram 459, total count",lowers risk
+28482,1,age (time_step),raises risk
+28482,2,Spec 1,raises risk
+28482,3,Spec 7,raises risk
+28486,1,Spec 1,raises risk
+28486,2,Spec 7,raises risk
+28486,3,"counter 666, level",raises risk
+28490,1,Spec 7,raises risk
+28490,2,Spec 1,raises risk
+28490,3,"histogram 167, mean bin (lifetime)",raises risk
+28501,1,Spec 7,raises risk
+28501,2,age (time_step),raises risk
+28501,3,Spec 1,raises risk
+28508,1,Spec 7,raises risk
+28508,2,age (time_step),raises risk
+28508,3,Spec 1,raises risk
+28512,1,Spec 1,raises risk
+28512,2,Spec 7,raises risk
+28512,3,"counter 666, level",raises risk
+28519,1,Spec 7,raises risk
+28519,2,age (time_step),raises risk
+28519,3,Spec 1,raises risk
+28522,1,Spec 7,raises risk
+28522,2,age (time_step),raises risk
+28522,3,Spec 1,raises risk
+28559,1,Spec 7,raises risk
+28559,2,Spec 1,raises risk
+28559,3,age (time_step),raises risk
+28592,1,"counter 309, level",lowers risk
+28592,2,age (time_step),raises risk
+28592,3,Spec 7,raises risk
+28618,1,Spec 7,raises risk
+28618,2,age (time_step),raises risk
+28618,3,Spec 1,raises risk
+28645,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+28645,2,"counter 309, level",lowers risk
+28645,3,"counter 837, level",lowers risk
+28651,1,age (time_step),raises risk
+28651,2,Spec 2,raises risk
+28651,3,"counter 666, level",raises risk
+28668,1,Spec 7,raises risk
+28668,2,age (time_step),raises risk
+28668,3,"counter 666, level",raises risk
+28685,1,Spec 7,raises risk
+28685,2,age (time_step),raises risk
+28685,3,Spec 1,raises risk
+28687,1,age (time_step),raises risk
+28687,2,Spec 1,raises risk
+28687,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+28697,1,Spec 1,lowers risk
+28697,2,age (time_step),raises risk
+28697,3,"counter 837, level",raises risk
+28704,1,age (time_step),raises risk
+28704,2,Spec 1,raises risk
+28704,3,Spec 7,raises risk
+28715,1,Spec 1,raises risk
+28715,2,age (time_step),raises risk
+28715,3,Spec 7,raises risk
+28737,1,age (time_step),raises risk
+28737,2,Spec 7,raises risk
+28737,3,"counter 100, change over last 5 readouts",lowers risk
+28745,1,Spec 1,raises risk
+28745,2,age (time_step),raises risk
+28745,3,Spec 7,raises risk
+28749,1,"counter 666, rate since previous readout",raises risk
+28749,2,age (time_step),raises risk
+28749,3,Spec 7,raises risk
+28756,1,Spec 7,raises risk
+28756,2,age (time_step),raises risk
+28756,3,Spec 1,raises risk
+28768,1,Spec 7,raises risk
+28768,2,age (time_step),raises risk
+28768,3,Spec 1,raises risk
+28773,1,age (time_step),raises risk
+28773,2,Spec 1,raises risk
+28773,3,Spec 7,raises risk
+28775,1,age (time_step),raises risk
+28775,2,Spec 7,raises risk
+28775,3,"counter 309, level",lowers risk
+28787,1,"histogram 167, mean bin (lifetime)",lowers risk
+28787,2,"counter 309, level",raises risk
+28787,3,age (time_step),raises risk
+28816,1,age (time_step),raises risk
+28816,2,Spec 1,raises risk
+28816,3,"counter 837, level",raises risk
+28842,1,Spec 7,raises risk
+28842,2,age (time_step),raises risk
+28842,3,Spec 1,raises risk
+28848,1,age (time_step),raises risk
+28848,2,"counter 666, level",raises risk
+28848,3,Spec 7,raises risk
+28856,1,Spec 7,raises risk
+28856,2,age (time_step),raises risk
+28856,3,Spec 1,raises risk
+28861,1,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+28861,2,"histogram 459, mean bin (lifetime)",raises risk
+28861,3,"counter 666, level",raises risk
+28888,1,Spec 7,raises risk
+28888,2,age (time_step),raises risk
+28888,3,"counter 666, level",raises risk
+28902,1,age (time_step),raises risk
+28902,2,Spec 7,raises risk
+28902,3,"counter 666, level",raises risk
+28939,1,age (time_step),raises risk
+28939,2,"counter 837, level",raises risk
+28939,3,Spec 1,raises risk
+28956,1,Spec 1,raises risk
+28956,2,age (time_step),raises risk
+28956,3,Spec 7,raises risk
+28962,1,Spec 7,raises risk
+28962,2,Spec 1,lowers risk
+28962,3,"histogram 272, mean bin (lifetime)",lowers risk
+28966,1,Spec 1,raises risk
+28966,2,"histogram 158, mean bin (last 5 readouts)",raises risk
+28966,3,"counter 100, change over last 5 readouts",lowers risk
+28968,1,age (time_step),raises risk
+28968,2,"counter 100, level",lowers risk
+28968,3,"counter 666, level",raises risk
+28975,1,age (time_step),raises risk
+28975,2,Spec 1,raises risk
+28975,3,Spec 7,raises risk
+28981,1,age (time_step),raises risk
+28981,2,Spec 7,raises risk
+28981,3,Spec 1,raises risk
+28983,1,age (time_step),raises risk
+28983,2,"counter 100, level",lowers risk
+28983,3,Spec 1,raises risk
+28985,1,Spec 1,raises risk
+28985,2,Spec 7,raises risk
+28985,3,age (time_step),raises risk
+29000,1,Spec 7,raises risk
+29000,2,Spec 1,raises risk
+29000,3,age (time_step),raises risk
+29010,1,age (time_step),raises risk
+29010,2,Spec 1,raises risk
+29010,3,Spec 7,raises risk
+29011,1,"counter 100, level",lowers risk
+29011,2,Spec 1,raises risk
+29011,3,Spec 7,raises risk
+29018,1,Spec 7,raises risk
+29018,2,Spec 1,raises risk
+29018,3,"counter 666, level",raises risk
+29055,1,Spec 7,raises risk
+29055,2,age (time_step),raises risk
+29055,3,Spec 1,raises risk
+29092,1,age (time_step),raises risk
+29092,2,Spec 7,raises risk
+29092,3,"counter 666, rate since previous readout",raises risk
+29097,1,Spec 1,raises risk
+29097,2,Spec 7,raises risk
+29097,3,"counter 666, level",raises risk
+29171,1,"histogram 158, share in top 2 bins (last 5 readouts)",raises risk
+29171,2,"counter 666, change over last 5 readouts",raises risk
+29171,3,age (time_step),raises risk
+29176,1,Spec 1,lowers risk
+29176,2,"counter 100, level",lowers risk
+29176,3,Spec 7,raises risk
+29194,1,Spec 7,raises risk
+29194,2,Spec 1,raises risk
+29194,3,age (time_step),raises risk
+29195,1,Spec 7,raises risk
+29195,2,"counter 666, level",raises risk
+29195,3,age (time_step),raises risk
+29203,1,"counter 666, level",raises risk
+29203,2,"counter 100, level",lowers risk
+29203,3,Spec 7,raises risk
+29208,1,Spec 1,raises risk
+29208,2,Spec 7,raises risk
+29208,3,"counter 666, level",raises risk
+29212,1,Spec 1,raises risk
+29212,2,age (time_step),raises risk
+29212,3,Spec 7,raises risk
+29214,1,Spec 7,raises risk
+29214,2,Spec 1,raises risk
+29214,3,age (time_step),raises risk
+29299,1,Spec 7,raises risk
+29299,2,age (time_step),raises risk
+29299,3,"histogram 167, mean bin (lifetime)",raises risk
+29318,1,age (time_step),raises risk
+29318,2,"counter 837, level",raises risk
+29318,3,"counter 100, level",raises risk
+29342,1,Spec 7,raises risk
+29342,2,Spec 1,raises risk
+29342,3,"histogram 167, mean bin (lifetime)",raises risk
+29377,1,Spec 1,raises risk
+29377,2,age (time_step),raises risk
+29377,3,"histogram 167, mean bin (lifetime)",raises risk
+29382,1,age (time_step),raises risk
+29382,2,Spec 7,raises risk
+29382,3,Spec 1,raises risk
+29387,1,Spec 7,raises risk
+29387,2,age (time_step),raises risk
+29387,3,"histogram 167, mean bin (lifetime)",raises risk
+29397,1,Spec 1,raises risk
+29397,2,age (time_step),raises risk
+29397,3,Spec 7,raises risk
+29410,1,Spec 7,raises risk
+29410,2,age (time_step),raises risk
+29410,3,"counter 666, level",raises risk
+29414,1,Spec 6,raises risk
+29414,2,Spec 7,raises risk
+29414,3,"counter 309, level",lowers risk
+29423,1,Spec 7,raises risk
+29423,2,age (time_step),raises risk
+29423,3,"counter 666, level",raises risk
+29431,1,age (time_step),raises risk
+29431,2,Spec 7,raises risk
+29431,3,Spec 1,raises risk
+29460,1,Spec 7,raises risk
+29460,2,age (time_step),raises risk
+29460,3,Spec 1,raises risk
+29467,1,Spec 1,raises risk
+29467,2,Spec 7,raises risk
+29467,3,age (time_step),raises risk
+29468,1,Spec 7,raises risk
+29468,2,age (time_step),raises risk
+29468,3,"counter 100, change over last 5 readouts",lowers risk
+29470,1,age (time_step),raises risk
+29470,2,Spec 7,raises risk
+29470,3,"counter 666, level",raises risk
+29483,1,"counter 837, level",raises risk
+29483,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+29483,3,Spec 7,raises risk
+29487,1,age (time_step),raises risk
+29487,2,Spec 1,raises risk
+29487,3,"histogram 167, mean bin (lifetime)",raises risk
+29491,1,Spec 7,raises risk
+29491,2,Spec 1,raises risk
+29491,3,"counter 100, level",lowers risk
+29513,1,Spec 1,raises risk
+29513,2,age (time_step),raises risk
+29513,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+29515,1,Spec 7,raises risk
+29515,2,age (time_step),raises risk
+29515,3,Spec 1,raises risk
+29527,1,"counter 837, level",raises risk
+29527,2,Spec 7,raises risk
+29527,3,age (time_step),raises risk
+29599,1,Spec 7,raises risk
+29599,2,Spec 1,raises risk
+29599,3,age (time_step),raises risk
+29603,1,Spec 1,raises risk
+29603,2,Spec 7,raises risk
+29603,3,age (time_step),raises risk
+29619,1,Spec 1,raises risk
+29619,2,"counter 666, level",raises risk
+29619,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+29630,1,age (time_step),raises risk
+29630,2,Spec 7,raises risk
+29630,3,Spec 1,raises risk
+29635,1,Spec 1,raises risk
+29635,2,"counter 666, level",raises risk
+29635,3,"counter 100, level",lowers risk
+29641,1,age (time_step),raises risk
+29641,2,Spec 6,raises risk
+29641,3,"histogram 291, total count",lowers risk
+29644,1,age (time_step),raises risk
+29644,2,Spec 7,raises risk
+29644,3,Spec 1,raises risk
+29646,1,age (time_step),raises risk
+29646,2,Spec 7,raises risk
+29646,3,"counter 666, level",raises risk
+29655,1,Spec 7,raises risk
+29655,2,age (time_step),raises risk
+29655,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+29658,1,Spec 7,raises risk
+29658,2,Spec 1,raises risk
+29658,3,age (time_step),raises risk
+29661,1,Spec 7,raises risk
+29661,2,age (time_step),raises risk
+29661,3,"histogram 459, total count",raises risk
+29664,1,age (time_step),raises risk
+29664,2,Spec 1,raises risk
+29664,3,Spec 7,raises risk
+29666,1,Spec 7,raises risk
+29666,2,"counter 666, level",raises risk
+29666,3,"histogram 167, mean bin (lifetime)",raises risk
+29674,1,age (time_step),raises risk
+29674,2,Spec 7,raises risk
+29674,3,"counter 100, rate over last 5 readouts",raises risk
+29681,1,Spec 7,raises risk
+29681,2,Spec 1,raises risk
+29681,3,"counter 666, level",raises risk
+29697,1,Spec 1,raises risk
+29697,2,"histogram 158, change in mean bin over last 5 readouts",raises risk
+29697,3,age (time_step),raises risk
+29698,1,Spec 7,raises risk
+29698,2,age (time_step),raises risk
+29698,3,Spec 1,raises risk
+29710,1,Spec 1,raises risk
+29710,2,"counter 837, level",raises risk
+29710,3,age (time_step),raises risk
+29722,1,"counter 837, level",lowers risk
+29722,2,Spec 1,raises risk
+29722,3,"histogram 167, mean bin (lifetime)",lowers risk
+29730,1,Spec 7,raises risk
+29730,2,Spec 1,raises risk
+29730,3,age (time_step),raises risk
+29742,1,Spec 7,raises risk
+29742,2,Spec 1,raises risk
+29742,3,age (time_step),raises risk
+29759,1,age (time_step),raises risk
+29759,2,Spec 7,raises risk
+29759,3,"counter 666, level",raises risk
+29785,1,Spec 1,raises risk
+29785,2,Spec 7,raises risk
+29785,3,"counter 100, level",lowers risk
+29799,1,age (time_step),raises risk
+29799,2,Spec 7,raises risk
+29799,3,Spec 1,raises risk
+29823,1,age (time_step),raises risk
+29823,2,Spec 1,raises risk
+29823,3,Spec 7,raises risk
+29828,1,Spec 1,raises risk
+29828,2,age (time_step),raises risk
+29828,3,Spec 7,raises risk
+29852,1,Spec 1,raises risk
+29852,2,Spec 7,raises risk
+29852,3,"histogram 167, mean bin (lifetime)",raises risk
+29858,1,Spec 1,raises risk
+29858,2,"counter 100, level",lowers risk
+29858,3,"histogram 291, mean bin (lifetime)",lowers risk
+29886,1,age (time_step),raises risk
+29886,2,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+29886,3,"counter 666, level",raises risk
+29890,1,Spec 7,raises risk
+29890,2,age (time_step),raises risk
+29890,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+29936,1,Spec 7,raises risk
+29936,2,age (time_step),raises risk
+29936,3,Spec 1,raises risk
+29960,1,Spec 7,raises risk
+29960,2,age (time_step),raises risk
+29960,3,"counter 666, level",raises risk
+29963,1,Spec 1,raises risk
+29963,2,"histogram 291, change in mean bin over last 5 readouts",lowers risk
+29963,3,"counter 100, level",lowers risk
+29970,1,Spec 7,raises risk
+29970,2,age (time_step),raises risk
+29970,3,Spec 1,raises risk
+29979,1,Spec 7,raises risk
+29979,2,age (time_step),raises risk
+29979,3,"histogram 167, mean bin (lifetime)",raises risk
+30029,1,age (time_step),raises risk
+30029,2,Spec 1,raises risk
+30029,3,"histogram 167, mean bin (lifetime)",raises risk
+30044,1,Spec 1,raises risk
+30044,2,Spec 7,raises risk
+30044,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+30046,1,"histogram 459, total count",lowers risk
+30046,2,age (time_step),raises risk
+30046,3,Spec 1,raises risk
+30048,1,Spec 7,raises risk
+30048,2,"histogram 272, mean bin (lifetime)",lowers risk
+30048,3,"counter 666, level",raises risk
+30053,1,Spec 1,raises risk
+30053,2,age (time_step),raises risk
+30053,3,Spec 7,raises risk
+30057,1,age (time_step),raises risk
+30057,2,Spec 7,raises risk
+30057,3,Spec 1,raises risk
+30084,1,age (time_step),raises risk
+30084,2,Spec 1,raises risk
+30084,3,"counter 666, level",raises risk
+30098,1,Spec 1,raises risk
+30098,2,"counter 666, level",raises risk
+30098,3,"histogram 167, mean bin (lifetime)",raises risk
+30099,1,age (time_step),raises risk
+30099,2,Spec 7,raises risk
+30099,3,Spec 1,raises risk
+30105,1,age (time_step),raises risk
+30105,2,Spec 1,raises risk
+30105,3,Spec 7,raises risk
+30129,1,age (time_step),raises risk
+30129,2,Spec 1,raises risk
+30129,3,"counter 666, level",raises risk
+30137,1,Spec 7,raises risk
+30137,2,Spec 1,raises risk
+30137,3,"counter 666, level",raises risk
+30159,1,Spec 1,raises risk
+30159,2,Spec 7,raises risk
+30159,3,"counter 666, level",raises risk
+30172,1,Spec 1,raises risk
+30172,2,age (time_step),raises risk
+30172,3,"histogram 167, mean bin (lifetime)",raises risk
+30177,1,Spec 7,raises risk
+30177,2,Spec 1,raises risk
+30177,3,"histogram 167, mean bin (lifetime)",raises risk
+30183,1,Spec 7,raises risk
+30183,2,Spec 1,raises risk
+30183,3,age (time_step),raises risk
+30188,1,Spec 7,raises risk
+30188,2,age (time_step),raises risk
+30188,3,Spec 1,raises risk
+30196,1,"histogram 291, share in top 2 bins (lifetime)",raises risk
+30196,2,"counter 309, level",lowers risk
+30196,3,Spec 6,raises risk
+30229,1,Spec 1,raises risk
+30229,2,Spec 7,raises risk
+30229,3,age (time_step),raises risk
+30268,1,Spec 7,raises risk
+30268,2,Spec 1,raises risk
+30268,3,age (time_step),raises risk
+30278,1,Spec 7,raises risk
+30278,2,age (time_step),raises risk
+30278,3,Spec 1,raises risk
+30295,1,Spec 1,raises risk
+30295,2,Spec 7,raises risk
+30295,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+30317,1,age (time_step),raises risk
+30317,2,Spec 7,raises risk
+30317,3,Spec 1,raises risk
+30324,1,Spec 1,raises risk
+30324,2,age (time_step),raises risk
+30324,3,"counter 666, level",raises risk
+30333,1,Spec 7,raises risk
+30333,2,Spec 1,raises risk
+30333,3,age (time_step),raises risk
+30336,1,Spec 7,raises risk
+30336,2,"counter 100, change over last 5 readouts",lowers risk
+30336,3,age (time_step),raises risk
+30344,1,Spec 7,raises risk
+30344,2,"counter 309, level",lowers risk
+30344,3,"counter 666, level",raises risk
+30388,1,"counter 100, level",lowers risk
+30388,2,"counter 666, level",raises risk
+30388,3,Spec 1,lowers risk
+30439,1,Spec 7,raises risk
+30439,2,age (time_step),raises risk
+30439,3,Spec 1,raises risk
+30443,1,Spec 7,raises risk
+30443,2,"histogram 397, share in top 2 bins (lifetime)",raises risk
+30443,3,"histogram 397, change in mean bin over last 5 readouts",lowers risk
+30451,1,Spec 1,raises risk
+30451,2,"histogram 167, share in top 2 bins (lifetime)",raises risk
+30451,3,span of last 5 readouts,raises risk
+30455,1,Spec 7,raises risk
+30455,2,Spec 1,raises risk
+30455,3,"counter 666, level",raises risk
+30497,1,Spec 7,raises risk
+30497,2,"histogram 167, mean bin (lifetime)",raises risk
+30497,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+30508,1,Spec 7,raises risk
+30508,2,age (time_step),raises risk
+30508,3,Spec 1,raises risk
+30513,1,Spec 1,raises risk
+30513,2,age (time_step),raises risk
+30513,3,"counter 666, level",raises risk
+30536,1,age (time_step),raises risk
+30536,2,Spec 7,raises risk
+30536,3,Spec 1,raises risk
+30541,1,age (time_step),raises risk
+30541,2,Spec 1,raises risk
+30541,3,Spec 7,raises risk
+30562,1,Spec 1,raises risk
+30562,2,age (time_step),raises risk
+30562,3,"counter 666, level",raises risk
+30582,1,Spec 7,raises risk
+30582,2,age (time_step),raises risk
+30582,3,Spec 1,raises risk
+30598,1,Spec 1,raises risk
+30598,2,"counter 837, level",raises risk
+30598,3,"counter 666, level",raises risk
+30605,1,Spec 7,raises risk
+30605,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+30605,3,Spec 1,raises risk
+30625,1,Spec 7,raises risk
+30625,2,Spec 1,raises risk
+30625,3,"counter 666, level",raises risk
+30627,1,Spec 7,raises risk
+30627,2,"counter 666, level",raises risk
+30627,3,age (time_step),raises risk
+30632,1,Spec 7,raises risk
+30632,2,Spec 1,raises risk
+30632,3,"counter 100, level",lowers risk
+30636,1,Spec 7,raises risk
+30636,2,age (time_step),raises risk
+30636,3,Spec 1,raises risk
+30645,1,Spec 1,raises risk
+30645,2,Spec 7,raises risk
+30645,3,age (time_step),raises risk
+30646,1,Spec 1,raises risk
+30646,2,Spec 7,raises risk
+30646,3,age (time_step),raises risk
+30658,1,Spec 1,raises risk
+30658,2,"counter 837, level",raises risk
+30658,3,span of last 5 readouts,raises risk
+30666,1,age (time_step),raises risk
+30666,2,"counter 666, level",raises risk
+30666,3,Spec 1,raises risk
+30668,1,Spec 1,lowers risk
+30668,2,age (time_step),raises risk
+30668,3,Spec 7,raises risk
+30692,1,Spec 7,raises risk
+30692,2,Spec 1,raises risk
+30692,3,age (time_step),raises risk
+30742,1,Spec 7,raises risk
+30742,2,span of last 5 readouts,raises risk
+30742,3,"counter 666, level",raises risk
+30743,1,age (time_step),raises risk
+30743,2,Spec 7,raises risk
+30743,3,Spec 1,raises risk
+30753,1,Spec 7,raises risk
+30753,2,age (time_step),raises risk
+30753,3,Spec 1,raises risk
+30758,1,"counter 309, level",lowers risk
+30758,2,Spec 7,raises risk
+30758,3,age (time_step),raises risk
+30767,1,Spec 7,raises risk
+30767,2,"counter 100, change over last 5 readouts",lowers risk
+30767,3,Spec 1,raises risk
+30768,1,age (time_step),raises risk
+30768,2,Spec 7,lowers risk
+30768,3,"counter 666, level",raises risk
+30775,1,"counter 837, level",raises risk
+30775,2,age (time_step),raises risk
+30775,3,Spec 7,raises risk
+30784,1,Spec 7,raises risk
+30784,2,"counter 666, level",raises risk
+30784,3,age (time_step),raises risk
+30787,1,Spec 1,raises risk
+30787,2,Spec 7,raises risk
+30787,3,"histogram 167, mean bin (lifetime)",raises risk
+30792,1,"counter 837, level",lowers risk
+30792,2,Spec 7,raises risk
+30792,3,"counter 100, level",raises risk
+30806,1,Spec 1,raises risk
+30806,2,age (time_step),raises risk
+30806,3,"counter 666, level",raises risk
+30828,1,Spec 7,raises risk
+30828,2,age (time_step),raises risk
+30828,3,"counter 666, rate since previous readout",raises risk
+30839,1,Spec 1,raises risk
+30839,2,Spec 7,raises risk
+30839,3,age (time_step),raises risk
+30864,1,Spec 7,raises risk
+30864,2,age (time_step),raises risk
+30864,3,"counter 100, rate over last 5 readouts",raises risk
+30865,1,Spec 7,raises risk
+30865,2,Spec 1,raises risk
+30865,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+30871,1,Spec 1,raises risk
+30871,2,Spec 7,raises risk
+30871,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+30879,1,"counter 100, change over last 5 readouts",lowers risk
+30879,2,Spec 1,raises risk
+30879,3,"counter 100, level",lowers risk
+30924,1,age (time_step),raises risk
+30924,2,"counter 666, level",raises risk
+30924,3,Spec 7,raises risk
+30927,1,Spec 7,raises risk
+30927,2,Spec 1,raises risk
+30927,3,"counter 100, level",lowers risk
+30945,1,"counter 837, level",raises risk
+30945,2,"counter 171, change over last 5 readouts",lowers risk
+30945,3,"counter 309, level",raises risk
+30976,1,Spec 7,raises risk
+30976,2,Spec 1,raises risk
+30976,3,Spec 6,raises risk
+30980,1,Spec 1,raises risk
+30980,2,"counter 100, level",lowers risk
+30980,3,"counter 309, level",raises risk
+30984,1,Spec 1,raises risk
+30984,2,"counter 666, level",raises risk
+30984,3,Spec 7,raises risk
+31011,1,Spec 7,raises risk
+31011,2,"counter 666, level",raises risk
+31011,3,Spec 1,raises risk
+31040,1,Spec 7,raises risk
+31040,2,Spec 1,raises risk
+31040,3,"counter 666, level",raises risk
+31046,1,Spec 1,raises risk
+31046,2,Spec 7,raises risk
+31046,3,"counter 666, level",raises risk
+31051,1,age (time_step),raises risk
+31051,2,Spec 7,raises risk
+31051,3,"counter 309, level",raises risk
+31053,1,Spec 7,raises risk
+31053,2,Spec 1,lowers risk
+31053,3,age (time_step),raises risk
+31061,1,"histogram 459, share in top 2 bins (lifetime)",lowers risk
+31061,2,"counter 309, level",raises risk
+31061,3,"counter 666, level",raises risk
+31063,1,Spec 1,raises risk
+31063,2,age (time_step),raises risk
+31063,3,Spec 7,raises risk
+31065,1,"counter 666, level",raises risk
+31065,2,"counter 100, level",raises risk
+31065,3,"histogram 291, total count",raises risk
+31076,1,Spec 7,raises risk
+31076,2,Spec 1,raises risk
+31076,3,age (time_step),raises risk
+31087,1,Spec 7,raises risk
+31087,2,Spec 1,raises risk
+31087,3,"counter 309, level",raises risk
+31089,1,Spec 1,lowers risk
+31089,2,"counter 309, level",lowers risk
+31089,3,age (time_step),raises risk
+31094,1,Spec 1,raises risk
+31094,2,age (time_step),raises risk
+31094,3,"counter 666, level",raises risk
+31104,1,Spec 7,raises risk
+31104,2,"counter 666, level",raises risk
+31104,3,age (time_step),raises risk
+31129,1,Spec 1,raises risk
+31129,2,Spec 7,raises risk
+31129,3,"counter 666, level",raises risk
+31142,1,"histogram 158, change in mean bin over last 5 readouts",raises risk
+31142,2,Spec 7,raises risk
+31142,3,"histogram 167, mean bin (last 5 readouts)",raises risk
+31146,1,Spec 7,raises risk
+31146,2,Spec 1,raises risk
+31146,3,age (time_step),raises risk
+31147,1,Spec 1,raises risk
+31147,2,Spec 7,raises risk
+31147,3,age (time_step),raises risk
+31149,1,"counter 666, level",raises risk
+31149,2,Spec 1,raises risk
+31149,3,Spec 6,raises risk
+31158,1,Spec 1,raises risk
+31158,2,"counter 100, level",raises risk
+31158,3,"counter 666, level",raises risk
+31161,1,age (time_step),raises risk
+31161,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+31161,3,Spec 1,lowers risk
+31193,1,Spec 7,raises risk
+31193,2,"counter 100, level",lowers risk
+31193,3,"histogram 167, mean bin (lifetime)",raises risk
+31215,1,Spec 1,raises risk
+31215,2,Spec 7,raises risk
+31215,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+31220,1,Spec 1,raises risk
+31220,2,Spec 7,raises risk
+31220,3,age (time_step),raises risk
+31223,1,Spec 7,raises risk
+31223,2,"histogram 167, mean bin (lifetime)",raises risk
+31223,3,"counter 666, level",raises risk
+31228,1,Spec 1,raises risk
+31228,2,Spec 7,raises risk
+31228,3,"counter 100, level",lowers risk
+31247,1,Spec 7,raises risk
+31247,2,"counter 666, level",raises risk
+31247,3,age (time_step),raises risk
+31264,1,age (time_step),raises risk
+31264,2,Spec 7,raises risk
+31264,3,span of last 5 readouts,lowers risk
+31294,1,"histogram 167, mean bin (lifetime)",raises risk
+31294,2,"counter 100, level",lowers risk
+31294,3,"counter 666, level",raises risk
+31312,1,Spec 1,raises risk
+31312,2,"counter 100, level",lowers risk
+31312,3,"histogram 291, total count",lowers risk
+31323,1,Spec 7,raises risk
+31323,2,Spec 1,raises risk
+31323,3,"histogram 167, mean bin (lifetime)",raises risk
+31352,1,Spec 1,raises risk
+31352,2,Spec 7,raises risk
+31352,3,"counter 666, level",raises risk
+31361,1,Spec 7,raises risk
+31361,2,Spec 1,raises risk
+31361,3,"counter 100, change over last 5 readouts",lowers risk
+31389,1,Spec 7,raises risk
+31389,2,Spec 1,raises risk
+31389,3,"histogram 167, mean bin (lifetime)",raises risk
+31397,1,Spec 1,raises risk
+31397,2,Spec 7,raises risk
+31397,3,age (time_step),raises risk
+31421,1,age (time_step),raises risk
+31421,2,Spec 7,raises risk
+31421,3,Spec 1,raises risk
+31425,1,Spec 7,raises risk
+31425,2,Spec 1,raises risk
+31425,3,age (time_step),raises risk
+31428,1,Spec 7,raises risk
+31428,2,Spec 1,raises risk
+31428,3,"counter 666, level",raises risk
+31444,1,Spec 1,raises risk
+31444,2,"counter 666, level",raises risk
+31444,3,Spec 7,raises risk
+31447,1,Spec 7,raises risk
+31447,2,Spec 1,raises risk
+31447,3,age (time_step),raises risk
+31451,1,age (time_step),raises risk
+31451,2,"counter 837, level",raises risk
+31451,3,Spec 1,raises risk
+31454,1,Spec 7,raises risk
+31454,2,Spec 1,raises risk
+31454,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+31455,1,"histogram 291, share in top 2 bins (lifetime)",raises risk
+31455,2,"counter 309, level",lowers risk
+31455,3,Spec 7,raises risk
+31474,1,"histogram 167, mean bin (lifetime)",lowers risk
+31474,2,Spec 1,lowers risk
+31474,3,Spec 7,raises risk
+31476,1,Spec 7,raises risk
+31476,2,"counter 666, level",raises risk
+31476,3,span of last 5 readouts,raises risk
+31479,1,"counter 100, level",lowers risk
+31479,2,Spec 7,raises risk
+31479,3,"counter 309, level",raises risk
+31481,1,Spec 1,raises risk
+31481,2,Spec 7,raises risk
+31481,3,"counter 100, change over last 5 readouts",lowers risk
+31486,1,"histogram 459, mean bin (lifetime)",raises risk
+31486,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+31486,3,Spec 2,raises risk
+31496,1,Spec 1,raises risk
+31496,2,Spec 7,raises risk
+31496,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+31499,1,Spec 1,raises risk
+31499,2,"counter 666, level",raises risk
+31499,3,"histogram 167, share in top 2 bins (lifetime)",lowers risk
+31507,1,Spec 7,raises risk
+31507,2,age (time_step),raises risk
+31507,3,"counter 666, level",raises risk
+31520,1,Spec 1,raises risk
+31520,2,age (time_step),raises risk
+31520,3,"counter 666, level",raises risk
+31531,1,Spec 1,raises risk
+31531,2,Spec 7,raises risk
+31531,3,"counter 666, level",raises risk
+31541,1,Spec 1,raises risk
+31541,2,Spec 7,raises risk
+31541,3,"counter 837, level",raises risk
+31548,1,Spec 1,raises risk
+31548,2,"histogram 459, mean bin (lifetime)",raises risk
+31548,3,Spec 7,raises risk
+31554,1,Spec 7,raises risk
+31554,2,"counter 100, level",lowers risk
+31554,3,"counter 666, level",raises risk
+31588,1,Spec 1,raises risk
+31588,2,"counter 666, level",raises risk
+31588,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+31592,1,span of last 5 readouts,raises risk
+31592,2,Spec 7,raises risk
+31592,3,"counter 837, level",raises risk
+31614,1,Spec 7,raises risk
+31614,2,Spec 1,raises risk
+31614,3,"histogram 158, share in top 2 bins (last 5 readouts)",lowers risk
+31631,1,Spec 1,raises risk
+31631,2,"counter 100, change over last 5 readouts",lowers risk
+31631,3,Spec 7,raises risk
+31660,1,Spec 7,raises risk
+31660,2,Spec 1,raises risk
+31660,3,"counter 100, level",lowers risk
+31706,1,Spec 1,raises risk
+31706,2,"counter 666, level",raises risk
+31706,3,"histogram 459, mean bin (lifetime)",raises risk
+31717,1,Spec 7,raises risk
+31717,2,Spec 1,raises risk
+31717,3,"histogram 167, mean bin (lifetime)",raises risk
+31718,1,Spec 1,raises risk
+31718,2,Spec 7,raises risk
+31718,3,"counter 100, level",lowers risk
+31723,1,"counter 666, level",raises risk
+31723,2,Spec 6,raises risk
+31723,3,Spec 7,raises risk
+31738,1,Spec 1,raises risk
+31738,2,Spec 7,raises risk
+31738,3,"counter 666, level",raises risk
+31749,1,Spec 1,raises risk
+31749,2,Spec 7,raises risk
+31749,3,"counter 666, level",raises risk
+31751,1,"histogram 158, change in mean bin over last 5 readouts",raises risk
+31751,2,"counter 666, level",raises risk
+31751,3,"histogram 459, total count",raises risk
+31769,1,Spec 1,raises risk
+31769,2,Spec 7,raises risk
+31769,3,"counter 666, level",raises risk
+31780,1,Spec 7,raises risk
+31780,2,Spec 1,raises risk
+31780,3,"counter 666, level",raises risk
+31815,1,Spec 1,raises risk
+31815,2,Spec 7,raises risk
+31815,3,"counter 666, level",raises risk
+31840,1,Spec 7,raises risk
+31840,2,Spec 1,raises risk
+31840,3,"counter 666, level",raises risk
+31849,1,Spec 1,raises risk
+31849,2,Spec 7,raises risk
+31849,3,"histogram 291, share in top 2 bins (lifetime)",raises risk
+31916,1,Spec 1,raises risk
+31916,2,Spec 7,raises risk
+31916,3,"counter 666, level",raises risk
+31936,1,Spec 7,raises risk
+31936,2,"counter 100, level",lowers risk
+31936,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+31975,1,Spec 1,lowers risk
+31975,2,Spec 7,raises risk
+31975,3,"counter 666, level",raises risk
+31976,1,Spec 1,raises risk
+31976,2,Spec 6,raises risk
+31976,3,"counter 666, level",raises risk
+31993,1,Spec 1,raises risk
+31993,2,Spec 7,raises risk
+31993,3,"counter 666, level",raises risk
+32002,1,Spec 7,raises risk
+32002,2,age (time_step),lowers risk
+32002,3,Spec 1,raises risk
+32011,1,Spec 1,raises risk
+32011,2,Spec 7,raises risk
+32011,3,"histogram 397, mean bin (last 5 readouts)",raises risk
+32042,1,"counter 309, level",lowers risk
+32042,2,Spec 7,raises risk
+32042,3,"counter 100, level",lowers risk
+32071,1,Spec 1,raises risk
+32071,2,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+32071,3,"histogram 167, mean bin (lifetime)",raises risk
+32074,1,Spec 7,raises risk
+32074,2,Spec 1,raises risk
+32074,3,"counter 666, level",raises risk
+32106,1,Spec 1,raises risk
+32106,2,"counter 100, level",lowers risk
+32106,3,Spec 7,raises risk
+32113,1,Spec 1,raises risk
+32113,2,Spec 7,raises risk
+32113,3,"histogram 397, share in top 2 bins (last 5 readouts)",raises risk
+32128,1,Spec 1,raises risk
+32128,2,Spec 7,raises risk
+32128,3,"counter 100, level",lowers risk
+32150,1,"histogram 459, mean bin (lifetime)",raises risk
+32150,2,"counter 309, level",raises risk
+32150,3,"counter 100, level",lowers risk
+32155,1,"counter 100, level",lowers risk
+32155,2,"counter 666, level",raises risk
+32155,3,span of last 5 readouts,raises risk
+32195,1,Spec 7,raises risk
+32195,2,"counter 666, level",raises risk
+32195,3,"histogram 167, mean bin (lifetime)",raises risk
+32236,1,"histogram 397, mean bin (last 5 readouts)",raises risk
+32236,2,"counter 837, rate since previous readout",raises risk
+32236,3,"counter 309, level",raises risk
+32293,1,Spec 1,raises risk
+32293,2,"counter 309, level",lowers risk
+32293,3,Spec 7,raises risk
+32302,1,"counter 666, level",raises risk
+32302,2,Spec 7,raises risk
+32302,3,"counter 100, level",lowers risk
+32342,1,"counter 309, level",lowers risk
+32342,2,Spec 7,raises risk
+32342,3,Spec 1,raises risk
+32396,1,age (time_step),lowers risk
+32396,2,"histogram 291, share in top 2 bins (lifetime)",raises risk
+32396,3,"counter 309, level",raises risk
+32428,1,"histogram 459, mean bin (lifetime)",raises risk
+32428,2,"counter 837, level",raises risk
+32428,3,"counter 309, level",raises risk
+32451,1,"counter 100, level",lowers risk
+32451,2,Spec 7,raises risk
+32451,3,"histogram 459, share in top 2 bins (lifetime)",raises risk
+32476,1,Spec 1,raises risk
+32476,2,"counter 100, level",lowers risk
+32476,3,Spec 7,raises risk
+32494,1,Spec 1,raises risk
+32494,2,Spec 7,raises risk
+32494,3,"counter 100, level",lowers risk
+32552,1,Spec 1,raises risk
+32552,2,Spec 7,raises risk
+32552,3,"counter 666, level",raises risk
+32558,1,Spec 7,raises risk
+32558,2,"counter 100, level",lowers risk
+32558,3,"counter 666, level",raises risk
+32597,1,Spec 1,raises risk
+32597,2,Spec 7,raises risk
+32597,3,"counter 309, level",raises risk
+32617,1,Spec 7,raises risk
+32617,2,"counter 100, level",lowers risk
+32617,3,"counter 666, level",raises risk
+32628,1,Spec 1,raises risk
+32628,2,Spec 7,raises risk
+32628,3,age (time_step),lowers risk
+32671,1,Spec 7,raises risk
+32671,2,Spec 1,raises risk
+32671,3,"counter 100, level",lowers risk
+32914,1,age (time_step),raises risk
+32914,2,Spec 7,lowers risk
+32914,3,"counter 309, level",lowers risk
+32978,1,Spec 1,raises risk
+32978,2,age (time_step),raises risk
+32978,3,"counter 837, level",raises risk
+33004,1,"histogram 291, total count",raises risk
+33004,2,"counter 100, level",raises risk
+33004,3,Spec 7,lowers risk
+33008,1,age (time_step),raises risk
+33008,2,Spec 1,raises risk
+33008,3,span of last 5 readouts,lowers risk
+33119,1,age (time_step),raises risk
+33119,2,Spec 1,raises risk
+33119,3,"counter 837, level",raises risk
+33145,1,age (time_step),lowers risk
+33145,2,Spec 1,raises risk
+33145,3,readouts so far,raises risk
+33238,1,age (time_step),lowers risk
+33238,2,Spec 1,raises risk
+33238,3,"counter 100, level",raises risk
+33263,1,age (time_step),raises risk
+33263,2,Spec 7,lowers risk
+33263,3,Spec 1,raises risk
+33299,1,Spec 1,raises risk
+33299,2,age (time_step),lowers risk
+33299,3,"histogram 459, mean bin (last 5 readouts)",lowers risk
+33305,1,Spec 7,lowers risk
+33305,2,Spec 1,raises risk
+33305,3,"histogram 291, mean bin (lifetime)",lowers risk
+33473,1,Spec 1,raises risk
+33473,2,Spec 6,raises risk
+33473,3,"counter 100, level",raises risk
+33475,1,age (time_step),raises risk
+33475,2,Spec 7,lowers risk
+33475,3,Spec 6,raises risk
+33519,1,Spec 7,lowers risk
+33519,2,age (time_step),raises risk
+33519,3,"histogram 291, share in top 2 bins (lifetime)",lowers risk
+33591,1,"histogram 291, total count",raises risk
+33591,2,Spec 7,raises risk
+33591,3,Spec 1,raises risk

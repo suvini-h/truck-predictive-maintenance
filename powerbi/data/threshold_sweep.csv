@@ -1,0 +1,169 @@
+sweep,x,policy,cost_per_1000,share_caught_in_time
+miss-cost multiplier,0.25,"Model, re-optimised",2696.195,0.3382
+miss-cost multiplier,0.25,"Model, decisions fixed at m = 1",4546.7697,0.7426
+miss-cost multiplier,0.25,Call everyone in now,9822.83,1.0
+miss-cost multiplier,0.25,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,0.25,Run-to-failure,2843.8367,0.0
+miss-cost multiplier,0.35,"Model, re-optimised",3585.0178,0.4265
+miss-cost multiplier,0.35,"Model, decisions fixed at m = 1",4812.3266,0.7426
+miss-cost multiplier,0.35,Call everyone in now,9822.83,1.0
+miss-cost multiplier,0.35,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,0.35,Run-to-failure,3981.3714,0.0
+miss-cost multiplier,0.5,"Model, re-optimised",4555.2913,0.5515
+miss-cost multiplier,0.5,"Model, decisions fixed at m = 1",5210.6619,0.7426
+miss-cost multiplier,0.5,Call everyone in now,9822.83,1.0
+miss-cost multiplier,0.5,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,0.5,Run-to-failure,5687.6734,0.0
+miss-cost multiplier,0.7,"Model, re-optimised",5710.8601,0.6324
+miss-cost multiplier,0.7,"Model, decisions fixed at m = 1",5741.7757,0.7426
+miss-cost multiplier,0.7,Call everyone in now,9822.83,1.0
+miss-cost multiplier,0.7,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,0.7,Run-to-failure,7962.7428,0.0
+miss-cost multiplier,1.0,"Model, re-optimised",6538.4463,0.7426
+miss-cost multiplier,1.0,"Model, decisions fixed at m = 1",6538.4463,0.7426
+miss-cost multiplier,1.0,Call everyone in now,9822.83,1.0
+miss-cost multiplier,1.0,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,1.0,Run-to-failure,11375.3468,0.0
+miss-cost multiplier,1.4,"Model, re-optimised",7995.8383,0.7868
+miss-cost multiplier,1.4,"Model, decisions fixed at m = 1",7600.6738,0.7426
+miss-cost multiplier,1.4,Call everyone in now,9822.83,1.0
+miss-cost multiplier,1.4,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,1.4,Run-to-failure,15925.4855,0.0
+miss-cost multiplier,2.0,"Model, re-optimised",9327.388,0.8309
+miss-cost multiplier,2.0,"Model, decisions fixed at m = 1",9194.0151,0.7426
+miss-cost multiplier,2.0,Call everyone in now,9822.83,1.0
+miss-cost multiplier,2.0,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,2.0,Run-to-failure,22750.6936,0.0
+miss-cost multiplier,2.8,"Model, re-optimised",9675.981,0.8971
+miss-cost multiplier,2.8,"Model, decisions fixed at m = 1",11318.4701,0.7426
+miss-cost multiplier,2.8,Call everyone in now,9822.83,1.0
+miss-cost multiplier,2.8,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,2.8,Run-to-failure,31850.9711,0.0
+miss-cost multiplier,4.0,"Model, re-optimised",10385.4538,0.9338
+miss-cost multiplier,4.0,"Model, decisions fixed at m = 1",14505.1526,0.7426
+miss-cost multiplier,4.0,Call everyone in now,9822.83,1.0
+miss-cost multiplier,4.0,Fixed-age rule (b),9701.9421,1.0
+miss-cost multiplier,4.0,Run-to-failure,45501.3872,0.0
+"workshop capacity (call-ins per 1,000)",0.0,Model: highest expected saving,11375.3468,0.0
+"workshop capacity (call-ins per 1,000)",0.0,Oldest trucks first,11375.3468,0.0
+"workshop capacity (call-ins per 1,000)",0.0,Random trucks,11375.3468,0.0
+"workshop capacity (call-ins per 1,000)",25.0,Model: highest expected saving,9711.2564,0.1618
+"workshop capacity (call-ins per 1,000)",25.0,Oldest trucks first,11545.1843,0.0074
+"workshop capacity (call-ins per 1,000)",25.0,Random trucks,11336.58,0.025
+"workshop capacity (call-ins per 1,000)",50.0,Model: highest expected saving,8854.1419,0.25
+"workshop capacity (call-ins per 1,000)",50.0,Oldest trucks first,11715.0218,0.0147
+"workshop capacity (call-ins per 1,000)",50.0,Random trucks,11297.8133,0.0499
+"workshop capacity (call-ins per 1,000)",75.0,Model: highest expected saving,8219.3817,0.3309
+"workshop capacity (call-ins per 1,000)",75.0,Oldest trucks first,11803.805,0.0294
+"workshop capacity (call-ins per 1,000)",75.0,Random trucks,11259.0465,0.0749
+"workshop capacity (call-ins per 1,000)",100.0,Model: highest expected saving,8087.9905,0.3603
+"workshop capacity (call-ins per 1,000)",100.0,Oldest trucks first,11853.3492,0.0441
+"workshop capacity (call-ins per 1,000)",100.0,Random trucks,11219.9721,0.1001
+"workshop capacity (call-ins per 1,000)",125.0,Model: highest expected saving,7692.6278,0.4118
+"workshop capacity (call-ins per 1,000)",125.0,Oldest trucks first,12001.9818,0.0515
+"workshop capacity (call-ins per 1,000)",125.0,Random trucks,11181.2053,0.125
+"workshop capacity (call-ins per 1,000)",150.0,Model: highest expected saving,7660.325,0.4338
+"workshop capacity (call-ins per 1,000)",150.0,Oldest trucks first,12171.8193,0.0588
+"workshop capacity (call-ins per 1,000)",150.0,Random trucks,11142.4385,0.15
+"workshop capacity (call-ins per 1,000)",175.0,Model: highest expected saving,7304.9941,0.4853
+"workshop capacity (call-ins per 1,000)",175.0,Oldest trucks first,12361.6726,0.0662
+"workshop capacity (call-ins per 1,000)",175.0,Random trucks,11103.6717,0.175
+"workshop capacity (call-ins per 1,000)",200.0,Model: highest expected saving,7193.0242,0.5221
+"workshop capacity (call-ins per 1,000)",200.0,Oldest trucks first,12510.3052,0.0735
+"workshop capacity (call-ins per 1,000)",200.0,Random trucks,11064.905,0.2
+"workshop capacity (call-ins per 1,000)",225.0,Model: highest expected saving,6999.8018,0.5588
+"workshop capacity (call-ins per 1,000)",225.0,Oldest trucks first,12720.1744,0.0809
+"workshop capacity (call-ins per 1,000)",225.0,Random trucks,11026.1382,0.2249
+"workshop capacity (call-ins per 1,000)",250.0,Model: highest expected saving,6929.6472,0.5882
+"workshop capacity (call-ins per 1,000)",250.0,Oldest trucks first,12870.7887,0.0882
+"workshop capacity (call-ins per 1,000)",250.0,Random trucks,10987.0638,0.2501
+"workshop capacity (call-ins per 1,000)",275.0,Model: highest expected saving,6737.614,0.625
+"workshop capacity (call-ins per 1,000)",275.0,Oldest trucks first,12979.5878,0.1029
+"workshop capacity (call-ins per 1,000)",275.0,Random trucks,10948.297,0.2751
+"workshop capacity (call-ins per 1,000)",300.0,Model: highest expected saving,6725.327,0.6471
+"workshop capacity (call-ins per 1,000)",300.0,Oldest trucks first,12926.0801,0.125
+"workshop capacity (call-ins per 1,000)",300.0,Random trucks,10909.5302,0.3
+"workshop capacity (call-ins per 1,000)",325.0,Model: highest expected saving,6653.1906,0.6765
+"workshop capacity (call-ins per 1,000)",325.0,Oldest trucks first,12973.6425,0.1397
+"workshop capacity (call-ins per 1,000)",325.0,Random trucks,10870.7635,0.325
+"workshop capacity (call-ins per 1,000)",350.0,Model: highest expected saving,6700.7531,0.6912
+"workshop capacity (call-ins per 1,000)",350.0,Oldest trucks first,13021.2049,0.1544
+"workshop capacity (call-ins per 1,000)",350.0,Random trucks,10831.9967,0.35
+"workshop capacity (call-ins per 1,000)",375.0,Model: highest expected saving,6870.5906,0.6985
+"workshop capacity (call-ins per 1,000)",375.0,Oldest trucks first,12870.5906,0.1985
+"workshop capacity (call-ins per 1,000)",375.0,Random trucks,10793.2299,0.375
+"workshop capacity (call-ins per 1,000)",400.0,Model: highest expected saving,6476.417,0.75
+"workshop capacity (call-ins per 1,000)",400.0,Oldest trucks first,12456.7975,0.2647
+"workshop capacity (call-ins per 1,000)",400.0,Random trucks,10754.4631,0.3999
+"workshop capacity (call-ins per 1,000)",425.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",425.0,Oldest trucks first,12042.2117,0.3162
+"workshop capacity (call-ins per 1,000)",425.0,Random trucks,10715.3887,0.4251
+"workshop capacity (call-ins per 1,000)",450.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",450.0,Oldest trucks first,11910.2259,0.3529
+"workshop capacity (call-ins per 1,000)",450.0,Random trucks,10676.6219,0.4501
+"workshop capacity (call-ins per 1,000)",475.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",475.0,Oldest trucks first,11798.0579,0.3824
+"workshop capacity (call-ins per 1,000)",475.0,Random trucks,10637.8552,0.475
+"workshop capacity (call-ins per 1,000)",500.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",500.0,Oldest trucks first,11502.5763,0.4265
+"workshop capacity (call-ins per 1,000)",500.0,Random trucks,10599.0884,0.5
+"workshop capacity (call-ins per 1,000)",525.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",525.0,Oldest trucks first,11550.1387,0.4412
+"workshop capacity (call-ins per 1,000)",525.0,Random trucks,10560.3216,0.525
+"workshop capacity (call-ins per 1,000)",550.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",550.0,Oldest trucks first,11478.0024,0.4706
+"workshop capacity (call-ins per 1,000)",550.0,Random trucks,10521.5548,0.5499
+"workshop capacity (call-ins per 1,000)",575.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",575.0,Oldest trucks first,11424.4946,0.4926
+"workshop capacity (call-ins per 1,000)",575.0,Random trucks,10482.7881,0.5749
+"workshop capacity (call-ins per 1,000)",600.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",600.0,Oldest trucks first,11495.2438,0.5074
+"workshop capacity (call-ins per 1,000)",600.0,Random trucks,10443.7136,0.6001
+"workshop capacity (call-ins per 1,000)",625.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",625.0,Oldest trucks first,11040.0317,0.5662
+"workshop capacity (call-ins per 1,000)",625.0,Random trucks,10404.9469,0.625
+"workshop capacity (call-ins per 1,000)",650.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",650.0,Oldest trucks first,10664.6849,0.6176
+"workshop capacity (call-ins per 1,000)",650.0,Random trucks,10366.1801,0.65
+"workshop capacity (call-ins per 1,000)",675.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",675.0,Oldest trucks first,10794.6889,0.6324
+"workshop capacity (call-ins per 1,000)",675.0,Random trucks,10327.4133,0.675
+"workshop capacity (call-ins per 1,000)",700.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",700.0,Oldest trucks first,10279.6274,0.6985
+"workshop capacity (call-ins per 1,000)",700.0,Random trucks,10288.6466,0.7
+"workshop capacity (call-ins per 1,000)",725.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",725.0,Oldest trucks first,10167.4594,0.7279
+"workshop capacity (call-ins per 1,000)",725.0,Random trucks,10249.8798,0.7249
+"workshop capacity (call-ins per 1,000)",750.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",750.0,Oldest trucks first,10156.3615,0.75
+"workshop capacity (call-ins per 1,000)",750.0,Random trucks,10211.113,0.7499
+"workshop capacity (call-ins per 1,000)",775.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",775.0,Oldest trucks first,10187.2771,0.7721
+"workshop capacity (call-ins per 1,000)",775.0,Random trucks,10172.0386,0.7751
+"workshop capacity (call-ins per 1,000)",800.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",800.0,Oldest trucks first,9914.1895,0.8162
+"workshop capacity (call-ins per 1,000)",800.0,Random trucks,10133.2718,0.8
+"workshop capacity (call-ins per 1,000)",825.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",825.0,Oldest trucks first,9963.1391,0.8382
+"workshop capacity (call-ins per 1,000)",825.0,Random trucks,10094.505,0.825
+"workshop capacity (call-ins per 1,000)",850.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",850.0,Oldest trucks first,10132.9766,0.8456
+"workshop capacity (call-ins per 1,000)",850.0,Random trucks,10055.7383,0.85
+"workshop capacity (call-ins per 1,000)",875.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",875.0,Oldest trucks first,10303.0123,0.8603
+"workshop capacity (call-ins per 1,000)",875.0,Random trucks,10016.9715,0.875
+"workshop capacity (call-ins per 1,000)",900.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",900.0,Oldest trucks first,10169.6393,0.8897
+"workshop capacity (call-ins per 1,000)",900.0,Random trucks,9978.2047,0.8999
+"workshop capacity (call-ins per 1,000)",925.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",925.0,Oldest trucks first,9857.3127,0.9338
+"workshop capacity (call-ins per 1,000)",925.0,Random trucks,9939.1303,0.9251
+"workshop capacity (call-ins per 1,000)",950.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",950.0,Oldest trucks first,9723.9398,0.9632
+"workshop capacity (call-ins per 1,000)",950.0,Random trucks,9900.3635,0.9501
+"workshop capacity (call-ins per 1,000)",975.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",975.0,Oldest trucks first,9893.7772,0.9706
+"workshop capacity (call-ins per 1,000)",975.0,Random trucks,9861.5967,0.975
+"workshop capacity (call-ins per 1,000)",1000.0,Model: highest expected saving,6502.1799,0.75
+"workshop capacity (call-ins per 1,000)",1000.0,Oldest trucks first,9822.83,1.0
+"workshop capacity (call-ins per 1,000)",1000.0,Random trucks,9822.83,1.0

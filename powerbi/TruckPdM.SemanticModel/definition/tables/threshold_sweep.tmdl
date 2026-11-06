@@ -1,0 +1,56 @@
+table threshold_sweep
+	lineageTag: 7bb85ece-141b-5775-ba28-7b41769ac6ae
+
+	column sweep
+		dataType: string
+		lineageTag: 6ed83044-04eb-5aab-9743-e0ae42de9d9d
+		summarizeBy: none
+		sourceColumn: sweep
+
+		annotation SummarizationSetBy = Automatic
+
+	column x
+		dataType: double
+		lineageTag: 2912b23c-4ddc-560f-989d-03e296b05a20
+		summarizeBy: none
+		sourceColumn: x
+
+		annotation SummarizationSetBy = Automatic
+
+	column policy
+		dataType: string
+		lineageTag: 25472419-4f00-5415-8508-6a3b136c4f17
+		summarizeBy: none
+		sourceColumn: policy
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_per_1000
+		dataType: double
+		formatString: #,0
+		lineageTag: eadb4612-7b00-54a7-8dda-e14e18334312
+		summarizeBy: none
+		sourceColumn: cost_per_1000
+
+		annotation SummarizationSetBy = Automatic
+
+	column share_caught_in_time
+		dataType: double
+		formatString: 0.0%
+		lineageTag: aff85fa4-2ac7-5c16-b5b8-eaf9c4f0e087
+		summarizeBy: none
+		sourceColumn: share_caught_in_time
+
+		annotation SummarizationSetBy = Automatic
+
+	partition threshold_sweep = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "threshold_sweep.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"sweep", type text}, {"x", type number}, {"policy", type text}, {"cost_per_1000", type number}, {"share_caught_in_time", type number}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

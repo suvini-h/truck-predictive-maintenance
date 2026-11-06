@@ -1,0 +1,26 @@
+actual,actual_label,predicted,predicted_label,cost,cell_type,is_late_or_missed
+0,0 · none within 48,0,No action,0,correct,0
+0,0 · none within 48,1,Plan within 48 steps,7,unnecessary call-in,0
+0,0 · none within 48,2,Book within 24 steps,8,unnecessary call-in,0
+0,0 · none within 48,3,Book within 12 steps,9,unnecessary call-in,0
+0,0 · none within 48,4,Call in now,10,unnecessary call-in,0
+1,1 · in 24–48,0,No action,200,missed repair,1
+1,1 · in 24–48,1,Plan within 48 steps,0,correct,0
+1,1 · in 24–48,2,Book within 24 steps,7,early,0
+1,1 · in 24–48,3,Book within 12 steps,8,early,0
+1,1 · in 24–48,4,Call in now,9,early,0
+2,2 · in 12–24,0,No action,300,missed repair,1
+2,2 · in 12–24,1,Plan within 48 steps,200,late,1
+2,2 · in 12–24,2,Book within 24 steps,0,correct,0
+2,2 · in 12–24,3,Book within 12 steps,7,early,0
+2,2 · in 12–24,4,Call in now,8,early,0
+3,3 · in 6–12,0,No action,400,missed repair,1
+3,3 · in 6–12,1,Plan within 48 steps,300,late,1
+3,3 · in 6–12,2,Book within 24 steps,200,late,1
+3,3 · in 6–12,3,Book within 12 steps,0,correct,0
+3,3 · in 6–12,4,Call in now,7,early,0
+4,4 · within 6,0,No action,500,missed repair,1
+4,4 · within 6,1,Plan within 48 steps,400,late,1
+4,4 · within 6,2,Book within 24 steps,300,late,1
+4,4 · within 6,3,Book within 12 steps,200,late,1
+4,4 · within 6,4,Call in now,0,correct,0

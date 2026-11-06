@@ -1,0 +1,48 @@
+table shap_top_drivers
+	lineageTag: 81bb6a04-3bf8-5d8d-841d-c86db65d7834
+
+	column vehicle_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 213e5a33-384c-51fb-a663-256b3cb58250
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 16385560-3dc2-58e5-8d6c-f187d24137c4
+		summarizeBy: none
+		sourceColumn: driver_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver
+		dataType: string
+		lineageTag: 7ad6cd9f-75d6-576b-8c44-4b6dc0581d11
+		summarizeBy: none
+		sourceColumn: driver
+
+		annotation SummarizationSetBy = Automatic
+
+	column effect
+		dataType: string
+		lineageTag: b041e487-a9f1-5c76-947b-c3e2fca7f028
+		summarizeBy: none
+		sourceColumn: effect
+
+		annotation SummarizationSetBy = Automatic
+
+	partition shap_top_drivers = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "shap_top_drivers.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"vehicle_id", Int64.Type}, {"driver_rank", Int64.Type}, {"driver", type text}, {"effect", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

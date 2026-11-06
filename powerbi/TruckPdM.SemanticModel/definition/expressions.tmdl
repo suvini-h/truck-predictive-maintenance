@@ -1,0 +1,5 @@
+expression DataFolder = "C:\Users\manuj\Desktop\Projects\truck-predictive-maintenance\powerbi\data\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 5223f7a7-32fe-574f-aad3-45b2a8686ca5
+
+	annotation PBI_ResultType = Text
+

@@ -1,0 +1,46 @@
+table reliability_key_numbers
+	lineageTag: b31d8ed2-fe8c-5c39-aa82-e65dcf072bee
+
+	column metric
+		dataType: string
+		lineageTag: 801b3d4b-6239-564b-a22c-fc16376711c2
+		summarizeBy: none
+		sourceColumn: metric
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		lineageTag: cca7e31c-564a-5f5b-873e-9e74b3c1be1f
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	column value
+		dataType: double
+		lineageTag: 3c8ed70a-96d8-5904-bbb9-4467d4840fef
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	column note
+		dataType: string
+		lineageTag: a9f9243d-d4fe-5e42-abf6-d4b91f1ecfdf
+		summarizeBy: none
+		sourceColumn: note
+
+		annotation SummarizationSetBy = Automatic
+
+	partition reliability_key_numbers = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "reliability_key_numbers.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"metric", type text}, {"label", type text}, {"value", type number}, {"note", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

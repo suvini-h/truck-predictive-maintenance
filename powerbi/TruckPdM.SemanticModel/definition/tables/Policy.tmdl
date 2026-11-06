@@ -1,0 +1,27 @@
+/// Axis for comparing policies side by side (Overview page); values come from [Policy Cost per 1000].
+table Policy
+	lineageTag: b1c60731-7ee8-5ce2-bc06-2f441aa1e8ab
+
+	column Policy
+		dataType: string
+		lineageTag: 7d7a80c7-4d01-5df5-a8dd-30a79bcc13f3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Policy]
+		sortByColumn: Order
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order
+		dataType: int64
+		formatString: 0
+		lineageTag: 553ba780-1d70-5b38-a3d5-f3fdf40722e6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Order]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Policy = calculated
+		mode: import
+		source = DATATABLE ( "Policy", STRING, "Order", INTEGER, { { "Risk-based plan (model)", 1 }, { "Age bands (validation-tuned)", 2 }, { "Fixed-age rule (b)", 3 }, { "Call everyone in now", 4 }, { "Run-to-failure", 5 } } )

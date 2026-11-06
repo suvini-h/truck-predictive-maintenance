@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "6d3491a75d78aa3498d4",
+  "position": {
+    "x": 1112,
+    "y": 88,
+    "z": 6000,
+    "height": 100,
+    "width": 144,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Repaired by 400"
+                }
+              },
+              "queryRef": "_Measures.Repaired by 400",
+              "nativeQueryRef": "Repaired by 400",
+              "displayName": "Repaired by time step 400"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

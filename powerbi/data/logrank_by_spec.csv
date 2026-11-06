@@ -1,0 +1,9 @@
+spec,groups,chi2,p_raw,lowest_group,repaired_by_300_lowest,highest_group,repaired_by_300_highest,p_holm,significant_5pct,p_holm_display
+Spec_0,3,65.61315,0.0,Other,0.085227,Cat0,0.143398,0.0,yes,< 1e-10
+Spec_1,17,115.414808,0.0,Cat16,0.037778,Cat17,0.188507,0.0,yes,< 1e-10
+Spec_2,9,268.969867,0.0,Cat12,0.026478,Cat5,0.305895,0.0,yes,< 1e-10
+Spec_3,4,96.588306,0.0,Cat3,0.069279,Cat1,0.163392,0.0,yes,< 1e-10
+Spec_4,2,47.605664,0.0,Cat0,0.131968,Cat1,0.229754,0.0,yes,< 1e-10
+Spec_5,5,4.349208,0.360804,Cat2,0.124016,Cat1,0.143364,0.360804,no,0.36
+Spec_6,7,108.706917,0.0,Other,0.052638,Cat2,0.194564,0.0,yes,< 1e-10
+Spec_7,9,425.337132,0.0,Cat8,0.024317,Cat7,0.278157,0.0,yes,< 1e-10

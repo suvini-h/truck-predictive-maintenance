@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "32438f433501a9abe7b3",
+  "position": {
+    "x": 273,
+    "y": 88,
+    "z": 3000,
+    "height": 100,
+    "width": 233,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Planner Call-ins per 1000"
+                }
+              },
+              "queryRef": "_Measures.Planner Call-ins per 1000",
+              "nativeQueryRef": "Planner Call-ins per 1000",
+              "displayName": "Call-ins per 1,000 trucks"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

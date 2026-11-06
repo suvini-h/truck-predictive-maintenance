@@ -1,0 +1,210 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "5c5f0017d0f00d2bcc09",
+  "position": {
+    "x": 800,
+    "y": 204,
+    "z": 7000,
+    "height": 304,
+    "width": 456,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "spec"
+                }
+              },
+              "queryRef": "logrank_by_spec.spec",
+              "nativeQueryRef": "spec",
+              "displayName": "Spec"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "chi2"
+                }
+              },
+              "queryRef": "logrank_by_spec.chi2",
+              "nativeQueryRef": "chi2",
+              "displayName": "χ²"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "p_holm_display"
+                }
+              },
+              "queryRef": "logrank_by_spec.p_holm_display",
+              "nativeQueryRef": "p_holm_display",
+              "displayName": "p (Holm)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "lowest_group"
+                }
+              },
+              "queryRef": "logrank_by_spec.lowest_group",
+              "nativeQueryRef": "lowest_group",
+              "displayName": "Lowest"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "repaired_by_300_lowest"
+                }
+              },
+              "queryRef": "logrank_by_spec.repaired_by_300_lowest",
+              "nativeQueryRef": "repaired_by_300_lowest",
+              "displayName": "Repaired by 300"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "highest_group"
+                }
+              },
+              "queryRef": "logrank_by_spec.highest_group",
+              "nativeQueryRef": "highest_group",
+              "displayName": "Highest"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "logrank_by_spec"
+                    }
+                  },
+                  "Property": "repaired_by_300_highest"
+                }
+              },
+              "queryRef": "logrank_by_spec.repaired_by_300_highest",
+              "nativeQueryRef": "repaired_by_300_highest",
+              "displayName": "Repaired by 300 "
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "logrank_by_spec"
+                  }
+                },
+                "Property": "chi2"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'7 of 8 specs differ in survival'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Log-rank test per spec, Holm-corrected'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

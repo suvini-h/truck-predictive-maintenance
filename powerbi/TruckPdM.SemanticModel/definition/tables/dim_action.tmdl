@@ -1,0 +1,49 @@
+table dim_action
+	lineageTag: 1e6db255-3abd-5ff9-a02f-8ea5d7535c20
+
+	column action
+		dataType: int64
+		formatString: 0
+		lineageTag: 960ae228-ee2c-5a0d-a161-4f82d0c56920
+		summarizeBy: none
+		sourceColumn: action
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		lineageTag: f7e33dc3-04c5-50a9-b655-c3457fc26abb
+		summarizeBy: none
+		sourceColumn: label
+		sortByColumn: sort_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column urgency_window
+		dataType: string
+		lineageTag: 6329c8f7-b6c7-5642-8e86-f04434153425
+		summarizeBy: none
+		sourceColumn: urgency_window
+
+		annotation SummarizationSetBy = Automatic
+
+	column sort_order
+		dataType: int64
+		formatString: 0
+		lineageTag: f3016372-324f-5fe2-a1cc-4e2668b63f05
+		summarizeBy: none
+		sourceColumn: sort_order
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_action = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "dim_action.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"action", Int64.Type}, {"label", type text}, {"urgency_window", type text}, {"sort_order", Int64.Type}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

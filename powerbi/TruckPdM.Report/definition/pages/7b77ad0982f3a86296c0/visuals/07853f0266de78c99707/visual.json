@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "07853f0266de78c99707",
+  "position": {
+    "x": 522,
+    "y": 88,
+    "z": 7000,
+    "height": 96,
+    "width": 233,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Planner Call-ins per 1000"
+                }
+              },
+              "queryRef": "_Measures.Planner Call-ins per 1000",
+              "nativeQueryRef": "Planner Call-ins per 1000",
+              "displayName": "Call-ins per 1,000"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

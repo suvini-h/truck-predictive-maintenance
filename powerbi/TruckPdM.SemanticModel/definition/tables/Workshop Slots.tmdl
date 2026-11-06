@@ -1,0 +1,29 @@
+/// What-if parameter: call-ins the workshop can take per 1,000 trucks; 1,000 = no limit.
+table 'Workshop Slots'
+	lineageTag: 781daa20-2a02-557e-8938-e7ccab0088ec
+
+	/// Selected value of 'Workshop Slots' (1000 when nothing or several values are selected).
+	measure 'Workshop Slots Value' = SELECTEDVALUE ( 'Workshop Slots'[Workshop Slots], 1000 )
+		formatString: #,0
+		displayFolder: Parameters
+		lineageTag: ff1cb42c-0885-5913-b6c9-c6fa410e81bd
+
+	column 'Workshop Slots'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 60c4af95-cd62-5d8b-9281-6f3fa6c4b9ee
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Workshop Slots' = calculated
+		mode: import
+		source = GENERATESERIES ( 0, 1000, 25 )
+
+	annotation PBI_Id = 3b654d3000550086a7e9

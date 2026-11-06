@@ -1,0 +1,65 @@
+table survival_curves
+	lineageTag: 35d27960-32a1-59a7-b073-6285965d457f
+
+	column spec
+		dataType: string
+		lineageTag: 91b29336-138e-55a2-848e-3d9ae55cb9a6
+		summarizeBy: none
+		sourceColumn: spec
+
+		annotation SummarizationSetBy = Automatic
+
+	column group
+		dataType: string
+		lineageTag: 5c7fc072-856e-54fd-82e8-26c8217ce788
+		summarizeBy: none
+		sourceColumn: group
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_step
+		dataType: double
+		lineageTag: 7457c96f-6a8b-5678-8ab4-a2160f59c6f1
+		summarizeBy: none
+		sourceColumn: time_step
+
+		annotation SummarizationSetBy = Automatic
+
+	column share_without_repair
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 54c939e8-bb7e-5a3b-abcc-ed9bf132a6a2
+		summarizeBy: none
+		sourceColumn: share_without_repair
+
+		annotation SummarizationSetBy = Automatic
+
+	column trucks_at_risk
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bfb3863-8f5c-55e0-a364-6434b811b262
+		summarizeBy: none
+		sourceColumn: trucks_at_risk
+
+		annotation SummarizationSetBy = Automatic
+
+	column group_size
+		dataType: int64
+		formatString: 0
+		lineageTag: 8aa0fca9-f3ac-58d7-9aaa-aafa0f75dae7
+		summarizeBy: none
+		sourceColumn: group_size
+
+		annotation SummarizationSetBy = Automatic
+
+	partition survival_curves = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "survival_curves.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"spec", type text}, {"group", type text}, {"time_step", type number}, {"share_without_repair", type number}, {"trucks_at_risk", Int64.Type}, {"group_size", Int64.Type}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

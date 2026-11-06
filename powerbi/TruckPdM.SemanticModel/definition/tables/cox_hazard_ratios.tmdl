@@ -1,0 +1,89 @@
+table cox_hazard_ratios
+	lineageTag: 2cf34163-453c-53fa-b3cf-0a9527706cce
+
+	column covariate
+		dataType: string
+		lineageTag: 56b7995d-3103-5761-9905-7a61c0348708
+		summarizeBy: none
+		sourceColumn: covariate
+
+		annotation SummarizationSetBy = Automatic
+
+	column hazard_ratio
+		dataType: double
+		formatString: 0.00
+		lineageTag: 0358a2e8-ba80-5f53-8bf7-223c75b5496d
+		summarizeBy: none
+		sourceColumn: hazard_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+	column hr_low_95
+		dataType: double
+		formatString: 0.00
+		lineageTag: 760bd717-e482-5303-8ec9-f3d81ee6f693
+		summarizeBy: none
+		sourceColumn: hr_low_95
+
+		annotation SummarizationSetBy = Automatic
+
+	column hr_high_95
+		dataType: double
+		formatString: 0.00
+		lineageTag: d391b539-356d-5131-829e-f67b35eb28c3
+		summarizeBy: none
+		sourceColumn: hr_high_95
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_raw
+		dataType: double
+		lineageTag: 2a55bd53-27f7-515f-ba94-73efc13765e7
+		summarizeBy: none
+		sourceColumn: p_raw
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_holm
+		dataType: double
+		lineageTag: 8411a78f-1aa4-5f45-86ac-3f929305a85b
+		summarizeBy: none
+		sourceColumn: p_holm
+
+		annotation SummarizationSetBy = Automatic
+
+	column kind
+		dataType: string
+		lineageTag: 444e4b54-6ead-50c2-8d03-9c3e2ed0965b
+		summarizeBy: none
+		sourceColumn: kind
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		lineageTag: 5589b224-da73-5d74-b742-14a2bade0381
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	column significant_5pct
+		dataType: string
+		lineageTag: 15bcd06e-776d-5c6c-84f1-90aa9ee9532d
+		summarizeBy: none
+		sourceColumn: significant_5pct
+
+		annotation SummarizationSetBy = Automatic
+
+	partition cox_hazard_ratios = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "cox_hazard_ratios.csv"), [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"covariate", type text}, {"hazard_ratio", type number}, {"hr_low_95", type number}, {"hr_high_95", type number}, {"p_raw", type number}, {"p_holm", type number}, {"kind", type text}, {"label", type text}, {"significant_5pct", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

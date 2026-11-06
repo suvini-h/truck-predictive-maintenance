@@ -1,0 +1,406 @@
+table _Measures
+	lineageTag: c7289931-0004-5a8e-95ba-9be3da02de41
+
+	/// Trucks in the test snapshot (current filters).
+	measure Trucks = COUNTROWS ( fact_snapshot_scores )
+		formatString: #,0
+		displayFolder: Fleet
+		lineageTag: a8aaff23-b5a5-51c1-bce6-ed4dbd57fece
+
+	/// Trucks whose Component X repair falls within the next 48 time steps (actual class 1-4).
+	measure 'Repairs Due' = CALCULATE ( [Trucks], fact_snapshot_scores[actual_class] > 0 )
+		formatString: #,0
+		displayFolder: Fleet
+		lineageTag: 1ab88f5a-e337-5f11-80fc-f310a50d1cc6
+
+	/// Smallest expected saving that still gets a workshop slot: trucks are ranked by expected saving and only the top K (= slots per 1,000 x selected fleet) are acted on.
+	measure 'Capacity Saving Threshold' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR fleet = CALCULATE ( COUNTROWS ( fact_snapshot_scores ), ALLSELECTED ( fact_snapshot_scores ) )
+			VAR K = ROUND ( [Workshop Slots Value] / 1000 * fleet, 0 )    -- call-ins allowed in the selected fleet
+			VAR scored =
+				ADDCOLUMNS (
+					CALCULATETABLE ( fact_snapshot_scores, ALLSELECTED ( fact_snapshot_scores ) ),
+					"@saving",
+						m * fact_snapshot_scores[L0]
+							- MIN (
+								MIN ( m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1], m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2] ),
+								MIN ( m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3], m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4] )
+							)
+				)
+			VAR candidates = FILTER ( scored, [@saving] > 0 )                -- trucks where acting pays at all
+			RETURN
+				SWITCH (
+					TRUE (),
+					K <= 0, 1E+300,                                              -- no slots: nobody is called in
+					K >= COUNTROWS ( candidates ), 0,                            -- enough slots: no limit
+					MINX ( TOPN ( K, candidates, [@saving], DESC ), [@saving] )  -- saving of the K-th best truck
+				)
+		formatString: #,0.00
+		isHidden
+		displayFolder: Planner (helpers)
+		lineageTag: a4c2cca9-3e95-54a5-a605-169ce3d50fe8
+
+	/// Realized cost (relative units) of the live planner policy on the test snapshot: each truck gets the action with the lowest expected cost under the selected miss-cost multiplier, limited by workshop slots; costed against its actual class.
+	measure 'Planner Cost' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR thr = [Capacity Saving Threshold]
+			RETURN
+				SUMX (
+					fact_snapshot_scores,
+					-- expected cost of each action d for this truck: m * L_d + U_d
+					VAR e0 = m * fact_snapshot_scores[L0]
+					VAR e1 = m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1]
+					VAR e2 = m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2]
+					VAR e3 = m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3]
+					VAR e4 = m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4]
+					VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other than 'No action'
+					VAR saving = e0 - best                                 -- expected saving of acting at all
+					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
+					-- among equally cheap actions take the least urgent one
+					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR y = fact_snapshot_scores[actual_class]
+					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], action )
+					RETURN IF ( y > action, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
+				)
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: aba5263f-d3c0-5731-ac40-a6cad75ba8fc
+
+	/// Planner cost per 1,000 trucks (headline metric).
+	measure 'Planner Cost per 1000' = DIVIDE ( [Planner Cost], [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: 531b702a-1eb2-5893-9d5e-2f2081aa613c
+
+	/// The model's own forecast of the planner cost per 1,000 trucks (expected cost of the chosen actions, no actual classes used).
+	measure 'Planner Expected Cost per 1000' =
+			VAR expected =
+				VAR m = [Miss Cost Multiplier Value]
+				VAR thr = [Capacity Saving Threshold]
+				RETURN
+					SUMX (
+						fact_snapshot_scores,
+						-- expected cost of each action d for this truck: m * L_d + U_d
+						VAR e0 = m * fact_snapshot_scores[L0]
+						VAR e1 = m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1]
+						VAR e2 = m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2]
+						VAR e3 = m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3]
+						VAR e4 = m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4]
+						VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other than 'No action'
+						VAR saving = e0 - best                                 -- expected saving of acting at all
+						-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
+						-- among equally cheap actions take the least urgent one
+						VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+						VAR y = fact_snapshot_scores[actual_class]
+						RETURN IF ( action = 0, e0, best )   -- expected cost of the chosen action
+					)
+			RETURN DIVIDE ( expected, [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: 76359da6-6b0e-59dc-859c-5e8f5e08bc51
+
+	/// Trucks the planner acts on (any action other than 'No action').
+	measure 'Planner Call-ins' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR thr = [Capacity Saving Threshold]
+			RETURN
+				SUMX (
+					fact_snapshot_scores,
+					-- expected cost of each action d for this truck: m * L_d + U_d
+					VAR e0 = m * fact_snapshot_scores[L0]
+					VAR e1 = m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1]
+					VAR e2 = m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2]
+					VAR e3 = m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3]
+					VAR e4 = m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4]
+					VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other than 'No action'
+					VAR saving = e0 - best                                 -- expected saving of acting at all
+					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
+					-- among equally cheap actions take the least urgent one
+					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR y = fact_snapshot_scores[actual_class]
+					RETURN IF ( action > 0, 1, 0 )
+				)
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: a9dd3591-11da-5df3-b4f4-4e1d054fa135
+
+	/// Call-ins per 1,000 trucks.
+	measure 'Planner Call-ins per 1000' = DIVIDE ( [Planner Call-ins], [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: ec7d7e41-24eb-527e-ae38-f43c3c3ad4e5
+
+	/// Due repairs caught in time: actual class 1-4 and an action at least as urgent as needed.
+	measure 'Planner Repairs Caught' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR thr = [Capacity Saving Threshold]
+			RETURN
+				SUMX (
+					fact_snapshot_scores,
+					-- expected cost of each action d for this truck: m * L_d + U_d
+					VAR e0 = m * fact_snapshot_scores[L0]
+					VAR e1 = m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1]
+					VAR e2 = m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2]
+					VAR e3 = m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3]
+					VAR e4 = m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4]
+					VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other than 'No action'
+					VAR saving = e0 - best                                 -- expected saving of acting at all
+					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
+					-- among equally cheap actions take the least urgent one
+					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR y = fact_snapshot_scores[actual_class]
+					RETURN IF ( y > 0 && action >= y, 1, 0 )
+				)
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: 6712620e-8511-536f-8507-dac0457ce13e
+
+	/// Share of due repairs caught in time.
+	measure 'Planner Share Caught' = DIVIDE ( [Planner Repairs Caught], [Repairs Due] )
+		formatString: 0.0%
+		displayFolder: Planner
+		lineageTag: 1d8a8e44-2f32-5d66-b5c6-e3e2533f6217
+
+	/// Call-ins of trucks with no repair due within 48 steps.
+	measure 'Planner Unnecessary Call-ins' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR thr = [Capacity Saving Threshold]
+			RETURN
+				SUMX (
+					fact_snapshot_scores,
+					-- expected cost of each action d for this truck: m * L_d + U_d
+					VAR e0 = m * fact_snapshot_scores[L0]
+					VAR e1 = m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1]
+					VAR e2 = m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2]
+					VAR e3 = m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3]
+					VAR e4 = m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4]
+					VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other than 'No action'
+					VAR saving = e0 - best                                 -- expected saving of acting at all
+					-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
+					-- among equally cheap actions take the least urgent one
+					VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+					VAR y = fact_snapshot_scores[actual_class]
+					RETURN IF ( y = 0 && action > 0, 1, 0 )
+				)
+		formatString: #,0
+		displayFolder: Planner
+		lineageTag: cf0fd9b1-5009-54de-b63b-664e450c0238
+
+	/// Live planner action (0-4) for a single truck; blank on totals.
+	measure 'Planner Action' =
+			IF (
+				HASONEVALUE ( fact_snapshot_scores[vehicle_id] ),
+				VAR m = [Miss Cost Multiplier Value]
+				VAR thr = [Capacity Saving Threshold]
+				RETURN
+					MAXX (
+						fact_snapshot_scores,
+						-- expected cost of each action d for this truck: m * L_d + U_d
+						VAR e0 = m * fact_snapshot_scores[L0]
+						VAR e1 = m * fact_snapshot_scores[L1] + fact_snapshot_scores[U1]
+						VAR e2 = m * fact_snapshot_scores[L2] + fact_snapshot_scores[U2]
+						VAR e3 = m * fact_snapshot_scores[L3] + fact_snapshot_scores[U3]
+						VAR e4 = m * fact_snapshot_scores[L4] + fact_snapshot_scores[U4]
+						VAR best = MIN ( MIN ( e1, e2 ), MIN ( e3, e4 ) )      -- cheapest action other than 'No action'
+						VAR saving = e0 - best                                 -- expected saving of acting at all
+						-- act only if acting is cheaper AND the truck is within workshop capacity (saving >= threshold);
+						-- among equally cheap actions take the least urgent one
+						VAR action = IF ( saving > 0 && saving >= thr, SWITCH ( TRUE (), e1 = best, 1, e2 = best, 2, e3 = best, 3, 4 ), 0 )
+						VAR y = fact_snapshot_scores[actual_class]
+						RETURN action
+					)
+			)
+		formatString: 0
+		displayFolder: Planner
+		lineageTag: 337ae357-455c-5479-a5ec-29d67cd89212
+
+	/// Live planner action as text, e.g. 'Call in now'.
+	measure 'Planner Action Label' =
+			VAR a = [Planner Action]
+			RETURN IF ( ISBLANK ( a ), BLANK (), LOOKUPVALUE ( dim_action[label], dim_action[action], a ) )
+		formatString: @
+		displayFolder: Planner
+		lineageTag: 6bd58440-2cd4-5fbc-832e-0c08900d9e1f
+
+	/// Cost per 1,000 trucks if no truck is called in.
+	measure 'Run-to-failure Cost per 1000' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR total =
+				SUMX (
+					fact_snapshot_scores,
+					VAR y = fact_snapshot_scores[actual_class]
+					VAR a = 0
+					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], a )
+					RETURN IF ( y > a, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
+				)
+			RETURN DIVIDE ( total, [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Baselines
+		lineageTag: e6f5eb57-6915-5e04-9d19-ab35c199e19b
+
+	/// Cost per 1,000 trucks if every truck is called in now.
+	measure 'Call-everyone Cost per 1000' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR total =
+				SUMX (
+					fact_snapshot_scores,
+					VAR y = fact_snapshot_scores[actual_class]
+					VAR a = 4
+					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], a )
+					RETURN IF ( y > a, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
+				)
+			RETURN DIVIDE ( total, [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Baselines
+		lineageTag: dc534ec9-b613-5525-aaf1-2d56547a7bf8
+
+	/// Cost per 1,000 trucks under baseline (b), the fixed-age rule from notebook 02 (call in every truck older than 65).
+	measure 'Fixed-age Rule Cost per 1000' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR total =
+				SUMX (
+					fact_snapshot_scores,
+					VAR y = fact_snapshot_scores[actual_class]
+					VAR a = fact_snapshot_scores[fixed_age_action]
+					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], a )
+					RETURN IF ( y > a, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
+				)
+			RETURN DIVIDE ( total, [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Baselines
+		lineageTag: f6366ed9-9bca-5697-a57a-d85e645ddd49
+
+	/// Cost per 1,000 trucks under the validation-tuned age bands (call in trucks aged 100-250).
+	measure 'Age-band Rule Cost per 1000' =
+			VAR m = [Miss Cost Multiplier Value]
+			VAR total =
+				SUMX (
+					fact_snapshot_scores,
+					VAR y = fact_snapshot_scores[actual_class]
+					VAR a = fact_snapshot_scores[age_band_action]
+					VAR c = LOOKUPVALUE ( dim_cost_matrix[cost], dim_cost_matrix[actual], y, dim_cost_matrix[predicted], a )
+					RETURN IF ( y > a, m * c, c )      -- late/missed cells scaled by the miss-cost multiplier
+				)
+			RETURN DIVIDE ( total, [Trucks] ) * 1000
+		formatString: #,0
+		displayFolder: Baselines
+		lineageTag: 3a26e4e3-b739-5d17-a146-4bf803a1dac9
+
+	/// Planner saving vs calling every truck in, cost units per 1,000 trucks.
+	measure 'Saving vs Call-everyone per 1000' = [Call-everyone Cost per 1000] - [Planner Cost per 1000]
+		formatString: #,0
+		displayFolder: Savings
+		lineageTag: 26c56f9f-ed6e-57f0-947b-c7e520f33d87
+
+	/// Planner saving vs the fixed-age rule, cost units per 1,000 trucks.
+	measure 'Saving vs Fixed-age per 1000' = [Fixed-age Rule Cost per 1000] - [Planner Cost per 1000]
+		formatString: #,0
+		displayFolder: Savings
+		lineageTag: 2ac5ca81-0a1d-5ea0-81be-edac2bf7aece
+
+	/// Planner cost per 1,000 trucks in SEK. ILLUSTRATIVE: SEK per cost unit is an assumption (what-if parameter), not data.
+	measure 'Planner Cost SEK per 1000' = [Planner Cost per 1000] * [SEK per Cost Unit Value]
+		formatString: #,0 "SEK"
+		displayFolder: Savings
+		lineageTag: d711d046-aeb1-5d0d-8cd8-503d62fc9753
+
+	/// Planner saving vs calling everyone in, SEK per 1,000 trucks. ILLUSTRATIVE (assumed SEK per cost unit).
+	measure 'Saving vs Call-everyone SEK per 1000' = [Saving vs Call-everyone per 1000] * [SEK per Cost Unit Value]
+		formatString: #,0 "SEK"
+		displayFolder: Savings
+		lineageTag: b7abc429-279a-5bb9-ae10-61b6589b71c3
+
+	/// Cost per 1,000 trucks for the policy on the Policy axis.
+	measure 'Policy Cost per 1000' =
+			SWITCH (
+				SELECTEDVALUE ( Policy[Policy] ),
+				"Risk-based plan (model)", [Planner Cost per 1000],
+				"Age bands (validation-tuned)", [Age-band Rule Cost per 1000],
+				"Fixed-age rule (b)", [Fixed-age Rule Cost per 1000],
+				"Call everyone in now", [Call-everyone Cost per 1000],
+				"Run-to-failure", [Run-to-failure Cost per 1000]
+			)
+		formatString: #,0
+		displayFolder: Savings
+		lineageTag: 257e7506-b513-5278-81e2-816ffa2d4f7d
+
+	/// Kaplan-Meier share of training trucks still on their original Component X.
+	measure 'Share Without Repair' = AVERAGE ( survival_curves[share_without_repair] )
+		formatString: 0.0%
+		displayFolder: Reliability
+		lineageTag: b1bee8d8-f56b-5966-8dd3-a689532d369b
+
+	/// Weibull shape rho; above 1 means the hazard rises with age (wear-out).
+	measure 'Weibull Shape' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "weibull_shape" )
+		formatString: 0.00
+		displayFolder: Reliability
+		lineageTag: aca81e24-0e80-5754-9986-ad584ed9639b
+
+	/// Share of trucks repaired by time step 300 (Kaplan-Meier).
+	measure 'Repaired by 300' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "repaired_by_300" )
+		formatString: 0.0%
+		displayFolder: Reliability
+		lineageTag: c9161edd-cb93-59b7-98dc-f49af2d02045
+
+	/// Share of trucks repaired by time step 400 (Kaplan-Meier).
+	measure 'Repaired by 400' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "repaired_by_400" )
+		formatString: 0.0%
+		displayFolder: Reliability
+		lineageTag: dbd64bee-daaf-5390-bb5e-197e3c241f9d
+
+	/// Cox hazard ratio (1 = no effect).
+	measure 'Hazard Ratio' = AVERAGE ( cox_hazard_ratios[hazard_ratio] )
+		formatString: 0.00
+		displayFolder: Reliability
+		lineageTag: dc526982-d862-55b3-ae84-a63896c72831
+
+	/// Mean predicted P(repair due within 48 steps) in the bin.
+	measure 'Predicted Share Due' = AVERAGE ( calibration[predicted_share_due] )
+		formatString: 0.0%
+		displayFolder: Model quality
+		lineageTag: f2c99aa2-3cfb-52d7-a037-474a1b080d2e
+
+	/// Observed share of trucks with a repair due within 48 steps in the bin.
+	measure 'Observed Share Due' = AVERAGE ( calibration[observed_share_due] )
+		formatString: 0.0%
+		displayFolder: Model quality
+		lineageTag: 111598ff-497c-5236-b447-8a41868fed0e
+
+	/// Cost of one actual/predicted cell.
+	measure 'Cost Matrix Cell' = SUM ( dim_cost_matrix[cost] )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: 30ed103b-f85a-56e6-8fca-991e8391bfc8
+
+	/// Notebook 04: cost per 1,000 trucks on validation (model: cross-fitted).
+	measure 'Validation Cost per 1000' = CALCULATE ( AVERAGE ( policy_comparison[cost_per_1000] ), policy_comparison[split] = "validation" )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: 3c04ab7a-c53a-5859-80df-12d2ca6d7bfd
+
+	/// Notebook 04: cost per 1,000 trucks on test (evaluated once).
+	measure 'Test Cost per 1000' = CALCULATE ( AVERAGE ( policy_comparison[cost_per_1000] ), policy_comparison[split] = "test" )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: d7fcc01d-db95-5872-bb0c-0613af041bf7
+
+	/// Notebook 04 validation sweep: cost per 1,000 trucks at each x.
+	measure 'Validation Sweep Cost' = AVERAGE ( threshold_sweep[cost_per_1000] )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: 267243f8-ecd7-59df-987c-beee5c40357a
+
+	column Value
+		dataType: int64
+		isHidden
+		lineageTag: d7881bc5-ed8c-57ce-af54-7ebe613c82b2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = { BLANK () }

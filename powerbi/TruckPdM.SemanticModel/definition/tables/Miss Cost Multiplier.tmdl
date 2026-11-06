@@ -1,0 +1,29 @@
+/// What-if parameter: multiplies the late/missed cells (200-500) of the cost matrix; 1 = Scania's expert matrix.
+table 'Miss Cost Multiplier'
+	lineageTag: c82da931-b275-5ad7-bb23-0d1609c61fbb
+
+	/// Selected value of 'Miss Cost Multiplier' (1 when nothing or several values are selected).
+	measure 'Miss Cost Multiplier Value' = SELECTEDVALUE ( 'Miss Cost Multiplier'[Miss Cost Multiplier], 1 )
+		formatString: 0.00
+		displayFolder: Parameters
+		lineageTag: d1e72db4-0dd9-5f22-a962-e30472596da2
+
+	column 'Miss Cost Multiplier'
+		dataType: double
+		formatString: 0.00
+		lineageTag: 27c6f44b-d450-53c3-abc3-63dbe946e03d
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition 'Miss Cost Multiplier' = calculated
+		mode: import
+		source = GENERATESERIES ( 0.25, 4, 0.25 )
+
+	annotation PBI_Id = ab6ba9d477abf6f77e9a

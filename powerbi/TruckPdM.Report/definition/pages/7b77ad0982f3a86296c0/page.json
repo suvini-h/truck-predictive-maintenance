@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "7b77ad0982f3a86296c0",
+  "displayName": "Cost trade-off",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "6f1f19f68e9645d564ea",
+      "target": "45546f557348973f3485",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b0c1cbc2be4111418adb",
+      "target": "9e3592c116c420d19852",
+      "type": "NoFilter"
+    }
+  ]
+}

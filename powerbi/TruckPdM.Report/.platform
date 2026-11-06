@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "TruckPdM"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cc55e791-22c8-5ade-b1ca-bf357dc1d6d4"
+  }
+}

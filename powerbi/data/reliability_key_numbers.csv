@@ -1,0 +1,6 @@
+metric,label,value,note
+weibull_shape,Weibull shape ρ,2.40001,95% CI 2.32–2.48; > 1 = wear-out
+repaired_by_200,Repaired by time step 200,0.05312,"Kaplan–Meier, training trucks"
+repaired_by_300,Repaired by time step 300,0.13406,"Kaplan–Meier, training trucks"
+repaired_by_400,Repaired by time step 400,0.2099,"Kaplan–Meier, training trucks"
+cox_concordance,Cox concordance (training),0.71591,specs + early-life usage; optimistic (fitted data)

@@ -1,0 +1,106 @@
+table logrank_by_spec
+	lineageTag: 53883775-b8b8-5760-baf6-35f200ff8e71
+
+	column spec
+		dataType: string
+		lineageTag: e0272153-a0b6-5e43-af93-2f8a4dfd669c
+		summarizeBy: none
+		sourceColumn: spec
+
+		annotation SummarizationSetBy = Automatic
+
+	column groups
+		dataType: int64
+		formatString: 0
+		lineageTag: bb85d29a-9a35-5997-bce9-ff44cc9d6631
+		summarizeBy: none
+		sourceColumn: groups
+
+		annotation SummarizationSetBy = Automatic
+
+	column chi2
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 252a5396-fbd2-5222-956f-1ab863d793fd
+		summarizeBy: none
+		sourceColumn: chi2
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_raw
+		dataType: double
+		lineageTag: c545b80b-0a29-577e-980b-63d3ac4082c2
+		summarizeBy: none
+		sourceColumn: p_raw
+
+		annotation SummarizationSetBy = Automatic
+
+	column lowest_group
+		dataType: string
+		lineageTag: c6391f22-ce50-58d6-ad30-36b890665608
+		summarizeBy: none
+		sourceColumn: lowest_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column repaired_by_300_lowest
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 8dd4f539-dad9-5f28-a987-d10007393e7f
+		summarizeBy: none
+		sourceColumn: repaired_by_300_lowest
+
+		annotation SummarizationSetBy = Automatic
+
+	column highest_group
+		dataType: string
+		lineageTag: 8ffbfaaa-db34-5410-a906-99fdff3521d3
+		summarizeBy: none
+		sourceColumn: highest_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column repaired_by_300_highest
+		dataType: double
+		formatString: 0.0%
+		lineageTag: 5ee893b9-8d02-59b9-8940-b88a2de57699
+		summarizeBy: none
+		sourceColumn: repaired_by_300_highest
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_holm
+		dataType: double
+		lineageTag: e1fb1ef1-c7a6-54d6-bb7a-5dc760fe57c3
+		summarizeBy: none
+		sourceColumn: p_holm
+
+		annotation SummarizationSetBy = Automatic
+
+	column significant_5pct
+		dataType: string
+		lineageTag: 6f5e2d66-2a6e-58af-988f-8166cc6522c0
+		summarizeBy: none
+		sourceColumn: significant_5pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column p_holm_display
+		dataType: string
+		lineageTag: 910d3915-4bd2-514a-ac65-6e6a963535bf
+		summarizeBy: none
+		sourceColumn: p_holm_display
+
+		annotation SummarizationSetBy = Automatic
+
+	partition logrank_by_spec = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "logrank_by_spec.csv"), [Delimiter=",", Columns=11, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"spec", type text}, {"groups", Int64.Type}, {"chi2", type number}, {"p_raw", type number}, {"lowest_group", type text}, {"repaired_by_300_lowest", type number}, {"highest_group", type text}, {"repaired_by_300_highest", type number}, {"p_holm", type number}, {"significant_5pct", type text}, {"p_holm_display", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

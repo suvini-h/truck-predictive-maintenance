@@ -1,0 +1,6 @@
+action,label,urgency_window,sort_order
+0,No action,none,5
+1,Plan within 48 steps,within 48 steps,4
+2,Book within 24 steps,within 24 steps,3
+3,Book within 12 steps,within 12 steps,2
+4,Call in now,now,1

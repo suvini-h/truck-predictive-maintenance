@@ -1,0 +1,95 @@
+table dim_vehicle
+	lineageTag: 0f2171fb-5926-5afd-ba4d-278ac017f4cb
+
+	column vehicle_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ee1bf370-063d-53f5-baff-e31bdd838b03
+		summarizeBy: none
+		sourceColumn: vehicle_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column split
+		dataType: string
+		lineageTag: 8059befd-01c3-5aa3-9771-47aa3c7b6861
+		summarizeBy: none
+		sourceColumn: split
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_0
+		dataType: string
+		lineageTag: 8cc937a2-6ff7-5a97-901d-aa94d95e8247
+		summarizeBy: none
+		sourceColumn: Spec_0
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_1
+		dataType: string
+		lineageTag: e9f8cb59-6ad4-5e96-a242-4a180f01b45e
+		summarizeBy: none
+		sourceColumn: Spec_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_2
+		dataType: string
+		lineageTag: 5a4ac4d8-f94e-5719-8576-5a591dfd3b9c
+		summarizeBy: none
+		sourceColumn: Spec_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_3
+		dataType: string
+		lineageTag: e412531d-ed6e-59e7-a31f-b697aa72e5c0
+		summarizeBy: none
+		sourceColumn: Spec_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_4
+		dataType: string
+		lineageTag: a5afbdd3-f729-57b7-a65f-43e25864eca3
+		summarizeBy: none
+		sourceColumn: Spec_4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_5
+		dataType: string
+		lineageTag: 9c7fa80c-07e2-5dee-944c-e01638260a94
+		summarizeBy: none
+		sourceColumn: Spec_5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_6
+		dataType: string
+		lineageTag: 4ebc411c-955d-5b8a-ba7d-d59ab2550191
+		summarizeBy: none
+		sourceColumn: Spec_6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Spec_7
+		dataType: string
+		lineageTag: 43517147-8913-5a69-b212-d1fa2052d8f5
+		summarizeBy: none
+		sourceColumn: Spec_7
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_vehicle = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "dim_vehicle.csv"), [Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"vehicle_id", Int64.Type}, {"split", type text}, {"Spec_0", type text}, {"Spec_1", type text}, {"Spec_2", type text}, {"Spec_3", type text}, {"Spec_4", type text}, {"Spec_5", type text}, {"Spec_6", type text}, {"Spec_7", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table
