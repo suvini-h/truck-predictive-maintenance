@@ -107,3 +107,4 @@ table policy_comparison
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

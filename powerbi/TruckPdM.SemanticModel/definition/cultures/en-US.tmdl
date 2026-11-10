@@ -1,2 +1,1331 @@
 cultureInfo en-US
 
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "policy.policy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Policy",
+			          "ConceptualProperty": "Policy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Policy": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.policy_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Policy Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cost per 1,000 trucks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.planner_callins_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Planner Call-ins per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Call-ins per 1,000 trucks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Call-ins per 1,000": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.trucks": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Trucks"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trucks in snapshot": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Trucks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.planner_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Planner Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cost per 1,000 trucks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Risk-based plan": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.planner_share_caught": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Planner Share Caught"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Due repairs caught in time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Due repairs caught": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.saving_vs_calleveryone_sek_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Saving vs Call-everyone SEK per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Saving vs calling everyone in (SEK, illustrative)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Saving vs call-everyone (SEK, illustrative)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.planner_action_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Planner Action Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Planner action (live)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.calleveryone_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Call-everyone Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Call everyone in": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.fixedage_rule_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Fixed-age Rule Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fixed-age rule (b)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.planner_expected_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Planner Expected Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Model's own forecast": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.validation_sweep_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Validation Sweep Cost"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cost per 1,000 trucks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.repaired_by_400": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Repaired by 400"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Repaired by time step 400": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.share_without_repair": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Share Without Repair"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Share without repair": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.repaired_by_300": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Repaired by 300"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Repaired by time step 300": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.hazard_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Hazard Ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Hazard ratio": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.weibull_shape": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Weibull Shape"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Weibull shape (> 1 = wear-out)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.validation_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Validation Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Validation": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.test_cost_per_1000": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Test Cost per 1000"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Test (once)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.predicted_share_due": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Predicted Share Due"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Predicted": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.observed_share_due": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Observed Share Due"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Observed": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures.cost_matrix_cell": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Cost Matrix Cell"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Cost": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_action.label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_action",
+			          "ConceptualProperty": "label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Recommended action": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.priority_rank": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "priority_rank"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Priority": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.vehicle_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "vehicle_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Truck": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.age_time_step": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "age_time_step"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Age (time steps)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.p_due_within_48": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "p_due_within_48"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P(repair due within 48 steps)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.expected_saving_if_called_in": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "expected_saving_if_called_in"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Expected saving if called in": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.driver_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "driver_1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Driver 1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.driver_1_effect": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "driver_1_effect"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Effect 1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.driver_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "driver_2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Driver 2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.driver_3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "driver_3"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Driver 3": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.actual_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "actual_label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Actual class": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fact_snapshot_scores.recommended_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_snapshot_scores",
+			          "ConceptualProperty": "recommended_label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Action": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_vehicle.spec_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_vehicle",
+			          "ConceptualProperty": "Spec_1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Spec_1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_vehicle.spec_7": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_vehicle",
+			          "ConceptualProperty": "Spec_7"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Spec_7": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "miss_cost_multiplier.miss_cost_multiplier": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Miss Cost Multiplier",
+			          "ConceptualProperty": "Miss Cost Multiplier"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Miss-cost multiplier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sek_per_cost_unit.sek_per_cost_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "SEK per Cost Unit",
+			          "ConceptualProperty": "SEK per Cost Unit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "SEK per cost unit (illustrative)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "workshop_slots.workshop_slots": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workshop Slots",
+			          "ConceptualProperty": "Workshop Slots"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Workshop slots per 1,000 trucks": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "threshold_sweep.x": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "threshold_sweep",
+			          "ConceptualProperty": "x"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Miss-cost multiplier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "threshold_sweep.policy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "threshold_sweep",
+			          "ConceptualProperty": "policy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Policy": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.spec": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "spec"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Spec": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.chi2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "chi2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "χ²": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.p_holm_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "p_holm_display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p (Holm)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.lowest_group": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "lowest_group"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Lowest": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.repaired_by_300_lowest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "repaired_by_300_lowest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Repaired by 300": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.highest_group": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "highest_group"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Highest": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "logrank_by_spec.repaired_by_300_highest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "logrank_by_spec",
+			          "ConceptualProperty": "repaired_by_300_highest"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Repaired by 300": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "survival_curves.time_step": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "survival_curves",
+			          "ConceptualProperty": "time_step"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Operating time (time steps)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "survival_curves.group": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "survival_curves",
+			          "ConceptualProperty": "group"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Group": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "survival_curves.spec": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "survival_curves",
+			          "ConceptualProperty": "spec"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Survival curves for": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cox_hazard_ratios.label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cox_hazard_ratios",
+			          "ConceptualProperty": "label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Spec category": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Covariate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cox_hazard_ratios.hazard_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cox_hazard_ratios",
+			          "ConceptualProperty": "hazard_ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HR": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cox_hazard_ratios.hr_low_95": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cox_hazard_ratios",
+			          "ConceptualProperty": "hr_low_95"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "95% low": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cox_hazard_ratios.hr_high_95": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cox_hazard_ratios",
+			          "ConceptualProperty": "hr_high_95"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "95% high": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "cox_hazard_ratios.significant_5pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "cox_hazard_ratios",
+			          "ConceptualProperty": "significant_5pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Holm 5%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "policy_comparison.policy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "policy_comparison",
+			          "ConceptualProperty": "policy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Policy": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calibration.bin_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calibration",
+			          "ConceptualProperty": "bin_label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Age band (time steps)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cost_matrix.actual_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_cost_matrix",
+			          "ConceptualProperty": "actual_label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Actual class": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cost_matrix.predicted_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_cost_matrix",
+			          "ConceptualProperty": "predicted_label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Action": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

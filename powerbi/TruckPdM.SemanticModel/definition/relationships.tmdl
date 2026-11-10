@@ -9,3 +9,4 @@ relationship 009d7c79-22e2-5c12-b9d3-0a891e7f19cc
 relationship 4f4ca08a-785a-57f9-8960-998e3ea5dfcd
 	fromColumn: shap_top_drivers.vehicle_id
 	toColumn: dim_vehicle.vehicle_id
+

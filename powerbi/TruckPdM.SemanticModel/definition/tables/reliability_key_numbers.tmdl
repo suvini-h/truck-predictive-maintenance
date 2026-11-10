@@ -44,3 +44,4 @@ table reliability_key_numbers
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

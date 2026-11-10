@@ -295,3 +295,4 @@ table fact_snapshot_scores
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

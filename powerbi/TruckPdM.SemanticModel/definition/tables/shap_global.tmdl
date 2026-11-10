@@ -38,3 +38,4 @@ table shap_global
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

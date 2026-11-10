@@ -1,0 +1,256 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1136.6221629171368,
+            "y": 45.870073948755277
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "c7289931-0004-5a8e-95ba-9be3da02de41",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420.6221629171368,
+            "y": 71.870073948755277
+          },
+          "nodeIndex": "calibration",
+          "nodeLineageTag": "d2baef36-d7a0-55df-8e08-e9e6e3d9d278",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704.6221629171368,
+            "y": 47.870073948755277
+          },
+          "nodeIndex": "cox_hazard_ratios",
+          "nodeLineageTag": "2cf34163-453c-53fa-b3cf-0a9527706cce",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 165.74014789751058
+          },
+          "nodeIndex": "dim_action",
+          "nodeLineageTag": "1e6db255-3abd-5ff9-a02f-8ea5d7535c20",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988.6221629171368,
+            "y": 71.870073948755277
+          },
+          "nodeIndex": "dim_cost_matrix",
+          "nodeLineageTag": "0c899967-2371-5bdc-81c1-6513f6e8eb2d",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 618.41040181545588,
+            "y": -50
+          },
+          "nodeIndex": "dim_vehicle",
+          "nodeLineageTag": "0f2171fb-5926-5afd-ba4d-278ac017f4cb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 334.202255104609,
+            "y": 27.5079898093486
+          },
+          "nodeIndex": "fact_snapshot_scores",
+          "nodeLineageTag": "7bfa2992-f3ac-5b39-963f-dcfca252d9f3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272.6221629171368,
+            "y": 45.870073948755277
+          },
+          "nodeIndex": "logrank_by_spec",
+          "nodeLineageTag": "53883775-b8b8-5760-baf6-35f200ff8e71",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556.6221629171368,
+            "y": 83.870073948755277
+          },
+          "nodeIndex": "Miss Cost Multiplier",
+          "nodeLineageTag": "c82da931-b275-5ad7-bb23-0d1609c61fbb",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840.6221629171368,
+            "y": 131.87007394875528
+          },
+          "nodeIndex": "Policy",
+          "nodeLineageTag": "b1c60731-7ee8-5ce2-bc06-2f441aa1e8ab",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124.6221629171368,
+            "y": 45.870073948755277
+          },
+          "nodeIndex": "policy_comparison",
+          "nodeLineageTag": "9cfb3787-2237-598c-8b6f-765b400635d2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408.6221629171368,
+            "y": 107.87007394875528
+          },
+          "nodeIndex": "reliability_key_numbers",
+          "nodeLineageTag": "b31d8ed2-fe8c-5c39-aa82-e65dcf072bee",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692.6221629171368,
+            "y": 83.870073948755277
+          },
+          "nodeIndex": "SEK per Cost Unit",
+          "nodeLineageTag": "359b633e-c545-54bd-be26-44d3324b0736",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976.6221629171368,
+            "y": 119.87007394875528
+          },
+          "nodeIndex": "shap_global",
+          "nodeLineageTag": "4f4d583a-dcfd-5487-8f20-73adcf0d9a49",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 902.62216291713685,
+            "y": -46.378697769012831
+          },
+          "nodeIndex": "shap_top_drivers",
+          "nodeLineageTag": "81bb6a04-3bf8-5d8d-841d-c86db65d7834",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4260.6221629171368,
+            "y": 83.870073948755277
+          },
+          "nodeIndex": "survival_curves",
+          "nodeLineageTag": "35d27960-32a1-59a7-b073-6285965d457f",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4544.6221629171368,
+            "y": 95.870073948755277
+          },
+          "nodeIndex": "threshold_sweep",
+          "nodeLineageTag": "7bb85ece-141b-5775-ba28-7b41769ac6ae",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4828.6221629171368,
+            "y": 83.870073948755277
+          },
+          "nodeIndex": "Workshop Slots",
+          "nodeLineageTag": "781daa20-2a02-557e-8938-e7ccab0088ec",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

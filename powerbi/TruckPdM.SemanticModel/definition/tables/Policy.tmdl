@@ -25,3 +25,4 @@ table Policy
 	partition Policy = calculated
 		mode: import
 		source = DATATABLE ( "Policy", STRING, "Order", INTEGER, { { "Risk-based plan (model)", 1 }, { "Age bands (validation-tuned)", 2 }, { "Fixed-age rule (b)", 3 }, { "Call everyone in now", 4 }, { "Run-to-failure", 5 } } )
+
