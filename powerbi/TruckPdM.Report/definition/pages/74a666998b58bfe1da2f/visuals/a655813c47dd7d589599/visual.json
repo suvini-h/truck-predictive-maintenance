@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "a655813c47dd7d589599",
+  "position": {
+    "x": 273,
+    "y": 92,
+    "z": 3000,
+    "height": 90,
+    "width": 233,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Plan Missed"
+                }
+              },
+              "queryRef": "_Measures.Plan Missed",
+              "nativeQueryRef": "Plan Missed",
+              "displayName": "breakdowns missed"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

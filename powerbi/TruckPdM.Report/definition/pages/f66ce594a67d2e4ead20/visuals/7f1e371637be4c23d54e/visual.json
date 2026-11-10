@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "7f1e371637be4c23d54e",
+  "position": {
+    "x": 856,
+    "y": 92,
+    "z": 4000,
+    "height": 72,
+    "width": 400,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SEK per Cost Unit"
+                    }
+                  },
+                  "Property": "SEK per Cost Unit"
+                }
+              },
+              "queryRef": "SEK per Cost Unit.SEK per Cost Unit",
+              "nativeQueryRef": "SEK per Cost Unit",
+              "active": true,
+              "displayName": "SEK per cost point (assumption)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Single'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

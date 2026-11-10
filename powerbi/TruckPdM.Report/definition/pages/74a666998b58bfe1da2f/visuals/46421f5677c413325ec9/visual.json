@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "46421f5677c413325ec9",
+  "position": {
+    "x": 771,
+    "y": 92,
+    "z": 5000,
+    "height": 90,
+    "width": 233,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Plan Correctly Left Alone"
+                }
+              },
+              "queryRef": "_Measures.Plan Correctly Left Alone",
+              "nativeQueryRef": "Plan Correctly Left Alone",
+              "displayName": "healthy trucks correctly left alone"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

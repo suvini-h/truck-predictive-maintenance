@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "6a4151d8f928656e5501",
+  "position": {
+    "x": 960,
+    "y": 396,
+    "z": 9000,
+    "height": 300,
+    "width": 296,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Plain name → technical term",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "fontWeight": "bold",
+                      "color": "#0b0b0b"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Our plan = expected-cost (Bayes) rule on calibrated gradient-boosting probabilities · Call in by age = fixed-age rule (b) · Call every truck in = predict class 4 · Wait until it breaks = run-to-failure · Breakdown risk = P(class 1–4) · Value of calling in = E[cost | no action] − E[cost | call in now] · Book soon = classes 1–3 · Influence = mean |SHAP| · Planning window = next 48 time steps",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "fontWeight": "normal",
+                      "color": "#52514e"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

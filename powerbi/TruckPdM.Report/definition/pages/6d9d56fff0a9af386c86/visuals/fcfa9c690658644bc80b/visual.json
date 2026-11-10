@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "fcfa9c690658644bc80b",
+  "position": {
+    "x": 24,
+    "y": 92,
+    "z": 2000,
+    "height": 110,
+    "width": 400,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Saving vs Call-everyone %"
+                }
+              },
+              "queryRef": "_Measures.Saving vs Call-everyone %",
+              "nativeQueryRef": "Saving vs Call-everyone %",
+              "displayName": "cheaper than calling every truck in"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f66ce594a67d2e4ead20",
+  "displayName": "3 What if",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "e46231ebcc793e8f091b",
+      "target": "94401ca12d2f534f663c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "57a8ffc0326b6e26fced",
+      "target": "f3d21e352e2026244bed",
+      "type": "NoFilter"
+    }
+  ]
+}

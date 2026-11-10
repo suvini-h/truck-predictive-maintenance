@@ -55,14 +55,16 @@ def q(name: str) -> str:
 # =============================================================================== semantic model
 FORMATS = {  # column format strings
     "p_due_within_48": "0.0%", "p0": "0.000", "p1": "0.000", "p2": "0.000", "p3": "0.000", "p4": "0.000",
-    "expected_saving_if_called_in": "#,0.0", "age_time_step": "#,0", "share_without_repair": "0.0%",
+    "expected_saving_if_called_in": "#,0", "age_time_step": "#,0", "share_without_repair": "0.0%",
     "predicted_share_due": "0.0%", "observed_share_due": "0.0%", "hazard_ratio": "0.00", "hr_low_95": "0.00",
     "hr_high_95": "0.00", "cost_per_1000": "#,0", "share_caught_in_time": "0.0%", "mean_abs_shap": "0.000",
     "chi2": "#,0.0", "repaired_by_300_lowest": "0.0%", "repaired_by_300_highest": "0.0%",
 }
 SORT_BY = {("dim_action", "label"): "sort_order", ("fact_snapshot_scores", "recommended_label"): "recommended_action",
            ("fact_snapshot_scores", "actual_label"): "actual_class", ("dim_cost_matrix", "actual_label"): "actual",
-           ("dim_cost_matrix", "predicted_label"): "predicted", ("calibration", "bin_label"): "bin_order"}
+           ("dim_cost_matrix", "predicted_label"): "predicted", ("calibration", "bin_label"): "bin_order",
+           ("fact_snapshot_scores", "action_group"): "action_group_order",
+           ("policy_comparison", "plain_policy"): "policy_order"}
 HIDDEN = {("fact_snapshot_scores", f"{lu}{d}") for lu in "LU" for d in range(5)}
 DESCRIPTIONS = {
     "fact_snapshot_scores": "Test snapshot (notebook 04): one row per test truck, scored once with the frozen model.",
@@ -70,7 +72,7 @@ DESCRIPTIONS = {
 }
 CSV_TABLES = ["dim_vehicle", "dim_action", "dim_cost_matrix", "fact_snapshot_scores", "shap_top_drivers", "shap_global",
               "survival_curves", "logrank_by_spec", "cox_hazard_ratios", "reliability_key_numbers", "calibration",
-              "policy_comparison", "threshold_sweep"]
+              "policy_comparison", "threshold_sweep", "key_results"]
 
 
 def csv_table(name: str) -> str:
@@ -168,8 +170,8 @@ def parameter_table(name: str, series: str, default: str, fmt: str, doc: str, dt
     ])
 
 
-POLICIES = [("Risk-based plan (model)", 1), ("Age bands (validation-tuned)", 2), ("Fixed-age rule (b)", 3),
-            ("Call everyone in now", 4), ("Run-to-failure", 5)]
+PLAN, BY_AGE, EVERYONE, WAIT = "Our plan (risk-based)", "Call in by age", "Call every truck in", "Wait until it breaks"
+POLICIES = [(PLAN, 1), (BY_AGE, 2), (EVERYONE, 3), (WAIT, 4)]
 policy_table = "\n".join([
     "/// Axis for comparing policies side by side (Overview page); values come from [Policy Cost per 1000].",
     "table Policy",
@@ -317,14 +319,41 @@ RETURN
      "Planner cost per 1,000 trucks in SEK. ILLUSTRATIVE: SEK per cost unit is an assumption (what-if parameter), not data."),
     ("Saving vs Call-everyone SEK per 1000", "[Saving vs Call-everyone per 1000] * [SEK per Cost Unit Value]", "#,0 \"SEK\"",
      "Savings", "Planner saving vs calling everyone in, SEK per 1,000 trucks. ILLUSTRATIVE (assumed SEK per cost unit)."),
-    ("Policy Cost per 1000", """SWITCH (
+    ("Policy Cost per 1000", f"""SWITCH (
 	SELECTEDVALUE ( Policy[Policy] ),
-	"Risk-based plan (model)", [Planner Cost per 1000],
-	"Age bands (validation-tuned)", [Age-band Rule Cost per 1000],
-	"Fixed-age rule (b)", [Fixed-age Rule Cost per 1000],
-	"Call everyone in now", [Call-everyone Cost per 1000],
-	"Run-to-failure", [Run-to-failure Cost per 1000]
-)""", "#,0", "Savings", "Cost per 1,000 trucks for the policy on the Policy axis."),
+	"{PLAN}", [Planner Cost per 1000],
+	"{BY_AGE}", [Fixed-age Rule Cost per 1000],
+	"{EVERYONE}", [Call-everyone Cost per 1000],
+	"{WAIT}", [Run-to-failure Cost per 1000]
+)""", "#,0", "Savings", "Cost per 1,000 trucks for the policy on the Policy axis (plain names)."),
+    # ---- plain-language headline measures (Summary, Call-in list, What if, How reliable)
+    ("Saving vs Call-everyone %", "DIVIDE ( [Saving vs Call-everyone per 1000], [Call-everyone Cost per 1000] )", "0%",
+     "Plain language", "How much cheaper the plan is than calling every truck in (live; 25% at the defaults on test)."),
+    ("Call-in Share", "DIVIDE ( [Planner Call-ins], [Trucks] )", "0%", "Plain language", "Share of trucks the plan acts on (live)."),
+    ("Call-in Ratio Text", 'VAR share = [Call-in Share]\nRETURN IF ( share > 0, "1 in " & FORMAT ( ROUND ( DIVIDE ( 1, share ), 0 ), "0" ), "none" )',
+     "@", "Plain language", "Call-ins as '1 in N trucks' (live)."),
+    ("Breakdowns Caught Text", 'FORMAT ( [Planner Repairs Caught], "#,0" ) & " of " & FORMAT ( [Repairs Due], "#,0" )',
+     "@", "Plain language", "Due repairs caught in time, as 'x of y' (live)."),
+    ("Trucks Call In Now", f'CALCULATE ( [Trucks], {F}[action_group] = "Call in now" )', "#,0", "Plain language",
+     "Trucks the frozen plan calls in now (expert costs, no capacity limit)."),
+    ("Trucks Book Soon", f'CALCULATE ( [Trucks], {F}[action_group] = "Book soon" )', "#,0", "Plain language",
+     "Trucks the frozen plan books within 12-48 time steps."),
+    ("Trucks No Action", f'CALCULATE ( [Trucks], {F}[action_group] = "No action" )', "#,0", "Plain language",
+     "Trucks the frozen plan leaves alone."),
+    ("Plan Caught", f"COUNTROWS ( FILTER ( {F}, {F}[actual_class] > 0 && {F}[recommended_action] >= {F}[actual_class] ) )", "#,0",
+     "Plain language", "Frozen plan on test: breakdowns caught in time."),
+    ("Plan Missed", f"COUNTROWS ( FILTER ( {F}, {F}[actual_class] > 0 && {F}[recommended_action] < {F}[actual_class] ) )", "#,0",
+     "Plain language", "Frozen plan on test: breakdowns missed or caught too late."),
+    ("Plan Called In But Fine", f"COUNTROWS ( FILTER ( {F}, {F}[actual_class] = 0 && {F}[recommended_action] > 0 ) )", "#,0",
+     "Plain language", "Frozen plan on test: trucks called in with no breakdown due in the planning window."),
+    ("Plan Correctly Left Alone", f"COUNTROWS ( FILTER ( {F}, {F}[actual_class] = 0 && {F}[recommended_action] = 0 ) )", "#,0",
+     "Plain language", "Frozen plan on test: healthy trucks correctly left alone."),
+    ("Saving Range Text", 'VAR lo = CALCULATE ( MAX ( key_results[value] ), key_results[metric] = "saving_ci_low_pct" )\n'
+                          'VAR hi = CALCULATE ( MAX ( key_results[value] ), key_results[metric] = "saving_ci_high_pct" )\n'
+                          'RETURN FORMAT ( lo, "0%" ) & " to " & FORMAT ( hi, "0%" ) & " cheaper"',
+     "@", "Plain language", "95% bootstrap range of the test saving vs calling every truck in."),
+    ("Influence", "SUM ( shap_global[mean_abs_shap] )", "0.00", "Plain language",
+     "How much an input moves the risk score on average (mean |SHAP|, summed over inputs with the same plain name)."),
     # ---- reliability
     ("Share Without Repair", "AVERAGE ( survival_curves[share_without_repair] )", "0.0%", "Reliability",
      "Kaplan-Meier share of training trucks still on their original Component X."),
@@ -502,19 +531,24 @@ class Page:
                                           "query": {"queryState": {"Data": {"projections": [proj(meas(measure_name), display)]}}},
                                           "drillFilterOtherVisuals": True})
 
-    def slicer(self, key, x, y, w, h, field, display, default=None, single=True):
-        objects = {"data": [{"properties": {"mode": lit("'Dropdown'")}}]}
-        if single:
+    def slicer(self, key, x, y, w, h, field, display, default=None, single=True, mode="Dropdown", search=False):
+        objects = {"data": [{"properties": {"mode": lit(s(mode))}}]}
+        if single and mode != "Single":
             objects["selection"] = [{"properties": {"singleSelect": lit("true")}}]
+        general = {}
         if default is not None:
             ent, prop = field["Column"]["Expression"]["SourceRef"]["Entity"], field["Column"]["Property"]
-            objects["general"] = [{"properties": {"filter": {"filter": in_filter(ent, prop, [default], "x")["filter"]}}}]
+            general["filter"] = {"filter": in_filter(ent, prop, [default], "x")["filter"]}
+        if search:
+            general["selfFilterEnabled"] = lit("true")
+        if general:
+            objects["general"] = [{"properties": general}]
         return self.add(key, x, y, w, h, {"visualType": "slicer",
                                           "query": {"queryState": {"Values": {"projections": [proj(field, display, True)]}}},
                                           "objects": objects, "drillFilterOtherVisuals": True})
 
     def chart(self, key, x, y, w, h, vtype, category, ys, title, subtitle=None, series=None, colors=None,
-              sort=None, filters=None, labels=False, legend=True):
+              sort=None, filters=None, labels=False, legend=True, highlight=None, axis_title=True):
         qs = {"Category": {"projections": [proj(category[0], category[1], True)]},
               "Y": {"projections": [proj(f, d) for f, d in ys]}}
         if series:
@@ -522,26 +556,41 @@ class Page:
         query = {"queryState": qs}
         if sort:
             query["sortDefinition"] = {"sort": [{"field": sort[0], "direction": sort[1]}], "isDefaultSort": True}
-        objects = {"categoryAxis": [{"properties": {"showAxisTitle": lit("true")}}],
+        objects = {"categoryAxis": [{"properties": {"showAxisTitle": lit("true" if axis_title else "false")}}],
                    "valueAxis": [{"properties": {"showAxisTitle": lit("false")}}],
                    "legend": [{"properties": {"show": lit("true" if legend else "false"),
                                               "position": lit("'TopRight'"), "showTitle": lit("false")}}]}
         if colors:
             objects["dataPoint"] = [{"properties": {"fill": {"solid": {"color": lit(s(c))}}}, "selector": {"metadata": f"_Measures.{m}"}}
                                     for m, c in colors.items()]
+        if highlight:  # (default colour, category value, highlight colour): one bar stands out
+            default_c, value, hi_c = highlight
+            cat = category[0]["Column"]
+            objects["dataPoint"] = [
+                {"properties": {"fill": {"solid": {"color": lit(s(default_c))}}}},
+                {"properties": {"fill": {"solid": {"color": lit(s(hi_c))}}},
+                 "selector": {"data": [{"scopeId": {"Comparison": {"ComparisonKind": 0, "Left": {"Column": cat},
+                                                                   "Right": {"Literal": {"Value": s(value)}}}}}]}}]
         if labels:
             objects["labels"] = [{"properties": {"show": lit("true")}}]
         visual = {"visualType": vtype, "query": query, "objects": objects,
                   "visualContainerObjects": titles(title, subtitle), "drillFilterOtherVisuals": True}
         return self.add(key, x, y, w, h, visual, filters)
 
-    def table(self, key, x, y, w, h, fields, title, subtitle=None, sort=None, filters=None):
+    def table(self, key, x, y, w, h, fields, title, subtitle=None, sort=None, filters=None, data_bars=None):
         query = {"queryState": {"Values": {"projections": [proj(f, d) for f, d in fields]}}}
         if sort:
             query["sortDefinition"] = {"sort": [{"field": sort[0], "direction": sort[1]}], "isDefaultSort": True}
-        return self.add(key, x, y, w, h, {"visualType": "tableEx", "query": query,
-                                          "visualContainerObjects": titles(title, subtitle), "drillFilterOtherVisuals": True},
-                        filters)
+        visual = {"visualType": "tableEx", "query": query,
+                  "visualContainerObjects": titles(title, subtitle), "drillFilterOtherVisuals": True}
+        if data_bars:  # [(queryRef, colour)]: a bar inside the cell, e.g. breakdown risk
+            visual["objects"] = {"columnFormatting": [
+                {"properties": {"dataBars": {"positiveColor": {"solid": {"color": lit(s(c))}},
+                                             "negativeColor": {"solid": {"color": lit(s(c))}},
+                                             "axisColor": {"solid": {"color": lit(s(INK2))}},
+                                             "reverseDirection": lit("false"), "hideText": lit("false")}},
+                 "selector": {"metadata": ref}} for ref, c in data_bars]}
+        return self.add(key, x, y, w, h, visual, filters)
 
     def matrix(self, key, x, y, w, h, rows, columns, values, title, subtitle=None):
         qs = {"Rows": {"projections": [proj(rows[0], rows[1], True)]},
@@ -552,134 +601,149 @@ class Page:
 
 
 def build_pages() -> list[Page]:
+    """Five pages for non-analysts first (plain names, answer-first titles), analyst detail last."""
     pages = []
     W = 1232
+    UNITS = "Costs in expert cost points per 1,000 trucks for one planning window (the next 48 time steps)"
+    REDRANGE = "#c3c2b7"
 
-    # ------------------------------------------------------------------ 1 Overview
-    p = Page("overview", "Overview")
-    p.textbox("title", 24, 16, W, 56, "Which trucks to call in for Component X, and what it saves",
-              "Test snapshot: 5,045 trucks scored once with the frozen model (notebook 04). Defaults: expert cost matrix, no capacity limit")
-    cards = [("Trucks", "Trucks in snapshot"), ("Planner Call-ins per 1000", "Call-ins per 1,000 trucks"),
-             ("Planner Share Caught", "Due repairs caught in time"), ("Planner Cost per 1000", "Cost per 1,000 trucks"),
-             ("Saving vs Call-everyone SEK per 1000", "Saving vs calling everyone in (SEK, illustrative)")]
-    cw = (W - 4 * 16) // 5
-    for i, (m, d) in enumerate(cards):
-        p.card(f"card{i}", 24 + i * (cw + 16), 88, cw, 100, m, d)
-    p.chart("policies", 24, 204, 740, 456, "clusteredBarChart", (col("Policy", "Policy"), "Policy"),
+    def cards_row(p, y, h, items, key):
+        cw_ = (W - (len(items) - 1) * 16) // len(items)
+        return [p.card(f"{key}{i}", 24 + i * (cw_ + 16), y, cw_, h, m, d) for i, (m, d) in enumerate(items)]
+
+    # ------------------------------------------------------------------ 1 Summary
+    p = Page("summary", "1 Summary")
+    p.textbox("title", 24, 16, W, 60, "Calling in the right trucks is 25% cheaper than calling them all in",
+              "Tested once on 5,045 Scania trucks the model had never seen. " + UNITS)
+    cards_row(p, 92, 110, [("Saving vs Call-everyone %", "cheaper than calling every truck in"),
+                           ("Planner Share Caught", "of breakdowns caught in time"),
+                           ("Call-in Ratio Text", "trucks called in")], "kpi")
+    p.chart("policies", 24, 218, 760, 440, "clusteredBarChart", (col("Policy", "Policy"), "Approach"),
             [(meas("Policy Cost per 1000"), "Cost per 1,000 trucks")],
-            "The risk-based plan costs a quarter less than calling every truck in",
-            "Cost per 1,000 trucks on the test snapshot, relative units (lower is better)",
-            colors={"Policy Cost per 1000": BLUE}, sort=(col("Policy", "Policy"), "Ascending"), labels=True, legend=False)
-    p.chart("actions", 780, 204, 476, 456, "clusteredBarChart", (col("dim_action", "label"), "Recommended action"),
-            [(meas("Trucks"), "Trucks")], "Recommended actions for today's fleet",
-            "Frozen policy (expected-cost rule, expert matrix)", colors={"Trucks": BLUE},
-            sort=(col("dim_action", "label"), "Ascending"), labels=True, legend=False)
+            "Our plan is the cheapest way to handle Component X",
+            "Cost per 1,000 trucks (lower is better). Waiting for breakdowns is the most expensive option",
+            sort=(col("Policy", "Policy"), "Ascending"), labels=True, legend=False, axis_title=False,
+            highlight=(REDRANGE, PLAN, BLUE))
+    p.textbox("meaning", 800, 218, 456, 440, "What this means",
+              "Out of every 1,000 trucks, our plan calls in about 320: the ones most likely to need a Component X "
+              "repair soon. That catches 63% of breakdowns before they happen and costs a quarter less than "
+              "calling every truck in for a check. "
+              "Calling trucks in by age alone does no better than calling them all in. "
+              "See page 2 for the trucks to call in, and page 3 to change the assumptions.", size="14pt")
     p.textbox("footer", 24, 676, W, 32, CITATION, size="8pt")
     pages.append(p)
 
-    # ------------------------------------------------------------------ 2 Service plan
-    p = Page("service", "Service plan")
-    p.textbox("title", 24, 16, 650, 56, "Service plan: trucks ranked by expected saving",
-              "Highest expected saving of calling in first; top 3 risk drivers for trucks the policy acts on")
-    p.slicer("s_action", 690, 16, 180, 56, col("dim_action", "label"), "Recommended action", single=False)
-    p.slicer("s_spec7", 882, 16, 180, 56, col("dim_vehicle", "Spec_7"), "Spec_7", single=False)
-    p.slicer("s_spec1", 1074, 16, 182, 56, col("dim_vehicle", "Spec_1"), "Spec_1", single=False)
-    p.table("list", 24, 88, W, 560, [
-        (col(F, "priority_rank"), "Priority"), (col(F, "vehicle_id"), "Truck"), (col(F, "age_time_step"), "Age (time steps)"),
-        (col(F, "p_due_within_48"), "P(repair due within 48 steps)"), (meas("Planner Action Label"), "Planner action (live)"),
-        (col(F, "expected_saving_if_called_in"), "Expected saving if called in"),
-        (col(F, "driver_1"), "Driver 1"), (col(F, "driver_1_effect"), "Effect 1"),
-        (col(F, "driver_2"), "Driver 2"), (col(F, "driver_3"), "Driver 3")],
-        "Today's fleet: who to call in first", "Anonymized variables (e.g. 'counter 666, level'); drivers are SHAP contributions to the risk score",
-        sort=(col(F, "priority_rank"), "Ascending"))
-    p.textbox("note", 24, 660, W, 40,
-              "'Planner action (live)' follows the what-if parameters (defaults here: expert matrix, no capacity limit). "
-              "Change them on the Cost trade-off page, or sync those slicers to this page.", size="9pt")
+    # ------------------------------------------------------------------ 2 Call-in list
+    p = Page("calllist", "2 Call-in list")
+    p.textbox("title", 24, 16, 700, 60, "1,554 trucks to call in now, most valuable first",
+              "Ranked by the value of calling the truck in: how much breakdown cost it is expected to avoid")
+    s_grp = p.slicer("s_group", 740, 16, 250, 60, col(F, "action_group"), "Show", default="Call in now", mode="Dropdown")
+    p.slicer("s_truck", 1006, 16, 250, 60, col(F, "truck"), "Find a truck", single=True, search=True)
+    cards = cards_row(p, 92, 90, [("Trucks Call In Now", "Call in now"), ("Trucks Book Soon", "Book soon (within 12–48 steps)"),
+                                  ("Trucks No Action", "No action")], "cnt")
+    for c in cards:
+        p.no_filter(s_grp, c)
+    p.table("list", 24, 198, W, 478, [
+        (col(F, "priority_rank"), "Priority"), (col(F, "truck"), "Truck"), (col(F, "action_group"), "Action"),
+        (col(F, "p_due_within_48"), "Breakdown risk (next window)"),
+        (col(F, "expected_saving_if_called_in"), "Value of calling in"),
+        (col(F, "why_flagged"), "Why flagged"), (col(F, "why_also"), "Also"), (col(F, "age_time_step"), "Truck age (time steps)")],
+        "The call-in list", "Variables are anonymized by Scania, so reasons name the measured signal (e.g. 'counter 666'), not a part",
+        sort=(col(F, "priority_rank"), "Ascending"), data_bars=[(f"{F}.p_due_within_48", ORANGE)])
+    p.textbox("note", 24, 684, W, 28, "The list uses the expert cost estimates and no workshop limit. "
+              "Try other assumptions on page 3.", size="9pt")
     pages.append(p)
 
-    # ------------------------------------------------------------------ 3 Cost trade-off
-    p = Page("tradeoff", "Cost trade-off")
-    p.textbox("title", 24, 16, 560, 56, "Cost trade-off: what if breakdowns cost more, or slots are short?",
-              "Every truck's action is re-optimised live for the selected values")
-    s_m = p.slicer("s_mult", 600, 16, 210, 56, col("Miss Cost Multiplier", "Miss Cost Multiplier"), "Miss-cost multiplier")
-    s_k = p.slicer("s_slots", 822, 16, 210, 56, col("Workshop Slots", "Workshop Slots"), "Workshop slots per 1,000 trucks")
-    p.slicer("s_sek", 1044, 16, 212, 56, col("SEK per Cost Unit", "SEK per Cost Unit"), "SEK per cost unit (illustrative)")
-    cards = [("Planner Cost per 1000", "Cost per 1,000 trucks"), ("Planner Expected Cost per 1000", "Model's own forecast"),
-             ("Planner Call-ins per 1000", "Call-ins per 1,000"), ("Planner Share Caught", "Due repairs caught"),
-             ("Saving vs Call-everyone SEK per 1000", "Saving vs call-everyone (SEK, illustrative)")]
-    for i, (m, d) in enumerate(cards):
-        p.card(f"card{i}", 24 + i * (cw + 16), 88, cw, 96, m, d)
-    c1 = p.chart("sweep_m", 24, 200, 608, 300, "lineChart", (col("Miss Cost Multiplier", "Miss Cost Multiplier"), "Miss-cost multiplier"),
-                 [(meas("Planner Cost per 1000"), "Risk-based plan"), (meas("Call-everyone Cost per 1000"), "Call everyone in"),
-                  (meas("Fixed-age Rule Cost per 1000"), "Fixed-age rule (b)")],
-                 "The plan beats calling everyone in until a breakdown costs about 2–3× the expert estimate",
-                 "Cost per 1,000 trucks vs the miss-cost multiplier (test snapshot, live)",
-                 colors={"Planner Cost per 1000": BLUE, "Call-everyone Cost per 1000": ORANGE, "Fixed-age Rule Cost per 1000": AQUA})
-    c2 = p.chart("sweep_k", 648, 200, 608, 300, "lineChart", (col("Workshop Slots", "Workshop Slots"), "Workshop slots per 1,000 trucks"),
-                 [(meas("Planner Cost per 1000"), "Risk-based plan"), (meas("Call-everyone Cost per 1000"), "Call everyone in")],
-                 "A few well-chosen slots deliver most of the saving",
-                 "Cost per 1,000 trucks vs workshop capacity; trucks ranked by expected saving (test snapshot, live)",
-                 colors={"Planner Cost per 1000": BLUE, "Call-everyone Cost per 1000": ORANGE})
+    # ------------------------------------------------------------------ 3 What if
+    p = Page("whatif", "3 What if")
+    p.textbox("title", 24, 16, W, 60, "What if breakdowns cost more, or the workshop is full?",
+              "Move the sliders: every truck's decision is recalculated. " + UNITS)
+    s_m = p.slicer("s_mult", 24, 92, 400, 72, col("Miss Cost Multiplier", "Miss Cost Multiplier"),
+                   "How costly is a breakdown? (× expert estimate)", mode="Single")
+    s_k = p.slicer("s_slots", 440, 92, 400, 72, col("Workshop Slots", "Workshop Slots"),
+                   "Workshop capacity (trucks per 1,000)", mode="Single")
+    p.slicer("s_sek", 856, 92, 400, 72, col("SEK per Cost Unit", "SEK per Cost Unit"),
+             "SEK per cost point (assumption)", mode="Single")
+    cards_row(p, 180, 96, [("Saving vs Call-everyone %", "cheaper than calling every truck in"),
+                           ("Planner Call-ins per 1000", "trucks called in, per 1,000"),
+                           ("Breakdowns Caught Text", "breakdowns caught in time"),
+                           ("Saving vs Call-everyone SEK per 1000", "saved per 1,000 trucks (SEK, assumption)")], "res")
+    c1 = p.chart("sweep_m", 24, 292, 608, 400, "lineChart",
+                 (col("Miss Cost Multiplier", "Miss Cost Multiplier"), "Breakdown cost (× expert estimate)"),
+                 [(meas("Planner Cost per 1000"), PLAN), (meas("Call-everyone Cost per 1000"), EVERYONE)],
+                 "Our plan stays cheaper until a breakdown costs about 2–3× the expert estimate",
+                 "Cost per 1,000 trucks as breakdowns get more expensive",
+                 colors={"Planner Cost per 1000": BLUE, "Call-everyone Cost per 1000": GREY})
+    c2 = p.chart("sweep_k", 648, 292, 608, 400, "lineChart",
+                 (col("Workshop Slots", "Workshop Slots"), "Workshop capacity (trucks per 1,000)"),
+                 [(meas("Planner Cost per 1000"), PLAN), (meas("Call-everyone Cost per 1000"), EVERYONE)],
+                 "Even a small workshop captures most of the saving",
+                 "Cost per 1,000 trucks when only the most valuable trucks fit in the workshop",
+                 colors={"Planner Cost per 1000": BLUE, "Call-everyone Cost per 1000": GREY})
     p.no_filter(s_m, c1)
     p.no_filter(s_k, c2)
-    p.chart("valid", 24, 516, W, 180, "lineChart", (col("threshold_sweep", "x"), "Miss-cost multiplier"),
-            [(meas("Validation Sweep Cost"), "Cost per 1,000 trucks")],
-            "For reference: the same sweep on validation (notebook 04)", "Model re-optimised vs baselines; validation trucks",
-            series=(col("threshold_sweep", "policy"), "Policy"),
-            filters=[in_filter("threshold_sweep", "sweep", ["miss-cost multiplier"], vid("f", "sweep"))])
     pages.append(p)
 
-    # ------------------------------------------------------------------ 4 Reliability
-    p = Page("reliability", "Reliability")
-    p.textbox("title", 24, 16, 800, 56, "Reliability: Component X wears out, and some specs fail much faster",
-              "Kaplan–Meier on 23,550 training trucks; Weibull and Cox models from notebook 02")
-    p.slicer("s_spec", 1040, 16, 216, 56, col("survival_curves", "spec"), "Survival curves for", default="Overall")
-    p.chart("km", 24, 88, 760, 420, "lineChart", (col("survival_curves", "time_step"), "Operating time (time steps)"),
-            [(meas("Share Without Repair"), "Share without repair")],
-            "Share of trucks still on their original Component X", "Pick 'Overall' or a spec; groups under 200 trucks pooled as 'Other'",
-            series=(col("survival_curves", "group"), "Group"))
-    for i, (m, d) in enumerate([("Weibull Shape", "Weibull shape (> 1 = wear-out)"), ("Repaired by 300", "Repaired by time step 300"),
-                                ("Repaired by 400", "Repaired by time step 400")]):
-        p.card(f"card{i}", 800 + i * 156, 88, 144, 100, m, d)
-    p.table("logrank", 800, 204, 456, 304, [
-        (col("logrank_by_spec", "spec"), "Spec"), (col("logrank_by_spec", "chi2"), "χ²"),
-        (col("logrank_by_spec", "p_holm_display"), "p (Holm)"), (col("logrank_by_spec", "lowest_group"), "Lowest"),
-        (col("logrank_by_spec", "repaired_by_300_lowest"), "Repaired by 300"), (col("logrank_by_spec", "highest_group"), "Highest"),
-        (col("logrank_by_spec", "repaired_by_300_highest"), "Repaired by 300 ")],
-        "7 of 8 specs differ in survival", "Log-rank test per spec, Holm-corrected", sort=(col("logrank_by_spec", "chi2"), "Descending"))
-    p.chart("hr", 24, 524, 760, 172, "clusteredBarChart", (col("cox_hazard_ratios", "label"), "Covariate"),
-            [(meas("Hazard Ratio"), "Hazard ratio")], "Heavier early use raises the hazard",
-            "Cox model: hazard ratio per 1 SD of log early-life usage rate (1 = no effect)", colors={"Hazard Ratio": BLUE},
-            sort=(meas("Hazard Ratio"), "Descending"), labels=True, legend=False,
-            filters=[in_filter("cox_hazard_ratios", "kind", ["early-life usage (per 1 SD of log rate)"], vid("f", "hr_usage"))])
-    p.table("hr_spec", 800, 524, 456, 172, [
-        (col("cox_hazard_ratios", "label"), "Spec category"), (col("cox_hazard_ratios", "hazard_ratio"), "HR"),
-        (col("cox_hazard_ratios", "hr_low_95"), "95% low"), (col("cox_hazard_ratios", "hr_high_95"), "95% high"),
-        (col("cox_hazard_ratios", "significant_5pct"), "Holm 5%")],
-        "Spec categories vs the largest category", None, sort=(col("cox_hazard_ratios", "hazard_ratio"), "Descending"),
-        filters=[in_filter("cox_hazard_ratios", "kind", ["spec category (vs largest category)"], vid("f", "hr_spec"))])
-    pages.append(p)
-
-    # ------------------------------------------------------------------ 5 Model quality
-    p = Page("quality", "Model quality")
-    p.textbox("title", 24, 16, W, 56, "Model quality: where the cost comes from, and whether the probabilities can be trusted",
-              "Test snapshot, frozen policy; validation numbers from notebooks 03–04")
-    p.matrix("confusion", 24, 88, 600, 270, (col(F, "actual_label"), "Actual class"), (col(F, "recommended_label"), "Action"),
-             (meas("Trucks"), "Trucks"), "Trucks: actual class vs recommended action", "Below the diagonal = late or missed repairs")
-    p.matrix("costs", 640, 88, 616, 270, (col("dim_cost_matrix", "actual_label"), "Actual class"),
-             (col("dim_cost_matrix", "predicted_label"), "Action"), (meas("Cost Matrix Cell"), "Cost"),
-             "The cost matrix (relative units)", "A missed repair costs 200–500; an unnecessary call-in 7–10")
-    p.chart("calib", 24, 374, 600, 322, "clusteredColumnChart", (col("calibration", "bin_label"), "Age band (time steps)"),
-            [(meas("Predicted Share Due"), "Predicted"), (meas("Observed Share Due"), "Observed")],
-            "Calibrated risk tracks the observed share due across ages", "Test snapshot; P(repair due within 48 steps)",
-            colors={"Predicted Share Due": BLUE, "Observed Share Due": GREY},
-            filters=[in_filter("calibration", "view", ["age band"], vid("f", "cal_view")),
+    # ------------------------------------------------------------------ 4 How reliable is this
+    p = Page("reliable", "4 How reliable is this")
+    p.textbox("title", 24, 16, W, 60, "Tested once on 5,045 trucks it had never seen, and it held up",
+              "Everything was fixed before this test; nothing was tuned on these trucks afterwards")
+    cards_row(p, 92, 90, [("Plan Caught", "breakdowns caught in time"), ("Plan Missed", "breakdowns missed"),
+                          ("Plan Called In But Fine", "called in, but turned out fine"),
+                          ("Plan Correctly Left Alone", "healthy trucks correctly left alone"),
+                          ("Saving Range Text", "vs calling every truck in (95% range)")], "score")
+    p.chart("holdup", 24, 198, 400, 498, "clusteredBarChart", (col("policy_comparison", "plain_policy"), "Approach"),
+            [(meas("Validation Cost per 1000"), "Trucks used for tuning"), (meas("Test Cost per 1000"), "New trucks (tested once)")],
+            "Still the cheapest on new trucks", "Cost per 1,000 trucks (lower is better)",
+            colors={"Validation Cost per 1000": REDRANGE, "Test Cost per 1000": BLUE},
+            sort=(col("policy_comparison", "plain_policy"), "Ascending"), axis_title=False,
+            filters=[in_filter("policy_comparison", "plain_policy", [PLAN, BY_AGE, EVERYONE, WAIT], vid("f", "holdup"))])
+    p.chart("calib", 440, 198, 400, 498, "clusteredColumnChart", (col("calibration", "bin_label"), "Trucks grouped by predicted risk"),
+            [(meas("Predicted Share Due"), "Predicted"), (meas("Observed Share Due"), "Actually broke down")],
+            "The risk numbers match reality", "Share of trucks needing the repair in the next window: predicted vs actual (new trucks)",
+            colors={"Predicted Share Due": BLUE, "Observed Share Due": REDRANGE},
+            filters=[in_filter("calibration", "view", ["risk bin"], vid("f", "cal_view")),
                      in_filter("calibration", "split", ["test"], vid("f", "cal_split"))])
-    p.chart("compare", 640, 374, 616, 322, "clusteredBarChart", (col("policy_comparison", "policy"), "Policy"),
-            [(meas("Validation Cost per 1000"), "Validation"), (meas("Test Cost per 1000"), "Test (once)")],
-            "The plan held up on unseen trucks", "Cost per 1,000 trucks, notebook 04",
-            colors={"Validation Cost per 1000": GREY, "Test Cost per 1000": BLUE},
-            sort=(meas("Test Cost per 1000"), "Ascending"))
+    p.chart("factors", 856, 198, 400, 498, "clusteredBarChart", (col("shap_global", "plain"), "Risk factor"),
+            [(meas("Influence"), "Influence on risk")], "What makes a truck risky: age, vehicle type and how it is used",
+            "Average influence on the risk score (anonymized signals named as measured)",
+            colors={"Influence": BLUE}, sort=(meas("Influence"), "Descending"), legend=False, axis_title=False,
+            filters=[in_filter("shap_global", "top8_plain", ["yes"], vid("f", "top8"))])
+    pages.append(p)
+
+    # ------------------------------------------------------------------ 5 Methods
+    p = Page("methods", "5 Methods (analyst detail)")
+    p.textbox("title", 24, 16, 980, 52, "Methods: survival analysis, risk model and cost-based decision rule",
+              "Notebooks 02–04. Validation = trucks used for tuning; test = evaluated once. Weibull shape 2.40 (wear-out)", size="16pt")
+    p.slicer("s_spec", 1040, 16, 216, 52, col("survival_curves", "spec"), "Survival curves for", default="Overall")
+    p.chart("km", 24, 80, 500, 300, "lineChart", (col("survival_curves", "time_step"), "time_step"),
+            [(meas("Share Without Repair"), "Share without repair")], "Kaplan–Meier by spec (training trucks)",
+            "Groups under 200 trucks pooled as 'Other'; 7 of 8 specs differ (log-rank, Holm)",
+            series=(col("survival_curves", "group"), "Group"))
+    p.chart("hr", 540, 80, 340, 300, "clusteredBarChart", (col("cox_hazard_ratios", "label"), "Covariate"),
+            [(meas("Hazard Ratio"), "Hazard ratio")], "Cox: early-life usage", "HR per 1 SD of log usage rate",
+            colors={"Hazard Ratio": BLUE}, sort=(meas("Hazard Ratio"), "Descending"), labels=True, legend=False, axis_title=False,
+            filters=[in_filter("cox_hazard_ratios", "kind", ["early-life usage (per 1 SD of log rate)"], vid("f", "hr_usage"))])
+    p.table("policies", 896, 80, 360, 300, [
+        (col("policy_comparison", "policy"), "Policy"), (col("policy_comparison", "split"), "Split"),
+        (col("policy_comparison", "cost_per_1000"), "Cost /1,000"), (col("policy_comparison", "share_caught_in_time"), "Caught"),
+        (col("policy_comparison", "call_ins_per_1000"), "Call-ins /1,000")],
+        "All policies, notebook 04", None, sort=(col("policy_comparison", "cost_per_1000"), "Ascending"))
+    p.matrix("confusion", 24, 396, 300, 300, (col(F, "actual_label"), "Actual class"), (col(F, "recommended_label"), "Action"),
+             (meas("Trucks"), "Trucks"), "Confusion matrix (test)", "Rows: actual class; columns: action")
+    p.matrix("costs", 336, 396, 300, 300, (col("dim_cost_matrix", "actual_label"), "Actual class"),
+             (col("dim_cost_matrix", "predicted_label"), "Action"), (meas("Cost Matrix Cell"), "Cost"),
+             "Cost matrix (IDA 2024)", "Relative units set by Scania experts")
+    p.chart("valid", 648, 396, 300, 300, "lineChart", (col("threshold_sweep", "x"), "Miss-cost multiplier"),
+            [(meas("Validation Sweep Cost"), "Cost per 1,000")], "Miss-cost sweep (validation)", None,
+            series=(col("threshold_sweep", "policy"), "Policy"), axis_title=False,
+            filters=[in_filter("threshold_sweep", "sweep", ["miss-cost multiplier"], vid("f", "sweep"))])
+    p.textbox("glossary", 960, 396, 296, 300, "Plain name → technical term",
+              "Our plan = expected-cost (Bayes) rule on calibrated gradient-boosting probabilities · "
+              "Call in by age = fixed-age rule (b) · Call every truck in = predict class 4 · "
+              "Wait until it breaks = run-to-failure · Breakdown risk = P(class 1–4) · "
+              "Value of calling in = E[cost | no action] − E[cost | call in now] · "
+              "Book soon = classes 1–3 · Influence = mean |SHAP| · Planning window = next 48 time steps", size="11pt")
     pages.append(p)
     return pages
 

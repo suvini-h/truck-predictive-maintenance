@@ -27,15 +27,30 @@ table shap_global
 
 		annotation SummarizationSetBy = Automatic
 
+	column plain
+		dataType: string
+		lineageTag: 3b9da1a5-e3e5-5394-ac1e-11afa320fb4e
+		summarizeBy: none
+		sourceColumn: plain
+
+		annotation SummarizationSetBy = Automatic
+
+	column top8_plain
+		dataType: string
+		lineageTag: 0c430bd1-143b-5975-a88e-654cbba02d84
+		summarizeBy: none
+		sourceColumn: top8_plain
+
+		annotation SummarizationSetBy = Automatic
+
 	partition shap_global = m
 		mode: import
 		source =
 				let
-					Source = Csv.Document(File.Contents(DataFolder & "shap_global.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Source = Csv.Document(File.Contents(DataFolder & "shap_global.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
 					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"input", type text}, {"mean_abs_shap", type number}, {"rank", Int64.Type}}, "en-US")
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"input", type text}, {"mean_abs_shap", type number}, {"rank", Int64.Type}, {"plain", type text}, {"top8_plain", type text}}, "en-US")
 				in
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

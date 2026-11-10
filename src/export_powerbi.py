@@ -137,6 +137,55 @@ for m, s in [(2.0, 1000), (1.0, 100), (1.0, 200)]:
     print(f"  m = {m}, slots = {s}: cost per 1,000 {r['cost_per_1000']:,.0f}, call-ins {r['call_ins_per_1000']:,.0f}, "
           f"caught {r['caught']}")
 
+# ---------------------------------------------------------------- plain-language layer (for non-analysts)
+import re  # noqa: E402
+
+GROUPS = {4: ("Call in now", 1), 3: ("Book soon", 2), 2: ("Book soon", 2), 1: ("Book soon", 2), 0: ("No action", 3)}
+fact["action_group"] = fact.recommended_action.map(lambda a: GROUPS[a][0])
+fact["action_group_order"] = fact.recommended_action.map(lambda a: GROUPS[a][1])
+fact["truck"] = "Truck " + fact.vehicle_id.astype(str)
+
+
+def plain_driver(name: str, specs: dict | None = None) -> str:
+    """Anonymized driver name -> plain words (still naming the anonymized variable)."""
+    if name == "age (time_step)":
+        return "Truck age"
+    if name.startswith("Spec "):
+        n = name.split()[1]
+        return f"Vehicle type (Spec {n} = {specs[f'Spec_{n}']})" if specs else f"Vehicle type (Spec {n})"
+    if name == "readouts so far":
+        return "Number of readouts"
+    if name in ("gap since previous readout", "span of last 5 readouts"):
+        return "Reporting gaps"
+    m = re.fullmatch(r"(counter|histogram) (\d+), (.+)", name)
+    if not m:
+        return name
+    kind, num, what = m.groups()
+    recent = "previous readout" in what or "last 5 readouts" in what
+    if kind == "counter":
+        return f"{'Recent' if recent else 'Total'} use (counter {num})"
+    return f"{'Recent load' if recent else 'Load'} pattern (histogram {num})"
+
+
+why = {1: [], 2: []}
+for _, row in svc.iterrows():
+    specs = {c: row[c] for c in SPEC_COLS}
+    reasons = []
+    for r in (1, 2, 3):
+        d, eff = row.get(f"driver_{r}"), row.get(f"driver_{r}_effect")
+        if isinstance(d, str) and eff == "raises risk":
+            p = plain_driver(d, specs)
+            if p not in reasons:
+                reasons.append(p)
+    why[1].append(reasons[0] if len(reasons) > 0 else "")
+    why[2].append(reasons[1] if len(reasons) > 1 else "")
+fact["why_flagged"], fact["why_also"] = why[1], why[2]
+
+PLAIN_POLICY = {"Model policy (expected cost)": ("Our plan (risk-based)", 1), "Fixed-age rule (b)": ("Call in by age", 2),
+                "Call everyone in now": ("Call every truck in", 3), "Run-to-failure": ("Wait until it breaks", 4),
+                "Age bands (validation-tuned bar)": ("Call in by age band (tuned)", 5),
+                "Model, no age correction (secondary)": ("Our plan without age correction", 6)}
+
 drivers = []
 for r in (1, 2, 3):
     d = svc.loc[svc[f"driver_{r}"].notna(), ["vehicle_id", f"driver_{r}", f"driver_{r}_effect"]]
@@ -144,6 +193,9 @@ for r in (1, 2, 3):
 shap_top = pd.concat(drivers).sort_values(["vehicle_id", "driver_rank"])[["vehicle_id", "driver_rank", "driver", "effect"]]
 shap_global = pd.read_csv(PROC / "shap_importance.csv").rename(columns={"name": "input"})[["input", "mean_abs_shap"]]
 shap_global["rank"] = np.arange(1, len(shap_global) + 1)
+shap_global["plain"] = shap_global.input.map(plain_driver)
+top_plain = shap_global.groupby("plain").mean_abs_shap.sum().nlargest(8).index
+shap_global["top8_plain"] = np.where(shap_global.plain.isin(top_plain), "yes", "no")
 
 # ---------------------------------------------------------------- reliability (repeats notebook 02)
 warnings.filterwarnings("ignore")
@@ -255,13 +307,30 @@ for split, d in cal_src.groupby("split"):
         rows.append({"split": split, "view": "age band", "bin_label": band, "bin_order": i + 1,
                      "trucks": len(g), "predicted_share_due": g.pred.mean(), "observed_share_due": g.due.mean()})
     d["risk_bin"] = pd.qcut(d.pred.rank(method="first"), 8, labels=False)
+    risk_labels = ["Lowest risk", "2", "3", "4", "5", "6", "7", "Highest risk"]
     for i, g in d.groupby("risk_bin"):
-        rows.append({"split": split, "view": "risk bin", "bin_label": f"bin {i + 1} of 8", "bin_order": i + 1,
+        rows.append({"split": split, "view": "risk bin", "bin_label": risk_labels[i], "bin_order": i + 1,
                      "trucks": len(g), "predicted_share_due": g.pred.mean(), "observed_share_due": g.due.mean()})
 calibration = pd.DataFrame(rows)
 
 # ---------------------------------------------------------------- notebook 04 tables
-policy_comparison = ref.rename(columns={"share_caught_in_time": "share_caught_in_time"})
+policy_comparison = ref.copy()
+policy_comparison["plain_policy"] = policy_comparison.policy.map(lambda p: PLAIN_POLICY[p][0])
+policy_comparison["policy_order"] = policy_comparison.policy.map(lambda p: PLAIN_POLICY[p][1])
+
+# Headline numbers for the plain-language pages (test set, frozen policy; notebook 04).
+boot = pd.read_csv(PROC / "test_bootstrap.csv").set_index("compared with")
+plan, everyone = ref_test.loc["Model policy (expected cost)"], ref_test.loc["Call everyone in now"]
+key_results = pd.DataFrame([
+    ("saving_vs_everyone_pct", 1 - plan.cost_per_1000 / everyone.cost_per_1000, "cheaper than calling every truck in"),
+    ("saving_ci_low_pct", boot.loc["Call everyone in now", "ci_low_95"] / everyone.cost_per_1000, "95% range, low end"),
+    ("saving_ci_high_pct", boot.loc["Call everyone in now", "ci_high_95"] / everyone.cost_per_1000, "95% range, high end"),
+    ("caught", plan.caught_in_time, "breakdowns caught in time"),
+    ("repairs_due", plan.repairs_due, "trucks with a breakdown due"),
+    ("missed", plan.missed + plan.late, "breakdowns missed"),
+    ("called_in_but_fine", plan.unnecessary_call_ins, "called in but fine"),
+], columns=["metric", "value", "label"])
+assert round(key_results.set_index("metric").loc["saving_vs_everyone_pct", "value"], 3) == 0.248
 sens = pd.read_csv(PROC / "miss_cost_sensitivity.csv")
 cap = pd.read_csv(PROC / "capacity_curve.csv")
 threshold_sweep = pd.concat([
@@ -276,5 +345,6 @@ for df, name in [(dim_vehicle, "dim_vehicle"), (dim_action, "dim_action"), (dim_
                  (survival_curves.round(5), "survival_curves"), (logrank.round(6), "logrank_by_spec"),
                  (hr.round(5), "cox_hazard_ratios"), (key.round(5), "reliability_key_numbers"),
                  (calibration.round(5), "calibration"), (policy_comparison.round(4), "policy_comparison"),
+                 (key_results.round(5), "key_results"),
                  (threshold_sweep.round(4), "threshold_sweep")]:
     write(df, name)

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "9c0a02a0e68e98a7184f",
+  "position": {
+    "x": 856,
+    "y": 92,
+    "z": 4000,
+    "height": 110,
+    "width": 400,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Call-in Ratio Text"
+                }
+              },
+              "queryRef": "_Measures.Call-in Ratio Text",
+              "nativeQueryRef": "Call-in Ratio Text",
+              "displayName": "trucks called in"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

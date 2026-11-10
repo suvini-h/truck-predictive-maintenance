@@ -1,0 +1,38 @@
+table key_results
+	lineageTag: a897ad4a-8a03-529b-9489-751f9b2e7abc
+
+	column metric
+		dataType: string
+		lineageTag: d96103fa-5691-58ae-8dbe-daee2544a81d
+		summarizeBy: none
+		sourceColumn: metric
+
+		annotation SummarizationSetBy = Automatic
+
+	column value
+		dataType: double
+		lineageTag: b295a1c5-26ef-59c7-bc31-538e3b242980
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		lineageTag: 2a49f189-ae93-58bc-bd54-158d2b269c2c
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	partition key_results = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "key_results.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"metric", type text}, {"value", type number}, {"label", type text}}, "en-US")
+				in
+					#"Changed Type"
+
+	annotation PBI_ResultType = Table

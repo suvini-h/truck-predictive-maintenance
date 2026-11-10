@@ -87,4 +87,3 @@ table cox_hazard_ratios
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

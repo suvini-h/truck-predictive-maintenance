@@ -112,7 +112,7 @@ table fact_snapshot_scores
 
 	column expected_saving_if_called_in
 		dataType: double
-		formatString: #,0.0
+		formatString: #,0
 		lineageTag: 59d2b3ec-f03e-5d61-ae11-eec32f4060d6
 		summarizeBy: none
 		sourceColumn: expected_saving_if_called_in
@@ -284,15 +284,56 @@ table fact_snapshot_scores
 
 		annotation SummarizationSetBy = Automatic
 
+	column action_group
+		dataType: string
+		lineageTag: bbee2bc7-8c91-5489-ba7b-c02cda493fed
+		summarizeBy: none
+		sourceColumn: action_group
+		sortByColumn: action_group_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_group_order
+		dataType: int64
+		formatString: 0
+		lineageTag: 2daaf7fe-4757-5dd6-8d18-bd380dab0dce
+		summarizeBy: none
+		sourceColumn: action_group_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column truck
+		dataType: string
+		lineageTag: 958323fa-439e-5924-bd53-b69f9fd64777
+		summarizeBy: none
+		sourceColumn: truck
+
+		annotation SummarizationSetBy = Automatic
+
+	column why_flagged
+		dataType: string
+		lineageTag: be8649ac-0da7-5e1f-a89c-45215216fca0
+		summarizeBy: none
+		sourceColumn: why_flagged
+
+		annotation SummarizationSetBy = Automatic
+
+	column why_also
+		dataType: string
+		lineageTag: b7baca16-6b8a-537b-9782-e36e0f5442e0
+		summarizeBy: none
+		sourceColumn: why_also
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fact_snapshot_scores = m
 		mode: import
 		source =
 				let
-					Source = Csv.Document(File.Contents(DataFolder & "fact_snapshot_scores.csv"), [Delimiter=",", Columns=32, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Source = Csv.Document(File.Contents(DataFolder & "fact_snapshot_scores.csv"), [Delimiter=",", Columns=37, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
 					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"vehicle_id", Int64.Type}, {"age_time_step", type number}, {"p0", type number}, {"p1", type number}, {"p2", type number}, {"p3", type number}, {"p4", type number}, {"p_due_within_48", type number}, {"recommended_action", Int64.Type}, {"recommended_label", type text}, {"actual_class", Int64.Type}, {"actual_label", type text}, {"expected_saving_if_called_in", type number}, {"priority_rank", Int64.Type}, {"fixed_age_action", Int64.Type}, {"age_band_action", Int64.Type}, {"L0", type number}, {"L1", type number}, {"L2", type number}, {"L3", type number}, {"L4", type number}, {"U0", type number}, {"U1", type number}, {"U2", type number}, {"U3", type number}, {"U4", type number}, {"driver_1", type text}, {"driver_1_effect", type text}, {"driver_2", type text}, {"driver_2_effect", type text}, {"driver_3", type text}, {"driver_3_effect", type text}}, "en-US")
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"vehicle_id", Int64.Type}, {"age_time_step", type number}, {"p0", type number}, {"p1", type number}, {"p2", type number}, {"p3", type number}, {"p4", type number}, {"p_due_within_48", type number}, {"recommended_action", Int64.Type}, {"recommended_label", type text}, {"actual_class", Int64.Type}, {"actual_label", type text}, {"expected_saving_if_called_in", type number}, {"priority_rank", Int64.Type}, {"fixed_age_action", Int64.Type}, {"age_band_action", Int64.Type}, {"L0", type number}, {"L1", type number}, {"L2", type number}, {"L3", type number}, {"L4", type number}, {"U0", type number}, {"U1", type number}, {"U2", type number}, {"U3", type number}, {"U4", type number}, {"driver_1", type text}, {"driver_1_effect", type text}, {"driver_2", type text}, {"driver_2_effect", type text}, {"driver_3", type text}, {"driver_3_effect", type text}, {"action_group", type text}, {"action_group_order", Int64.Type}, {"truck", type text}, {"why_flagged", type text}, {"why_also", type text}}, "en-US")
 				in
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

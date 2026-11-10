@@ -54,4 +54,3 @@ table threshold_sweep
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

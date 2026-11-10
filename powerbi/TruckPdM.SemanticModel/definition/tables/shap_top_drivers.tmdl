@@ -46,4 +46,3 @@ table shap_top_drivers
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

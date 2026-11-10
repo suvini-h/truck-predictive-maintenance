@@ -1,0 +1,8 @@
+metric,value,label
+saving_vs_everyone_pct,0.2485,cheaper than calling every truck in
+saving_ci_low_pct,0.12326,"95% range, low end"
+saving_ci_high_pct,0.37227,"95% range, high end"
+caught,89.0,breakdowns caught in time
+repairs_due,142.0,trucks with a breakdown due
+missed,53.0,breakdowns missed
+called_in_but_fine,1526.0,called in but fine

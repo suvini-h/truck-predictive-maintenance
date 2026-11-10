@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "e46231ebcc793e8f091b",
+  "position": {
+    "x": 24,
+    "y": 92,
+    "z": 2000,
+    "height": 72,
+    "width": 400,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Miss Cost Multiplier"
+                    }
+                  },
+                  "Property": "Miss Cost Multiplier"
+                }
+              },
+              "queryRef": "Miss Cost Multiplier.Miss Cost Multiplier",
+              "nativeQueryRef": "Miss Cost Multiplier",
+              "active": true,
+              "displayName": "How costly is a breakdown? (× expert estimate)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Single'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

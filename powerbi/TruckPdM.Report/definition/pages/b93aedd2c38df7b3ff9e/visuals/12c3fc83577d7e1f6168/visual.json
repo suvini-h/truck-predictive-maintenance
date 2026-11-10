@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "12c3fc83577d7e1f6168",
+  "position": {
+    "x": 24,
+    "y": 92,
+    "z": 4000,
+    "height": 90,
+    "width": 400,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Trucks Call In Now"
+                }
+              },
+              "queryRef": "_Measures.Trucks Call In Now",
+              "nativeQueryRef": "Trucks Call In Now",
+              "displayName": "Call in now"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

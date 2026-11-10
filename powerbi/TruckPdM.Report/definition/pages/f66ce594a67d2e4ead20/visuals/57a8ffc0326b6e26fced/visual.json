@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "57a8ffc0326b6e26fced",
+  "position": {
+    "x": 440,
+    "y": 92,
+    "z": 3000,
+    "height": 72,
+    "width": 400,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Workshop Slots"
+                    }
+                  },
+                  "Property": "Workshop Slots"
+                }
+              },
+              "queryRef": "Workshop Slots.Workshop Slots",
+              "nativeQueryRef": "Workshop Slots",
+              "active": true,
+              "displayName": "Workshop capacity (trucks per 1,000)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Single'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

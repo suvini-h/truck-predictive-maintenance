@@ -311,19 +311,101 @@ table _Measures
 		displayFolder: Savings
 		lineageTag: b7abc429-279a-5bb9-ae10-61b6589b71c3
 
-	/// Cost per 1,000 trucks for the policy on the Policy axis.
+	/// Cost per 1,000 trucks for the policy on the Policy axis (plain names).
 	measure 'Policy Cost per 1000' =
 			SWITCH (
 				SELECTEDVALUE ( Policy[Policy] ),
-				"Risk-based plan (model)", [Planner Cost per 1000],
-				"Age bands (validation-tuned)", [Age-band Rule Cost per 1000],
-				"Fixed-age rule (b)", [Fixed-age Rule Cost per 1000],
-				"Call everyone in now", [Call-everyone Cost per 1000],
-				"Run-to-failure", [Run-to-failure Cost per 1000]
+				"Our plan (risk-based)", [Planner Cost per 1000],
+				"Call in by age", [Fixed-age Rule Cost per 1000],
+				"Call every truck in", [Call-everyone Cost per 1000],
+				"Wait until it breaks", [Run-to-failure Cost per 1000]
 			)
 		formatString: #,0
 		displayFolder: Savings
 		lineageTag: 257e7506-b513-5278-81e2-816ffa2d4f7d
+
+	/// How much cheaper the plan is than calling every truck in (live; 25% at the defaults on test).
+	measure 'Saving vs Call-everyone %' = DIVIDE ( [Saving vs Call-everyone per 1000], [Call-everyone Cost per 1000] )
+		formatString: 0%
+		displayFolder: Plain language
+		lineageTag: c81f1575-aea4-58ff-9214-25a76e4c6255
+
+	/// Share of trucks the plan acts on (live).
+	measure 'Call-in Share' = DIVIDE ( [Planner Call-ins], [Trucks] )
+		formatString: 0%
+		displayFolder: Plain language
+		lineageTag: 71d07b1a-8d70-557a-86dc-288fde9d8abf
+
+	/// Call-ins as '1 in N trucks' (live).
+	measure 'Call-in Ratio Text' =
+			VAR share = [Call-in Share]
+			RETURN IF ( share > 0, "1 in " & FORMAT ( ROUND ( DIVIDE ( 1, share ), 0 ), "0" ), "none" )
+		formatString: @
+		displayFolder: Plain language
+		lineageTag: 611a542a-33be-5d81-854f-8e25f7df1c6f
+
+	/// Due repairs caught in time, as 'x of y' (live).
+	measure 'Breakdowns Caught Text' = FORMAT ( [Planner Repairs Caught], "#,0" ) & " of " & FORMAT ( [Repairs Due], "#,0" )
+		formatString: @
+		displayFolder: Plain language
+		lineageTag: 98f6a870-62b6-53f0-ac7f-a7dc558ff344
+
+	/// Trucks the frozen plan calls in now (expert costs, no capacity limit).
+	measure 'Trucks Call In Now' = CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "Call in now" )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: a88bfa45-ac0a-5e85-8bcf-143ab4b5078e
+
+	/// Trucks the frozen plan books within 12-48 time steps.
+	measure 'Trucks Book Soon' = CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "Book soon" )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: 1969cae9-11e2-50da-9194-9fc13e2ca76f
+
+	/// Trucks the frozen plan leaves alone.
+	measure 'Trucks No Action' = CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "No action" )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: dbda5049-3e0a-533c-8b2e-749d78438c54
+
+	/// Frozen plan on test: breakdowns caught in time.
+	measure 'Plan Caught' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] > 0 && fact_snapshot_scores[recommended_action] >= fact_snapshot_scores[actual_class] ) )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: 3c5c141c-df6e-51b2-b81a-cacc66cc3327
+
+	/// Frozen plan on test: breakdowns missed or caught too late.
+	measure 'Plan Missed' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] > 0 && fact_snapshot_scores[recommended_action] < fact_snapshot_scores[actual_class] ) )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: 9ae1ca52-0fe9-5f77-90a4-c02df6fe7b2e
+
+	/// Frozen plan on test: trucks called in with no breakdown due in the planning window.
+	measure 'Plan Called In But Fine' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] = 0 && fact_snapshot_scores[recommended_action] > 0 ) )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: 4ca535eb-2835-54ad-a9a4-b1e3035c4f98
+
+	/// Frozen plan on test: healthy trucks correctly left alone.
+	measure 'Plan Correctly Left Alone' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] = 0 && fact_snapshot_scores[recommended_action] = 0 ) )
+		formatString: #,0
+		displayFolder: Plain language
+		lineageTag: bd1d18aa-09f4-5239-9dca-702f7e38fa53
+
+	/// 95% bootstrap range of the test saving vs calling every truck in.
+	measure 'Saving Range Text' =
+			VAR lo = CALCULATE ( MAX ( key_results[value] ), key_results[metric] = "saving_ci_low_pct" )
+			VAR hi = CALCULATE ( MAX ( key_results[value] ), key_results[metric] = "saving_ci_high_pct" )
+			RETURN FORMAT ( lo, "0%" ) & " to " & FORMAT ( hi, "0%" ) & " cheaper"
+		formatString: @
+		displayFolder: Plain language
+		lineageTag: 49884b3c-142c-52bd-a21c-6530b8b63890
+
+	/// How much an input moves the risk score on average (mean |SHAP|, summed over inputs with the same plain name).
+	measure Influence = SUM ( shap_global[mean_abs_shap] )
+		formatString: 0.00
+		displayFolder: Plain language
+		lineageTag: d13e246e-0c05-5aa8-8225-0530cd6bcae6
 
 	/// Kaplan-Meier share of training trucks still on their original Component X.
 	measure 'Share Without Repair' = AVERAGE ( survival_curves[share_without_repair] )
@@ -404,4 +486,3 @@ table _Measures
 	partition _Measures = calculated
 		mode: import
 		source = { BLANK () }
-

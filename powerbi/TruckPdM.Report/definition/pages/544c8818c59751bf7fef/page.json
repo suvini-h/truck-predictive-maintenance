@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "544c8818c59751bf7fef",
+  "displayName": "5 Methods (analyst detail)",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

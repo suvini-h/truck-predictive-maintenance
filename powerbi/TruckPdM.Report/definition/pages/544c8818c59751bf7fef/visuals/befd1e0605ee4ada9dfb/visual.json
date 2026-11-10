@@ -1,0 +1,160 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "befd1e0605ee4ada9dfb",
+  "position": {
+    "x": 896,
+    "y": 80,
+    "z": 5000,
+    "height": 300,
+    "width": 360,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "policy_comparison"
+                    }
+                  },
+                  "Property": "policy"
+                }
+              },
+              "queryRef": "policy_comparison.policy",
+              "nativeQueryRef": "policy",
+              "displayName": "Policy"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "policy_comparison"
+                    }
+                  },
+                  "Property": "split"
+                }
+              },
+              "queryRef": "policy_comparison.split",
+              "nativeQueryRef": "split",
+              "displayName": "Split"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "policy_comparison"
+                    }
+                  },
+                  "Property": "cost_per_1000"
+                }
+              },
+              "queryRef": "policy_comparison.cost_per_1000",
+              "nativeQueryRef": "cost_per_1000",
+              "displayName": "Cost /1,000"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "policy_comparison"
+                    }
+                  },
+                  "Property": "share_caught_in_time"
+                }
+              },
+              "queryRef": "policy_comparison.share_caught_in_time",
+              "nativeQueryRef": "share_caught_in_time",
+              "displayName": "Caught"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "policy_comparison"
+                    }
+                  },
+                  "Property": "call_ins_per_1000"
+                }
+              },
+              "queryRef": "policy_comparison.call_ins_per_1000",
+              "nativeQueryRef": "call_ins_per_1000",
+              "displayName": "Call-ins /1,000"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "policy_comparison"
+                  }
+                },
+                "Property": "cost_per_1000"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'All policies, notebook 04'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

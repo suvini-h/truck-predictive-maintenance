@@ -96,15 +96,32 @@ table policy_comparison
 
 		annotation SummarizationSetBy = Automatic
 
+	column plain_policy
+		dataType: string
+		lineageTag: 8b82e075-8ecc-560f-a7c9-b77574096a32
+		summarizeBy: none
+		sourceColumn: plain_policy
+		sortByColumn: policy_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column policy_order
+		dataType: int64
+		formatString: 0
+		lineageTag: fe01e878-33bf-5cfb-9671-8070dc1f5d1b
+		summarizeBy: none
+		sourceColumn: policy_order
+
+		annotation SummarizationSetBy = Automatic
+
 	partition policy_comparison = m
 		mode: import
 		source =
 				let
-					Source = Csv.Document(File.Contents(DataFolder & "policy_comparison.csv"), [Delimiter=",", Columns=11, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Source = Csv.Document(File.Contents(DataFolder & "policy_comparison.csv"), [Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
 					#"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"policy", type text}, {"cost_per_1000", type number}, {"repairs_due", Int64.Type}, {"caught_in_time", Int64.Type}, {"late", Int64.Type}, {"missed", Int64.Type}, {"share_caught_in_time", type number}, {"unnecessary_call_ins", Int64.Type}, {"call_ins_per_1000", type number}, {"unnecessary_per_1000", type number}, {"split", type text}}, "en-US")
+					#"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers", {{"policy", type text}, {"cost_per_1000", type number}, {"repairs_due", Int64.Type}, {"caught_in_time", Int64.Type}, {"late", Int64.Type}, {"missed", Int64.Type}, {"share_caught_in_time", type number}, {"unnecessary_call_ins", Int64.Type}, {"call_ins_per_1000", type number}, {"unnecessary_per_1000", type number}, {"split", type text}, {"plain_policy", type text}, {"policy_order", Int64.Type}}, "en-US")
 				in
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

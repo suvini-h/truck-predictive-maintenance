@@ -1,89 +1,89 @@
-input,mean_abs_shap,rank
-age (time_step),0.62264,1
-Spec 7,0.22022,2
-Spec 1,0.20953,3
-"counter 666, level",0.16986,4
-"histogram 167, mean bin (lifetime)",0.15972,5
-"histogram 291, share in top 2 bins (lifetime)",0.14072,6
-"counter 309, level",0.13632,7
-"counter 837, level",0.13094,8
-"counter 100, level",0.12437,9
-"histogram 167, mean bin (last 5 readouts)",0.09182,10
-"histogram 459, mean bin (lifetime)",0.09061,11
-"histogram 397, share in top 2 bins (last 5 readouts)",0.08836,12
-Spec 6,0.08637,13
-readouts so far,0.0839,14
-Spec 2,0.08054,15
-"counter 427, level",0.07755,16
-"counter 666, rate since previous readout",0.07493,17
-span of last 5 readouts,0.07474,18
-"histogram 397, share in top 2 bins (lifetime)",0.07311,19
-"histogram 272, mean bin (last 5 readouts)",0.07107,20
-"histogram 459, mean bin (last 5 readouts)",0.06956,21
-"histogram 291, mean bin (lifetime)",0.06656,22
-"counter 100, rate over last 5 readouts",0.06608,23
-"histogram 158, share in top 2 bins (last 5 readouts)",0.06366,24
-"histogram 272, mean bin (lifetime)",0.06184,25
-"histogram 158, mean bin (last 5 readouts)",0.0612,26
-"histogram 459, share in top 2 bins (lifetime)",0.06,27
-"histogram 397, mean bin (last 5 readouts)",0.05743,28
-"histogram 167, change in mean bin over last 5 readouts",0.05719,29
-"histogram 459, total count",0.05129,30
-"counter 666, change over last 5 readouts",0.05113,31
-"counter 427, rate over last 5 readouts",0.04994,32
-"histogram 167, total count",0.04977,33
-"counter 666, rate over last 5 readouts",0.04894,34
-"histogram 291, change in mean bin over last 5 readouts",0.04796,35
-"histogram 397, change in mean bin over last 5 readouts",0.04644,36
-"counter 100, change over last 5 readouts",0.04608,37
-"counter 835, rate since previous readout",0.04514,38
-"counter 837, change over last 5 readouts",0.04494,39
-"histogram 158, change in mean bin over last 5 readouts",0.04087,40
-"histogram 459, change in mean bin over last 5 readouts",0.04005,41
-"histogram 291, total count",0.03973,42
-"histogram 167, share in top 2 bins (lifetime)",0.03971,43
-"counter 171, rate since previous readout",0.03878,44
-"histogram 291, share in top 2 bins (last 5 readouts)",0.03869,45
-"counter 100, rate since previous readout",0.0386,46
-"histogram 459, share in top 2 bins (last 5 readouts)",0.03833,47
-"counter 100, change since previous readout",0.0383,48
-"histogram 158, mean bin (lifetime)",0.03623,49
-"histogram 397, mean bin (lifetime)",0.03578,50
-gap since previous readout,0.03423,51
-"counter 835, rate over last 5 readouts",0.03415,52
-"counter 835, change over last 5 readouts",0.03383,53
-"histogram 158, share in top 2 bins (lifetime)",0.0313,54
-"counter 666, change since previous readout",0.03075,55
-"counter 427, rate since previous readout",0.03065,56
-"histogram 291, mean bin (last 5 readouts)",0.03049,57
-"counter 171, level",0.0295,58
-"counter 171, change over last 5 readouts",0.02898,59
-"histogram 272, change in mean bin over last 5 readouts",0.02897,60
-"counter 427, change since previous readout",0.02717,61
-"counter 171, change since previous readout",0.02693,62
-"counter 370, level",0.0266,63
-"counter 427, change over last 5 readouts",0.02624,64
-"counter 837, rate since previous readout",0.02558,65
-"histogram 167, share in top 2 bins (last 5 readouts)",0.02548,66
-"counter 835, change since previous readout",0.02398,67
-"counter 171, rate over last 5 readouts",0.02371,68
-"counter 309, rate over last 5 readouts",0.0233,69
-"counter 309, change over last 5 readouts",0.02147,70
-"counter 837, rate over last 5 readouts",0.0213,71
-"counter 835, level",0.01729,72
-"counter 837, change since previous readout",0.0171,73
-"counter 309, rate since previous readout",0.01636,74
-Spec 3,0.01624,75
-"histogram 158, total count",0.01374,76
-"counter 370, change since previous readout",0.01325,77
-"counter 309, change since previous readout",0.01287,78
-"counter 370, change over last 5 readouts",0.01228,79
-"counter 370, rate over last 5 readouts",0.01129,80
-"histogram 397, total count",0.00932,81
-Spec 5,0.00847,82
-"histogram 272, share in top 2 bins (lifetime)",0.00553,83
-"counter 370, rate since previous readout",0.00518,84
-"histogram 272, total count",0.00484,85
-Spec 4,0.00208,86
-"histogram 272, share in top 2 bins (last 5 readouts)",0.0006,87
-Spec 0,0.0,88
+input,mean_abs_shap,rank,plain,top8_plain
+age (time_step),0.62264,1,Truck age,yes
+Spec 7,0.22022,2,Vehicle type (Spec 7),yes
+Spec 1,0.20953,3,Vehicle type (Spec 1),yes
+"counter 666, level",0.16986,4,Total use (counter 666),no
+"histogram 167, mean bin (lifetime)",0.15972,5,Load pattern (histogram 167),yes
+"histogram 291, share in top 2 bins (lifetime)",0.14072,6,Load pattern (histogram 291),yes
+"counter 309, level",0.13632,7,Total use (counter 309),no
+"counter 837, level",0.13094,8,Total use (counter 837),no
+"counter 100, level",0.12437,9,Total use (counter 100),no
+"histogram 167, mean bin (last 5 readouts)",0.09182,10,Recent load pattern (histogram 167),no
+"histogram 459, mean bin (lifetime)",0.09061,11,Load pattern (histogram 459),yes
+"histogram 397, share in top 2 bins (last 5 readouts)",0.08836,12,Recent load pattern (histogram 397),yes
+Spec 6,0.08637,13,Vehicle type (Spec 6),no
+readouts so far,0.0839,14,Number of readouts,no
+Spec 2,0.08054,15,Vehicle type (Spec 2),no
+"counter 427, level",0.07755,16,Total use (counter 427),no
+"counter 666, rate since previous readout",0.07493,17,Recent use (counter 666),yes
+span of last 5 readouts,0.07474,18,Reporting gaps,no
+"histogram 397, share in top 2 bins (lifetime)",0.07311,19,Load pattern (histogram 397),no
+"histogram 272, mean bin (last 5 readouts)",0.07107,20,Recent load pattern (histogram 272),no
+"histogram 459, mean bin (last 5 readouts)",0.06956,21,Recent load pattern (histogram 459),no
+"histogram 291, mean bin (lifetime)",0.06656,22,Load pattern (histogram 291),yes
+"counter 100, rate over last 5 readouts",0.06608,23,Recent use (counter 100),no
+"histogram 158, share in top 2 bins (last 5 readouts)",0.06366,24,Recent load pattern (histogram 158),no
+"histogram 272, mean bin (lifetime)",0.06184,25,Load pattern (histogram 272),no
+"histogram 158, mean bin (last 5 readouts)",0.0612,26,Recent load pattern (histogram 158),no
+"histogram 459, share in top 2 bins (lifetime)",0.06,27,Load pattern (histogram 459),yes
+"histogram 397, mean bin (last 5 readouts)",0.05743,28,Recent load pattern (histogram 397),yes
+"histogram 167, change in mean bin over last 5 readouts",0.05719,29,Recent load pattern (histogram 167),no
+"histogram 459, total count",0.05129,30,Load pattern (histogram 459),yes
+"counter 666, change over last 5 readouts",0.05113,31,Recent use (counter 666),yes
+"counter 427, rate over last 5 readouts",0.04994,32,Recent use (counter 427),no
+"histogram 167, total count",0.04977,33,Load pattern (histogram 167),yes
+"counter 666, rate over last 5 readouts",0.04894,34,Recent use (counter 666),yes
+"histogram 291, change in mean bin over last 5 readouts",0.04796,35,Recent load pattern (histogram 291),no
+"histogram 397, change in mean bin over last 5 readouts",0.04644,36,Recent load pattern (histogram 397),yes
+"counter 100, change over last 5 readouts",0.04608,37,Recent use (counter 100),no
+"counter 835, rate since previous readout",0.04514,38,Recent use (counter 835),no
+"counter 837, change over last 5 readouts",0.04494,39,Recent use (counter 837),no
+"histogram 158, change in mean bin over last 5 readouts",0.04087,40,Recent load pattern (histogram 158),no
+"histogram 459, change in mean bin over last 5 readouts",0.04005,41,Recent load pattern (histogram 459),no
+"histogram 291, total count",0.03973,42,Load pattern (histogram 291),yes
+"histogram 167, share in top 2 bins (lifetime)",0.03971,43,Load pattern (histogram 167),yes
+"counter 171, rate since previous readout",0.03878,44,Recent use (counter 171),no
+"histogram 291, share in top 2 bins (last 5 readouts)",0.03869,45,Recent load pattern (histogram 291),no
+"counter 100, rate since previous readout",0.0386,46,Recent use (counter 100),no
+"histogram 459, share in top 2 bins (last 5 readouts)",0.03833,47,Recent load pattern (histogram 459),no
+"counter 100, change since previous readout",0.0383,48,Recent use (counter 100),no
+"histogram 158, mean bin (lifetime)",0.03623,49,Load pattern (histogram 158),no
+"histogram 397, mean bin (lifetime)",0.03578,50,Load pattern (histogram 397),no
+gap since previous readout,0.03423,51,Reporting gaps,no
+"counter 835, rate over last 5 readouts",0.03415,52,Recent use (counter 835),no
+"counter 835, change over last 5 readouts",0.03383,53,Recent use (counter 835),no
+"histogram 158, share in top 2 bins (lifetime)",0.0313,54,Load pattern (histogram 158),no
+"counter 666, change since previous readout",0.03075,55,Recent use (counter 666),yes
+"counter 427, rate since previous readout",0.03065,56,Recent use (counter 427),no
+"histogram 291, mean bin (last 5 readouts)",0.03049,57,Recent load pattern (histogram 291),no
+"counter 171, level",0.0295,58,Total use (counter 171),no
+"counter 171, change over last 5 readouts",0.02898,59,Recent use (counter 171),no
+"histogram 272, change in mean bin over last 5 readouts",0.02897,60,Recent load pattern (histogram 272),no
+"counter 427, change since previous readout",0.02717,61,Recent use (counter 427),no
+"counter 171, change since previous readout",0.02693,62,Recent use (counter 171),no
+"counter 370, level",0.0266,63,Total use (counter 370),no
+"counter 427, change over last 5 readouts",0.02624,64,Recent use (counter 427),no
+"counter 837, rate since previous readout",0.02558,65,Recent use (counter 837),no
+"histogram 167, share in top 2 bins (last 5 readouts)",0.02548,66,Recent load pattern (histogram 167),no
+"counter 835, change since previous readout",0.02398,67,Recent use (counter 835),no
+"counter 171, rate over last 5 readouts",0.02371,68,Recent use (counter 171),no
+"counter 309, rate over last 5 readouts",0.0233,69,Recent use (counter 309),no
+"counter 309, change over last 5 readouts",0.02147,70,Recent use (counter 309),no
+"counter 837, rate over last 5 readouts",0.0213,71,Recent use (counter 837),no
+"counter 835, level",0.01729,72,Total use (counter 835),no
+"counter 837, change since previous readout",0.0171,73,Recent use (counter 837),no
+"counter 309, rate since previous readout",0.01636,74,Recent use (counter 309),no
+Spec 3,0.01624,75,Vehicle type (Spec 3),no
+"histogram 158, total count",0.01374,76,Load pattern (histogram 158),no
+"counter 370, change since previous readout",0.01325,77,Recent use (counter 370),no
+"counter 309, change since previous readout",0.01287,78,Recent use (counter 309),no
+"counter 370, change over last 5 readouts",0.01228,79,Recent use (counter 370),no
+"counter 370, rate over last 5 readouts",0.01129,80,Recent use (counter 370),no
+"histogram 397, total count",0.00932,81,Load pattern (histogram 397),no
+Spec 5,0.00847,82,Vehicle type (Spec 5),no
+"histogram 272, share in top 2 bins (lifetime)",0.00553,83,Load pattern (histogram 272),no
+"counter 370, rate since previous readout",0.00518,84,Recent use (counter 370),no
+"histogram 272, total count",0.00484,85,Load pattern (histogram 272),no
+Spec 4,0.00208,86,Vehicle type (Spec 4),no
+"histogram 272, share in top 2 bins (last 5 readouts)",0.0006,87,Recent load pattern (histogram 272),no
+Spec 0,0.0,88,Vehicle type (Spec 0),no

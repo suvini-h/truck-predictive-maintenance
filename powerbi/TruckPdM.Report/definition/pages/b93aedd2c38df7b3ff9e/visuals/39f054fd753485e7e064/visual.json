@@ -1,0 +1,285 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "39f054fd753485e7e064",
+  "position": {
+    "x": 24,
+    "y": 198,
+    "z": 7000,
+    "height": 478,
+    "width": 1232,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "priority_rank"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.priority_rank",
+              "nativeQueryRef": "priority_rank",
+              "displayName": "Priority"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "truck"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.truck",
+              "nativeQueryRef": "truck",
+              "displayName": "Truck"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "action_group"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.action_group",
+              "nativeQueryRef": "action_group",
+              "displayName": "Action"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "p_due_within_48"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.p_due_within_48",
+              "nativeQueryRef": "p_due_within_48",
+              "displayName": "Breakdown risk (next window)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "expected_saving_if_called_in"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.expected_saving_if_called_in",
+              "nativeQueryRef": "expected_saving_if_called_in",
+              "displayName": "Value of calling in"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "why_flagged"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.why_flagged",
+              "nativeQueryRef": "why_flagged",
+              "displayName": "Why flagged"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "why_also"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.why_also",
+              "nativeQueryRef": "why_also",
+              "displayName": "Also"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_snapshot_scores"
+                    }
+                  },
+                  "Property": "age_time_step"
+                }
+              },
+              "queryRef": "fact_snapshot_scores.age_time_step",
+              "nativeQueryRef": "age_time_step",
+              "displayName": "Truck age (time steps)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_snapshot_scores"
+                  }
+                },
+                "Property": "priority_rank"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'The call-in list'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Variables are anonymized by Scania, so reasons name the measured signal (e.g. ''counter 666''), not a part'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "columnFormatting": [
+        {
+          "properties": {
+            "dataBars": {
+              "positiveColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#eb6834'"
+                      }
+                    }
+                  }
+                }
+              },
+              "negativeColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#eb6834'"
+                      }
+                    }
+                  }
+                }
+              },
+              "axisColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#52514e'"
+                      }
+                    }
+                  }
+                }
+              },
+              "reverseDirection": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "hideText": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_snapshot_scores.p_due_within_48"
+          }
+        }
+      ]
+    }
+  }
+}

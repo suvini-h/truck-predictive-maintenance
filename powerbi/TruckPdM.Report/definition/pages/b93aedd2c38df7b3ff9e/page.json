@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "b93aedd2c38df7b3ff9e",
+  "displayName": "2 Call-in list",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "1eb28c4c235b5b25574a",
+      "target": "12c3fc83577d7e1f6168",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1eb28c4c235b5b25574a",
+      "target": "73f23b402c68e6e21fb8",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1eb28c4c235b5b25574a",
+      "target": "88df5a480d447431b6fe",
+      "type": "NoFilter"
+    }
+  ]
+}

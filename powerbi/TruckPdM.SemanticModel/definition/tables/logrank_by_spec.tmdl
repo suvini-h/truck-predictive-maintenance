@@ -104,4 +104,3 @@ table logrank_by_spec
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
-

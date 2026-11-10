@@ -1,12 +1,12 @@
-policy,cost_per_1000,repairs_due,caught_in_time,late,missed,share_caught_in_time,unnecessary_call_ins,call_ins_per_1000,unnecessary_per_1000,split
-Run-to-failure,11375.3468,136,0,0,136,0.0,0,0.0,0.0,validation
-Call everyone in now,9822.83,136,136,0,0,1.0,4910,1000.0,973.048,validation
-Fixed-age rule (b),9701.9421,136,136,0,0,1.0,4849,987.9112,960.9592,validation
-Age bands (validation-tuned bar),8109.3936,136,99,0,37,0.7279,2530,521.0067,501.3872,validation
-Model policy (expected cost),6538.4463,136,101,1,34,0.7426,1936,403.8843,383.6702,validation
-Run-to-failure,11119.9207,142,0,0,142,0.0,0,0.0,0.0,test
-Call everyone in now,9845.5897,142,142,0,0,1.0,4903,1000.0,971.8533,test
-Fixed-age rule (b),9720.7136,142,142,0,0,1.0,4840,987.5124,959.3657,test
-Age bands (validation-tuned bar),9149.8513,142,91,0,51,0.6408,2503,514.1724,496.1348,test
-Model policy (expected cost),7399.0089,142,89,0,53,0.6268,1526,320.1189,302.4777,test
-"Model, no age correction (secondary)",7599.6036,142,88,1,53,0.6197,1666,347.8692,330.2279,test
+policy,cost_per_1000,repairs_due,caught_in_time,late,missed,share_caught_in_time,unnecessary_call_ins,call_ins_per_1000,unnecessary_per_1000,split,plain_policy,policy_order
+Run-to-failure,11375.3468,136,0,0,136,0.0,0,0.0,0.0,validation,Wait until it breaks,4
+Call everyone in now,9822.83,136,136,0,0,1.0,4910,1000.0,973.048,validation,Call every truck in,3
+Fixed-age rule (b),9701.9421,136,136,0,0,1.0,4849,987.9112,960.9592,validation,Call in by age,2
+Age bands (validation-tuned bar),8109.3936,136,99,0,37,0.7279,2530,521.0067,501.3872,validation,Call in by age band (tuned),5
+Model policy (expected cost),6538.4463,136,101,1,34,0.7426,1936,403.8843,383.6702,validation,Our plan (risk-based),1
+Run-to-failure,11119.9207,142,0,0,142,0.0,0,0.0,0.0,test,Wait until it breaks,4
+Call everyone in now,9845.5897,142,142,0,0,1.0,4903,1000.0,971.8533,test,Call every truck in,3
+Fixed-age rule (b),9720.7136,142,142,0,0,1.0,4840,987.5124,959.3657,test,Call in by age,2
+Age bands (validation-tuned bar),9149.8513,142,91,0,51,0.6408,2503,514.1724,496.1348,test,Call in by age band (tuned),5
+Model policy (expected cost),7399.0089,142,89,0,53,0.6268,1526,320.1189,302.4777,test,Our plan (risk-based),1
+"Model, no age correction (secondary)",7599.6036,142,88,1,53,0.6197,1666,347.8692,330.2279,test,Our plan without age correction,6

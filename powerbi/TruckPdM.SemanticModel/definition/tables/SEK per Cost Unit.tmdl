@@ -27,4 +27,3 @@ table 'SEK per Cost Unit'
 		source = GENERATESERIES ( 250, 5000, 250 )
 
 	annotation PBI_Id = d583af48faeebd7a4cfd
-
