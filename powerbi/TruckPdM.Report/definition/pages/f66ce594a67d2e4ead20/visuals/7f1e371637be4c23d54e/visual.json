@@ -42,7 +42,7 @@
             "numericStart": {
               "expr": {
                 "Literal": {
-                  "Value": "2250D"
+                  "Value": "1000D"
                 }
               }
             },
@@ -86,13 +86,26 @@
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "2250D"
+                            "Value": "1000D"
                           }
                         }
                       }
                     }
                   }
                 ]
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
               }
             }
           }

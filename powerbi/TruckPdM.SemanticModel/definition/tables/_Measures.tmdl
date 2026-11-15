@@ -417,44 +417,44 @@ table _Measures
 		lineageTag: 98f6a870-62b6-53f0-ac7f-a7dc558ff344
 
 	/// Trucks the frozen plan calls in now (expert costs, no capacity limit).
-	measure 'Trucks Call In Now' = CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "Call in now" )
-		formatString: #,0
+	measure 'Trucks Call In Now' = FORMAT ( CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "Call in now" ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: a88bfa45-ac0a-5e85-8bcf-143ab4b5078e
 
 	/// Trucks the frozen plan books within 12-48 time steps.
-	measure 'Trucks Book Soon' = CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "Book soon" )
-		formatString: #,0
+	measure 'Trucks Book Soon' = FORMAT ( CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "Book soon" ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: 1969cae9-11e2-50da-9194-9fc13e2ca76f
 
 	/// Trucks the frozen plan leaves alone.
-	measure 'Trucks No Action' = CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "No action" )
-		formatString: #,0
+	measure 'Trucks No Action' = FORMAT ( CALCULATE ( [Trucks], fact_snapshot_scores[action_group] = "No action" ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: dbda5049-3e0a-533c-8b2e-749d78438c54
 
 	/// Frozen plan on test: breakdowns caught in time.
-	measure 'Plan Caught' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] > 0 && fact_snapshot_scores[recommended_action] >= fact_snapshot_scores[actual_class] ) )
-		formatString: #,0
+	measure 'Plan Caught' = FORMAT ( COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] > 0 && fact_snapshot_scores[recommended_action] >= fact_snapshot_scores[actual_class] ) ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: 3c5c141c-df6e-51b2-b81a-cacc66cc3327
 
 	/// Frozen plan on test: breakdowns missed or caught too late.
-	measure 'Plan Missed' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] > 0 && fact_snapshot_scores[recommended_action] < fact_snapshot_scores[actual_class] ) )
-		formatString: #,0
+	measure 'Plan Missed' = FORMAT ( COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] > 0 && fact_snapshot_scores[recommended_action] < fact_snapshot_scores[actual_class] ) ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: 9ae1ca52-0fe9-5f77-90a4-c02df6fe7b2e
 
 	/// Frozen plan on test: trucks called in with no breakdown due in the planning window.
-	measure 'Plan Called In But Fine' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] = 0 && fact_snapshot_scores[recommended_action] > 0 ) )
-		formatString: #,0
+	measure 'Plan Called In But Fine' = FORMAT ( COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] = 0 && fact_snapshot_scores[recommended_action] > 0 ) ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: 4ca535eb-2835-54ad-a9a4-b1e3035c4f98
 
 	/// Frozen plan on test: healthy trucks correctly left alone.
-	measure 'Plan Correctly Left Alone' = COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] = 0 && fact_snapshot_scores[recommended_action] = 0 ) )
-		formatString: #,0
+	measure 'Plan Correctly Left Alone' = FORMAT ( COUNTROWS ( FILTER ( fact_snapshot_scores, fact_snapshot_scores[actual_class] = 0 && fact_snapshot_scores[recommended_action] = 0 ) ), "#,0" )
+		formatString: @
 		displayFolder: Plain language
 		lineageTag: bd1d18aa-09f4-5239-9dca-702f7e38fa53
 
@@ -462,7 +462,7 @@ table _Measures
 	measure 'Saving Range Text' =
 			VAR lo = CALCULATE ( MAX ( key_results[value] ), key_results[metric] = "saving_ci_low_pct" )
 			VAR hi = CALCULATE ( MAX ( key_results[value] ), key_results[metric] = "saving_ci_high_pct" )
-			RETURN FORMAT ( lo, "0%" ) & " to " & FORMAT ( hi, "0%" ) & " cheaper"
+			RETURN FORMAT ( lo * 100, "0" ) & "–" & FORMAT ( hi, "0%" ) & " cheaper"
 		formatString: @
 		displayFolder: Plain language
 		lineageTag: 49884b3c-142c-52bd-a21c-6530b8b63890

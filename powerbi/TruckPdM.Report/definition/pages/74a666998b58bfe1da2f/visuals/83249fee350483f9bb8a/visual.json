@@ -21,8 +21,8 @@
                   {
                     "value": "Tested once on 5,045 trucks it had never seen, and it held up",
                     "textStyle": {
-                      "fontSize": "18pt",
                       "fontWeight": "bold",
+                      "fontSize": "18pt",
                       "color": "#0b0b0b"
                     }
                   }
@@ -34,7 +34,6 @@
                     "value": "Everything was fixed before this test; nothing was tuned on these trucks afterwards",
                     "textStyle": {
                       "fontSize": "10pt",
-                      "fontWeight": "normal",
                       "color": "#52514e"
                     }
                   }
