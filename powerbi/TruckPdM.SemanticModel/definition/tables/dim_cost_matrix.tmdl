@@ -75,3 +75,4 @@ table dim_cost_matrix
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

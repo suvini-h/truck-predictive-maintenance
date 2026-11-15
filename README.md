@@ -2,7 +2,7 @@
 
 **On 5,045 unseen Scania trucks, a risk-based call-in plan costs 7,399 per 1,000 trucks, against 9,846 for calling every truck in and 11,120 for waiting for breakdowns: 25% and 33% lower. It calls in a third of the fleet and catches 63% of the repairs due in time.** Costs are the expert cost matrix that ships with the data (relative units, not SEK).
 
-![Policies on the test set](docs/figures/04_policies_test.png)
+![Power BI dashboard walkthrough](docs/docs_dashboard.gif)
 
 ## Key insights
 
@@ -62,7 +62,7 @@ erDiagram
     dim_action ||--o{ fact_snapshot_scores : "recommended_action"
 ```
 
-`fact_snapshot_scores` is the test set as "today's fleet": calibrated class probabilities, recommended action and drivers for each truck. All relationships are single-direction. The cost matrix, survival curves, hazard ratios, calibration and policy tables are standalone. Three what-if parameters drive the DAX measures:
+`fact_snapshot_scores` is the test set treated as "today's fleet": calibrated class probabilities, recommended action and drivers for each truck. All relationships are single-direction. The cost matrix, survival curves, hazard ratios, calibration and policy tables are standalone. Three what-if parameters drive the DAX measures:
 - **miss-cost multiplier;**
 - **workshop slots per 1,000 trucks;**
 - **SEK per cost unit** (illustrative).
@@ -71,7 +71,14 @@ The planner measures re-optimise every truck's action live, and `src/export_powe
 
 ## Dashboard and outputs
 
-- **Power BI project:** [powerbi/](powerbi/) (open `TruckPdM.pbip` in Power BI Desktop), five pages: Overview, Service plan, Cost trade-off, Reliability, Model quality
+- **Dashboard (PDF):** [docs/dashboard.pdf](docs/dashboard.pdf), five pages written for a workshop manager first and an analyst last:
+  1. **Summary:** the headline numbers and how the plan compares with the alternatives.
+  2. **Call-in list:** the trucks to call in, ranked, with plain-language reasons.
+  3. **What if:** sliders for breakdown cost, workshop capacity and SEK per cost point.
+  4. **How reliable is this:** the one-time test, risk accuracy and the main risk factors.
+  5. **Methods:** survival curves, hazard ratios, confusion and cost matrices, and a glossary from plain names to technical terms.
+- **Dashboard walkthrough (GIF):** [docs/docs_dashboard.gif](docs/docs_dashboard.gif)
+- **Power BI project:** [powerbi/](powerbi/) (open `TruckPdM.pbip` in Power BI Desktop)
 - **Service list:** [data/processed/test_service_list.csv](data/processed/test_service_list.csv), every test truck with risk, recommended action, priority and top 3 drivers
 - **Notebooks:** [01 EDA](notebooks/01_eda.ipynb) · [02 Reliability](notebooks/02_reliability.ipynb) · [03 Risk model](notebooks/03_risk_model.ipynb) · [04 Policy](notebooks/04_maintenance_policy.ipynb)
 - **Figures:** [docs/figures/](docs/figures/)

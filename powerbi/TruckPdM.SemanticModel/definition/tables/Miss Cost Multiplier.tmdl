@@ -27,3 +27,4 @@ table 'Miss Cost Multiplier'
 		source = GENERATESERIES ( 0.25, 4, 0.25 )
 
 	annotation PBI_Id = ab6ba9d477abf6f77e9a
+

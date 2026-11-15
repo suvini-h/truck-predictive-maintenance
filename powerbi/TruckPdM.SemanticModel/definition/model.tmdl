@@ -23,11 +23,12 @@ ref table reliability_key_numbers
 ref table calibration
 ref table policy_comparison
 ref table threshold_sweep
-ref table key_results
 ref table 'Miss Cost Multiplier'
 ref table 'Workshop Slots'
 ref table 'SEK per Cost Unit'
 ref table Policy
 ref table _Measures
+ref table key_results
 
 ref cultureInfo en-US
+

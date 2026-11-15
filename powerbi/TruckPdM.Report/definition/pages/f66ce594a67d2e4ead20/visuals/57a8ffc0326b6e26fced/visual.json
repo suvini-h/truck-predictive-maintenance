@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "57a8ffc0326b6e26fced",
   "position": {
-    "x": 440,
-    "y": 92,
+    "x": 440.76249915202493,
+    "y": 92.216267553083242,
     "z": 3000,
-    "height": 72,
-    "width": 400,
+    "height": 85.964317210501321,
+    "width": 398.56183433959706,
     "tabOrder": 3000
   },
   "visual": {
@@ -39,6 +39,13 @@
       "data": [
         {
           "properties": {
+            "numericStart": {
+              "expr": {
+                "Literal": {
+                  "Value": "425D"
+                }
+              }
+            },
             "mode": {
               "expr": {
                 "Literal": {
@@ -48,8 +55,68 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "w",
+                    "Entity": "Workshop Slots",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "w"
+                              }
+                            },
+                            "Property": "Workshop Slots"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "425D"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "808a3b324858c5c4de2a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Workshop Slots"
+              }
+            },
+            "Property": "Workshop Slots"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

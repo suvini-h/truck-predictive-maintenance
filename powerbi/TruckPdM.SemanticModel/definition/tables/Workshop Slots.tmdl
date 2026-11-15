@@ -27,3 +27,4 @@ table 'Workshop Slots'
 		source = GENERATESERIES ( 0, 1000, 25 )
 
 	annotation PBI_Id = 3b654d3000550086a7e9
+

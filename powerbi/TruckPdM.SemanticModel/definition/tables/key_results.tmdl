@@ -36,3 +36,4 @@ table key_results
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

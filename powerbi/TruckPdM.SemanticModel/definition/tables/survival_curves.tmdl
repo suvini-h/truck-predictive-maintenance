@@ -63,3 +63,4 @@ table survival_curves
 					#"Changed Type"
 
 	annotation PBI_ResultType = Table
+

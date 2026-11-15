@@ -324,6 +324,72 @@ table _Measures
 		displayFolder: Savings
 		lineageTag: 257e7506-b513-5278-81e2-816ffa2d4f7d
 
+	/// Kaplan-Meier share of training trucks still on their original Component X.
+	measure 'Share Without Repair' = AVERAGE ( survival_curves[share_without_repair] )
+		formatString: 0.0%
+		displayFolder: Reliability
+		lineageTag: b1bee8d8-f56b-5966-8dd3-a689532d369b
+
+	/// Weibull shape rho; above 1 means the hazard rises with age (wear-out).
+	measure 'Weibull Shape' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "weibull_shape" )
+		formatString: 0.00
+		displayFolder: Reliability
+		lineageTag: aca81e24-0e80-5754-9986-ad584ed9639b
+
+	/// Share of trucks repaired by time step 300 (Kaplan-Meier).
+	measure 'Repaired by 300' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "repaired_by_300" )
+		formatString: 0.0%
+		displayFolder: Reliability
+		lineageTag: c9161edd-cb93-59b7-98dc-f49af2d02045
+
+	/// Share of trucks repaired by time step 400 (Kaplan-Meier).
+	measure 'Repaired by 400' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "repaired_by_400" )
+		formatString: 0.0%
+		displayFolder: Reliability
+		lineageTag: dbd64bee-daaf-5390-bb5e-197e3c241f9d
+
+	/// Cox hazard ratio (1 = no effect).
+	measure 'Hazard Ratio' = AVERAGE ( cox_hazard_ratios[hazard_ratio] )
+		formatString: 0.00
+		displayFolder: Reliability
+		lineageTag: dc526982-d862-55b3-ae84-a63896c72831
+
+	/// Mean predicted P(repair due within 48 steps) in the bin.
+	measure 'Predicted Share Due' = AVERAGE ( calibration[predicted_share_due] )
+		formatString: 0.0%
+		displayFolder: Model quality
+		lineageTag: f2c99aa2-3cfb-52d7-a037-474a1b080d2e
+
+	/// Observed share of trucks with a repair due within 48 steps in the bin.
+	measure 'Observed Share Due' = AVERAGE ( calibration[observed_share_due] )
+		formatString: 0.0%
+		displayFolder: Model quality
+		lineageTag: 111598ff-497c-5236-b447-8a41868fed0e
+
+	/// Cost of one actual/predicted cell.
+	measure 'Cost Matrix Cell' = SUM ( dim_cost_matrix[cost] )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: 30ed103b-f85a-56e6-8fca-991e8391bfc8
+
+	/// Notebook 04: cost per 1,000 trucks on validation (model: cross-fitted).
+	measure 'Validation Cost per 1000' = CALCULATE ( AVERAGE ( policy_comparison[cost_per_1000] ), policy_comparison[split] = "validation" )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: 3c04ab7a-c53a-5859-80df-12d2ca6d7bfd
+
+	/// Notebook 04: cost per 1,000 trucks on test (evaluated once).
+	measure 'Test Cost per 1000' = CALCULATE ( AVERAGE ( policy_comparison[cost_per_1000] ), policy_comparison[split] = "test" )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: d7fcc01d-db95-5872-bb0c-0613af041bf7
+
+	/// Notebook 04 validation sweep: cost per 1,000 trucks at each x.
+	measure 'Validation Sweep Cost' = AVERAGE ( threshold_sweep[cost_per_1000] )
+		formatString: #,0
+		displayFolder: Model quality
+		lineageTag: 267243f8-ecd7-59df-987c-beee5c40357a
+
 	/// How much cheaper the plan is than calling every truck in (live; 25% at the defaults on test).
 	measure 'Saving vs Call-everyone %' = DIVIDE ( [Saving vs Call-everyone per 1000], [Call-everyone Cost per 1000] )
 		formatString: 0%
@@ -407,72 +473,6 @@ table _Measures
 		displayFolder: Plain language
 		lineageTag: d13e246e-0c05-5aa8-8225-0530cd6bcae6
 
-	/// Kaplan-Meier share of training trucks still on their original Component X.
-	measure 'Share Without Repair' = AVERAGE ( survival_curves[share_without_repair] )
-		formatString: 0.0%
-		displayFolder: Reliability
-		lineageTag: b1bee8d8-f56b-5966-8dd3-a689532d369b
-
-	/// Weibull shape rho; above 1 means the hazard rises with age (wear-out).
-	measure 'Weibull Shape' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "weibull_shape" )
-		formatString: 0.00
-		displayFolder: Reliability
-		lineageTag: aca81e24-0e80-5754-9986-ad584ed9639b
-
-	/// Share of trucks repaired by time step 300 (Kaplan-Meier).
-	measure 'Repaired by 300' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "repaired_by_300" )
-		formatString: 0.0%
-		displayFolder: Reliability
-		lineageTag: c9161edd-cb93-59b7-98dc-f49af2d02045
-
-	/// Share of trucks repaired by time step 400 (Kaplan-Meier).
-	measure 'Repaired by 400' = CALCULATE ( MAX ( reliability_key_numbers[value] ), reliability_key_numbers[metric] = "repaired_by_400" )
-		formatString: 0.0%
-		displayFolder: Reliability
-		lineageTag: dbd64bee-daaf-5390-bb5e-197e3c241f9d
-
-	/// Cox hazard ratio (1 = no effect).
-	measure 'Hazard Ratio' = AVERAGE ( cox_hazard_ratios[hazard_ratio] )
-		formatString: 0.00
-		displayFolder: Reliability
-		lineageTag: dc526982-d862-55b3-ae84-a63896c72831
-
-	/// Mean predicted P(repair due within 48 steps) in the bin.
-	measure 'Predicted Share Due' = AVERAGE ( calibration[predicted_share_due] )
-		formatString: 0.0%
-		displayFolder: Model quality
-		lineageTag: f2c99aa2-3cfb-52d7-a037-474a1b080d2e
-
-	/// Observed share of trucks with a repair due within 48 steps in the bin.
-	measure 'Observed Share Due' = AVERAGE ( calibration[observed_share_due] )
-		formatString: 0.0%
-		displayFolder: Model quality
-		lineageTag: 111598ff-497c-5236-b447-8a41868fed0e
-
-	/// Cost of one actual/predicted cell.
-	measure 'Cost Matrix Cell' = SUM ( dim_cost_matrix[cost] )
-		formatString: #,0
-		displayFolder: Model quality
-		lineageTag: 30ed103b-f85a-56e6-8fca-991e8391bfc8
-
-	/// Notebook 04: cost per 1,000 trucks on validation (model: cross-fitted).
-	measure 'Validation Cost per 1000' = CALCULATE ( AVERAGE ( policy_comparison[cost_per_1000] ), policy_comparison[split] = "validation" )
-		formatString: #,0
-		displayFolder: Model quality
-		lineageTag: 3c04ab7a-c53a-5859-80df-12d2ca6d7bfd
-
-	/// Notebook 04: cost per 1,000 trucks on test (evaluated once).
-	measure 'Test Cost per 1000' = CALCULATE ( AVERAGE ( policy_comparison[cost_per_1000] ), policy_comparison[split] = "test" )
-		formatString: #,0
-		displayFolder: Model quality
-		lineageTag: d7fcc01d-db95-5872-bb0c-0613af041bf7
-
-	/// Notebook 04 validation sweep: cost per 1,000 trucks at each x.
-	measure 'Validation Sweep Cost' = AVERAGE ( threshold_sweep[cost_per_1000] )
-		formatString: #,0
-		displayFolder: Model quality
-		lineageTag: 267243f8-ecd7-59df-987c-beee5c40357a
-
 	column Value
 		dataType: int64
 		isHidden
@@ -486,3 +486,4 @@ table _Measures
 	partition _Measures = calculated
 		mode: import
 		source = { BLANK () }
+
